@@ -14,6 +14,10 @@ export default {
 			fira: ['Fira Sans Extra Condensed', 'sans-serif'],
 		},
   		colors: {
+			glass: {
+				black: "rgba(0, 0, 0, 0.25)",
+				border: "rgba(255, 255, 255, 0.1)"
+			},
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
