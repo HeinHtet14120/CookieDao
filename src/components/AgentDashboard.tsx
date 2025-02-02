@@ -43,9 +43,10 @@ import {
 } from "@/components/ui/table";
 import XIcon from "./ui/general";
 import CoinAvatar from "./CoinAvatar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { debounce } from "@/lib/debounce";
 import CoinInfo from "./CoinInfo";
+import { Progress } from "@/components/ui/progress";
 
 export type Agent = {
   agentName: string;
@@ -79,6 +80,7 @@ export const columns: ColumnDef<Agent>[] = [
       return (
         <div className="text-center w-full">
           <Button
+            className=" hover:bg-transparent"
             variant="ghost"
             onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
           >
@@ -129,7 +131,7 @@ export const columns: ColumnDef<Agent>[] = [
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-          className="w-full text-center"
+          className="w-full text-center hover:bg-transparent"
         >
           Price
           <ArrowUpDown className="ml-2 h-2 w-2" />
@@ -164,7 +166,7 @@ export const columns: ColumnDef<Agent>[] = [
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-          className="w-full text-center"
+          className="w-full text-center hover:bg-transparent"
         >
           Mindshare
           <ArrowUpDown className="ml-2 h-2 w-2" />
@@ -205,7 +207,7 @@ export const columns: ColumnDef<Agent>[] = [
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-          className="w-full text-center"
+          className="w-full text-center hover:bg-transparent"
         >
           Market Cap
           <ArrowUpDown className="ml-2 h-2 w-2" />
@@ -235,7 +237,7 @@ export const columns: ColumnDef<Agent>[] = [
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-          className="w-full text-center"
+          className="w-full text-center hover:bg-transparent"
         >
           Liquidity
           <ArrowUpDown className="ml-2 h-2 w-2" />
@@ -261,7 +263,7 @@ export const columns: ColumnDef<Agent>[] = [
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-          className="w-full text-center"
+          className="w-full text-center hover:bg-transparent"
         >
           24h Volume
           <ArrowUpDown className="ml-2 h-2 w-2" />
@@ -297,6 +299,7 @@ export const columns: ColumnDef<Agent>[] = [
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+          className="hover:bg-transparent"
         >
           Holders
           <ArrowUpDown className="ml-2 h-2 w-2" />
@@ -349,6 +352,7 @@ export const columns: ColumnDef<Agent>[] = [
         <Button
           variant="ghost"
           onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+          className="hover:bg-transparent"
         >
           SF Count
           <ArrowUpDown className="ml-2 h-2 w-2" />
@@ -431,7 +435,6 @@ export function AgentDashboard({
   onPageChange,
   onSearch,
 }: AgentDashboardProps) {
-  console.log("data", data);
   const [sorting, setSorting] = React.useState<SortingState>([
     {
       id: "volume24Hours",
@@ -451,6 +454,7 @@ export function AgentDashboard({
     "contract",
   );
   const [searchQuery, setSearchQuery] = useState("");
+  const [progress, setProgress] = useState(0);
 
   const table = useReactTable({
     data,
@@ -486,6 +490,25 @@ export function AgentDashboard({
     },
   });
 
+  useEffect(() => {
+    if (!loading) return;
+    
+    // Reset progress when loading starts
+    setProgress(0);
+    
+    const interval = setInterval(() => {
+      setProgress((prev) => {
+        if (prev >= 100) {
+          clearInterval(interval);
+          return 100;
+        }
+        return prev + 1;
+      });
+    }, 50);
+
+    return () => clearInterval(interval);
+  }, [loading]);
+
   const handlePreviousPage = () => {
     if (pagination.currentPage > 1 && !loading) {
       onPageChange(pagination.currentPage - 1);
@@ -508,13 +531,21 @@ export function AgentDashboard({
     500,
   );
 
-  if (loading) return <div>Loading...</div>;
+  if (loading)
+    return (
+      <div className="w-full h-[100vh] flex items-center justify-center flex-col gap-4">
+        <Progress value={progress} className="w-[15%] h-1" />
+        <div className="text-sm text-muted-foreground">Loading agent data...</div>
+      </div>
+    );
+
   if (error) return <div>Error: {error}</div>;
 
   return (
-    <div className="w-full ">
+    <div className="w-full">
       <div className="flex items-center py-4 gap-2">
         <Input
+          className="max-w-md focus-visible:ring-0 focus-visible:ring-offset-0 bg-white/10 backdrop-blur-lg border border-white/20"
           placeholder={`Search by ${searchType === "contract" ? "contract address" : "Twitter username"}...`}
           value={searchQuery}
           onChange={(e) => {
@@ -535,11 +566,13 @@ export function AgentDashboard({
               setSearchQuery("");
             }
           }}
-          className="max-w-md"
         />
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="outline" className="ml-auto">
+            <Button
+              variant="outline"
+              className="ml-auto border border-white/20 backdrop-blur-lg focus-visible:ring-0 focus-visible:ring-offset-0"
+            >
               Fields <ChevronDown />
             </Button>
           </DropdownMenuTrigger>
@@ -571,7 +604,7 @@ export function AgentDashboard({
           </div>
         )}
         <Table className="w-full">
-          <TableHeader>
+          <TableHeader className="bg-white/10 backdrop-blur-lg border border-white/20">
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>
                 {headerGroup.headers.map((header) => {
@@ -589,7 +622,7 @@ export function AgentDashboard({
               </TableRow>
             ))}
           </TableHeader>
-          <TableBody>
+          <TableBody className="bg-white/10 backdrop-blur-lg border border-white/20">
             {table.getRowModel().rows?.length ? (
               table.getRowModel().rows.map((row) => (
                 <TableRow
@@ -598,7 +631,10 @@ export function AgentDashboard({
                   className="[&_td]:py-1"
                 >
                   {row.getVisibleCells().map((cell) => (
-                    <TableCell key={cell.id} className="text-center text-sm">
+                    <TableCell
+                      key={cell.id}
+                      className="text-center border-b border-white/90 text-sm"
+                    >
                       {flexRender(
                         cell.column.columnDef.cell,
                         cell.getContext(),
