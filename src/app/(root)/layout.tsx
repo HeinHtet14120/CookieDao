@@ -1,13 +1,13 @@
 import Navbar from "@/components/NavBar";
 import React, { ReactNode } from "react";
 
-
 const Layout = ({ children }: { children: ReactNode }) => {
-    return (
-        <main>
-            <Navbar />
-            {children}
-        </main>
-    );
+  return (
+    <main className="min-h-screen">
+      <Navbar />
+      {children}
+      
+    </main>
+  );
 };
 export default Layout;
