@@ -6,7 +6,6 @@ const Layout = ({ children }: { children: ReactNode }) => {
     <main className="min-h-screen">
       <Navbar />
       {children}
-      
     </main>
   );
 };
