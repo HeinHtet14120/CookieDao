@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+
 import {
   ColumnDef,
   ColumnFiltersState,
@@ -47,6 +48,7 @@ import { useState, useEffect } from "react";
 import { debounce } from "@/lib/debounce";
 import CoinInfo from "./CoinInfo";
 import { Progress } from "@/components/ui/progress";
+
 
 export type Agent = {
   agentName: string;
@@ -416,6 +418,7 @@ export const columns: ColumnDef<Agent>[] = [
 
 interface AgentDashboardProps {
   data: Agent[];
+  aiPredictions: { [key: string]: string }; // ✅ Ensure AI Predictions is passed here
   pagination: {
     currentPage: number;
     totalPages: number;
@@ -433,6 +436,7 @@ export function AgentDashboard({
   loading,
   error,
   onPageChange,
+  aiPredictions,
   onSearch,
 }: AgentDashboardProps) {
   const [sorting, setSorting] = React.useState<SortingState>([
@@ -455,6 +459,370 @@ export function AgentDashboard({
   );
   const [searchQuery, setSearchQuery] = useState("");
   const [progress, setProgress] = useState(0);
+
+  const columns: ColumnDef<Agent>[] = [
+    {
+      accessorKey: "agentName",
+      size: 250,
+      enableHiding: false,
+      header: ({ column }) => {
+        return (
+            <div className="text-center w-full">
+              <Button
+                  variant="ghost"
+                  onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+              >
+                Agent
+                <ArrowUpDown className="ml-1 h-2 w-2" />
+              </Button>
+            </div>
+        );
+      },
+      cell: ({ row, table }) => {
+        // Get all rows and sort by volume to find top 3
+        const allRows = table.getRowModel().rows;
+        const sortedByVolume = [...allRows].sort((a, b) => {
+          const volumeA = a.getValue<number>("volume24Hours");
+          const volumeB = b.getValue<number>("volume24Hours");
+          return volumeB - volumeA;
+        });
+
+        // Find current row's rank
+        const currentRowRank =
+            sortedByVolume.findIndex((r) => r.id === row.id) + 1;
+
+        // Determine which fire emoji to show (if any)
+        let rankEmoji = "";
+        if (currentRowRank === 1) rankEmoji = "🔥";
+        else if (currentRowRank === 2) rankEmoji = "🔥";
+        else if (currentRowRank === 3) rankEmoji = "🔥";
+
+        return (
+            <div className="flex items-center justify-left gap-3">
+              <CoinAvatar
+                  contractAddress={row.original?.contracts?.[0]?.contractAddress}
+                  chain={row.original?.contracts?.[0]?.chain}
+              />
+              <div className="flex">
+                <span className="font-medium">{row.getValue("agentName")}</span>
+                {rankEmoji && <span className="ml-1">{rankEmoji}</span>}
+              </div>
+            </div>
+        );
+      },
+    },
+    {
+      accessorKey: "price",
+      enableHiding: false,
+      header: ({ column }) => {
+        return (
+            <Button
+                variant="ghost"
+                onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+                className="w-full text-center"
+            >
+              Price
+              <ArrowUpDown className="ml-2 h-2 w-2" />
+            </Button>
+        );
+      },
+      cell: ({ row }) => {
+        const value = row.getValue<number>("price");
+        const delta = row.original.priceDeltaPercent;
+        const formatted = new Intl.NumberFormat("en-US", {
+          style: "currency",
+          currency: "USD",
+        }).format(value);
+
+        return (
+            <div className="flex items-center justify-center gap-2">
+              <div>{formatted}</div>
+              <div
+                  className={`text-sm ${delta > 0 ? "text-green-600" : "text-red-600"}`}
+              >
+                ({delta > 0 ? "+" : ""}
+                {delta?.toFixed(2)}%)
+              </div>
+            </div>
+        );
+      },
+    },
+    {
+      accessorKey: "mindshare",
+      header: ({ column }) => {
+        return (
+            <Button
+                variant="ghost"
+                onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+                className="w-full text-center"
+            >
+              Mindshare
+              <ArrowUpDown className="ml-2 h-2 w-2" />
+            </Button>
+        );
+      },
+      cell: ({ row }) => {
+        const value = row.original?.mindshare ?? null;
+        const delta = row.original?.mindshareDeltaPercent ?? 0;
+
+        // Handle null/undefined cases
+        if (value === null || typeof value === "undefined") {
+          return <div className="text-center">-</div>;
+        }
+
+        return (
+            <div className="flex items-center justify-center gap-2 w-full">
+              <div
+                  className={`flex items-center text-sm ${delta > 0 ? "text-green-600" : "text-red-600"}`}
+              >
+                {delta > 0 ? (
+                    <TrendingUp className="h-3 w-3 mr-1" />
+                ) : (
+                    <TrendingDown className="h-3 w-3 mr-1" />
+                )}
+                {/* Safe number formatting */}
+                {typeof value === "number" ? value.toFixed(2) : "-"}
+              </div>
+            </div>
+        );
+      },
+    },
+    {
+      accessorKey: "marketCap",
+      enableHiding: false,
+      header: ({ column }) => {
+        return (
+            <Button
+                variant="ghost"
+                onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+                className="w-full text-center"
+            >
+              Market Cap
+              <ArrowUpDown className="ml-2 h-2 w-2" />
+            </Button>
+        );
+      },
+      cell: ({ row }) => {
+        const value = row.getValue<number>("marketCap");
+        const formatted = new Intl.NumberFormat("en-US", {
+          style: "currency",
+          currency: "USD",
+          notation: "compact",
+        }).format(value);
+
+        return (
+            <div className="flex items-center justify-center gap-2 w-full">
+              <div>{formatted}</div>
+            </div>
+        );
+      },
+    },
+
+    {
+      accessorKey: "liquidity",
+      header: ({ column }) => {
+        return (
+            <Button
+                variant="ghost"
+                onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+                className="w-full text-center"
+            >
+              Liquidity
+              <ArrowUpDown className="ml-2 h-2 w-2" />
+            </Button>
+        );
+      },
+      cell: ({ row }) => {
+        const value = row.getValue<number>("liquidity");
+        const formatted = new Intl.NumberFormat("en-US", {
+          style: "currency",
+          currency: "USD",
+          notation: "compact",
+        }).format(value);
+
+        return <div className="w-full text-center">{formatted}</div>;
+      },
+    },
+    {
+      accessorKey: "volume24Hours",
+      enableHiding: false,
+      header: ({ column }) => {
+        return (
+            <Button
+                variant="ghost"
+                onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+                className="w-full text-center"
+            >
+              24h Volume
+              <ArrowUpDown className="ml-2 h-2 w-2" />
+            </Button>
+        );
+      },
+      cell: ({ row }) => {
+        const value = row.getValue<number>("volume24Hours");
+        const delta = row.original.volume24HoursDeltaPercent;
+        const formatted = new Intl.NumberFormat("en-US", {
+          style: "currency",
+          currency: "USD",
+          notation: "compact",
+        }).format(value);
+
+        return (
+            <div className="flex items-center justify-center gap-2 w-full">
+              <div>{formatted}</div>
+              <div
+                  className={`text-sm ${delta > 0 ? "text-green-600" : "text-red-600"}`}
+              >
+                ({delta > 0 ? "+" : ""}
+                {delta.toFixed(2)}%)
+              </div>
+            </div>
+        );
+      },
+    },
+    {
+      accessorKey: "holdersCount",
+      header: ({ column }) => {
+        return (
+            <Button
+                variant="ghost"
+                onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+            >
+              Holders
+              <ArrowUpDown className="ml-2 h-2 w-2" />
+            </Button>
+        );
+      },
+      cell: ({ row }) => {
+        const value = row.getValue<number>("holdersCount");
+        const delta = row.original.holdersCountDeltaPercent;
+        const formatted = new Intl.NumberFormat("en-US", {
+          notation: "compact",
+        }).format(value);
+
+        return (
+            <div className="flex items-center gap-2">
+              <div>{formatted}</div>
+              <div
+                  className={`text-sm ${delta > 0 ? "text-green-600" : "text-red-600"}`}
+              >
+                ({delta > 0 ? "+" : ""}
+                {delta.toFixed(2)}%)
+              </div>
+            </div>
+        );
+      },
+    },
+
+    {
+      id: "twitter",
+      cell: ({ row }) => {
+        const username = row.original.twitterUsernames[0];
+        if (!username) return <div>-</div>;
+        return (
+            <a
+                href={`https://twitter.com/${username}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+            >
+              <XIcon width={24} height={24} />
+            </a>
+        );
+      },
+    },
+    {
+      accessorKey: "smartFollowersCount",
+      size: 150,
+      header: ({ column }) => {
+        return (
+            <Button
+                variant="ghost"
+                onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+            >
+              SF Count
+              <ArrowUpDown className="ml-2 h-2 w-2" />
+            </Button>
+        );
+      },
+      cell: ({ row }) => {
+        const value = row.getValue<number>("smartFollowersCount");
+        const formatted = new Intl.NumberFormat("en-US", {
+          notation: "compact",
+        }).format(value);
+
+        return <div>{formatted}</div>;
+      },
+    },
+    {
+      id: "aiPrediction",
+      header: "AI Suggestion",
+      cell: ({ row }) => {
+        const agentName = row.original.agentName;
+        const prediction = aiPredictions[agentName] || "No Data";
+
+        return (
+            <div
+                className={`text-sm px-2 py-1 rounded ${
+                    prediction === "Increase allocation"
+                        ? "bg-green-300 text-green-800"
+                        : prediction === "Reduce allocation"
+                            ? "bg-red-300 text-red-800"
+                            : "bg-gray-200"
+                }`}
+            >
+              {prediction}
+            </div>
+        );
+      },
+    },
+
+    {
+      id: "actions",
+      enableHiding: false,
+      cell: ({ row }) => {
+        const agent = row.original;
+
+        return (
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" className="h-8 w-8 p-0">
+                  <span className="sr-only">Open menu</span>
+                  <MoreHorizontal className="h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                <DropdownMenuLabel>Actions</DropdownMenuLabel>
+                <DropdownMenuItem
+                    onClick={() =>
+                        navigator.clipboard.writeText(
+                            agent.contracts[0].contractAddress,
+                        )
+                    }
+                >
+                  Copy contract address
+                </DropdownMenuItem>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem>View details</DropdownMenuItem>
+                {agent.twitterUsernames[0] && (
+                    <DropdownMenuItem
+                        onClick={() =>
+                            window.open(
+                                `https://twitter.com/${agent.twitterUsernames[0]}`,
+                                "_blank",
+                            )
+                        }
+                    >
+                      View Twitter
+                    </DropdownMenuItem>
+                )}
+              </DropdownMenuContent>
+            </DropdownMenu>
+        );
+      },
+    },
+  ];
+
 
   const table = useReactTable({
     data,
