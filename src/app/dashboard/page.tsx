@@ -4,8 +4,8 @@ import { cookieApi } from "@/app/api/cookies";
 import { useEffect, useState } from "react";
 import { Agent, ApiResponse } from "@/types/api";
 import AgentDashboard from "@/components/AgentDashboard";
-import { BackgroundBeams } from "@/components/ui/background-beams";
 import axios from "axios";
+
 
 export default function DashboardPage() {
   const [agentsCache, setAgentsCache] = useState<Record<number, Agent[]>>({});
@@ -123,17 +123,17 @@ export default function DashboardPage() {
   };
 
   return (
-      <div className="p-4 h-full w-full ">
-        <BackgroundBeams className="h-full w-full" />
-        <AgentDashboard
-            data={hasSearched ? searchResults : agents}
+
+    <div className="p-4 h-full w-full bg-black/10 backdrop-blur-lg rounded-xl border dark:border-white/20 shadow-xl ">
+      <AgentDashboard
+      data={hasSearched ? searchResults : agents}
             pagination={pagination}
             loading={loading}
             error={error}
             onPageChange={handlePageChange}
             onSearch={handleSearch}
-            aiPredictions={aiPredictions} // Pass predictions to AgentDashboard
-        />
-      </div>
+            aiPredictions={aiPredictions} 
+      />
+    </div>
   );
 }

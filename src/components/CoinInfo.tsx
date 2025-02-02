@@ -71,43 +71,43 @@ const CoinInfo = ({ data }: { data: Agent }) => {
   return (
     // <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
     <div className="flex justify-between items-start gap-4">
-        <div className="flex flex-col gap-4">
-      {/* Core Metrics Card */}
-      <Card className="h-fit w-fit">
-        <CardHeader className="pb-3">
-          <CardTitle className="text-lg flex items-center justify-between gap-2">
-            <div>{data.agentName}</div>
-            <div className="flex items-center gap-2 border rounded-md p-1">
-              <span>
-                {data.priceDeltaPercent > 0 ? (
-                  <TrendingUp className="h-3 w-3 text-green-600" />
-                ) : (
-                  <TrendingDown className="h-3 w-3 text-red-600" />
-                )}
-              </span>
-              <span
-                className={`text-sm ${data.priceDeltaPercent > 0 ? "text-green-600" : "text-red-600"}`}
-              >
-                {formatPercentage(data.priceDeltaPercent)}
-              </span>
-            </div>
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-1">
-          <DataRow label="Price" value={formatCurrency(data.price)} />
-          <DataRow label="Market Cap" value={formatCurrency(data.marketCap)} />
-          <DataRow
-            label="24h Volume"
-            value={formatCurrency(data.volume24Hours)}
-          />
-          <DataRow label="Liquidity" value={formatCurrency(data.liquidity)} />
-        </CardContent>
-      </Card>
+      <div className="flex flex-col gap-4">
+        {/* Core Metrics Card */}
+        <Card className="h-fit w-fit">
+          <CardHeader className="pb-3">
+            <CardTitle className="text-lg flex items-center justify-between gap-2">
+              <div>{data.agentName}</div>
+              <div className="flex items-center gap-2 border rounded-md p-1">
+                <span>
+                  {data.priceDeltaPercent > 0 ? (
+                    <TrendingUp className="h-3 w-3 text-green-600" />
+                  ) : (
+                    <TrendingDown className="h-3 w-3 text-red-600" />
+                  )}
+                </span>
+                <span
+                  className={`text-sm ${data.priceDeltaPercent > 0 ? "text-green-600" : "text-red-600"}`}
+                >
+                  {formatPercentage(data.priceDeltaPercent)}
+                </span>
+              </div>
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-1">
+            <DataRow label="Price" value={formatCurrency(data.price)} />
+            <DataRow
+              label="Market Cap"
+              value={formatCurrency(data.marketCap)}
+            />
+            <DataRow
+              label="24h Volume"
+              value={formatCurrency(data.volume24Hours)}
+            />
+            <DataRow label="Liquidity" value={formatCurrency(data.liquidity)} />
+          </CardContent>
+        </Card>
 
-        <Button
-          variant="outline"
-          className="w-fit h-fit text-xs"
-        >
+        <Button variant="outline" className="w-fit h-fit text-xs">
           {data.contracts?.map((contract, index) => (
             <div key={index}>{contract.contractAddress}</div>
           ))}
