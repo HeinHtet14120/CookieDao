@@ -12,6 +12,7 @@ export function TopTweet({
     impressionsCount: number;
   }>;
 }) {
+  console.log("this is the tweets", tweets);
   return (
     <BentoGrid className="max-w-max mx-auto">
       {tweets.map((tweet, i) => (

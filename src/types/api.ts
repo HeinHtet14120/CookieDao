@@ -6,6 +6,10 @@ export interface Tweet {
   impressionsCount: number;
 }
 
+export interface XCardProps {
+  tweets: Tweet[];
+}
+
 export interface Contract {
   chain: number;
   contractAddress: string;
@@ -33,10 +37,11 @@ export interface Agent {
   followersCount: number;
   smartFollowersCount: number;
   topTweets?: Array<{
-    tweetId: string;
-    impressions: number;
-    engagements: number;
-    url: string;
+    tweetAuthorDisplayName: string;
+    tweetAuthorProfileImageUrl: string;
+    tweetUrl: string;
+    impressionsCount: number;
+    smartEngagementPoints: number;
   }>;
 }
 

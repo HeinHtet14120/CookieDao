@@ -4,7 +4,7 @@ import { CardTitle, Card } from "@/components/ui/card-hover-effect";
 import { FloatingDock } from "./ui/floating-dock";
 import { IconBrandX, IconTerminal2 } from "@tabler/icons-react";
 import { CardContent, CardHeader } from "./ui/card";
-import { TopTweet } from "./TopTweet";
+import { XCard } from "./XCard";
 
 // Helper formatting functions
 const formatCurrency = (value?: number) =>
@@ -81,11 +81,18 @@ const CoinInfo = ({ data }: { data: Agent }) => {
   ];
 
   if (!data) return null;
+
+  // const tweets = data.topTweets?.map(tweet => ({
+  //   impressionsCount: tweet.impressions,
+  //   smartEngagementPoints: tweet.engagements,
+  //   tweetAuthorDisplayName: data.twitterUsernames?.[0],
+  //   tweetAuthorProfileImageUrl: data.u,
+  //   tweetUrl: tweet.url
+  // })) || [];
+
   return (
-    <div className="flex h-[calc(100vh-100px)] w-[100%] mt-4 items-start gap-10">
-      <div className="w-[80%]">
-        <TopTweet tweets={data.topTweets} />
-      </div>
+    <div className="flex items-center my-auto justify-between min-h-full w-[100%] mt-10 gap-10">
+      
       <div className="flex w-[20%] flex-col gap-2">
         {/* Core Metrics Card */}
         <Card className="h-fit w-fit">
@@ -128,6 +135,9 @@ const CoinInfo = ({ data }: { data: Agent }) => {
             <div key={index}>{contract.contractAddress}</div>
           ))}
         </Button> */}
+      </div>
+      <div className=" w-[80%] ">
+        <XCard tweets={data.topTweets || []} />
       </div>
       {/* Social & Community Card */}
       {/* <Card className="h-fit">
