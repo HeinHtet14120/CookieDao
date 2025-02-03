@@ -1,8 +1,10 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Agent } from "@/types/api";
 import { TrendingUp, TrendingDown, Link as LinkIcon, Link } from "lucide-react";
-import { Button } from "./ui/button";
-import { useToast } from "@/hooks/use-toast";
+import { CardTitle, Card } from "@/components/ui/card-hover-effect";
+import { FloatingDock } from "./ui/floating-dock";
+import { IconBrandX, IconTerminal2 } from "@tabler/icons-react";
+import { CardContent, CardHeader } from "./ui/card";
+import { TopTweet } from "./TopTweet";
 
 // Helper formatting functions
 const formatCurrency = (value?: number) =>
@@ -17,9 +19,6 @@ const formatCurrency = (value?: number) =>
 const formatPercentage = (value?: number) =>
   value ? `${value > 0 ? "+" : " "}${value.toFixed(2)}%` : " - ";
 
-const formatNumber = (value?: number) =>
-  value ? new Intl.NumberFormat().format(value) : "-";
-
 // Reusable data row component
 const DataRow = ({
   label,
@@ -32,21 +31,20 @@ const DataRow = ({
   delta?: number;
   link?: string;
 }) => (
-  <div className="flex justify-between items-center gap-5 py-1.5 px-2 hover:bg-muted/50 rounded">
-    <span className="text-muted-foreground text-sm">{label}</span>
+  <div className="flex justify-between items-center gap-5 py-1.5 px-2">
+    <span className=" text-muted-foreground/90 text-sm">{label}</span>
     <div className="flex items-center justify-between gap-5">
       {link ? (
         <Link
           to={link}
           target="_blank"
-          rel="noopener noreferrer"
           className="text-blue-600 hover:underline flex items-center gap-1"
         >
           {value}
           <LinkIcon className="h-3 w-3" />
         </Link>
       ) : (
-        <span className="font-medium text-sm">{value}</span>
+        <span className="font-medium text-white/80 text-sm">{value}</span>
       )}
       {delta !== undefined && (
         <span
@@ -65,19 +63,36 @@ const DataRow = ({
 );
 
 const CoinInfo = ({ data }: { data: Agent }) => {
-  const { toast } = useToast();
+  const links = [
+    {
+      title: "CA",
+      icon: (
+        <IconTerminal2 className="h-full w-full text-black   dark:text-neutral-300" />
+      ),
+      ca: data.contracts?.[0]?.contractAddress,
+    },
+    {
+      title: "Twitter",
+      icon: (
+        <IconBrandX className="h-full w-full text-black   dark:text-neutral-300" />
+      ),
+      href: `https://twitter.com/${data.twitterUsernames?.[0]}`,
+    },
+  ];
+
   if (!data) return null;
-  console.log(data);
   return (
-    // <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-    <div className="flex justify-between items-start gap-4">
-      <div className="flex flex-col gap-4">
+    <div className="flex h-[calc(100vh-100px)] w-[100%] mt-4 items-start gap-10">
+      <div className="w-[80%]">
+        <TopTweet tweets={data.topTweets} />
+      </div>
+      <div className="flex w-[20%] flex-col gap-2">
         {/* Core Metrics Card */}
         <Card className="h-fit w-fit">
           <CardHeader className="pb-3">
             <CardTitle className="text-lg flex items-center justify-between gap-2">
               <div>{data.agentName}</div>
-              <div className="flex items-center gap-2 border rounded-md p-1">
+              <div className="flex items-center gap-2 rounded-md p-1">
                 <span>
                   {data.priceDeltaPercent > 0 ? (
                     <TrendingUp className="h-3 w-3 text-green-600" />
@@ -106,14 +121,14 @@ const CoinInfo = ({ data }: { data: Agent }) => {
             <DataRow label="Liquidity" value={formatCurrency(data.liquidity)} />
           </CardContent>
         </Card>
+        <FloatingDock items={links} />
 
-        <Button variant="outline" className="w-fit h-fit text-xs">
+        {/* <Button variant="outline" className="w-fit h-fit text-xs">
           {data.contracts?.map((contract, index) => (
             <div key={index}>{contract.contractAddress}</div>
           ))}
-        </Button>
+        </Button> */}
       </div>
-
       {/* Social & Community Card */}
       {/* <Card className="h-fit">
         <CardHeader className="pb-3">
