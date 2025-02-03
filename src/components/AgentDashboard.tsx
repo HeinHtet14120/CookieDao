@@ -49,7 +49,6 @@ import { debounce } from "@/lib/debounce";
 import CoinInfo from "./CoinInfo";
 import { Progress } from "@/components/ui/progress";
 
-
 export type Agent = {
   agentName: string;
   contracts: {
@@ -467,15 +466,17 @@ export function AgentDashboard({
       enableHiding: false,
       header: ({ column }) => {
         return (
-            <div className="text-center w-full">
-              <Button
-                  variant="ghost"
-                  onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-              >
-                Agent
-                <ArrowUpDown className="ml-1 h-2 w-2" />
-              </Button>
-            </div>
+          <div className="text-center w-full">
+            <Button
+              variant="ghost"
+              onClick={() =>
+                column.toggleSorting(column.getIsSorted() === "asc")
+              }
+            >
+              Agent
+              <ArrowUpDown className="ml-1 h-2 w-2" />
+            </Button>
+          </div>
         );
       },
       cell: ({ row, table }) => {
@@ -489,7 +490,7 @@ export function AgentDashboard({
 
         // Find current row's rank
         const currentRowRank =
-            sortedByVolume.findIndex((r) => r.id === row.id) + 1;
+          sortedByVolume.findIndex((r) => r.id === row.id) + 1;
 
         // Determine which fire emoji to show (if any)
         let rankEmoji = "";
@@ -498,16 +499,16 @@ export function AgentDashboard({
         else if (currentRowRank === 3) rankEmoji = "🔥";
 
         return (
-            <div className="flex items-center justify-left gap-3">
-              <CoinAvatar
-                  contractAddress={row.original?.contracts?.[0]?.contractAddress}
-                  chain={row.original?.contracts?.[0]?.chain}
-              />
-              <div className="flex">
-                <span className="font-medium">{row.getValue("agentName")}</span>
-                {rankEmoji && <span className="ml-1">{rankEmoji}</span>}
-              </div>
+          <div className="flex items-center justify-left gap-3">
+            <CoinAvatar
+              contractAddress={row.original?.contracts?.[0]?.contractAddress}
+              chain={row.original?.contracts?.[0]?.chain}
+            />
+            <div className="flex">
+              <span className="font-medium">{row.getValue("agentName")}</span>
+              {rankEmoji && <span className="ml-1">{rankEmoji}</span>}
             </div>
+          </div>
         );
       },
     },
@@ -516,14 +517,14 @@ export function AgentDashboard({
       enableHiding: false,
       header: ({ column }) => {
         return (
-            <Button
-                variant="ghost"
-                onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-                className="w-full text-center"
-            >
-              Price
-              <ArrowUpDown className="ml-2 h-2 w-2" />
-            </Button>
+          <Button
+            variant="ghost"
+            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+            className="w-full text-center"
+          >
+            Price
+            <ArrowUpDown className="ml-2 h-2 w-2" />
+          </Button>
         );
       },
       cell: ({ row }) => {
@@ -535,15 +536,15 @@ export function AgentDashboard({
         }).format(value);
 
         return (
-            <div className="flex items-center justify-center gap-2">
-              <div>{formatted}</div>
-              <div
-                  className={`text-sm ${delta > 0 ? "text-green-600" : "text-red-600"}`}
-              >
-                ({delta > 0 ? "+" : ""}
-                {delta?.toFixed(2)}%)
-              </div>
+          <div className="flex items-center justify-center gap-2">
+            <div>{formatted}</div>
+            <div
+              className={`text-sm ${delta > 0 ? "text-green-600" : "text-red-600"}`}
+            >
+              ({delta > 0 ? "+" : ""}
+              {delta?.toFixed(2)}%)
             </div>
+          </div>
         );
       },
     },
@@ -551,14 +552,14 @@ export function AgentDashboard({
       accessorKey: "mindshare",
       header: ({ column }) => {
         return (
-            <Button
-                variant="ghost"
-                onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-                className="w-full text-center"
-            >
-              Mindshare
-              <ArrowUpDown className="ml-2 h-2 w-2" />
-            </Button>
+          <Button
+            variant="ghost"
+            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+            className="w-full text-center"
+          >
+            Mindshare
+            <ArrowUpDown className="ml-2 h-2 w-2" />
+          </Button>
         );
       },
       cell: ({ row }) => {
@@ -571,19 +572,19 @@ export function AgentDashboard({
         }
 
         return (
-            <div className="flex items-center justify-center gap-2 w-full">
-              <div
-                  className={`flex items-center text-sm ${delta > 0 ? "text-green-600" : "text-red-600"}`}
-              >
-                {delta > 0 ? (
-                    <TrendingUp className="h-3 w-3 mr-1" />
-                ) : (
-                    <TrendingDown className="h-3 w-3 mr-1" />
-                )}
-                {/* Safe number formatting */}
-                {typeof value === "number" ? value.toFixed(2) : "-"}
-              </div>
+          <div className="flex items-center justify-center gap-2 w-full">
+            <div
+              className={`flex items-center text-sm ${delta > 0 ? "text-green-600" : "text-red-600"}`}
+            >
+              {delta > 0 ? (
+                <TrendingUp className="h-3 w-3 mr-1" />
+              ) : (
+                <TrendingDown className="h-3 w-3 mr-1" />
+              )}
+              {/* Safe number formatting */}
+              {typeof value === "number" ? value.toFixed(2) : "-"}
             </div>
+          </div>
         );
       },
     },
@@ -592,14 +593,14 @@ export function AgentDashboard({
       enableHiding: false,
       header: ({ column }) => {
         return (
-            <Button
-                variant="ghost"
-                onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-                className="w-full text-center"
-            >
-              Market Cap
-              <ArrowUpDown className="ml-2 h-2 w-2" />
-            </Button>
+          <Button
+            variant="ghost"
+            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+            className="w-full text-center"
+          >
+            Market Cap
+            <ArrowUpDown className="ml-2 h-2 w-2" />
+          </Button>
         );
       },
       cell: ({ row }) => {
@@ -611,9 +612,9 @@ export function AgentDashboard({
         }).format(value);
 
         return (
-            <div className="flex items-center justify-center gap-2 w-full">
-              <div>{formatted}</div>
-            </div>
+          <div className="flex items-center justify-center gap-2 w-full">
+            <div>{formatted}</div>
+          </div>
         );
       },
     },
@@ -622,14 +623,14 @@ export function AgentDashboard({
       accessorKey: "liquidity",
       header: ({ column }) => {
         return (
-            <Button
-                variant="ghost"
-                onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-                className="w-full text-center"
-            >
-              Liquidity
-              <ArrowUpDown className="ml-2 h-2 w-2" />
-            </Button>
+          <Button
+            variant="ghost"
+            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+            className="w-full text-center"
+          >
+            Liquidity
+            <ArrowUpDown className="ml-2 h-2 w-2" />
+          </Button>
         );
       },
       cell: ({ row }) => {
@@ -648,14 +649,14 @@ export function AgentDashboard({
       enableHiding: false,
       header: ({ column }) => {
         return (
-            <Button
-                variant="ghost"
-                onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-                className="w-full text-center"
-            >
-              24h Volume
-              <ArrowUpDown className="ml-2 h-2 w-2" />
-            </Button>
+          <Button
+            variant="ghost"
+            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+            className="w-full text-center"
+          >
+            24h Volume
+            <ArrowUpDown className="ml-2 h-2 w-2" />
+          </Button>
         );
       },
       cell: ({ row }) => {
@@ -668,15 +669,15 @@ export function AgentDashboard({
         }).format(value);
 
         return (
-            <div className="flex items-center justify-center gap-2 w-full">
-              <div>{formatted}</div>
-              <div
-                  className={`text-sm ${delta > 0 ? "text-green-600" : "text-red-600"}`}
-              >
-                ({delta > 0 ? "+" : ""}
-                {delta.toFixed(2)}%)
-              </div>
+          <div className="flex items-center justify-center gap-2 w-full">
+            <div>{formatted}</div>
+            <div
+              className={`text-sm ${delta > 0 ? "text-green-600" : "text-red-600"}`}
+            >
+              ({delta > 0 ? "+" : ""}
+              {delta.toFixed(2)}%)
             </div>
+          </div>
         );
       },
     },
@@ -684,13 +685,13 @@ export function AgentDashboard({
       accessorKey: "holdersCount",
       header: ({ column }) => {
         return (
-            <Button
-                variant="ghost"
-                onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-            >
-              Holders
-              <ArrowUpDown className="ml-2 h-2 w-2" />
-            </Button>
+          <Button
+            variant="ghost"
+            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+          >
+            Holders
+            <ArrowUpDown className="ml-2 h-2 w-2" />
+          </Button>
         );
       },
       cell: ({ row }) => {
@@ -701,15 +702,15 @@ export function AgentDashboard({
         }).format(value);
 
         return (
-            <div className="flex items-center gap-2">
-              <div>{formatted}</div>
-              <div
-                  className={`text-sm ${delta > 0 ? "text-green-600" : "text-red-600"}`}
-              >
-                ({delta > 0 ? "+" : ""}
-                {delta.toFixed(2)}%)
-              </div>
+          <div className="flex items-center gap-2">
+            <div>{formatted}</div>
+            <div
+              className={`text-sm ${delta > 0 ? "text-green-600" : "text-red-600"}`}
+            >
+              ({delta > 0 ? "+" : ""}
+              {delta.toFixed(2)}%)
             </div>
+          </div>
         );
       },
     },
@@ -720,14 +721,14 @@ export function AgentDashboard({
         const username = row.original.twitterUsernames[0];
         if (!username) return <div>-</div>;
         return (
-            <a
-                href={`https://twitter.com/${username}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-            >
-              <XIcon width={24} height={24} />
-            </a>
+          <a
+            href={`https://twitter.com/${username}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            <XIcon width={24} height={24} />
+          </a>
         );
       },
     },
@@ -736,13 +737,13 @@ export function AgentDashboard({
       size: 150,
       header: ({ column }) => {
         return (
-            <Button
-                variant="ghost"
-                onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
-            >
-              SF Count
-              <ArrowUpDown className="ml-2 h-2 w-2" />
-            </Button>
+          <Button
+            variant="ghost"
+            onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+          >
+            SF Count
+            <ArrowUpDown className="ml-2 h-2 w-2" />
+          </Button>
         );
       },
       cell: ({ row }) => {
@@ -762,17 +763,17 @@ export function AgentDashboard({
         const prediction = aiPredictions[agentName] || "No Data";
 
         return (
-            <div
-                className={`text-sm px-2 py-1 rounded ${
-                    prediction === "Increase allocation"
-                        ? "bg-green-300 text-green-800"
-                        : prediction === "Reduce allocation"
-                            ? "bg-red-300 text-red-800"
-                            : "bg-gray-200"
-                }`}
-            >
-              {prediction}
-            </div>
+          <div
+            className={`text-sm px-2 py-1 rounded ${
+              prediction === "Increase allocation"
+                ? "bg-green-300 text-green-800"
+                : prediction === "Reduce allocation"
+                  ? "bg-red-300 text-red-800"
+                  : "bg-gray-200"
+            }`}
+          >
+            {prediction}
+          </div>
         );
       },
     },
@@ -784,45 +785,44 @@ export function AgentDashboard({
         const agent = row.original;
 
         return (
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="h-8 w-8 p-0">
-                  <span className="sr-only">Open menu</span>
-                  <MoreHorizontal className="h-4 w-4" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuLabel>Actions</DropdownMenuLabel>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="ghost" className="h-8 w-8 p-0">
+                <span className="sr-only">Open menu</span>
+                <MoreHorizontal className="h-4 w-4" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              <DropdownMenuLabel>Actions</DropdownMenuLabel>
+              <DropdownMenuItem
+                onClick={() =>
+                  navigator.clipboard.writeText(
+                    agent.contracts[0].contractAddress,
+                  )
+                }
+              >
+                Copy contract address
+              </DropdownMenuItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem>View details</DropdownMenuItem>
+              {agent.twitterUsernames[0] && (
                 <DropdownMenuItem
-                    onClick={() =>
-                        navigator.clipboard.writeText(
-                            agent.contracts[0].contractAddress,
-                        )
-                    }
+                  onClick={() =>
+                    window.open(
+                      `https://twitter.com/${agent.twitterUsernames[0]}`,
+                      "_blank",
+                    )
+                  }
                 >
-                  Copy contract address
+                  View Twitter
                 </DropdownMenuItem>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem>View details</DropdownMenuItem>
-                {agent.twitterUsernames[0] && (
-                    <DropdownMenuItem
-                        onClick={() =>
-                            window.open(
-                                `https://twitter.com/${agent.twitterUsernames[0]}`,
-                                "_blank",
-                            )
-                        }
-                    >
-                      View Twitter
-                    </DropdownMenuItem>
-                )}
-              </DropdownMenuContent>
-            </DropdownMenu>
+              )}
+            </DropdownMenuContent>
+          </DropdownMenu>
         );
       },
     },
   ];
-
 
   const table = useReactTable({
     data,
@@ -860,10 +860,10 @@ export function AgentDashboard({
 
   useEffect(() => {
     if (!loading) return;
-    
+
     // Reset progress when loading starts
     setProgress(0);
-    
+
     const interval = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) {
@@ -903,7 +903,9 @@ export function AgentDashboard({
     return (
       <div className="w-full h-[100vh] flex items-center justify-center flex-col gap-4">
         <Progress value={progress} className="w-[15%] h-1" />
-        <div className="text-sm text-muted-foreground">Loading agent data...</div>
+        <div className="text-sm text-muted-foreground">
+          Loading agent data...
+        </div>
       </div>
     );
 
