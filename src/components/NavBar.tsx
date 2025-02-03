@@ -91,13 +91,13 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
                   <Link
-                      href="/about"
-                      className={cn(
-                          "block select-none text-slate-200 space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-                          pathname === "/about" ? "text-slate-300" : "",
-                      )}
+                    href="/search"
+                    className={cn(
+                      "block select-none text-slate-200 space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+                      pathname === "/search" ? "text-slate-300" : "",
+                    )}
                   >
-                    About
+                    Search
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
