@@ -122,7 +122,7 @@ export default function DashboardPage() {
   };
 
   return (
-    <div className="p-4 h-full w-full bg-black/10 backdrop-blur-lg rounded-xl border dark:border-white/20 shadow-xl ">
+    <div className="p-4 h-screen w-full bg-black/10 backdrop-blur-lg rounded-xl border dark:border-white/20 shadow-xl ">
       <AgentDashboard
         data={hasSearched ? searchResults : agents}
         pagination={pagination}

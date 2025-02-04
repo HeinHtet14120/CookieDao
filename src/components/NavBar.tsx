@@ -59,6 +59,7 @@ export default function Navbar() {
               </NavigationMenuList>
             </NavigationMenu>
 
+
             <NavigationMenu>
               <NavigationMenuList className="flex items-center gap-10">
                 <NavigationMenuItem>
