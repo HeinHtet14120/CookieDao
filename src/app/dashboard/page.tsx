@@ -6,7 +6,6 @@ import { Agent, ApiResponse } from "@/types/api";
 import AgentDashboard from "@/components/AgentDashboard";
 import axios from "axios";
 
-
 export default function DashboardPage() {
   const [agentsCache, setAgentsCache] = useState<Record<number, Agent[]>>({});
   const [currentPage, setCurrentPage] = useState(1);
@@ -20,7 +19,9 @@ export default function DashboardPage() {
   const [agents, setAgents] = useState<Agent[]>([]);
   const [searchResults, setSearchResults] = useState<Agent[]>([]);
   const [hasSearched, setHasSearched] = useState(false);
-  const [aiPredictions, setAiPredictions] = useState<{ [key: string]: string }>({});
+  const [aiPredictions, setAiPredictions] = useState<{ [key: string]: string }>(
+    {},
+  );
 
   useEffect(() => {
     const fetchAiPredictions = async () => {
@@ -41,7 +42,6 @@ export default function DashboardPage() {
 
     fetchAiPredictions();
   }, []);
-
 
   const fetchAgents = async (page: number) => {
     setLoading(true);
@@ -66,7 +66,7 @@ export default function DashboardPage() {
     } catch (error) {
       console.error("Error fetching agents:", error);
       setError(
-          error instanceof Error ? error.message : "Failed to fetch agents"
+        error instanceof Error ? error.message : "Failed to fetch agents",
       );
     } finally {
       setLoading(false);
@@ -86,9 +86,9 @@ export default function DashboardPage() {
       }
 
       const result =
-          type === "contract"
-              ? await cookieApi.getAgentByContract(query)
-              : await cookieApi.getAgentByTwitter(query);
+        type === "contract"
+          ? await cookieApi.getAgentByContract(query)
+          : await cookieApi.getAgentByTwitter(query);
 
       if (result?.success && result.ok) {
         console.log("result", result.ok.data);
@@ -104,7 +104,7 @@ export default function DashboardPage() {
     } catch (error) {
       setSearchResults([]);
       if (
-          !(error instanceof Error && error.message.includes("Data not found"))
+        !(error instanceof Error && error.message.includes("Data not found"))
       ) {
         setError(error instanceof Error ? error.message : "Search failed");
       }
@@ -115,7 +115,6 @@ export default function DashboardPage() {
 
   useEffect(() => {
     fetchAgents(1);
-
   }, []);
 
   const handlePageChange = (newPage: number) => {
@@ -123,16 +122,15 @@ export default function DashboardPage() {
   };
 
   return (
-
     <div className="p-4 h-full w-full bg-black/10 backdrop-blur-lg rounded-xl border dark:border-white/20 shadow-xl ">
       <AgentDashboard
-      data={hasSearched ? searchResults : agents}
-            pagination={pagination}
-            loading={loading}
-            error={error}
-            onPageChange={handlePageChange}
-            onSearch={handleSearch}
-            aiPredictions={aiPredictions} 
+        data={hasSearched ? searchResults : agents}
+        pagination={pagination}
+        loading={loading}
+        error={error}
+        onPageChange={handlePageChange}
+        onSearch={handleSearch}
+        aiPredictions={aiPredictions}
       />
     </div>
   );
