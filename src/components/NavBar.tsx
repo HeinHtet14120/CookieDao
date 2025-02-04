@@ -99,8 +99,8 @@ export default function Navbar() {
                   <DialogTitle>Connect Wallet</DialogTitle>
                   <DialogDescription>
                     {walletAddress
-                        ? "Your wallet is connected. Below is your wallet address."
-                        : "Connect your wallet to continue."}
+                        ? "Your walletPortfolio is connected. Below is your walletPortfolio address."
+                        : "Connect your walletPortfolio to continue."}
                   </DialogDescription>
                 </DialogHeader>
                 {walletAddress ? (
