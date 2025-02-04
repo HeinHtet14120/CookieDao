@@ -22,9 +22,9 @@ export default function Dashboard() {
             try {
                 const tokenList = [
                     { address: "0x6B175474E89094C44Da98b954EedeAC495271d0F", symbol: "DAI" },
-                    { address: "0xA0b86991c6218b36c1d19d4a2e9eb0ce3606eb48", symbol: "USDC" },
+                    // { address: "0xA0b86991c6218b36c1d19d4a2e9eb0ce3606eb48", symbol: "USDC" },
                     { address: "0xdAC17F958D2ee523a2206206994597C13D831ec7", symbol: "USDT" },
-                    { address: "0xC02aaa39b223FE8D0A0e5C4F27eAD9083C756Cc2", symbol: "WETH" },
+                    // { address: "0xC02aaa39b223FE8D0A0e5C4F27eAD9083C756Cc2", symbol: "WETH" },
                 ];
 
                 const erc20Abi = [
