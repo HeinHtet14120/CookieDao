@@ -28,7 +28,7 @@ contract DeFiRebalancer is Ownable {
 
     constructor() {
         // ✅ UniswapV3 Router (works on Ethereum L2 chains)
-        router = IUniswapV3Router(0xE592427A0AEce92De3Edee1F18E0157C05861564); // ✅ Fixed checksummed address
+        router = IUniswapV3Router(0xE592427A0AEce92De3Edee1F18E0157C05861564);
     }
 
     function setTokenAllocation(address token, uint256 allocation) external onlyOwner {
