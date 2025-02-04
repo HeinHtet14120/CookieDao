@@ -64,22 +64,22 @@ export default function Navbar() {
               <NavigationMenuList className="flex items-center gap-10">
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <Link href="/" className={`block select-none text-slate-200 p-2 transition-colors hover:bg-accent focus:bg-accent ${pathname === "/" ? "text-slate-300" : ""}`}>
+                    <Link href="/" className={`block select-none text-slate-200 p-2 transition-colors rounded-md hover:text-accent focus:text-accent ${pathname === "/" ? "text-slate-300" : ""}`}>
                       Home
                     </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <Link href="/dashboard" className={`block select-none text-slate-200 p-2 transition-colors hover:bg-accent focus:bg-accent ${pathname === "/dashboard" ? "text-slate-300" : ""}`}>
+                    <Link href="/dashboard" className={`block select-none text-slate-200 p-2 transition-colors rounded-md hover:text-accent focus:text-accent ${pathname === "/dashboard" ? "text-slate-300" : ""}`}>
                       Dashboard
                     </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <Link href="/about" className={`block select-none text-slate-200 p-2 transition-colors hover:bg-accent focus:bg-accent ${pathname === "/about" ? "text-slate-300" : ""}`}>
-                      About
+                    <Link href="/search" className={`block select-none text-slate-200 p-2 transition-colors rounded-md hover:text-accent focus:text-accent ${pathname === "/search" ? "text-slate-300" : ""}`}>
+                      Search
                     </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
