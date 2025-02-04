@@ -1,12 +1,12 @@
 require("@nomicfoundation/hardhat-toolbox");
-require("dotenv").config();
 
 module.exports = {
-  solidity: "0.8.28",
+  solidity: "0.8.19",
   networks: {
-    bsc_testnet: {
-      url: "https://data-seed-prebsc-1-s1.binance.org:8545/",
-      accounts: [process.env.PRIVATE_KEY], // Your wallet's private key
+    arbitrumSepolia: {
+      url: "https://arb-sepolia.g.alchemy.com/v2/GgqNEJtHS2Li3xF0t2ZiGbnxJWqGXVwq",
+      accounts: ["379dd2289c08efbcd7b16541fa8b863bc271a10d4c7d1f5ef623270118e73d4c"],
+      chainId: 421614,
     },
   },
 };
