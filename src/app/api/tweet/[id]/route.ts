@@ -1,8 +1,8 @@
-import { NextResponse } from 'next/server';
+import { NextResponse } from "next/server";
 
 export async function GET(
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: { id: string } },
 ) {
   const id = params.id;
 
@@ -11,11 +11,11 @@ export async function GET(
       `https://api.twitter.com/2/tweets/${id}?tweet.fields=public_metrics,text`,
       {
         headers: {
-          'Authorization': `Bearer ${process.env.TWITTER_BEARER_TOKEN}`,
-          'Content-Type': 'application/json',
+          Authorization: `Bearer ${process.env.TWITTER_BEARER_TOKEN}`,
+          "Content-Type": "application/json",
         },
-        next: { revalidate: 3600 } // Cache for 1 hour
-      }
+        next: { revalidate: 3600 }, // Cache for 1 hour
+      },
     );
 
     console.log("this is the response", response);
@@ -31,12 +31,11 @@ export async function GET(
       retweet_count: data.data.public_metrics.retweet_count,
       reply_count: data.data.public_metrics.reply_count,
     });
-
   } catch (error) {
-    console.error('Error fetching tweet:', error);
+    console.error("Error fetching tweet:", error);
     return NextResponse.json(
-      { error: 'Failed to fetch tweet data' },
-      { status: 500 }
+      { error: "Failed to fetch tweet data" },
+      { status: 500 },
     );
   }
 }
