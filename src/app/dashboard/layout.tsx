@@ -7,9 +7,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <main className="">
       <Navbar />
-      <div className=" h-screen w-full overflow-y-auto">
-        {children}
-      </div>
+      <div className=" h-screen w-full overflow-y-auto">{children}</div>
     </main>
   );
 };

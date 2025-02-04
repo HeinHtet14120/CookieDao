@@ -44,98 +44,123 @@ export default function Navbar() {
   };
 
   return (
-      <nav className="border-b bg-zinc-950">
-        <div className="flex items-center justify-between p-4 max-w-full">
-          <div className="flex items-center justify-between gap-20">
-            <NavigationMenu>
-              <NavigationMenuList>
-                <NavigationMenuItem>
-                  <NavigationMenuLink asChild>
-                    <Link href="/" className="font-bold text-3xl bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent font-fira">
-                      Jr.Mafia DeFi
-                    </Link>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
+    <nav className="border-b border-transparent bg-zinc-950">
+      <div className="flex items-center justify-between p-4 max-w-full">
+        <div className="flex items-center justify-between gap-20">
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link
+                    href="/"
+                    className="font-bold text-3xl bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent font-fira"
+                  >
+                    Jr.Mafia DeFi
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
 
-
-            <NavigationMenu>
-              <NavigationMenuList className="flex items-center gap-10">
-                <NavigationMenuItem>
-                  <NavigationMenuLink asChild>
-                    <Link href="/" className={`block select-none text-slate-200 p-2 transition-colors rounded-md hover:text-accent focus:text-accent ${pathname === "/" ? "text-slate-300" : ""}`}>
-                      Home
-                    </Link>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <NavigationMenuLink asChild>
-                    <Link href="/dashboard" className={`block select-none text-slate-200 p-2 transition-colors rounded-md hover:text-accent focus:text-accent ${pathname === "/dashboard" ? "text-slate-300" : ""}`}>
-                      Dashboard
-                    </Link>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  <NavigationMenuLink asChild>
-                    <Link href="/search" className={`block select-none text-slate-200 p-2 transition-colors rounded-md hover:text-accent focus:text-accent ${pathname === "/search" ? "text-slate-300" : ""}`}>
-                      Search
-                    </Link>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button variant="outline">
-                  {walletAddress ? "Wallet Connected" : "Connect Wallet"}
-                </Button>
-              </DialogTrigger>
-              <DialogContent className="sm:max-w-md">
-                <DialogHeader>
-                  <DialogTitle>Connect Wallet</DialogTitle>
-                  <DialogDescription>
-                    {walletAddress
-                        ? "Your walletPortfolio is connected. Below is your walletPortfolio address."
-                        : "Connect your walletPortfolio to continue."}
-                  </DialogDescription>
-                </DialogHeader>
-                {walletAddress ? (
-                    <div className="flex items-center space-x-2">
-                      <div className="grid flex-1 gap-2">
-                        <input id="wallet-address" value={walletAddress} readOnly className="cursor-default border px-3 py-2 rounded" />
-                      </div>
-                      <Button type="button" size="sm" className="px-3" onClick={handleCopy}>
-                        {copied ? "Copied!" : <Copy />}
-                      </Button>
-                    </div>
-                ) : (
-                    <div className="mt-4">
-                      <p>Select a Wallet:</p>
-                      <div className="flex flex-col space-y-2 mt-2">
-                        {availableWallets.map((wallet) => (
-                            <Button key={wallet} onClick={connectWallet} className="w-full">
-                              {wallet}
-                            </Button>
-                        ))}
-                      </div>
-                      {error && <p className="mt-2 text-red-600">{error}</p>}
-                    </div>
-                )}
-                <DialogFooter className="sm:justify-start">
-                  {walletAddress && (
-                      <Button variant="destructive" onClick={disconnectWallet}>
-                        Disconnect Wallet
-                      </Button>
-                  )}
-                </DialogFooter>
-              </DialogContent>
-            </Dialog>
-          </div>
+          <NavigationMenu>
+            <NavigationMenuList className="flex items-center gap-10">
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link
+                    href="/"
+                    className={`block select-none text-slate-200 p-2 transition-colors rounded-md hover:text-accent focus:text-accent ${pathname === "/" ? "text-slate-300" : ""}`}
+                  >
+                    Home
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link
+                    href="/dashboard"
+                    className={`block select-none text-slate-200 p-2 transition-colors rounded-md hover:text-accent focus:text-accent ${pathname === "/dashboard" ? "text-slate-300" : ""}`}
+                  >
+                    Dashboard
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link
+                    href="/search"
+                    className={`block select-none text-slate-200 p-2 transition-colors rounded-md hover:text-accent focus:text-accent ${pathname === "/search" ? "text-slate-300" : ""}`}
+                  >
+                    Search
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
         </div>
-      </nav>
+
+        <div className="flex items-center gap-4 z-10">
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button variant="outline">
+                {walletAddress ? "Wallet Connected" : "Connect Wallet"}
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="sm:max-w-md">
+              <DialogHeader>
+                <DialogTitle>Connect Wallet</DialogTitle>
+                <DialogDescription>
+                  {walletAddress
+                    ? "Your wallet is connected. Below is your wallet address."
+                    : "Connect your wallet to continue."}
+                </DialogDescription>
+              </DialogHeader>
+              {walletAddress ? (
+                <div className="flex items-center space-x-2">
+                  <div className="grid flex-1 gap-2">
+                    <input
+                      id="wallet-address"
+                      value={walletAddress}
+                      readOnly
+                      className="cursor-default border px-3 py-2 rounded"
+                    />
+                  </div>
+                  <Button
+                    type="button"
+                    size="sm"
+                    className="px-3"
+                    onClick={handleCopy}
+                  >
+                    {copied ? "Copied!" : <Copy />}
+                  </Button>
+                </div>
+              ) : (
+                <div className="mt-4">
+                  <p>Select a Wallet:</p>
+                  <div className="flex flex-col space-y-2 mt-2">
+                    {availableWallets.map((wallet) => (
+                      <Button
+                        key={wallet}
+                        onClick={connectWallet}
+                        className="w-full"
+                      >
+                        {wallet}
+                      </Button>
+                    ))}
+                  </div>
+                  {error && <p className="mt-2 text-red-600">{error}</p>}
+                </div>
+              )}
+              <DialogFooter className="sm:justify-start">
+                {walletAddress && (
+                  <Button variant="destructive" onClick={disconnectWallet}>
+                    Disconnect Wallet
+                  </Button>
+                )}
+              </DialogFooter>
+            </DialogContent>
+          </Dialog>
+        </div>
+      </div>
+    </nav>
   );
 }
