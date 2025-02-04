@@ -1,30 +1,34 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.28;
+pragma solidity ^0.8.19;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
-interface IPancakeRouter {
-    function swapExactTokensForTokens(
-        uint amountIn,
-        uint amountOutMin,
-        address[] calldata path,
-        address to,
-        uint deadline
-    ) external returns (uint[] memory amounts);
+interface IUniswapV3Router {
+    function exactInputSingle(
+        address tokenIn,
+        address tokenOut,
+        uint24 fee,
+        address recipient,
+        uint256 deadline,
+        uint256 amountIn,
+        uint256 amountOutMinimum,
+        uint160 sqrtPriceLimitX96
+    ) external payable returns (uint256 amountOut);
 }
 
 contract DeFiRebalancer is Ownable {
-    IPancakeRouter public immutable router;
+    IUniswapV3Router public immutable router;
 
     mapping(address => uint256) public tokenAllocations; // Token -> % Allocation
     mapping(address => bool) public allowedTokens; // Whitelisted Tokens
 
     event AllocationUpdated(address indexed token, uint256 allocation);
-    event SwapSuggested(address indexed fromToken, address indexed toToken, uint256 amount);
+    event SwapExecuted(address indexed fromToken, address indexed toToken, uint256 amountIn, uint256 amountOut);
 
     constructor() {
-        router = IPancakeRouter(0xCc7aDc94F3D80127849D2b41b6439b7CF1eB4Ae0); // ✅ PancakeSwap Testnet Router
+        // ✅ UniswapV3 Router (works on Ethereum L2 chains)
+        router = IUniswapV3Router(0xE592427A0AEce92De3Edee1F18E0157C05861564); // ✅ Fixed checksummed address
     }
 
     function setTokenAllocation(address token, uint256 allocation) external onlyOwner {
@@ -34,9 +38,28 @@ contract DeFiRebalancer is Ownable {
         emit AllocationUpdated(token, allocation);
     }
 
-    function suggestSwap(address fromToken, address toToken, uint256 amount) external onlyOwner {
+    function swapTokens(
+        address fromToken,
+        address toToken,
+        uint256 amountIn
+    ) external onlyOwner {
         require(allowedTokens[fromToken] && allowedTokens[toToken], "Tokens not allowed");
-        emit SwapSuggested(fromToken, toToken, amount);
+
+        IERC20(fromToken).transferFrom(msg.sender, address(this), amountIn);
+        IERC20(fromToken).approve(address(router), amountIn);
+
+        uint256 amountOut = router.exactInputSingle(
+            fromToken,
+            toToken,
+            3000, // Uniswap Fee Tier (0.3%)
+            msg.sender,
+            block.timestamp + 600,
+            amountIn,
+            0,
+            0
+        );
+
+        emit SwapExecuted(fromToken, toToken, amountIn, amountOut);
     }
 
     function withdrawTokens(address token, uint256 amount) external onlyOwner {
