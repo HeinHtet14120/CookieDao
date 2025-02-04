@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserProvider, JsonRpcSigner } from "ethers";
+import { BrowserProvider, JsonRpcSigner, formatEther } from "ethers";
 
 declare global {
     interface Window {
@@ -11,16 +11,18 @@ export const useWallet = () => {
     const [walletAddress, setWalletAddress] = useState<string | null>(null);
     const [provider, setProvider] = useState<BrowserProvider | null>(null);
     const [signer, setSigner] = useState<JsonRpcSigner | null>(null);
+    const [networkName, setNetworkName] = useState<string | null>(null);
+    const [ethBalance, setEthBalance] = useState<string | null>(null);
     const [error, setError] = useState<string | null>(null);
 
     // 🔹 Connect Wallet Function
     const connectWallet = async () => {
         try {
             if (!window.ethereum) {
-                throw new Error("No Ethereum provider detected. Install MetaMask or a compatible wallet.");
+                throw new Error("No Ethereum provider detected. Install MetaMask or a compatible walletPortfolio.");
             }
 
-            // Initialize Ethereum provider using Ethers v6
+            // Initialize Ethereum provider
             const ethProvider = new BrowserProvider(window.ethereum);
             setProvider(ethProvider);
 
@@ -28,20 +30,36 @@ export const useWallet = () => {
             const accounts: string[] = await window.ethereum.request({ method: "eth_requestAccounts" });
 
             if (accounts.length === 0) {
-                throw new Error("No accounts found. Please connect your wallet.");
+                throw new Error("No accounts found. Please connect your walletPortfolio.");
             }
 
-            // Get signer and wallet address
+            // Get signer, walletPortfolio address, and network details
             const signerInstance = await ethProvider.getSigner();
             const address = await signerInstance.getAddress();
+            const network = await ethProvider.getNetwork();
 
             setWalletAddress(address);
             setSigner(signerInstance);
-            localStorage.setItem("walletAddress", address); // Save to localStorage
+            setNetworkName(network.name);
+
+            // Fetch ETH balance
+            fetchEthBalance(address, ethProvider);
+
+            localStorage.setItem("walletAddress", address);
             setError(null);
         } catch (err: any) {
             console.error("Wallet Connection Error:", err);
             setError(err.message);
+        }
+    };
+
+    // 🔹 Fetch ETH Balance
+    const fetchEthBalance = async (address: string, ethProvider: BrowserProvider) => {
+        try {
+            const balance = await ethProvider.getBalance(address);
+            setEthBalance(formatEther(balance));
+        } catch (err) {
+            console.error("❌ Error fetching ETH balance:", err);
         }
     };
 
@@ -50,7 +68,9 @@ export const useWallet = () => {
         setWalletAddress(null);
         setProvider(null);
         setSigner(null);
-        localStorage.removeItem("walletAddress"); // Remove wallet from local storage
+        setNetworkName(null);
+        setEthBalance(null);
+        localStorage.removeItem("walletAddress");
     };
 
     // 🔹 Check Connection on Page Load
@@ -62,9 +82,14 @@ export const useWallet = () => {
 
                 const accounts = await ethProvider.send("eth_accounts", []);
                 if (accounts.length > 0) {
-                    setWalletAddress(accounts[0]); // Restore connection
+                    setWalletAddress(accounts[0]);
                     const signerInstance = await ethProvider.getSigner();
                     setSigner(signerInstance);
+
+                    const network = await ethProvider.getNetwork();
+                    setNetworkName(network.name);
+
+                    fetchEthBalance(accounts[0], ethProvider);
                 }
             }
         };
@@ -82,7 +107,7 @@ export const useWallet = () => {
 
         // Handle Network Changes
         window.ethereum?.on("chainChanged", () => {
-            window.location.reload(); // Reload the app when network changes
+            window.location.reload();
         });
 
         return () => {
@@ -91,5 +116,5 @@ export const useWallet = () => {
         };
     }, []);
 
-    return { walletAddress, provider, signer, connectWallet, disconnectWallet, error };
+    return { walletAddress, provider, signer, networkName, ethBalance, connectWallet, disconnectWallet, error };
 };
