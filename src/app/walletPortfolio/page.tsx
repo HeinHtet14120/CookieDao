@@ -5,9 +5,8 @@ import { Connection, PublicKey } from "@solana/web3.js";
 import { useWallet } from "@/hooks/useWallet";
 
 const SOLANA_MAINNET_URL =
-    "https://tiniest-broken-lake.solana-mainnet.quiknode.pro/c5462950ebb302a25357758b0160085153b91d73/";
+  "https://tiniest-broken-lake.solana-mainnet.quiknode.pro/c5462950ebb302a25357758b0160085153b91d73/";
 const connection = new Connection(SOLANA_MAINNET_URL, "confirmed");
-
 const COOKIE_API_KEY = "77cdfd4c-132e-4314-ac93-b8ac64f6a2a8"; // 🔹 Replace with your actual API key
 const COOKIE_API_URL = "https://api.cookie.fun/v2/agents/contractAddress";
 
@@ -125,8 +124,13 @@ const AvaBalances = () => {
             )}
 
             {errors && <p style={styles.error}>{errors}</p>}
+
         </div>
-    );
+      )}
+
+      {error && <p style={styles.error}>{error}</p>}
+    </div>
+  );
 };
 
 // Styles
@@ -182,6 +186,7 @@ const styles = {
         color: "red",
         marginTop: "20px",
     },
+
 };
 
 export default AvaBalances;
