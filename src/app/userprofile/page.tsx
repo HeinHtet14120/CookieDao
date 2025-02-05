@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useEffect } from "react";
@@ -162,6 +163,7 @@ export default function Page() {
   const topToken = balances.length > 0 ? balances[0].agentName : "No tokens found";
 
   return (
+
       <div className="min-h-screen bg-black text-white">
         <main className="p-6">
           <div className="mb-6 flex items-center justify-between">
@@ -196,3 +198,4 @@ export default function Page() {
       </div>
   );
 }
+

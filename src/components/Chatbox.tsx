@@ -109,7 +109,7 @@ export default function ChatBot() {
             : "scale-95 opacity-0 pointer-events-none",
         )}
       >
-        <div className="max-w-4xl w-full mx-auto rounded-lg shadow-input bg-black">
+        <div className="max-w-4xl w-full mx-auto rounded-lg  bg-black bg-opacity-60 text-neutral-200 shadow-input shadow-[0px_0px_1px_1px_var(--neutral-700)]">
           {/* Chat Header */}
           <div className="flex items-center justify-between p-4 border-b border-gray-800">
             <div className="flex items-center gap-2">

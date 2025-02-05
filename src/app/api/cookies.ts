@@ -30,9 +30,15 @@ export const getAgentsPaged = async (page: number) => {
 
     if (!response.ok) {
       const errorText = await response.text();
-      console.error(`❌ API Error (Page ${page}): ${response.status} - ${response.statusText}`);
+      console.error(
+        `❌ API Error (Page ${page}): ${response.status} - ${response.statusText}`,
+      );
       console.error(`🔍 Error Response Body:`, errorText);
-      return { success: false, error: `API Error: ${response.status} - ${response.statusText}`, details: errorText };
+      return {
+        success: false,
+        error: `API Error: ${response.status} - ${response.statusText}`,
+        details: errorText,
+      };
     }
 
     return await response.json();
@@ -41,7 +47,6 @@ export const getAgentsPaged = async (page: number) => {
     return { success: false, error: "Network error", details: error.message };
   }
 };
-
 
 export const cookieApis = {
   getAgentsPaged: async (page = 1, pageSize = 25) => {
@@ -53,14 +58,14 @@ export const cookieApis = {
       console.log(`🔹 Fetching page ${page} from CookieFun API...`);
 
       const response = await fetch(
-          `http://localhost:3000/api/cookie/v2/agents/agentsPaged?page=${page}&pageSize=${pageSize}`,
-          {
-            method: "GET",
-            headers: {
-              "x-api-key": API_KEY, // Ensure the API Key is correct
-              "Content-Type": "application/json",
-            },
-          }
+        `http://localhost:3000/api/cookie/v2/agents/agentsPaged?page=${page}&pageSize=${pageSize}`,
+        {
+          method: "GET",
+          headers: {
+            "x-api-key": API_KEY, // Ensure the API Key is correct
+            "Content-Type": "application/json",
+          },
+        },
       );
 
       if (!response.ok) {
@@ -68,7 +73,9 @@ export const cookieApis = {
       }
 
       const data = await response.json();
-      console.log(`✅ Successfully fetched ${data.ok.data.length} tokens from CookieFun API (Page ${page})`);
+      console.log(
+        `✅ Successfully fetched ${data.ok.data.length} tokens from CookieFun API (Page ${page})`,
+      );
       return data;
     } catch (error) {
       console.error("❌ Error fetching agents:", error);
@@ -76,7 +83,6 @@ export const cookieApis = {
     }
   },
 };
-
 
 export const cookieApi = {
   checkQuota: async () => {

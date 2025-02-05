@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { Line, LineChart, ResponsiveContainer, Tooltip } from "recharts"
+import { Line, LineChart, ResponsiveContainer, Tooltip } from "recharts";
 
 export function StatsChart({ data }) {
   return (
