@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-
+import { IconBrandX } from "@tabler/icons-react";
 import {
   ColumnDef,
   ColumnFiltersState,
@@ -338,9 +338,9 @@ export const columns: ColumnDef<Agent>[] = [
           href={`https://twitter.com/${username}`}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-600 hover:underline"
+          className=" hover:underline"
         >
-          <XIcon width={24} height={24} />
+          <IconBrandX fill="white" className="h-full w-full text-neutral-300" />
         </a>
       );
     },
@@ -505,7 +505,7 @@ export function AgentDashboard({
               chain={row.original?.contracts?.[0]?.chain}
             />
             <div className="flex">
-              <span className="font-medium">{row.getValue("agentName")}</span>
+              <span className="font-medium text-white/50">{row.getValue("agentName")}</span>
               {rankEmoji && <span className="ml-1">{rankEmoji}</span>}
             </div>
           </div>
@@ -537,7 +537,7 @@ export function AgentDashboard({
 
         return (
           <div className="flex items-center justify-center gap-2">
-            <div>{formatted}</div>
+            <div className="text-white/50">{formatted}</div>
             <div
               className={`text-sm ${delta > 0 ? "text-green-600" : "text-red-600"}`}
             >
@@ -613,7 +613,7 @@ export function AgentDashboard({
 
         return (
           <div className="flex items-center justify-center gap-2 w-full">
-            <div>{formatted}</div>
+            <div className="text-white/50">{formatted}</div>
           </div>
         );
       },
@@ -641,7 +641,7 @@ export function AgentDashboard({
           notation: "compact",
         }).format(value);
 
-        return <div className="w-full text-center">{formatted}</div>;
+        return <div className="w-full text-center text-white/50">{formatted}</div>;
       },
     },
     {
@@ -670,7 +670,7 @@ export function AgentDashboard({
 
         return (
           <div className="flex items-center justify-center gap-2 w-full">
-            <div>{formatted}</div>
+            <div className="text-white/50">{formatted}</div>
             <div
               className={`text-sm ${delta > 0 ? "text-green-600" : "text-red-600"}`}
             >
@@ -703,7 +703,7 @@ export function AgentDashboard({
 
         return (
           <div className="flex items-center gap-2">
-            <div>{formatted}</div>
+            <div className="text-white/50">{formatted}</div>
             <div
               className={`text-sm ${delta > 0 ? "text-green-600" : "text-red-600"}`}
             >
@@ -725,9 +725,9 @@ export function AgentDashboard({
             href={`https://twitter.com/${username}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="text-white/50 hover:underline"
           >
-            <XIcon width={24} height={24} />
+            <IconBrandX fill="white/50" className="h-4 w-4" />
           </a>
         );
       },
@@ -752,7 +752,7 @@ export function AgentDashboard({
           notation: "compact",
         }).format(value);
 
-        return <div>{formatted}</div>;
+        return <div className="text-white/50">{formatted}</div>;
       },
     },
     {
@@ -915,7 +915,7 @@ export function AgentDashboard({
     <div className="w-full">
       <div className="flex items-center py-4 gap-2">
         <Input
-          className="max-w-md focus-visible:ring-0 focus-visible:ring-offset-0 bg-white/10 backdrop-blur-lg border border-white/20"
+          className="max-w-md focus-visible:ring-0 text-white/50 focus-visible:ring-offset-0 bg-white/10 backdrop-blur-lg border border-white/20"
           placeholder={`Search by ${searchType === "contract" ? "contract address" : "Twitter username"}...`}
           value={searchQuery}
           onChange={(e) => {
@@ -967,14 +967,14 @@ export function AgentDashboard({
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
-      <div className="rounded-md border overflow-x-auto relative">
+      <div className="rounded-md border overflow-x-auto relative border-none backdrop-blur-lg border-top-1 border-white/20">
         {loading && (
           <div className="absolute inset-0 bg-white/50 flex items-center justify-center">
             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-gray-900"></div>
           </div>
         )}
         <Table className="w-full">
-          <TableHeader className="bg-white/10 backdrop-blur-lg border border-white/20">
+          <TableHeader className="bg-black/80 border-none backdrop-blur-lg">
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>
                 {headerGroup.headers.map((header) => {
@@ -992,7 +992,7 @@ export function AgentDashboard({
               </TableRow>
             ))}
           </TableHeader>
-          <TableBody className="bg-white/10 backdrop-blur-lg border border-white/20">
+          <TableBody className="bg-black/50 backdrop-blur-lg border-b border-white/20">
             {table.getRowModel().rows?.length ? (
               table.getRowModel().rows.map((row) => (
                 <TableRow
@@ -1003,7 +1003,7 @@ export function AgentDashboard({
                   {row.getVisibleCells().map((cell) => (
                     <TableCell
                       key={cell.id}
-                      className="text-center border-b border-white/90 text-sm"
+                      className="text-center border-b border-white/20 text-sm"
                     >
                       {flexRender(
                         cell.column.columnDef.cell,
@@ -1014,7 +1014,7 @@ export function AgentDashboard({
                 </TableRow>
               ))
             ) : (
-              <TableRow>
+              <TableRow className="bg-white/50 backdrop-blur-lg border border-white/20">
                 <TableCell
                   colSpan={columns.length}
                   className="h-24 text-center"
@@ -1027,7 +1027,7 @@ export function AgentDashboard({
         </Table>
       </div>
       {data.length > 1 && (
-        <div className="flex items-center justify-end space-x-2 py-4">
+        <div className="flex items-center justify-end space-x-2 bg-black/100 border-none mt-4 mb-4 backdrop-blur-lg rounded-xl border shadow-xl">
           <div className="flex-1 text-sm text-muted-foreground">
             Page {pagination.currentPage} of {pagination.totalPages} (
             {pagination.totalCount} total items)
