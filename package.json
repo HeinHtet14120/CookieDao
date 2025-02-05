@@ -25,6 +25,8 @@
     "@radix-ui/react-slot": "^1.1.1",
     "@radix-ui/react-toast": "^1.2.5",
     "@radix-ui/react-tooltip": "^1.1.7",
+    "@react-three/drei": "^9.121.4",
+    "@react-three/fiber": "^9.0.0-alpha.8",
     "@tabler/icons-react": "^3.29.0",
     "@tanstack/react-table": "^8.20.6",
     "@uniswap/sdk-core": "^7.5.0",
@@ -38,9 +40,10 @@
     "cargo": "^0.8.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "cobe": "^0.6.3",
     "date-fns": "^4.1.0",
     "ethers": "^6.13.5",
-    "framer-motion": "^12.0.6",
+    "framer-motion": "^12.3.0",
     "fs": "^0.0.1-security",
     "lucide-react": "^0.474.0",
     "mini-svg-data-uri": "^1.4.4",
@@ -53,7 +56,9 @@
     "recharts": "^2.15.1",
     "solana": "^3.0.0",
     "tailwind-merge": "^3.0.1",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "three": "^0.173.0",
+    "three-globe": "^2.41.11"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

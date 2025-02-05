@@ -1,6 +1,13 @@
-import { Avatar } from "@/components/ui/avatar"
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
-import { MoreHorizontal } from "lucide-react"
+import { Avatar } from "@/components/ui/avatar";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import { MoreHorizontal } from "lucide-react";
 
 const vaults = [
   {
@@ -36,7 +43,7 @@ const vaults = [
     startDate: "21.01.2023",
     liquidity: "low",
   },
-]
+];
 
 export function VaultTable() {
   return (
@@ -45,11 +52,17 @@ export function VaultTable() {
         <TableRow className="border-neutral-500">
           <TableHead className=" font-bold text-neutral-300">Vault</TableHead>
           <TableHead className=" font-bold text-neutral-300">Daily</TableHead>
-          <TableHead className=" font-bold text-neutral-300">Balance ↓</TableHead>
+          <TableHead className=" font-bold text-neutral-300">
+            Balance ↓
+          </TableHead>
           <TableHead className=" font-bold text-neutral-300">APY ↓</TableHead>
           <TableHead className=" font-bold text-neutral-300">State</TableHead>
-          <TableHead className=" font-bold text-neutral-300">Start date</TableHead>
-          <TableHead className=" font-bold text-neutral-300">Liquidity</TableHead>
+          <TableHead className=" font-bold text-neutral-300">
+            Start date
+          </TableHead>
+          <TableHead className=" font-bold text-neutral-300">
+            Liquidity
+          </TableHead>
           <TableHead></TableHead>
         </TableRow>
       </TableHeader>
@@ -59,11 +72,16 @@ export function VaultTable() {
             <TableCell className="font-medium">
               <div className="flex items-center gap-2">
                 <Avatar className="h-6 w-6">
-                  <img src={`/placeholder.svg?height=24&width=24`} alt={vault.name} />
+                  <img
+                    src={`/placeholder.svg?height=24&width=24`}
+                    alt={vault.name}
+                  />
                 </Avatar>
                 <div>
                   <div className="font-medium">{vault.name}</div>
-                  <div className="text-xs text-muted-foreground">{vault.price}</div>
+                  <div className="text-xs text-muted-foreground">
+                    {vault.price}
+                  </div>
                 </div>
               </div>
             </TableCell>
@@ -73,7 +91,9 @@ export function VaultTable() {
             <TableCell>
               <span
                 className={`inline-flex items-center rounded-full px-2 py-1 text-xs ${
-                  vault.state === "Fixed" ? "bg-yellow-500/10 text-yellow-500" : "bg-green-500/10 text-green-500"
+                  vault.state === "Fixed"
+                    ? "bg-yellow-500/10 text-yellow-500"
+                    : "bg-green-500/10 text-green-500"
                 }`}
               >
                 {vault.state}
@@ -86,7 +106,12 @@ export function VaultTable() {
                   <div
                     key={i}
                     className={`h-1.5 w-3 rounded-full ${
-                      i < (vault.liquidity === "high" ? 3 : vault.liquidity === "medium" ? 2 : 1)
+                      i <
+                      (vault.liquidity === "high"
+                        ? 3
+                        : vault.liquidity === "medium"
+                          ? 2
+                          : 1)
                         ? "bg-primary"
                         : "bg-muted"
                     }`}
@@ -101,6 +126,5 @@ export function VaultTable() {
         ))}
       </TableBody>
     </Table>
-  )
+  );
 }
-

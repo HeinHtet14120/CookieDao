@@ -1,16 +1,16 @@
-import { Card } from "@/components/ui/card"
-import { ArrowUpRight, TrendingDown, TrendingUp } from "lucide-react"
-import type React from "react" // Added import for React
+import { Card } from "@/components/ui/card";
+import { ArrowUpRight, TrendingDown, TrendingUp } from "lucide-react";
+import type React from "react"; // Added import for React
 
 interface MetricsCardProps {
-  title: string
-  value: string
+  title: string;
+  value: string;
   change: {
-    value: string
-    percentage: string
-    isPositive: boolean
-  }
-  chart?: React.ReactNode
+    value: string;
+    percentage: string;
+    isPositive: boolean;
+  };
+  chart?: React.ReactNode;
 }
 
 export function MetricsCard({ title, value, change, chart }: MetricsCardProps) {
@@ -29,8 +29,12 @@ export function MetricsCard({ title, value, change, chart }: MetricsCardProps) {
             ) : (
               <TrendingDown className="h-4 w-4 text-red-500" />
             )}
-            <span className="text-sm font-medium text-gray-300">{change.value}</span>
-            <span className={`text-sm font-medium ${change.isPositive ? "text-[#F0B90B]" : "text-red-500"}`}>
+            <span className="text-sm font-medium text-gray-300">
+              {change.value}
+            </span>
+            <span
+              className={`text-sm font-medium ${change.isPositive ? "text-[#F0B90B]" : "text-red-500"}`}
+            >
               {change.percentage}
             </span>
           </div>
@@ -38,6 +42,5 @@ export function MetricsCard({ title, value, change, chart }: MetricsCardProps) {
         <div className="flex-shrink-0">{chart}</div>
       </div>
     </Card>
-  )
+  );
 }
-
