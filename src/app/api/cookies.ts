@@ -18,6 +18,66 @@ const fetchOptions = {
   headers: headers,
 };
 
+export const getAgentsPaged = async (page: number) => {
+  try {
+    console.log(`🔄 Fetching page ${page} from CookieFun API...`);
+    const response = await fetch(`${BASE_URL}${page}&pageSize=25`, {
+      method: "GET",
+      headers: {
+        "x-api-key": API_KEY,
+      },
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error(`❌ API Error (Page ${page}): ${response.status} - ${response.statusText}`);
+      console.error(`🔍 Error Response Body:`, errorText);
+      return { success: false, error: `API Error: ${response.status} - ${response.statusText}`, details: errorText };
+    }
+
+    return await response.json();
+  } catch (error) {
+    console.error("❌ Fetch Error:", error);
+    return { success: false, error: "Network error", details: error.message };
+  }
+};
+
+
+export const cookieApis = {
+  getAgentsPaged: async (page = 1, pageSize = 25) => {
+    try {
+      if (pageSize < 1 || pageSize > 25) {
+        throw new Error("Page size must be between 1 and 25");
+      }
+
+      console.log(`🔹 Fetching page ${page} from CookieFun API...`);
+
+      const response = await fetch(
+          `http://localhost:3000/api/cookie/v2/agents/agentsPaged?page=${page}&pageSize=${pageSize}`,
+          {
+            method: "GET",
+            headers: {
+              "x-api-key": API_KEY, // Ensure the API Key is correct
+              "Content-Type": "application/json",
+            },
+          }
+      );
+
+      if (!response.ok) {
+        throw new Error(`Network response was not ok: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      console.log(`✅ Successfully fetched ${data.ok.data.length} tokens from CookieFun API (Page ${page})`);
+      return data;
+    } catch (error) {
+      console.error("❌ Error fetching agents:", error);
+      throw error;
+    }
+  },
+};
+
+
 export const cookieApi = {
   checkQuota: async () => {
     try {
