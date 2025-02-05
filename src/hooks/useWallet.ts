@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from "react";
 
+
 export const useWallet = () => {
     const [walletAddress, setWalletAddress] = useState<string | null>(null);
     const [error, setError] = useState<string | null>(null);

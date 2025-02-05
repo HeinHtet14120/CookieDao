@@ -25,14 +25,17 @@ const ERC20_ABI = [
     "function symbol() view returns (string)"
 ];
 
+
 export const useTokens = () => {
     const { walletAddress } = useWallet();
     const [tokens, setTokens] = useState<{ name: string; symbol: string; balance: string; chain: number }[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [error, setError] = useState<string | null>(null);
 
-    useEffect(() => {
-        if (!walletAddress) return;
+
+  useEffect(() => {
+    if (!walletAddress) return;
+
 
         const fetchAllTokens = async () => {
             try {
@@ -61,7 +64,8 @@ export const useTokens = () => {
         fetchAllTokens();
     }, [walletAddress]);
 
-    return { tokens, loading, error };
+
+  return { tokens, loading, error };
 };
 
 // ✅ **Fetch All Contract Addresses from CookieFun API (Handles ALL Pages)**

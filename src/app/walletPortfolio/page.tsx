@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Connection, PublicKey } from "@solana/web3.js";
 import {useWallet} from "@/hooks/useWallet";
 
+
 const SOLANA_MAINNET_URL =
     "https://tiniest-broken-lake.solana-mainnet.quiknode.pro/c5462950ebb302a25357758b0160085153b91d73/";
 const connection = new Connection(SOLANA_MAINNET_URL, "confirmed");
@@ -125,3 +126,4 @@ const styles = {
 };
 
 export default AvaBalances;
+
