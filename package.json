@@ -13,6 +13,7 @@
   "dependencies": {
     "@dicebear/collection": "^9.2.2",
     "@dicebear/core": "^9.2.2",
+    "@metamask/detect-provider": "^2.0.0",
     "@openzeppelin/contracts": "^4.9.6",
     "@project-serum/anchor": "^0.26.0",
     "@radix-ui/react-avatar": "^1.1.2",
@@ -57,8 +58,12 @@
     "solana": "^3.0.0",
     "tailwind-merge": "^3.0.1",
     "tailwindcss-animate": "^1.0.7",
+
+    "web3": "^4.16.0"
+
     "three": "^0.173.0",
     "three-globe": "^2.41.11"
+
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
