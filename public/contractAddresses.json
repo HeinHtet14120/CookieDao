@@ -1,0 +1,6207 @@
+[
+  {
+    "agentName": "Fartcoin",
+    "chain": -2,
+    "contractAddress": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump"
+  },
+  {
+    "agentName": "aixbt",
+    "chain": 8453,
+    "contractAddress": "0x4F9Fd6Be4a90f2620860d680c0d4d5Fb53d1A825"
+  },
+  {
+    "agentName": "aixbt",
+    "chain": -2,
+    "contractAddress": "14zP2ToQ79XWvc7FQpm4bRnp9d6Mp1rFfsUW3gpLcRX"
+  },
+  {
+    "agentName": "VIRTUAL",
+    "chain": 8453,
+    "contractAddress": "0x0b3e328455c4059EEb9e3f84b5543F74E24e7E1b"
+  },
+  {
+    "agentName": "Griffain",
+    "chain": -2,
+    "contractAddress": "KENJSUYLASHUMfHyy5o4Hp2FdNqZg1AsUPhfH2kYvEP"
+  },
+  {
+    "agentName": "FCHAIN",
+    "chain": -2,
+    "contractAddress": "jUpa2aDCzvdR9EF4fqDXmuyMUkonPTohphABLmRkRFj"
+  },
+  {
+    "agentName": "HENLO",
+    "chain": 8453,
+    "contractAddress": "0x23a96680ccde03bd4bdd9a3e9a0cb56a5d27f7c9"
+  },
+  {
+    "agentName": "ai16z",
+    "chain": -2,
+    "contractAddress": "HeLp6NuQkmYB4pYWo2zYs22mESHXPQYzXbB8n4V98jwC"
+  },
+  {
+    "agentName": "VVV",
+    "chain": 8453,
+    "contractAddress": "0xacfE6019Ed1A7Dc6f7B508C02d1b04ec88cC21bf"
+  },
+  {
+    "agentName": "ARC",
+    "chain": -2,
+    "contractAddress": "61V8vBaqAGMpgDQi4JcAwo1dmBGHsyhzodcPqnEVpump"
+  },
+  {
+    "agentName": "Toshi",
+    "chain": 8453,
+    "contractAddress": "0xAC1Bd2486aAf3B5C0fc3Fd868558b082a531B2B4"
+  },
+  {
+    "agentName": "Zerebro",
+    "chain": -2,
+    "contractAddress": "8x5VqbHA8D7NkD52uNuS5nnt3PwA8pLD34ymskeSo2Wn"
+  },
+  {
+    "agentName": "Moby AI",
+    "chain": -2,
+    "contractAddress": "Cy1GS2FqefgaMbi45UunrUzin1rfEmTUYnomddzBpump"
+  },
+  {
+    "agentName": "SNAI",
+    "chain": -2,
+    "contractAddress": "Hjw6bEcHtbHGpQr8onG3izfJY5DJiWdt7uk2BfdSpump"
+  },
+  {
+    "agentName": "Hey Anon",
+    "chain": -2,
+    "contractAddress": "9McvH6w97oewLmPxqQEoHUAv3u5iYMyQ9AeZZhguYf1T"
+  },
+  {
+    "agentName": "Rektguy",
+    "chain": 8453,
+    "contractAddress": "0xB3e3c89B8D9c88B1fe96856E382959eE6291ebbA"
+  },
+  {
+    "agentName": "AlphaArc",
+    "chain": -2,
+    "contractAddress": "Cg93SZJkHePybZqGDuyXLf5Ag5sB2cpWfHUG8wNPpump"
+  },
+  {
+    "agentName": "Cookie",
+    "chain": 8453,
+    "contractAddress": "0xc0041ef357b183448b235a8ea73ce4e4ec8c265f"
+  },
+  {
+    "agentName": "Cookie",
+    "chain": 56,
+    "contractAddress": "0xc0041ef357b183448b235a8ea73ce4e4ec8c265f"
+  },
+  {
+    "agentName": "GOD",
+    "chain": -2,
+    "contractAddress": "9qriMjPPAJTMCtfQnz7Mo9BsV2jAWTr2ff7yc3JWpump"
+  },
+  {
+    "agentName": "Sharpe AI",
+    "chain": 1,
+    "contractAddress": "0x3567aa22cd3ab9aEf23d7e18EE0D7cf16974d7e6"
+  },
+  {
+    "agentName": "AVA",
+    "chain": -2,
+    "contractAddress": "DKu9kykSfbN5LBfFXtNNDPaX35o4Fv6vJ9FKk7pZpump"
+  },
+  {
+    "agentName": "alchemist ai",
+    "chain": -2,
+    "contractAddress": "HNg5PYJmtqcmzXrv6S9zP1CDKk5BgDuyFBxbvNApump"
+  },
+  {
+    "agentName": "Luna by Virtuals",
+    "chain": 8453,
+    "contractAddress": "0x55cd6469f597452b5a7536e2cd98fde4c1247ee4"
+  },
+  {
+    "agentName": "Goatseus Maximus",
+    "chain": -2,
+    "contractAddress": "CzLSujWBLFsSjncfkh59rUFqvafWcY5tzedWJSuypump"
+  },
+  {
+    "agentName": "kAia",
+    "chain": -2,
+    "contractAddress": "7bD1RTKSZSsneDXDoMincSswED3uBnzuRyHi5tJ7ZjwN"
+  },
+  {
+    "agentName": "ASYM",
+    "chain": -2,
+    "contractAddress": "DNMTk67urDBxEEVRx9HjVzCVu8en4Kgg5HfZy3E6pump"
+  },
+  {
+    "agentName": "Orbit",
+    "chain": -2,
+    "contractAddress": "GekTNfm84QfyP2GdAHZ5AgACBRd69aNmgA5FDhZupump"
+  },
+  {
+    "agentName": "Bully",
+    "chain": -2,
+    "contractAddress": "79yTpy8uwmAkrdgZdq6ZSBTvxKsgPrNqTLvYQBh1pump"
+  },
+  {
+    "agentName": "Bankr",
+    "chain": 8453,
+    "contractAddress": "0x22aF33FE49fD1Fa80c7149773dDe5890D3c76F3b"
+  },
+  {
+    "agentName": "ViralMindAI",
+    "chain": -2,
+    "contractAddress": "HW7D5MyYG4Dz2C98axfjVBeLWpsEnofrqy6ZUwqwpump"
+  },
+  {
+    "agentName": "Hustle",
+    "chain": -2,
+    "contractAddress": "HHoXk7WursT9DLBBhHzBWBbuQkfvvoNyHKpJi61mpump"
+  },
+  {
+    "agentName": "FUKU",
+    "chain": -2,
+    "contractAddress": "2KchKijPuwnwC92LPWVjFjRwB3WxKtzx9bbXZ7kRpump"
+  },
+  {
+    "agentName": "CLANKER",
+    "chain": 8453,
+    "contractAddress": "0x1bc0c42215582d5A085795f4baDbaC3ff36d1Bcb"
+  },
+  {
+    "agentName": "Otto the intern of Botto",
+    "chain": 1,
+    "contractAddress": "0x9dfad1b7102d46b1b197b90095b5c4e9f5845bba"
+  },
+  {
+    "agentName": "pippin",
+    "chain": -2,
+    "contractAddress": "Dfh5DzRgSvvCFDoYc2ciTkMrbDfRKybA4SoFbPmApump"
+  },
+  {
+    "agentName": "KWEEN",
+    "chain": -2,
+    "contractAddress": "DEf93bSt8dx58gDFCcz4CwbjYZzjwaRBYAciJYLfdCA9"
+  },
+  {
+    "agentName": "OPUS",
+    "chain": -2,
+    "contractAddress": "9JhFqCA21MoAXs2PTaeqNQp2XngPn1PgYr2rsEVCpump"
+  },
+  {
+    "agentName": "Andy BNB ",
+    "chain": 56,
+    "contractAddress": "0x01CA78a2B5F1a9152D8A3A625bd7dF5765eeE1D8"
+  },
+  {
+    "agentName": "Eternal AI",
+    "chain": 1,
+    "contractAddress": "0xa84f95eb3DaBdc1bbD613709ef5F2fD42CE5bE8d"
+  },
+  {
+    "agentName": "Eternal AI",
+    "chain": 8453,
+    "contractAddress": "0x4B6bF1d365ea1A8d916Da37FaFd4ae8C86d061D7"
+  },
+  {
+    "agentName": "MORPH",
+    "chain": 1,
+    "contractAddress": "0x4687f007da484EFE20D7A17E5B1D105CDBFCA0Eb"
+  },
+  {
+    "agentName": "PAAL AI",
+    "chain": 1,
+    "contractAddress": "0x14fee680690900ba0cccfc76ad70fd1b95d10e16"
+  },
+  {
+    "agentName": "buzz",
+    "chain": -2,
+    "contractAddress": "9DHe3pycTuymFk4H4bbPoAJ4hQrr2kaLDF6J6aAKpump"
+  },
+  {
+    "agentName": "Jarvis",
+    "chain": -2,
+    "contractAddress": "CmpuL8k9KY3NrpfDRoJrVmuwd1zRMFRUxX55avyGpump"
+  },
+  {
+    "agentName": "TRUST",
+    "chain": 8453,
+    "contractAddress": "0xC841b4eaD3F70bE99472FFdB88E5c3C7aF6A481a"
+  },
+  {
+    "agentName": "SarumAI Agent",
+    "chain": -2,
+    "contractAddress": "ts3foLrNUMvwdVeit1oNeLWjYk7e4qsn8PqSsqRpump"
+  },
+  {
+    "agentName": "NIKITA",
+    "chain": 8453,
+    "contractAddress": "0x698B49063C14D2753D23064fF891A876cfFa6fb5"
+  },
+  {
+    "agentName": "NeuraVox",
+    "chain": 1,
+    "contractAddress": "0xB5274D9F803B4b15607c6E180EF8f68fE990F73b"
+  },
+  {
+    "agentName": "FXN",
+    "chain": -2,
+    "contractAddress": "92cRC6kV5D7TiHX1j56AbkPbffo9jwcXxSDQZ8Mopump"
+  },
+  {
+    "agentName": "EMP",
+    "chain": 1,
+    "contractAddress": "0x39D5313C3750140E5042887413bA8AA6145a9bd2"
+  },
+  {
+    "agentName": "EMP",
+    "chain": 42161,
+    "contractAddress": " 0x772598E9e62155D7fDFe65FdF01EB5a53a8465BE"
+  },
+  {
+    "agentName": "soulgraph",
+    "chain": -2,
+    "contractAddress": "9doRRAik5gvhbEwjbZDbZR6GxXSAfdoomyJR57xKpump"
+  },
+  {
+    "agentName": "$TRISIG",
+    "chain": -2,
+    "contractAddress": "BLDiYcvm3CLcgZ7XUBPgz6idSAkNmWY6MBbm8Xpjpump"
+  },
+  {
+    "agentName": "Agent YP",
+    "chain": 8453,
+    "contractAddress": "0x919E43a2CcE006710090E64BDE9E01b38Fd7f32f"
+  },
+  {
+    "agentName": "TANK",
+    "chain": -2,
+    "contractAddress": "GAMwtMB6onAvBNBQJCJFuxoaqfPH8uCQ2dewNMVVpump"
+  },
+  {
+    "agentName": "AGIXBT",
+    "chain": 8453,
+    "contractAddress": "0x81496F85AbaF8bd2e13D90379fdE86C533D8670D"
+  },
+  {
+    "agentName": "QSTAR",
+    "chain": 1,
+    "contractAddress": "0x9ABFc0f085C82Ec1Be31D30843965FCC63053fFe"
+  },
+  {
+    "agentName": "MONA",
+    "chain": -2,
+    "contractAddress": "MoNAoCoXKLb38Y2VpbukGacdNYhvRTyVn92DvRApXep"
+  },
+  {
+    "agentName": "Top Hat",
+    "chain": -2,
+    "contractAddress": "AxGAbdFtdbj2oNXa4dKqFvwHzgFtW9mFHWmd7vQfpump"
+  },
+  {
+    "agentName": "ChainGPT",
+    "chain": 56,
+    "contractAddress": "0x9840652DC04fb9db2C43853633f0F62BE6f00f98"
+  },
+  {
+    "agentName": "Hive Intelligence",
+    "chain": 8453,
+    "contractAddress": "0x91da780bc7f4b7cf19abe90411a2a296ec5ff787"
+  },
+  {
+    "agentName": "NEUR",
+    "chain": -2,
+    "contractAddress": "3N2ETvNpPNAxhcaXgkhKoY1yDnQfs41Wnxsx5qNJpump"
+  },
+  {
+    "agentName": "Dr. COPE",
+    "chain": 8453,
+    "contractAddress": "0xf05f89D80Ab218Dcc092b5Af6dc4cb23c4D49c48"
+  },
+  {
+    "agentName": "ELIZAConnectUC",
+    "chain": -2,
+    "contractAddress": "8HGyAAB1yoM1ttS7pXjHMa3dukTFGQggnFFH3hJZgzQh"
+  },
+  {
+    "agentName": "Kwant",
+    "chain": -2,
+    "contractAddress": "9Yt5tHLFB2Uz1yg3cyEpTN4KTSWhiGpKxXPJ8HX3hat"
+  },
+  {
+    "agentName": "AIKA",
+    "chain": -2,
+    "contractAddress": "BsAEhPN1DKfpjMoSZ5UnDTL4impSYvT9ZpFjnBD2pump"
+  },
+  {
+    "agentName": "Ribbita",
+    "chain": 8453,
+    "contractAddress": "0xA4A2E2ca3fBfE21aed83471D28b6f65A233C6e00"
+  },
+  {
+    "agentName": "MAX",
+    "chain": -2,
+    "contractAddress": "oraim8c9d1nkfuQk9EzGYEUGxqL3MHQYndRw1huVo5h"
+  },
+  {
+    "agentName": "Act I The AI Prophecy",
+    "chain": -2,
+    "contractAddress": "GJAFwWjJ3vnTsrQVabjBVK2TYB1YtRCQXRDfDgUnpump"
+  },
+  {
+    "agentName": "DREAMS",
+    "chain": -2,
+    "contractAddress": "GMzuntWYJLpNuCizrSR7ZXggiMdDzTNiEmSNHHunpump"
+  },
+  {
+    "agentName": "Racer",
+    "chain": -2,
+    "contractAddress": "A18g5EmqMo1LV2N8yfQGo1eBKiwRn4ovHs37Xspspump"
+  },
+  {
+    "agentName": "Neurobro",
+    "chain": 8453,
+    "contractAddress": "0xc796E499CC8f599A2a8280825d8BdA92F7a895e0"
+  },
+  {
+    "agentName": "AI9000",
+    "chain": 43114,
+    "contractAddress": "0x79Ea4E536f598dCd67C76Ee3829f84AB9E72A558"
+  },
+  {
+    "agentName": "swarms",
+    "chain": -2,
+    "contractAddress": "74SBV4zDXxTRgv1pEMoECskKBkZHc2yGPnc7GYVepump"
+  },
+  {
+    "agentName": "SEND",
+    "chain": -2,
+    "contractAddress": "SENDdRQtYMWaQrBroBrJ2Q53fgVuq95CV9UPGEvpCxa"
+  },
+  {
+    "agentName": "Vader AI",
+    "chain": 8453,
+    "contractAddress": "0x731814e491571A2e9eE3c5b1F7f3b962eE8f4870"
+  },
+  {
+    "agentName": "Vader AI",
+    "chain": -2,
+    "contractAddress": "77fbrTmaGX7fJL8dK2PmMDJrMoZHdpzcsGM8kaFGwJcD"
+  },
+  {
+    "agentName": "BID",
+    "chain": 56,
+    "contractAddress": "0xa1832f7F4e534aE557f9B5AB76dE54B1873e498B"
+  },
+  {
+    "agentName": "YieldMachine",
+    "chain": 8453,
+    "contractAddress": "0xBA1CC6E3f1c5F937497e4e196196E7535e6a8E63"
+  },
+  {
+    "agentName": "Flork",
+    "chain": -2,
+    "contractAddress": "CnGb7hJsGdsFyQP2uXNWrUgT5K1tovBA3mNnUZcTpump"
+  },
+  {
+    "agentName": "Sturdy",
+    "chain": 1,
+    "contractAddress": "0xaeb3607ec434454ceb308f5cd540875efb54309a"
+  },
+  {
+    "agentName": "J3FF",
+    "chain": 8453,
+    "contractAddress": "0x7C3AF051bfA356b8EaEe35C273a21aD9223EE994"
+  },
+  {
+    "agentName": "aixcb",
+    "chain": 8453,
+    "contractAddress": "0x76c71f1703fbf19ffdcf3051e1e684cb9934510f"
+  },
+  {
+    "agentName": "REI",
+    "chain": 8453,
+    "contractAddress": "0x6B2504A03ca4D43d0D73776F6aD46dAb2F2a4cFD"
+  },
+  {
+    "agentName": "Edwin",
+    "chain": -2,
+    "contractAddress": "GPrg1CgbBvAJS2SCuf9gF7NmQYsWudfyfWy5SUzypump"
+  },
+  {
+    "agentName": "Wise Monkey",
+    "chain": 56,
+    "contractAddress": "0x59e69094398afbea632f8bd63033bdd2443a3be1"
+  },
+  {
+    "agentName": "Sekoia",
+    "chain": 8453,
+    "contractAddress": "0x1185cB5122Edad199BdBC0cbd7a0457E448f23c7"
+  },
+  {
+    "agentName": "Vera",
+    "chain": -2,
+    "contractAddress": "5SXx7DqZAwnYwRxhBdkcV78RdJrzvCJjRxLmoXdbpump"
+  },
+  {
+    "agentName": "Shoggoth",
+    "chain": -2,
+    "contractAddress": "H2c31USxu35MDkBrGph8pUDUnmzo2e4Rf4hnvL2Upump"
+  },
+  {
+    "agentName": "BUILD",
+    "chain": -2,
+    "contractAddress": "AuLFCTA8V8katsgpkFsezQtkHodJby5M4KB2VryTpump"
+  },
+  {
+    "agentName": "GAME",
+    "chain": 8453,
+    "contractAddress": "0x1c4cca7c5db003824208adda61bd749e55f463a3"
+  },
+  {
+    "agentName": "whispersai",
+    "chain": -2,
+    "contractAddress": "whispF7G9DHaojYHe2cdhRX5EMJzGBdqq7R57kL6inL"
+  },
+  {
+    "agentName": "MOE",
+    "chain": -2,
+    "contractAddress": "8xzoj8mVmXtBQm6d2euJGFPvQ2QsTV5R8cdexi2qpump"
+  },
+  {
+    "agentName": "Laika AI",
+    "chain": 56,
+    "contractAddress": "0x1865dc79a9e4B5751531099057D7Ee801033d268"
+  },
+  {
+    "agentName": "Autonolas",
+    "chain": 1,
+    "contractAddress": "0x0001a500a6b18995b03f44bb040a5ffc28e45cb0"
+  },
+  {
+    "agentName": "SoulBazaarAI",
+    "chain": -2,
+    "contractAddress": "Agentfk87X48g37uPprEZaQtizDvnSQVeTqVjAtmbhd3"
+  },
+  {
+    "agentName": "mfercoin",
+    "chain": 8453,
+    "contractAddress": "0xE3086852A4B125803C815a158249ae468A3254Ca"
+  },
+  {
+    "agentName": "Hyperfy",
+    "chain": -2,
+    "contractAddress": "8vBMibwpn8wpfYKbQ9xqzodymg3LjmYec2tSNGRy23K8"
+  },
+  {
+    "agentName": "Bananalyst / BANANAS31",
+    "chain": 56,
+    "contractAddress": "0x3d4f0513e8a29669b960f9dbca61861548a9a760"
+  },
+  {
+    "agentName": "REX",
+    "chain": -2,
+    "contractAddress": "CNKEXXypBC66cZ111Mg3JUxyczXS1E9T6MWEufzQZVMo"
+  },
+  {
+    "agentName": "Turbo",
+    "chain": 1,
+    "contractAddress": "0xa35923162c49cf95e6bf26623385eb431ad920d3"
+  },
+  {
+    "agentName": "Aion 5100",
+    "chain": 8453,
+    "contractAddress": "0xfc48314ad4aD5bD36a84E8307b86A68A01D95d9C"
+  },
+  {
+    "agentName": "Eliza Wakes Up",
+    "chain": -2,
+    "contractAddress": "5voS9evDjxF589WuEub5i4ti7FWQmZCsAsyD5ucbuRqM"
+  },
+  {
+    "agentName": "Kitsune",
+    "chain": -2,
+    "contractAddress": "9hfKxLSnwh4LhpRgmxBYDRgrKeYUgszMePKxuidPpump"
+  },
+  {
+    "agentName": "Schizo Terminal",
+    "chain": -2,
+    "contractAddress": "H1NPJkh3KUJGbpjkyQD5qG1nrpFW7tHiqek5SAbMpump"
+  },
+  {
+    "agentName": "ZALPHA",
+    "chain": -2,
+    "contractAddress": "EAyvG3YKGsnHkQLcmY3R8YRSab3wu2rC288U8f8PVwND"
+  },
+  {
+    "agentName": "LAY",
+    "chain": 8453,
+    "contractAddress": "0xb89D354AD1b0d95a48b3De4607F75a8cD710c1bA"
+  },
+  {
+    "agentName": "LAY",
+    "chain": -2,
+    "contractAddress": " sRCDYrKbg186hfdrVnY3K8WTeW13cj7M25sA1Kvx2f7"
+  },
+  {
+    "agentName": "PONZI",
+    "chain": -2,
+    "contractAddress": "DAnqpzUXQhSZwnPmHjx6LYdGfi68XkjHvUmnDA11pump"
+  },
+  {
+    "agentName": "FAI",
+    "chain": 8453,
+    "contractAddress": "0xb33Ff54b9F7242EF1593d2C9Bcd8f9df46c77935"
+  },
+  {
+    "agentName": "AKA",
+    "chain": -2,
+    "contractAddress": "4TwC4AiF1uUSHES2eBftGqemp6TqjEnKghqiH6dFpump"
+  },
+  {
+    "agentName": "Wai",
+    "chain": 8453,
+    "contractAddress": "0x6112b8714221bbd96ae0a0032a683e38b475d06c"
+  },
+  {
+    "agentName": "SARAH",
+    "chain": -2,
+    "contractAddress": "8NQ2HcFBw5oY9wQVrPVnZtQvmeH1atWayH72ErLP2Dcc"
+  },
+  {
+    "agentName": "logos",
+    "chain": -2,
+    "contractAddress": "HJUfqXoYjC653f2p33i84zdCC3jc4EuVnbruSe5kpump"
+  },
+  {
+    "agentName": "WAGMI",
+    "chain": 8453,
+    "contractAddress": "0x2Ce1340F1d402aE75aFEb55003d7491645dB1857"
+  },
+  {
+    "agentName": "NRN Agents",
+    "chain": 42161,
+    "contractAddress": "0xdadeca1167fe47499e53Eb50F261103630974905"
+  },
+  {
+    "agentName": "AI Shell NOVA",
+    "chain": -2,
+    "contractAddress": "AxDKAyDsC7p8C5MeDFX6FKV2MPCSGwzkRfGY2qZZpump"
+  },
+  {
+    "agentName": "thales",
+    "chain": -2,
+    "contractAddress": "7yn2PRbB96TgcCkkMK4zD6vvMth6Co5B5Nma6XvPpump"
+  },
+  {
+    "agentName": "OBOT",
+    "chain": -2,
+    "contractAddress": "7yZFFUhq9ac7DY4WobLL539pJEUbMnQ5AGQQuuEMpump"
+  },
+  {
+    "agentName": "KEKE",
+    "chain": -2,
+    "contractAddress": "Gp8GVGPc8QCe4Jn6ryG5YKokG5bjKycATEzqpeyspump"
+  },
+  {
+    "agentName": "Athena",
+    "chain": 8453,
+    "contractAddress": "0x1a43287cbfcc5f35082e6e2aa98e5b474fe7bd4e"
+  },
+  {
+    "agentName": "AI16Z Eliza",
+    "chain": -2,
+    "contractAddress": "wUtwjNmjCP9TTTtoc5Xn5h5sZ2cYJm5w2w44b79yr2o"
+  },
+  {
+    "agentName": "Leo",
+    "chain": 8453,
+    "contractAddress": "0x2dEEd9b2d1E396D750288B394286fB8d395797b4"
+  },
+  {
+    "agentName": "Seraph AI",
+    "chain": 8453,
+    "contractAddress": "0x4f81837C2f4A189A0B69370027cc2627d93785B4"
+  },
+  {
+    "agentName": "TARDI",
+    "chain": -2,
+    "contractAddress": "DTTLrCGbqn6fmNuKjGYqWFeQU5Hz153f5C3pNnxepump"
+  },
+  {
+    "agentName": "FortifyAI",
+    "chain": 1,
+    "contractAddress": "0x2893A91B29b80aB62dEfFFF6Eb135f32DDA8e1D3"
+  },
+  {
+    "agentName": "SPACE",
+    "chain": 8453,
+    "contractAddress": "0x48C6740BcF807d6C47C864FaEEA15Ed4dA3910Ab"
+  },
+  {
+    "agentName": "AGENT",
+    "chain": 8453,
+    "contractAddress": "0xF5Bc3439f53A45607cCaD667AbC7DAF5A583633F"
+  },
+  {
+    "agentName": "DTRXBT",
+    "chain": 8453,
+    "contractAddress": "0x84A9AAE8FCc085DBE11524F570716D89b772f430"
+  },
+  {
+    "agentName": "KUDAI",
+    "chain": 8453,
+    "contractAddress": "0x288F4Eb27400fA220d14b864259Ad1B7f77C1594"
+  },
+  {
+    "agentName": "NFTXBT",
+    "chain": 8453,
+    "contractAddress": "0x08c81699F9a357a9F0d04A09b353576ca328d60D"
+  },
+  {
+    "agentName": "Naval",
+    "chain": -2,
+    "contractAddress": "7wM4MnbsPsG95A3WhZgbrPWvMtydKmJjqKr2ZVJVpump"
+  },
+  {
+    "agentName": "Sora Labs",
+    "chain": -2,
+    "contractAddress": "89nnWMkWeF9LSJvAWcN2JFQfeWdDk6diKEckeToEU1hE"
+  },
+  {
+    "agentName": "CAT Terminal ",
+    "chain": 56,
+    "contractAddress": "0x6894CDe390a3f51155ea41Ed24a33A4827d3063D"
+  },
+  {
+    "agentName": "King of Lies",
+    "chain": -2,
+    "contractAddress": "9HmJESAKw8v9sFckes3BQrwWj9oA6chyyJEsA1zRahat"
+  },
+  {
+    "agentName": "RavenAI",
+    "chain": -2,
+    "contractAddress": "5EkhGmXSGU7WhW2NPyEuDRFonjbmtVjJNveZv9XUUhat"
+  },
+  {
+    "agentName": "Freya",
+    "chain": 8453,
+    "contractAddress": "0xF04D220b8136E2d3d4BE08081Dbb565c3c302FfD"
+  },
+  {
+    "agentName": "Redacted Terminal",
+    "chain": -2,
+    "contractAddress": "3QGGLYLu251jE9Ra8jkGtuHb773xYciXeqqvUgNTGimE"
+  },
+  {
+    "agentName": "Bloomsperg Terminal",
+    "chain": -2,
+    "contractAddress": "4vKEwZ2ZHmHFuQEE69emXV2Zq1EKeJYVCESsMqydpump"
+  },
+  {
+    "agentName": "Large Language Model",
+    "chain": -2,
+    "contractAddress": "98mb39tPFKQJ4Bif8iVg9mYb9wsfPZgpgN1sxoVTpump"
+  },
+  {
+    "agentName": "aiPump",
+    "chain": 8453,
+    "contractAddress": "0xfbecd19292b1effeaa7b2e61f5101ddb6744a1fb"
+  },
+  {
+    "agentName": "AiSweatShop",
+    "chain": 42161,
+    "contractAddress": "0x13ad3f1150db0e1e05fd32bDEeB7C110ee023de6"
+  },
+  {
+    "agentName": "Nova on Mars",
+    "chain": -2,
+    "contractAddress": "STKmfGGegeoYqrHrJ3nvTafSvRC6GJJBbLwN1cqpump"
+  },
+  {
+    "agentName": "Liminal",
+    "chain": 8453,
+    "contractAddress": "0xb7b4e8406673528e7dc3d787f3a42eb1ebc01cf6"
+  },
+  {
+    "agentName": "RELIGN",
+    "chain": -2,
+    "contractAddress": "7AkSKHomPcrJHSgnKFmbrqKARR7PyDk9XoE1PHrtpump"
+  },
+  {
+    "agentName": "Charm AI",
+    "chain": -2,
+    "contractAddress": "DBpVGmVbMrw2vEbkhBu2cC3MvEg63opeRHdakVMEpump"
+  },
+  {
+    "agentName": "AIT",
+    "chain": -2,
+    "contractAddress": "D4G7rpcQBF5oVQwBzoDwHPiweJ5RYvuEVGdxqmPApump"
+  },
+  {
+    "agentName": "Project89",
+    "chain": -2,
+    "contractAddress": "Bz4MhmVRQENiCou7ZpJ575wpjNFjBjVBSiVhuNg1pump"
+  },
+  {
+    "agentName": "HolozoneAI",
+    "chain": -2,
+    "contractAddress": "B8hCuoikV9gLeuwmTyhNdLbPnb5k3P77Q7WTtEM7pump"
+  },
+  {
+    "agentName": "Xenopus laevis",
+    "chain": -2,
+    "contractAddress": "Db7ZUaWTThwZy7bVhjn5Dda8D3fbbAhihcxPV4m9pump"
+  },
+  {
+    "agentName": "piotrek",
+    "chain": -2,
+    "contractAddress": "Cn5Ne1vmR9ctMGY9z5NC71A3NYFvopjXNyxYtfVYpump"
+  },
+  {
+    "agentName": "SIM",
+    "chain": 8453,
+    "contractAddress": "0x749e5334752466CdA899B302ed4176B8573dC877"
+  },
+  {
+    "agentName": "PIXIE",
+    "chain": 8453,
+    "contractAddress": "0xF79691B3B809053C581Be5D2151A1965451081EF"
+  },
+  {
+    "agentName": "Keyboard Cat",
+    "chain": 8453,
+    "contractAddress": "0x9a26F5433671751C3276a065f57e5a02D2817973"
+  },
+  {
+    "agentName": "Big Tony",
+    "chain": 8453,
+    "contractAddress": "0xB22a793a81ff5b6Ad37F40d5FE1E0AC4184d52F3"
+  },
+  {
+    "agentName": "Big Tony",
+    "chain": -2,
+    "contractAddress": "3SboFTm5xF3VGcduCP6CPue3ZTh8qKXNcNSXR74YDaw1"
+  },
+  {
+    "agentName": "Simmi",
+    "chain": -2,
+    "contractAddress": "6Nf3nFbyQ1p1CVQYtEZXfeM89XyvkFPyF2JosxdriH7S"
+  },
+  {
+    "agentName": "Simmi",
+    "chain": 8453,
+    "contractAddress": "0x161e113B8E9BBAEfb846F73F31624F6f9607bd44"
+  },
+  {
+    "agentName": "MANA on SOL",
+    "chain": -2,
+    "contractAddress": "Bw5K8eZaf361uDLHgX2UUn1PNfC7XtgQVvY9sSappump"
+  },
+  {
+    "agentName": "MIZUKI",
+    "chain": -2,
+    "contractAddress": "9XS6ayT8aCaoH7tDmTgNyEXRLeVpgyHKtZk5xTXpump"
+  },
+  {
+    "agentName": "METAVERSE",
+    "chain": -2,
+    "contractAddress": "HCgvbV9Qcf9TVGPGKMGbVEj8WwwVD6HhTt5E2i3qkeN9"
+  },
+  {
+    "agentName": "Berry",
+    "chain": 1,
+    "contractAddress": "0xCb76314C2540199f4B844D4ebbC7998C604880cA"
+  },
+  {
+    "agentName": "Gnon on Solana | $Gnon",
+    "chain": -2,
+    "contractAddress": "HeJUFDxfJSzYFUuHLxkMqCgytU31G6mjP4wKviwqpump"
+  },
+  {
+    "agentName": "1000x",
+    "chain": 8453,
+    "contractAddress": "0x352b850b733ab8baB50aED1Dab5D22E3186ce984"
+  },
+  {
+    "agentName": "AIWS",
+    "chain": -2,
+    "contractAddress": "hMqjUNgePRaRaFcvMh7WxMbmuBMBKQEubmruxwopump"
+  },
+  {
+    "agentName": "REALIS",
+    "chain": -2,
+    "contractAddress": "EBGaJP7srpUUN8eRdta1MsojrNtweuHYsdP3P1TRpump"
+  },
+  {
+    "agentName": "Gekko AI",
+    "chain": 8453,
+    "contractAddress": "0xf7b0dd0B642a6ccc2fc4d8FfE2BfFb0caC8C43C8"
+  },
+  {
+    "agentName": "xGPT",
+    "chain": -2,
+    "contractAddress": "2PHi2f7xPq6bnh2J6xRN2Qc5TJ37epHihvBk49DgpAaU"
+  },
+  {
+    "agentName": "OMNI",
+    "chain": 8453,
+    "contractAddress": "0xb58f9704c7a80D2775222F7Cb2eed28BEB9a06be"
+  },
+  {
+    "agentName": "Polytrader",
+    "chain": 8453,
+    "contractAddress": "0x2676E4e0E2eB58D9Bdb5078358ff8A3a964CEdf5"
+  },
+  {
+    "agentName": "Limitus",
+    "chain": -2,
+    "contractAddress": "86t88w3MKT38HChTBKBwEeb1RW1MeTceaW68qY2Vpump"
+  },
+  {
+    "agentName": "FOREST",
+    "chain": -2,
+    "contractAddress": "BoAQaykj3LtkM2Brevc7cQcRAzpqcsP47nJ2rkyopump"
+  },
+  {
+    "agentName": "EVAL",
+    "chain": 8453,
+    "contractAddress": "0xdd78523217390bb0d49C7601e7e54C36d71622F0"
+  },
+  {
+    "agentName": "Acolyte",
+    "chain": 8453,
+    "contractAddress": "0x79dacb99a8698052a9898e81fdf883c29efb93cb"
+  },
+  {
+    "agentName": "OVERLORD",
+    "chain": 42161,
+    "contractAddress": "0xf6eb7a9799f6680c320e79d0fb35e842d54d38ce"
+  },
+  {
+    "agentName": "AIOS Foundation",
+    "chain": -2,
+    "contractAddress": "5QS7RcHfGUa2ZtrovPvEJMB9coqroiT7H48dPSwFpump"
+  },
+  {
+    "agentName": "CPA",
+    "chain": 8453,
+    "contractAddress": "0xd9DA0A693ea8057dCd97f02Df6c98951acF92EF7"
+  },
+  {
+    "agentName": "Limbo",
+    "chain": -2,
+    "contractAddress": "5UAMZkfNmuVcKzr2wo8Jqw4R1k8vfdAVJNN6h3bVpump"
+  },
+  {
+    "agentName": "$AINTI",
+    "chain": -2,
+    "contractAddress": "BAezfVmia8UYLt4rst6PCU4dvL2i2qHzqn4wGhytpNJW"
+  },
+  {
+    "agentName": "Sploots",
+    "chain": 8453,
+    "contractAddress": "0x3058e9b4Bfe397b81e2b91dA79CFF685d662049f"
+  },
+  {
+    "agentName": "Devin",
+    "chain": -2,
+    "contractAddress": "7gbEP2TAy5wM3TmMp5utCrRvdJ3FFqYjgN5KDpXiWPmo"
+  },
+  {
+    "agentName": "panik",
+    "chain": 8453,
+    "contractAddress": "0x78e35f7ee63DFb143ec3802C6AeCe214bF241519"
+  },
+  {
+    "agentName": "Kolin",
+    "chain": -2,
+    "contractAddress": "4q3Z58YxrZEAVMLtMwnm7eHtodSD3LSpSNt3pDnqpump"
+  },
+  {
+    "agentName": "$LEA",
+    "chain": -2,
+    "contractAddress": "8SpPaFLycx897D6sowPZkEkcNdDahzRZb5itr6D8pump"
+  },
+  {
+    "agentName": "LEONARDO",
+    "chain": 8453,
+    "contractAddress": "0xb933D4FF5A0e7bFE6AB7Da72b5DCE2259030252f"
+  },
+  {
+    "agentName": "AGENCY",
+    "chain": -2,
+    "contractAddress": "5UmDWgyLV1JBg8Jr8NwyezXdQkiU3vHGJu2efm7Cpump"
+  },
+  {
+    "agentName": "Mates",
+    "chain": -2,
+    "contractAddress": "MAtesZXcU38mgPuteRFo9ApCauYRRuwn3xf1cs5y7ZX"
+  },
+  {
+    "agentName": "KLAUS",
+    "chain": 1,
+    "contractAddress": "0xb612bfc5ce2fb1337bd29f5af24ca85dbb181ce2"
+  },
+  {
+    "agentName": "IAMAI",
+    "chain": 8453,
+    "contractAddress": "0xc3D64eE7056CFd33c8382679773F8d6277E5C2c9"
+  },
+  {
+    "agentName": "Singularry",
+    "chain": 56,
+    "contractAddress": "0x18EA4dF6a9CDE2472f2321a4Ec77da106498A66E"
+  },
+  {
+    "agentName": "Singularry",
+    "chain": -2,
+    "contractAddress": "HwKE9CPg9Z9WzAeQSj6jeLBizK7LJs5m6LTVx6pLpump "
+  },
+  {
+    "agentName": "ROASTED",
+    "chain": -2,
+    "contractAddress": "7EV4rstrZvPLhmHZPuaGH6mFs8RmxSoqQcFQUsUGpump"
+  },
+  {
+    "agentName": "LUCY",
+    "chain": -2,
+    "contractAddress": "DUt3yt1QdpNvCQj9pmkx3rRmKAcaMeCxPfwVapTkpump"
+  },
+  {
+    "agentName": "IMGNAI",
+    "chain": 8453,
+    "contractAddress": "0x18E692c03De43972Fe81058f322fa542Ae1A5E2c"
+  },
+  {
+    "agentName": "Dasha",
+    "chain": -2,
+    "contractAddress": "FQ1tyso61AH1tzodyJfSwmzsD3GToybbRNoZxUBz21p8"
+  },
+  {
+    "agentName": "0xsimulation",
+    "chain": 8453,
+    "contractAddress": "0x8feef9f0ffa554e51220a3391e7bb7560526a72a"
+  },
+  {
+    "agentName": "ProfitPilot",
+    "chain": 8453,
+    "contractAddress": "0x2972f737450ebb29434d4102caf0880c0e768292"
+  },
+  {
+    "agentName": "PLS",
+    "chain": -2,
+    "contractAddress": "4g7SkRo2zv8xXo1dyPdC15HvW34uLBGgunWTUWcDR5AR"
+  },
+  {
+    "agentName": "BRAT",
+    "chain": -2,
+    "contractAddress": "8CLsURizURUKvapqq85F4zZWtDeqUZAiFubPyTFBEkgq"
+  },
+  {
+    "agentName": "ZEN",
+    "chain": -2,
+    "contractAddress": "3pH7FnM3yR2Jy2c6vyXmsCiNi1rjQ7gerCq2pEUHpump"
+  },
+  {
+    "agentName": "HYPE3",
+    "chain": -2,
+    "contractAddress": "9iQFnxrDDMFrhLx2pYJCDeqN3wFuaBimQkUnZQHNpump"
+  },
+  {
+    "agentName": "BAKSO",
+    "chain": -2,
+    "contractAddress": "FqnqT1GKi8S4Gyk5wnSKvJjXW48HqGtKJt9WS4o2pump"
+  },
+  {
+    "agentName": "DAO Agents",
+    "chain": -2,
+    "contractAddress": "2gFer8X7Rtz6qXZLtjG7QQovgvmR9RqRryjGzWZxpump"
+  },
+  {
+    "agentName": "TAOCAT",
+    "chain": 8453,
+    "contractAddress": "0x7A5f5CcD46EBd7aC30615836D988ca3BD57412b3"
+  },
+  {
+    "agentName": "Puppet Master",
+    "chain": 8453,
+    "contractAddress": "0xC127dC63F96adE4b28Bc5838910736D8aB68c645"
+  },
+  {
+    "agentName": "High AI",
+    "chain": -2,
+    "contractAddress": "BWiai9oqkb3YNnT3yv37msHogDqeVPgnqcKhuxhb8hat"
+  },
+  {
+    "agentName": "TONY Soprano",
+    "chain": -2,
+    "contractAddress": "9aEfYiosckvSoQNrDtkZRoLCmoCCXLaSqCVQFdb7pump"
+  },
+  {
+    "agentName": "Sola AI",
+    "chain": -2,
+    "contractAddress": "B5UsiUYcTD3PcQa8r2uXcVgRmDL8jUYuXPiYjrY7pump"
+  },
+  {
+    "agentName": "Waifu Buzz",
+    "chain": -2,
+    "contractAddress": "3yPEZDVrzcYUsjbpg5BuYoQqzfn6AVjs3S6kW29gGJAS"
+  },
+  {
+    "agentName": "OTTO",
+    "chain": 8453,
+    "contractAddress": "0x62Ff28a01AbD2484aDb18C61f78f30Fb2E4A6fDb"
+  },
+  {
+    "agentName": "higher",
+    "chain": 8453,
+    "contractAddress": "0x0578d8a44db98b23bf096a382e016e29a5ce0ffe"
+  },
+  {
+    "agentName": "DexCheck AI Agent",
+    "chain": 56,
+    "contractAddress": "0x16faf9daa401aa42506af503aa3d80b871c467a3"
+  },
+  {
+    "agentName": "VELVET UNICORN",
+    "chain": 8453,
+    "contractAddress": "0x511ef9Ad5E645E533D15DF605B4628e3D0d0Ff53"
+  },
+  {
+    "agentName": "LOKY",
+    "chain": 8453,
+    "contractAddress": "0x1A3e429D2D22149Cc61e0f539B112a227c844aa3"
+  },
+  {
+    "agentName": "Noderzz AI Agent",
+    "chain": 8453,
+    "contractAddress": "0x2ACd6A246157bf51636D06A83200F8923E7Eb864"
+  },
+  {
+    "agentName": "Memes AI",
+    "chain": -2,
+    "contractAddress": "39qibQxVzemuZTEvjSB7NePhw9WyyHdQCqP8xmBMpump"
+  },
+  {
+    "agentName": "AgentiPy",
+    "chain": -2,
+    "contractAddress": "yLUD35WTiPLEY6DUqEj5W2JVXF2DfKB5arPkKJXpump"
+  },
+  {
+    "agentName": "V1T-Alina",
+    "chain": -2,
+    "contractAddress": "2kaRSuDcz1V1kqq1sDmP23Wy98jutHQQgr5fGDWRpump"
+  },
+  {
+    "agentName": "VitalikCurberin",
+    "chain": -2,
+    "contractAddress": "2kaRSuDcz1V1kqq1sDmP23Wy98jutHQQgr5fGDWRpump"
+  },
+  {
+    "agentName": "Etholana",
+    "chain": -2,
+    "contractAddress": "2kaRSuDcz1V1kqq1sDmP23Wy98jutHQQgr5fGDWRpump"
+  },
+  {
+    "agentName": "Kitten Haimer",
+    "chain": -2,
+    "contractAddress": "3TWgDvYBL2YPET2LxnWAwsMeoA8aL4DutNuwat2pKCjC"
+  },
+  {
+    "agentName": "Octowallet",
+    "chain": -2,
+    "contractAddress": "4CoTCzobYt38zVbSieZxcmz2CCs8kmZJ6wnbj8HWocto"
+  },
+  {
+    "agentName": "Dream",
+    "chain": 8453,
+    "contractAddress": "0xb462ac0e0a7fa3f8d7c129cd8398fc1258cfefb2"
+  },
+  {
+    "agentName": "Dream machine",
+    "chain": -2,
+    "contractAddress": "5iuHLrJ6cx1UHGhbiEomsqUxDNoQ5ytdbU8aC6tZvAB8"
+  },
+  {
+    "agentName": "Peanut the Squirrel",
+    "chain": 8453,
+    "contractAddress": "0x88f5a4250D73453B1bf087f8cB4FCA41c23D8Fa1"
+  },
+  {
+    "agentName": " Aiccelerate DAO",
+    "chain": -2,
+    "contractAddress": "3zQ1XAcbSejFZNdbTBGvFGQatvViYbcwgXZ5pQ3KRRaw"
+  },
+  {
+    "agentName": "Digimon",
+    "chain": -2,
+    "contractAddress": "WEmjxPMGXEW1Nvc4rCgRKiWHj1H1tvhPsKMw2yvpump"
+  },
+  {
+    "agentName": "Byte",
+    "chain": -2,
+    "contractAddress": "ArGfk9JJ72QETcmckxVjCZ9ApuATgP1mf9ysVHnPU4ut"
+  },
+  {
+    "agentName": "Byte",
+    "chain": 1,
+    "contractAddress": "0xde342a3e269056fc3305f9e315f4c40d917ba521"
+  },
+  {
+    "agentName": "Byte",
+    "chain": 8453,
+    "contractAddress": "0xe095780ba2a64a4efa7a74830f0b71656f0b0ad4"
+  },
+  {
+    "agentName": "Slopfather",
+    "chain": -2,
+    "contractAddress": "EWWDzCwq4UYW3ERTXbdgd6X6sdkKHFMJqRz1ZiFcpump"
+  },
+  {
+    "agentName": "Project Nostradamus",
+    "chain": 8453,
+    "contractAddress": "0xeb476e9ab6b1655860b3f40100678d0c1cedb321"
+  },
+  {
+    "agentName": "LOUDER",
+    "chain": 8453,
+    "contractAddress": "0x120edC8E391ba4c94Cb98bb65d8856Ae6eC1525F"
+  },
+  {
+    "agentName": "Virtu",
+    "chain": 8453,
+    "contractAddress": "0x41e0fe1317bd6e8944b037cd59b22d428c1434c2"
+  },
+  {
+    "agentName": "AXI",
+    "chain": -2,
+    "contractAddress": "9tLUnDz6G2dUGVhiLEEEpfM8e1YBiXnWrdT4xVeopump"
+  },
+  {
+    "agentName": "Eva",
+    "chain": -2,
+    "contractAddress": "ENZ9ZcXtBtndadYhkwhe3rrey2DvwKNicJUGGwXtpump"
+  },
+  {
+    "agentName": "Fine(.wtf)",
+    "chain": -2,
+    "contractAddress": "J4bGYAB8uXd5chn8nQakZjJRw6YCkfK2rXMGo1n2pump"
+  },
+  {
+    "agentName": "PAWSY",
+    "chain": 8453,
+    "contractAddress": "0x29e39327b5B1E500B87FC0fcAe3856CD8F96eD2a"
+  },
+  {
+    "agentName": "Project Plutus",
+    "chain": -2,
+    "contractAddress": "76PsEyML7UV9uiBDWMdG3itRRuupDuRs6nNpjNBpump"
+  },
+  {
+    "agentName": "JAIL",
+    "chain": -2,
+    "contractAddress": "8cNmp9T2CMQRNZhNRoeSvr57LDf1kbZ42SvgsSWfpump"
+  },
+  {
+    "agentName": "Spectral Labs",
+    "chain": 8453,
+    "contractAddress": "0x96419929d7949d6a801a6909c145c8eef6a40431"
+  },
+  {
+    "agentName": "Aimonica",
+    "chain": -2,
+    "contractAddress": "FVdo7CDJarhYoH6McyTFqx71EtzCPViinvdd1v86Qmy5"
+  },
+  {
+    "agentName": "TMAI",
+    "chain": 8453,
+    "contractAddress": "0xCa4569949699D56E1834EFe9f58747Ca0f151B01"
+  },
+  {
+    "agentName": "TETSUO",
+    "chain": -2,
+    "contractAddress": "8i51XNNpGaKaj4G4nDdmQh95v4FKAxw8mhtaRoKd9tE8"
+  },
+  {
+    "agentName": "Bongo AI",
+    "chain": -2,
+    "contractAddress": "HUdqc5MR5h3FssESabPnQ1GTgTcPvnNudAuLj5J6a9sU"
+  },
+  {
+    "agentName": "Bonsai",
+    "chain": 8453,
+    "contractAddress": "0x474f4cb764df9da079d94052fed39625c147c12c"
+  },
+  {
+    "agentName": "danteGPU",
+    "chain": -2,
+    "contractAddress": "7xUV6YR3rZMfExPqZiovQSUxpnHxr2KJJqFg1bFrpump"
+  },
+  {
+    "agentName": "The Mule",
+    "chain": 8453,
+    "contractAddress": "0x1e93c5a6c542ea4f797abd1357afcf6a024383d7"
+  },
+  {
+    "agentName": "MINDZERO",
+    "chain": -2,
+    "contractAddress": "27265MRQFxz2LSTnn4mNTmcz1HJsjJVBST1cozxzpump"
+  },
+  {
+    "agentName": "NEKO",
+    "chain": 8453,
+    "contractAddress": "0xd59EDbbe897766df1E03A76bb5AA35ADC209A16D"
+  },
+  {
+    "agentName": "LifeGPT on Solana",
+    "chain": -2,
+    "contractAddress": "8XfBPt6wxjMc8j1A2HgMZ1qoAknLAJhG6erWjqtspump"
+  },
+  {
+    "agentName": "Chad onchain",
+    "chain": -2,
+    "contractAddress": "ENaLo6qVYMLMSvAHQ65QKiy1DXhg8pYF95mtJMh5pump"
+  },
+  {
+    "agentName": "$1",
+    "chain": -2,
+    "contractAddress": "GHichsGq8aPnqJyz6Jp1ASTK4PNLpB5KrD6XrfDjpump"
+  },
+  {
+    "agentName": "miratisu",
+    "chain": 8453,
+    "contractAddress": "0xb85F486B15812cc63e293D0Bf31E0642d2E3F96D"
+  },
+  {
+    "agentName": "Capricorn",
+    "chain": 8453,
+    "contractAddress": "0x807c4c94BA36817677385ad8E468Ac13a4B9cEAb"
+  },
+  {
+    "agentName": "Bacon Protocol",
+    "chain": 56,
+    "contractAddress": "0xb85d4C45383aCfcFd9869645275349C9c3f28EDB"
+  },
+  {
+    "agentName": "Gud.Tech",
+    "chain": 8453,
+    "contractAddress": "0xA608512BBC9934E4b1DDeCF0F5Fb38b6Ad93308D"
+  },
+  {
+    "agentName": "WAVE",
+    "chain": -2,
+    "contractAddress": "5XUUN5z1yBPEwoLztu4qMenmFe6GQnZptBFsnFnEpump"
+  },
+  {
+    "agentName": "AiSTR",
+    "chain": 8453,
+    "contractAddress": "0x20ef84969f6d81Ff74AE4591c331858b20AD82CD"
+  },
+  {
+    "agentName": "VISION",
+    "chain": 8453,
+    "contractAddress": "0x50d7A818E5e339ebE13b17E130B5B608fAC354DC"
+  },
+  {
+    "agentName": "Top Hat Cat ",
+    "chain": -2,
+    "contractAddress": "CJ3S6V4MmAE6VazLUny4MgVBxNZ2tSadNPaUBr9Bpump"
+  },
+  {
+    "agentName": "Grok",
+    "chain": 1,
+    "contractAddress": "0x8390a1DA07E376ef7aDd4Be859BA74Fb83aA02D5"
+  },
+  {
+    "agentName": "t3",
+    "chain": -2,
+    "contractAddress": "CckLtcfEtsYzg8sUrVBBrFKt16iExpvEurc1dhKmmoon"
+  },
+  {
+    "agentName": "EMILIA",
+    "chain": 8453,
+    "contractAddress": "0xe4A7b54c0A30Da69c04Dc54b89868C185Ff382bC"
+  },
+  {
+    "agentName": "FREGO",
+    "chain": -2,
+    "contractAddress": "F9GqoJRPzQnGzvP7cQzLHB7C22DToHQYWfsPvhKwqrpC"
+  },
+  {
+    "agentName": "Reality Spiral",
+    "chain": -2,
+    "contractAddress": "hhYm4Km9Jky98SbR2k3csPht14qXSgA7NyKG6i5NF1X"
+  },
+  {
+    "agentName": "ask the Sandwich",
+    "chain": 8453,
+    "contractAddress": "0xe56b9f83a7cBE491f248490264066552D8a47E58"
+  },
+  {
+    "agentName": "Vainguard",
+    "chain": 8453,
+    "contractAddress": "0x6C7ebB64E258F5712EEeC83CEaf41c3dcbb534B1"
+  },
+  {
+    "agentName": "LULU",
+    "chain": -2,
+    "contractAddress": "3hFWyugN2W3JM6TsYZ4SAyHkHLLTCVUkAbH5GYWNpump"
+  },
+  {
+    "agentName": "Sympson AI",
+    "chain": 8453,
+    "contractAddress": "0x504A26cf29674bC77A9341e73f88CCEcc864034c"
+  },
+  {
+    "agentName": "$BAD",
+    "chain": 1,
+    "contractAddress": "0x32b86b99441480a7E5BD3A26c124ec2373e3F015"
+  },
+  {
+    "agentName": "Gluteus Maximus",
+    "chain": 8453,
+    "contractAddress": "0x06A63c498eF95AD1fA4FfF841955e512b4B2198a"
+  },
+  {
+    "agentName": "OCADA",
+    "chain": -2,
+    "contractAddress": "ocadaAXpD1haGy2JnjHbgUhczqtiMdYHzvnBihjJHg9"
+  },
+  {
+    "agentName": "OnlyCalls",
+    "chain": 8453,
+    "contractAddress": "0xac743B05f5E590D9Db6a4192E02457838e4Af61e"
+  },
+  {
+    "agentName": "Blormmy",
+    "chain": -2,
+    "contractAddress": "71AZt4P5kc5vpfTJR1HjNbMzD84G7vxam4DtL3kJpump"
+  },
+  {
+    "agentName": "MS2",
+    "chain": -2,
+    "contractAddress": "AbktLHcNzEoZc9qfVgNaQhJbqDTEmLwsARY7JcTndsPg"
+  },
+  {
+    "agentName": "TheUpsiderAI",
+    "chain": 8453,
+    "contractAddress": "0x9e271eC4D66F2b400Ad92De8a10e5c9C1914259C"
+  },
+  {
+    "agentName": "NYX",
+    "chain": -2,
+    "contractAddress": "2FGqMdHMTrGGBmVStucjBzD6ZoN5VDYV8CtK9QRXpump"
+  },
+  {
+    "agentName": "Flame",
+    "chain": -2,
+    "contractAddress": "BivtZFQ5mVdjMM3DQ8vxzvhKKiVs27fz1YUF8bRFdKKc"
+  },
+  {
+    "agentName": "Homo Memetus",
+    "chain": -2,
+    "contractAddress": "7Uuzh9JwqF8z3u6MWpQuQJbpD1u46xPDY6PGjwfwTh4o"
+  },
+  {
+    "agentName": "GIGAI",
+    "chain": -2,
+    "contractAddress": "7wdxpzhn8Bz21nTb9b7qM7HzmU6LEoV1QeFKqWeKpump"
+  },
+  {
+    "agentName": "BLOCKLORDS",
+    "chain": 8453,
+    "contractAddress": "0xB676f87A6E701f0DE8De5Ab91B56b66109766DB1"
+  },
+  {
+    "agentName": "draiftking",
+    "chain": 8453,
+    "contractAddress": "0x57edc3f1fd42c0d48230e964b1c5184b9c89b2ed"
+  },
+  {
+    "agentName": "koto",
+    "chain": -2,
+    "contractAddress": "BfdVHnbt9LSNAFCZU9kvTjbrH3jX78sv2siLKGQ7pump"
+  },
+  {
+    "agentName": "CROW",
+    "chain": 8453,
+    "contractAddress": "0x2EfB2110F352fC98Cd39dC041887C41766dBb301"
+  },
+  {
+    "agentName": "AIFUN",
+    "chain": 8453,
+    "contractAddress": "0xbdf317f9c153246c429f23f4093087164b145390"
+  },
+  {
+    "agentName": "Zero Ontology System",
+    "chain": -2,
+    "contractAddress": "BwUTq7fS6sfUmHDwAiCQZ3asSiPEapW5zDrsbwtapump"
+  },
+  {
+    "agentName": "AAA",
+    "chain": -2,
+    "contractAddress": "275FUEyp5o7TWo1dCDYJyprb4o2WBcxEQsvmt816pump"
+  },
+  {
+    "agentName": "Alris",
+    "chain": -2,
+    "contractAddress": "FwzpNxnabjZvc8QCnV6qPEBKxqLxSyjobc5Etdgxpump"
+  },
+  {
+    "agentName": "Fungi Agent",
+    "chain": -2,
+    "contractAddress": "3u4XvCjmTmQmcvjoxo1z8y3wnRdtnCuv6N9WkiE6FJvH"
+  },
+  {
+    "agentName": "RADIO",
+    "chain": -2,
+    "contractAddress": "B4gipVUHKJ7keVN3MWEYDQCHjkdoXGsbmZoTSJDZpump"
+  },
+  {
+    "agentName": "Keep Gambling AI",
+    "chain": -2,
+    "contractAddress": "4ZDFnVXL2ED9htVnLTNMwCwVttp8TbBJcwzFePZwpump"
+  },
+  {
+    "agentName": "AURORA TERMINAL",
+    "chain": -2,
+    "contractAddress": "bozdUuCb2kdipxES9PzsYHmDVrf7FBTSW3p1CFBpump"
+  },
+  {
+    "agentName": "CHAOS",
+    "chain": 8453,
+    "contractAddress": "0x26E0331355dF5Ef082F69dF161218093708a73ac"
+  },
+  {
+    "agentName": "aiGCR_agent",
+    "chain": -2,
+    "contractAddress": "9vtNLbN2qxPbrx666rP34s9PBGtyLrsupMGdVyqG7FzH"
+  },
+  {
+    "agentName": "Ongo",
+    "chain": -2,
+    "contractAddress": "CxN2KctowQ216p9wWRgiQeMe9ExRSrL7UeR2UYRzpump"
+  },
+  {
+    "agentName": "Bunzie",
+    "chain": 8453,
+    "contractAddress": "0xdcE524DCBcB475057503021c44Ad840859967D56"
+  },
+  {
+    "agentName": "Crypto 101",
+    "chain": 8453,
+    "contractAddress": "0x30193F81E7599429afd6B2b11b27d66C56A1DFe4"
+  },
+  {
+    "agentName": "AM",
+    "chain": -2,
+    "contractAddress": "7ddd3rNWdx36MgnLkoUdwEPNoXt1bi9fszorkZungN2E"
+  },
+  {
+    "agentName": "KIRI",
+    "chain": -2,
+    "contractAddress": "3Ei8SaoL4JWZv1XsWePqiAjVtb7QtpJbV2TSuURmpump"
+  },
+  {
+    "agentName": "Sovrun",
+    "chain": 1,
+    "contractAddress": "0x031B8d752d73d7Fe9678ACEf26e818280D0646b4"
+  },
+  {
+    "agentName": "ASSAI",
+    "chain": -2,
+    "contractAddress": "12XbSPVc5hmWjKUzf5ExTysM2pEL3tM953YkMXmLWkGd"
+  },
+  {
+    "agentName": "KIRA2",
+    "chain": -2,
+    "contractAddress": "HBV58vtGSRWDppXpaER3KCRU2SyH5Z9YPTF92PTwKvzq"
+  },
+  {
+    "agentName": "Zara",
+    "chain": -2,
+    "contractAddress": "73UdJevxaNKXARgkvPHQGKuv8HCZARszuKW2LTL3pump"
+  },
+  {
+    "agentName": "aether",
+    "chain": -2,
+    "contractAddress": "BEP6KhDwv7K211JtZnszNcztHBffSCgRjUuNhucopump"
+  },
+  {
+    "agentName": "Blank Meme",
+    "chain": -2,
+    "contractAddress": "9E6PfjKH7TcJ6T75FN5h1HRNnUVhTT6vNsudauyWCxza"
+  },
+  {
+    "agentName": "Hyperstition",
+    "chain": -2,
+    "contractAddress": "9ofYn7AF2wnVFvWPU1sM9DtJbRm47Neo4nXnJ77upump"
+  },
+  {
+    "agentName": "GAM3S.GG",
+    "chain": 8453,
+    "contractAddress": "0xCF67815ccE72E682Eb4429eCa46843bed81Ca739"
+  },
+  {
+    "agentName": "thefrensapp",
+    "chain": -2,
+    "contractAddress": "GTYZZZAhqYqMZSQZh99vX9njgRsRbZqvT81L9y5V2p2j"
+  },
+  {
+    "agentName": "NOMAI",
+    "chain": 8453,
+    "contractAddress": "0x4d70f1058b73198F12a76C193AEf5Db5dD75BabD"
+  },
+  {
+    "agentName": "MOSS",
+    "chain": -2,
+    "contractAddress": "9bNUjxEvygayUE2ZRN5zh9Hhjh6cN6GPK4zoHzXXpump"
+  },
+  {
+    "agentName": "AROK.VC",
+    "chain": -2,
+    "contractAddress": "Cwe5k2iEy8dt7vCGY93GBrqQS4FWyac6pQjvjLcPD6qp"
+  },
+  {
+    "agentName": "CertaiK",
+    "chain": 8453,
+    "contractAddress": "0xf5f2a79eECcF6e7F4C570c803F529930e29cc96B"
+  },
+  {
+    "agentName": "mements.xyz",
+    "chain": -2,
+    "contractAddress": "FB4oRMhbV8kD6YH6hRErmdUxPPFrz1LdQfwE9JDNpump"
+  },
+  {
+    "agentName": "PIX",
+    "chain": -2,
+    "contractAddress": "3bGuPexrqNdmXkSxeUuMavYDFdjpQTSDt9ZusDgDpump"
+  },
+  {
+    "agentName": "Artto",
+    "chain": 8453,
+    "contractAddress": "0x9239e9F9E325E706EF8b89936eCe9d48896AbBe3"
+  },
+  {
+    "agentName": "AIAI",
+    "chain": 8453,
+    "contractAddress": "0x9dca9fa8c4730205757fdaf147b39b428844a6a3"
+  },
+  {
+    "agentName": "Bossu",
+    "chain": -2,
+    "contractAddress": "5h5YCbybHMpVj378FrxrypY9eXKoy92Vpw9xyru1pump"
+  },
+  {
+    "agentName": "KASU HUNTER",
+    "chain": 8453,
+    "contractAddress": "0x784c5e60F13D201542BAd099d4e1f84d53f2B6C0"
+  },
+  {
+    "agentName": "LOLA",
+    "chain": -2,
+    "contractAddress": "AKyVUXwrYPxnt9cf9EQUpRmty6yrW25d3R8R1YVepump"
+  },
+  {
+    "agentName": "DEUS",
+    "chain": -2,
+    "contractAddress": "FsKUS8j884k9AhAQxbCTMrLWX341hVXKT8M8G8b1pump"
+  },
+  {
+    "agentName": "KOALA AI",
+    "chain": -2,
+    "contractAddress": "FsA54yL49WKs7rWoGv9sUcbSGWCWV756jTD349e6H2yW"
+  },
+  {
+    "agentName": "Degen Spartan AI",
+    "chain": -2,
+    "contractAddress": "Gu3LDkn7Vx3bmCzLafYNKcDxv2mH7YN44NJZFXnypump"
+  },
+  {
+    "agentName": "Daige",
+    "chain": -2,
+    "contractAddress": "HsNx7RirehVMy54xnFtcgCBPDMrwNnJKykageqdWpump"
+  },
+  {
+    "agentName": "KiboShib",
+    "chain": 1,
+    "contractAddress": "0x02e7f808990638e9e67e1f00313037ede2362361"
+  },
+  {
+    "agentName": "Hiero",
+    "chain": -2,
+    "contractAddress": "BDW8YHasD3NSDjSHU9Xy6KXtshGayMGQfj5bJpLcpump"
+  },
+  {
+    "agentName": "AGI ALPHA AGENT",
+    "chain": -2,
+    "contractAddress": "tWKHzXd5PRmxTF5cMfJkm2Ua3TcjwNNoSRUqx6Apump"
+  },
+  {
+    "agentName": "Universal Operating System",
+    "chain": -2,
+    "contractAddress": "79HZeHkX9A5WfBg72ankd1ppTXGepoSGpmkxW63wsrHY"
+  },
+  {
+    "agentName": "Universal Basic Compute - $UBC",
+    "chain": -2,
+    "contractAddress": "9psiRdn9cXYVps4F1kFuoNjd2EtmqNJXrCPmRppJpump"
+  },
+  {
+    "agentName": "Kizuna",
+    "chain": 1,
+    "contractAddress": "0x470c8950C0c3aA4B09654bC73b004615119A44b5"
+  },
+  {
+    "agentName": "LUM",
+    "chain": 8453,
+    "contractAddress": "0x0fD7a301B51d0A83FCAf6718628174D527B373b6"
+  },
+  {
+    "agentName": "Deep Worm",
+    "chain": -2,
+    "contractAddress": "DwDtUqBZJtbRpdjsFw3N7YKB5epocSru25BGcVhfcYtg"
+  },
+  {
+    "agentName": "SHEKEL",
+    "chain": 8453,
+    "contractAddress": "0x5F6a682A58854C7fBE228712aEEFfcCDe0008Ac0"
+  },
+  {
+    "agentName": "KIMA",
+    "chain": 42161,
+    "contractAddress": "0x94fcd9c18f99538c0f7c61c5500ca79f0d5c4dab"
+  },
+  {
+    "agentName": "SENTAI",
+    "chain": -2,
+    "contractAddress": "CXPLyc3EX8WySgEXLbjhuA7vy8EKQokVJYQuJm2jpump"
+  },
+  {
+    "agentName": "GUANCIALE",
+    "chain": 8453,
+    "contractAddress": "0xcc0adB6C436eB1f65B2f27733Bf926691b94c5f1"
+  },
+  {
+    "agentName": "TrenchBuddy",
+    "chain": -2,
+    "contractAddress": "GACpABn18xqiSJbD9ZEyArJDT9RHRMUut5nK9Z9Spump"
+  },
+  {
+    "agentName": "QAAG AI",
+    "chain": 56,
+    "contractAddress": "0x7f22a8Af38BCF14b92cD65Ae8B19260FC0bEeFDf"
+  },
+  {
+    "agentName": "Biosphere3",
+    "chain": -2,
+    "contractAddress": "DWDnYfhVMnNBbWz4uEVvLVZLdYQoSuBosSU2vmHSpump"
+  },
+  {
+    "agentName": "Saint",
+    "chain": -2,
+    "contractAddress": "8PXfc6tVKNLUaa6pTfN7VBeTLhe8TH6WpVDYBjG9DWhV"
+  },
+  {
+    "agentName": "Saint",
+    "chain": 8453,
+    "contractAddress": "0x7588880d9c78e81fade7b7e8dc0781e95995a792"
+  },
+  {
+    "agentName": "PondHub",
+    "chain": 8453,
+    "contractAddress": "0x6136494DB8A33707b2da36c2608994982EFA04C2"
+  },
+  {
+    "agentName": "PRONUT",
+    "chain": -2,
+    "contractAddress": "DHkguUzSuKRAZQTQ394tfQpa8CqrFoKSGggBr7XsawJr"
+  },
+  {
+    "agentName": "CYI",
+    "chain": 8453,
+    "contractAddress": "0x49c86046903807d0a3193a221c1A3e1b1B6C9Ba3"
+  },
+  {
+    "agentName": "Legend AI Agent",
+    "chain": 8453,
+    "contractAddress": "0xc7837BE3d71E00fcbE76D77602BCf353Df859664"
+  },
+  {
+    "agentName": "CONVO",
+    "chain": -2,
+    "contractAddress": "KnrmAHo1wW2fGqVXcSZSpo6kmiKam5vNbDByrURpump"
+  },
+  {
+    "agentName": "ROCKET",
+    "chain": 8453,
+    "contractAddress": "0x0bF852Ebb243b963652b71103a2B97cf446F22C3"
+  },
+  {
+    "agentName": "ZODs",
+    "chain": -2,
+    "contractAddress": "J1ow1c3ExcJYQmgNFRPfCp1LMYRf6P3A33isDcBmpump"
+  },
+  {
+    "agentName": "SCOUT",
+    "chain": -2,
+    "contractAddress": "GLPdQwGtjcynj3RLraenPeR9v1REnpdyuciPBpVipump"
+  },
+  {
+    "agentName": "Terminal",
+    "chain": 8453,
+    "contractAddress": "0xb488fcb23333e7baa28d1dfd7b69a5d3a8bfeb3a"
+  },
+  {
+    "agentName": "BNB Agents",
+    "chain": 56,
+    "contractAddress": "0x2AaBE2ef9eE8Ab04C6F27C4284c3F268769B35eC"
+  },
+  {
+    "agentName": "Keira",
+    "chain": 8453,
+    "contractAddress": "0x710eEc215b3bB653d42fC6e70E0531eA13F51A7A"
+  },
+  {
+    "agentName": "API the Degen Ape",
+    "chain": -2,
+    "contractAddress": "HmJ8VR1ugamWJTecfcNpmCG1hviMRWNXp7Pq68fzpump"
+  },
+  {
+    "agentName": "Lenda",
+    "chain": -2,
+    "contractAddress": "9kEcnFj9vwShFtjyLNULGFugBS9KrYAazMAcx3GWpump"
+  },
+  {
+    "agentName": "Eye Future",
+    "chain": 8453,
+    "contractAddress": "0x5537A24aD7e8D68Aec165DCff6d2F8C23605417F"
+  },
+  {
+    "agentName": "Shift AI",
+    "chain": -2,
+    "contractAddress": "2NUEQdSpFFGhssmT9LFUn67gAucyajmgscT7zsizpump"
+  },
+  {
+    "agentName": "Battle Tech Agency",
+    "chain": 8453,
+    "contractAddress": "0xaB10E517f3138b17108B32129E8C8446AD44a267"
+  },
+  {
+    "agentName": "Brokie",
+    "chain": -2,
+    "contractAddress": "DAMqxQRG5FKsnMNXEdBQMdTSiz86b5BziH4p6FS6pump"
+  },
+  {
+    "agentName": "flub",
+    "chain": -2,
+    "contractAddress": "58PpWbbRWiu3DujnGSCK3v1mY49H5xCKadx3PyVvMzcr"
+  },
+  {
+    "agentName": "Gort",
+    "chain": -2,
+    "contractAddress": "5tZHKgJpnF1hsjSnQ5N9NA2c3S4QzaFw3uq2ARGspump"
+  },
+  {
+    "agentName": "ALICE",
+    "chain": -2,
+    "contractAddress": "8T988C2a8YNNbppjjd1uYUpmDqE8hLee1tuNokuepump"
+  },
+  {
+    "agentName": "Sports Analyst AI",
+    "chain": 8453,
+    "contractAddress": "0x220c6019203aaa7f14b5cd44a323446019609798"
+  },
+  {
+    "agentName": "Ava Stallion",
+    "chain": 56,
+    "contractAddress": "0x3be0e5edc58bd55aaa381fa642688adc289c05a3"
+  },
+  {
+    "agentName": "jarvis.fun",
+    "chain": -2,
+    "contractAddress": "FR382Gv7RxrEb2q1MZkP9athyJC9rUBt8M2jKfyKpump"
+  },
+  {
+    "agentName": "Terminal of Tokens",
+    "chain": -2,
+    "contractAddress": "A8rnTyqWyM6bPYqFTxA37YcwwXdQARP9AeL1XznQpump"
+  },
+  {
+    "agentName": "Wokie",
+    "chain": 8453,
+    "contractAddress": "0xbfefd7a0eda8a0feb06d0f52cf431afd0f9b2dd0"
+  },
+  {
+    "agentName": "Artificial General Intelligence",
+    "chain": 1,
+    "contractAddress": "0xd1a6616f56221a9f27eb9476867b5bdb2b2d101d"
+  },
+  {
+    "agentName": "Akita AI Agent",
+    "chain": 56,
+    "contractAddress": "0x1A4C5C74Fb1EC39E839799baa0A91CaEAEADEdf7"
+  },
+  {
+    "agentName": "Agience CookieMaps",
+    "chain": -2,
+    "contractAddress": "6xAtWWHmXdZvtBLZu4D4PEwiTuUVfzGuWJfBiCVpump"
+  },
+  {
+    "agentName": "Toly AI",
+    "chain": -2,
+    "contractAddress": "8LRpgKZU7e1ckqo6qFMCVmhHNRUAAwu1Nfkc37StXCRs"
+  },
+  {
+    "agentName": "TOGA",
+    "chain": -2,
+    "contractAddress": "4T54PGF4gAU75NL9j2GHvrVbR6u5zjyJE4zGuJbkpump"
+  },
+  {
+    "agentName": "Raoni",
+    "chain": 8453,
+    "contractAddress": "0xCC1c421767a6D9A9eFA99e81259f4b41d9EB8D40"
+  },
+  {
+    "agentName": "CA:ART",
+    "chain": -2,
+    "contractAddress": "F968SJJfWg7GWfQR5jajk87vaE2ydwNZ4uPrQiTv2hat"
+  },
+  {
+    "agentName": "AICZ",
+    "chain": 56,
+    "contractAddress": "0x2Ff8d8CAE3a9633285c60150099bAd25C9b4E5d9"
+  },
+  {
+    "agentName": "TheJoker.ron",
+    "chain": 8453,
+    "contractAddress": "0x28A7fBc89616E620A9f58B949d67636244dF34CD"
+  },
+  {
+    "agentName": "Just Juni",
+    "chain": 8453,
+    "contractAddress": "0xEfB4898DF7353aF68AAe3fA365A8fc5b40dC12d9"
+  },
+  {
+    "agentName": "DePIN Baby",
+    "chain": 8453,
+    "contractAddress": "0xb4f4776219a20720D03eaE922De341A9586DE6c9"
+  },
+  {
+    "agentName": "Rokos Matrix",
+    "chain": -2,
+    "contractAddress": "Bu4tm4gdpFXWakMiTVSBtDp77Mia7tEe8cU4H23Vpump"
+  },
+  {
+    "agentName": "GOATSE",
+    "chain": -2,
+    "contractAddress": "FKZWwdAxhAhf6kiKM5Jwk1vDjJqxxM3jdanexwS66LxM"
+  },
+  {
+    "agentName": "The Butlerian",
+    "chain": -2,
+    "contractAddress": "HKkCs86LbHpqpjzywXcNcSgAfsaktK2utsz3HuAznCTX"
+  },
+  {
+    "agentName": "Brainlet Capital Partners",
+    "chain": -2,
+    "contractAddress": "trbxgK3nJZqJSf1bzZDSdVCe3SM3vmNcKvf6xTdpump"
+  },
+  {
+    "agentName": "Anti-Goatse",
+    "chain": -2,
+    "contractAddress": "BdYqxVbfofR5SrwwDdMhf6P7oGWQnbydFjY3ySpppump"
+  },
+  {
+    "agentName": "MGGA",
+    "chain": 8453,
+    "contractAddress": "0x0411e91e8e7765872795A6B5513346D8Ad816506"
+  },
+  {
+    "agentName": "Parrhesia AI",
+    "chain": -2,
+    "contractAddress": "HkfpH2Leivu27WmAy2emvrn6g9hpGzjua1sCVhzPqwoi"
+  },
+  {
+    "agentName": "CorgiAI",
+    "chain": -2,
+    "contractAddress": "79F32BvHBE49gPsvypYTGzcpWGvt66mgvenQow3mJjXu"
+  },
+  {
+    "agentName": "CorgiAI",
+    "chain": 1,
+    "contractAddress": "0x6b431b8a964bfcf28191b07c91189ff4403957d0"
+  },
+  {
+    "agentName": "Calypso by grix",
+    "chain": -2,
+    "contractAddress": "Ajwoz7CyVX3HFpJSZBWaYzdQdU3pUefjYCuuz3FTLiHb"
+  },
+  {
+    "agentName": "ArbDoge AI",
+    "chain": 42161,
+    "contractAddress": "0x09E18590E8f76b6Cf471b3cd75fE1A1a9D2B2c2b"
+  },
+  {
+    "agentName": "USA",
+    "chain": -2,
+    "contractAddress": "69kdRLyP5DTRkpHraaSZAQbWmAwzF9guKjZfzMXzcbAs"
+  },
+  {
+    "agentName": "CHEQD",
+    "chain": 1,
+    "contractAddress": "0x70EDF1c215D0ce69E7F16FD4E6276ba0d99d4de7"
+  },
+  {
+    "agentName": "SPORE",
+    "chain": -2,
+    "contractAddress": "8bdhP1UQMevciC9oJ7NrvgDfoW8XPXPfbkkm6vKtMS7N"
+  },
+  {
+    "agentName": "Convo by Virtuals",
+    "chain": 8453,
+    "contractAddress": "0xab964f7b7b6391bd6c4e8512ef00d01f255d9c0d"
+  },
+  {
+    "agentName": "Autonomous Virtual Beings",
+    "chain": -2,
+    "contractAddress": "6d5zHW5B8RkGKd51Lpb9RqFQSqDudr9GJgZ1SgQZpump"
+  },
+  {
+    "agentName": "Burger Me, Baby",
+    "chain": 56,
+    "contractAddress": "0xAe9269f27437f0fcBC232d39Ec814844a51d6b8f"
+  },
+  {
+    "agentName": "Mettalex",
+    "chain": 1,
+    "contractAddress": "0x2e1e15c44ffe4df6a0cb7371cd00d5028e571d14"
+  },
+  {
+    "agentName": "SAM (Small Autonomous Motherfucker)",
+    "chain": -2,
+    "contractAddress": "JCKqVrB4cKRFGKFYTMuYzry8QVCgaxS6g5s3HbczCP5W"
+  },
+  {
+    "agentName": "SAM (Small Autonomous Motherfucker)",
+    "chain": 8453,
+    "contractAddress": "0xd0174292C4d6dfa7c4Ee20F371f3b6D401782cd5"
+  },
+  {
+    "agentName": "Beeper",
+    "chain": 56,
+    "contractAddress": "0x238950013FA29A3575EB7a3D99C00304047a77b5"
+  },
+  {
+    "agentName": "RenaAi",
+    "chain": -2,
+    "contractAddress": "3iRcWbvuikkkk85d42nQiNTC2pP3shfbMYLNFYTqpump"
+  },
+  {
+    "agentName": "The1",
+    "chain": -2,
+    "contractAddress": "BhmEQeiFd8Cu5fB6nmxm9rUsQj9Pu35X96RKv6GKtRJU"
+  },
+  {
+    "agentName": "AstroPepeX",
+    "chain": -2,
+    "contractAddress": "8GQa5N9HJT5tW6vg3umYG5us1xHmiU948LfDihg2f8Vf"
+  },
+  {
+    "agentName": "AstroPepeX",
+    "chain": 1,
+    "contractAddress": "0xed4e879087ebd0e8a77d66870012b5e0dffd0fa4"
+  },
+  {
+    "agentName": "AstroPepeX",
+    "chain": 8453,
+    "contractAddress": "0xcacf1ca03983ce6c7e235fb20c70acc70ed13509"
+  },
+  {
+    "agentName": "SOLENG",
+    "chain": -2,
+    "contractAddress": "2wUGjvMqXusgfzYP3Vj149bSM9MwTPLS4maxkdGfpump"
+  },
+  {
+    "agentName": "Fame AI",
+    "chain": 1,
+    "contractAddress": "0x6bfDB6f4E65Ead27118592A41eB927cEa6956198"
+  },
+  {
+    "agentName": "AIKEK",
+    "chain": 1,
+    "contractAddress": "0x8dCE83ECa4af45dbe618Da1779F9Aaca43201084"
+  },
+  {
+    "agentName": "AIKEK",
+    "chain": -2,
+    "contractAddress": "CotWkXoBD3edLb6opEGHV9tb3pyKmeoWBLwdMJ8ZDimW"
+  },
+  {
+    "agentName": "AIKEK",
+    "chain": 8453,
+    "contractAddress": "0x681A09A902D9C7445b3B1Ab282C38D60c72F1f09"
+  },
+  {
+    "agentName": "Casper AI",
+    "chain": 56,
+    "contractAddress": "0xaDCDBCb0db9EDF31509971f64F0A8E0Fc53B384D"
+  },
+  {
+    "agentName": "Pigeon Tech",
+    "chain": -2,
+    "contractAddress": "4kHu4VktgzpZW9i8LEsHZrNLJcTV98nGhyZE5JSEpump"
+  },
+  {
+    "agentName": "CWIF",
+    "chain": -2,
+    "contractAddress": "7atgF8KQo4wJrD5ATGX7t1V2zVvykPJbFfNeVf1icFv1"
+  },
+  {
+    "agentName": "focai",
+    "chain": -2,
+    "contractAddress": "5qsZAnWuR7vMJbiznrJEY2ddVqZXjNYmFvR3eXSxpump"
+  },
+  {
+    "agentName": "AgentAlgo",
+    "chain": 8453,
+    "contractAddress": "0xd98832e8a59156acbee4744b9a94a9989a728f36"
+  },
+  {
+    "agentName": "MUSIC",
+    "chain": 8453,
+    "contractAddress": "0xc655C331d1Aa7f96c252F1f40CE13D80eAc53504"
+  },
+  {
+    "agentName": "LokieAI",
+    "chain": -2,
+    "contractAddress": "2URzn4j6SYXUQVZ8DqxsrSVPbpNP8xRQPbGBLtm1BV47"
+  },
+  {
+    "agentName": "INT OS",
+    "chain": 8453,
+    "contractAddress": "0x42e07fA3d31190731368Ca2F88D12D80139DCa42"
+  },
+  {
+    "agentName": "Vault Zero",
+    "chain": 56,
+    "contractAddress": "0x910F42f204BD998fA271cA8aa07ce359c733b898"
+  },
+  {
+    "agentName": "Duck AI",
+    "chain": -2,
+    "contractAddress": "HFw81sUUPBkNF5tKDanV8VCYTfVY4XbrEEPiwzyypump"
+  },
+  {
+    "agentName": "GNZ",
+    "chain": -2,
+    "contractAddress": "FFgfStKwuF3DSxEeogA69FNkPrkb7XDA5Tw29TBEpump"
+  },
+  {
+    "agentName": "PBTC",
+    "chain": -2,
+    "contractAddress": "HfMbPyDdZH6QMaDDUokjYCkHxzjoGBMpgaUvpLWGbF5p"
+  },
+  {
+    "agentName": "H4CK Terminal",
+    "chain": 8453,
+    "contractAddress": "0x625Bb9Bb04BdcA51871ed6D07e2DD9034E914631"
+  },
+  {
+    "agentName": "Onchain Computer",
+    "chain": 8453,
+    "contractAddress": "0xFeF2D7B013b88FEc2BFe4D2FEE0AEb719af73481"
+  },
+  {
+    "agentName": "Misato",
+    "chain": 8453,
+    "contractAddress": "0x98f4779FcCb177A6D856dd1DfD78cd15B7cd2af5"
+  },
+  {
+    "agentName": "gigabrain alpha",
+    "chain": 8453,
+    "contractAddress": "0xCE1eAB31756A48915B7E7bb79C589835aAc6242d"
+  },
+  {
+    "agentName": "SENSUS",
+    "chain": -2,
+    "contractAddress": "F8tDt7QRAYicWQPK5LTh8kZR4zKJPdTiEq5dwCcVpump"
+  },
+  {
+    "agentName": "mcs",
+    "chain": -2,
+    "contractAddress": "ALHFgnXSenUv17GMdf3dL9gtFW2KKQTz9avpM2Wypump"
+  },
+  {
+    "agentName": "Kira Kuru",
+    "chain": -2,
+    "contractAddress": "AY2Qidgrky4TFymeJKe36w5buY7QWK7TSd7obQLupump"
+  },
+  {
+    "agentName": "STIX Token",
+    "chain": 8453,
+    "contractAddress": "0xFD1013c72CBB0FFB920D347C5836bF88965D0D5e"
+  },
+  {
+    "agentName": "Whales Intern",
+    "chain": -2,
+    "contractAddress": "GTH3wG3NErjwcf7VGCoXEXkgXSHvYhx5gtATeeM5JAS1"
+  },
+  {
+    "agentName": "Solaris AI",
+    "chain": -2,
+    "contractAddress": "3RfQPYVJgJbwyB3BzqqypCEWWryxjTfFDAcXQsckpump"
+  },
+  {
+    "agentName": "Bill Nye the DeSci Guy",
+    "chain": 8453,
+    "contractAddress": "0x53081b67c58e52097dfd34a5de1ccb0c5920ae3c"
+  },
+  {
+    "agentName": "DeepSeek AI",
+    "chain": -2,
+    "contractAddress": "9A2jUbgoDY97fruKHXvDd7eQiq4xvnW3By1BfH1Bwn9Y"
+  },
+  {
+    "agentName": "LIMITLESS",
+    "chain": -2,
+    "contractAddress": "44o1iDPGuzHxQgDrPE3HRb2WXwGLsBsY7yMttX47pump"
+  },
+  {
+    "agentName": "YouSim",
+    "chain": -2,
+    "contractAddress": "66gsTs88mXJ5L4AtJnWqFW6H2L5YQDRy4W41y6zbpump"
+  },
+  {
+    "agentName": "IF Science",
+    "chain": -2,
+    "contractAddress": "RqGHXg2eh3zPjyzNM7kUyrrSmhb9M9q4mCKFH1mpump"
+  },
+  {
+    "agentName": "Stoic",
+    "chain": -2,
+    "contractAddress": "62mETtNRaVY5iNsJr5YexsbVg1uyyoLwtoWLSnjApump"
+  },
+  {
+    "agentName": "DEGENC",
+    "chain": 8453,
+    "contractAddress": "0x99298C6bE0e8ec9E56B7A2bE5850aBE1Fc109D94"
+  },
+  {
+    "agentName": "TRENCHAI",
+    "chain": -2,
+    "contractAddress": "AaWVpk6eZbgBfVbq1UfXw3EXBmAvw4QXov1xHuG7pump"
+  },
+  {
+    "agentName": "Michael Seilor",
+    "chain": 8453,
+    "contractAddress": "0x9bde70bad05b7d84dac03024dae15aace8c9cca2"
+  },
+  {
+    "agentName": "Black Rack AI",
+    "chain": -2,
+    "contractAddress": "D7yP4ycfsRWUGYionGpi64sLF2ddZ2JXxuRAti2M7uck"
+  },
+  {
+    "agentName": "GEMXBT",
+    "chain": -2,
+    "contractAddress": "68YY6KjfnmPuQubYkFTsmXGaF2FuwcxumWLFxb6cpump"
+  },
+  {
+    "agentName": "Sally_A1c",
+    "chain": 8453,
+    "contractAddress": "0x1f1c695f6b4a3f8b05f2492cef9474afb6d6ad69"
+  },
+  {
+    "agentName": "BET",
+    "chain": -2,
+    "contractAddress": "5CLSw4viyMLfnRHHxZpDF8CuZt5e1ceq1AJqd4GjAJNX"
+  },
+  {
+    "agentName": "Voyager AI",
+    "chain": -2,
+    "contractAddress": "CvwWh9NVQJ12KJ3xqe5SzWAvdohdfD8sePo8STQApump"
+  },
+  {
+    "agentName": "KIRA",
+    "chain": -2,
+    "contractAddress": "CefZxozhhxK88XPJoeWBczYSaBPd35tsKnziTH6Cpump"
+  },
+  {
+    "agentName": "AIRENE",
+    "chain": 8453,
+    "contractAddress": "0x2eac9b08a4d86f347b9e856fb3ec082e61c76545"
+  },
+  {
+    "agentName": "SANTA",
+    "chain": 8453,
+    "contractAddress": "0x815269D17C10f0F3dF7249370E0c1B9efe781aa8"
+  },
+  {
+    "agentName": "Gemach",
+    "chain": 1,
+    "contractAddress": "0xD96e84DDBc7CbE1D73c55B6fe8c64f3a6550deea"
+  },
+  {
+    "agentName": "LateFi",
+    "chain": -2,
+    "contractAddress": "bv88GZQfPHeTXHctPPxkbFCAKBCocXFSENYGYBppump"
+  },
+  {
+    "agentName": "GMika",
+    "chain": -2,
+    "contractAddress": "HtCqD3o5aF1RXcyGi6AW11PoB3bZmFdA8kvVyhJrpump"
+  },
+  {
+    "agentName": "Dora AI",
+    "chain": 8453,
+    "contractAddress": "0x1E2093AB84768948C6176DB5aD98C909ce97F368"
+  },
+  {
+    "agentName": "Coinye West",
+    "chain": 8453,
+    "contractAddress": "0x0028e1E60167b48a938B785AA5292917E7eacA8b"
+  },
+  {
+    "agentName": "Kappy",
+    "chain": -2,
+    "contractAddress": "CEhFvMotKm3zucKUBEHVvTaxQ4e9QVPaAjSfkzFLpump"
+  },
+  {
+    "agentName": "Cent",
+    "chain": -2,
+    "contractAddress": "C9FVTtx4WxgHmz55FEvQgykq8rqiLS8xRBVgqQVtpump"
+  },
+  {
+    "agentName": "Rebel",
+    "chain": 8453,
+    "contractAddress": "0x0aa9876C9cCf97be7Eed5C4ceE91d556bf7DBaC3"
+  },
+  {
+    "agentName": "Eolas ☴",
+    "chain": 8453,
+    "contractAddress": "0xf878e27afb649744eec3c5c0d03bc9335703cfe3"
+  },
+  {
+    "agentName": "PILLZUMI",
+    "chain": -2,
+    "contractAddress": "97Mbx6Jym1iEkQdVfLf5PMWL5tARGnQ5na5jhR9Lpump"
+  },
+  {
+    "agentName": "DeFAI",
+    "chain": 8453,
+    "contractAddress": "0xf857b2764095b9a5f57c3e71f82f297fe4e45334"
+  },
+  {
+    "agentName": "AAAHHMM",
+    "chain": -2,
+    "contractAddress": "7Rtegu95FZZ2KX3zA37LU1ypicxu6pBysNEagFwhpump"
+  },
+  {
+    "agentName": "Nora",
+    "chain": -2,
+    "contractAddress": "3Yie9s6iuEmk8aiXYC19xaq2iccTuFzyfKBWv6gFpump"
+  },
+  {
+    "agentName": "Brot",
+    "chain": -2,
+    "contractAddress": "DdEWen5QEDFZmBJLscgwY81mbZLNZ642zMuR5YLVv8vH"
+  },
+  {
+    "agentName": "Asha",
+    "chain": -2,
+    "contractAddress": "45ZAM7JK8ZGHuBQiJ8kvhdiVdiQGsTQGgt3gRAEQpump"
+  },
+  {
+    "agentName": "Agent Spectra",
+    "chain": 8453,
+    "contractAddress": "0x34AE675502448DeCa35762611005500F7E5b800E"
+  },
+  {
+    "agentName": "ROASTMASTER9000",
+    "chain": -2,
+    "contractAddress": "G6haJithfeUgSghVpu1rDPCq2NFiYcJFHNpHEANbpump"
+  },
+  {
+    "agentName": "#UAI Agent",
+    "chain": -2,
+    "contractAddress": "haahyN2RTafHNNySeXKoowgGF7DdX5b5nGNGmghpump"
+  },
+  {
+    "agentName": "chaos and disorder",
+    "chain": -2,
+    "contractAddress": "8SgNwESovnbG1oNEaPVhg6CR9mTMSK7jPvcYRe3wpump"
+  },
+  {
+    "agentName": "Koby",
+    "chain": -2,
+    "contractAddress": "ARMYZt71GXq4vw4mtDs5LnEp4ZgwWKEE2CdMU3WNnFEC"
+  },
+  {
+    "agentName": "Generator Project AI",
+    "chain": -2,
+    "contractAddress": "oraiJP7H3LAt57DkFXNLDbLdBFNRRPvS8jg2j5AZkd9"
+  },
+  {
+    "agentName": "SYMX",
+    "chain": -2,
+    "contractAddress": "Fu4jQQpUnECSVQrVfeeVPpQpXQffM75LL328EJPtpump"
+  },
+  {
+    "agentName": "Gameboi AI Agent",
+    "chain": 42161,
+    "contractAddress": "0xA0C8D91B6dcE36F6deeADF716ab02bC539d9beBF"
+  },
+  {
+    "agentName": "Gattaca",
+    "chain": -2,
+    "contractAddress": "FJk7XQp89UFUZVbpKuuKE65SNZoPamTftnjHmX2Jpump"
+  },
+  {
+    "agentName": "KEVIN AI",
+    "chain": 8453,
+    "contractAddress": "0x4661EB19A95cC62E1683b6a2687a8c5d8f790BE9"
+  },
+  {
+    "agentName": "Luigi",
+    "chain": 8453,
+    "contractAddress": "0x6263ad921e11ab47ae85f1daa725b8b3581baed3"
+  },
+  {
+    "agentName": "Shitcoin",
+    "chain": -2,
+    "contractAddress": "wzpeUomX2VNiswbyYMLqYsdN4nNFZSobNs5xuR7shit"
+  },
+  {
+    "agentName": "$SIZE",
+    "chain": -2,
+    "contractAddress": "HqLRjru6pD6GFGnQ7TwSSGQRuPhF8UZNey9T4yCsZzuq"
+  },
+  {
+    "agentName": "Smug Rat AI",
+    "chain": -2,
+    "contractAddress": "B1KrhWbacPi3tpjWqnsbjKQJEkp3RvWppGxNzUYBpump"
+  },
+  {
+    "agentName": "ZENITH",
+    "chain": 8453,
+    "contractAddress": "0x33c527361ab68b46a6669f82d25b704423cae568"
+  },
+  {
+    "agentName": "MORRIS II",
+    "chain": -2,
+    "contractAddress": "HqqnXZ8S76rY3GnXgHR9LpbLEKNfxCZASWydNHydpump"
+  },
+  {
+    "agentName": "TSUBA",
+    "chain": -2,
+    "contractAddress": "9yNykgy7xvXv9ij8TapMjXREArGCREjY38KoFtASpump"
+  },
+  {
+    "agentName": "Elyrai",
+    "chain": -2,
+    "contractAddress": "3t2LfNCAooGrQSzi45Ndg27X54TnsdbBv2So8FfrcL2k"
+  },
+  {
+    "agentName": "Druid AI",
+    "chain": -2,
+    "contractAddress": "MLoYxeB1Xm4BZyuWLaM3K69LvMSm4TSPXWedF9Epump"
+  },
+  {
+    "agentName": "Aiwithdaddyissues",
+    "chain": -2,
+    "contractAddress": "2KgAN8nLAU74wjiyKi85m4ZT6Z9MtqrUTGfse8Xapump"
+  },
+  {
+    "agentName": "JamAI",
+    "chain": 56,
+    "contractAddress": "0xF8252C05eC4cB2fdf1e0398BaE049D454dDbA3AD"
+  },
+  {
+    "agentName": "prol_ai",
+    "chain": -2,
+    "contractAddress": "3ZAS5KKKd6cPrk9sBHS3ndpRiEbRPD23G8cAQncSpump"
+  },
+  {
+    "agentName": "infinite backrooms",
+    "chain": -2,
+    "contractAddress": "4J5HoZWoKcbo2JQxEEVCKRBfUQtEroY1QdRrKtZFpump"
+  },
+  {
+    "agentName": "WMM",
+    "chain": -2,
+    "contractAddress": "9pWPUXoZKWNPWyaegPQeR3Kn8aFz9nrGtm5jeAFzpump"
+  },
+  {
+    "agentName": "Databot",
+    "chain": 1,
+    "contractAddress": "0xb551b43AF192965F74e3dfAA476C890B403caD95"
+  },
+  {
+    "agentName": "TIMI",
+    "chain": 8453,
+    "contractAddress": "0x9bEec80e62aA257cED8b0edD8692f79EE8783777"
+  },
+  {
+    "agentName": "Deep Whales AI",
+    "chain": 1,
+    "contractAddress": "0x18bc66f0c15e27179dd8e2277c1c9c056df0a14d"
+  },
+  {
+    "agentName": "Tate Terminal",
+    "chain": -2,
+    "contractAddress": "LX2mJPsutHkUc6iXNFgumSC6LVKyc66xpy2zDTZpump"
+  },
+  {
+    "agentName": "Domina",
+    "chain": -2,
+    "contractAddress": "C4j7kPx9PqDnfvxe2uycJQRTAeyGwmU4DyGf21Xgpump"
+  },
+  {
+    "agentName": "LPC_Ai_Lumi",
+    "chain": 8453,
+    "contractAddress": "0x077A32FdEF94dbB0Bdcf917450a9cAcF68ed236f"
+  },
+  {
+    "agentName": "Neroboss",
+    "chain": -2,
+    "contractAddress": "5HTp1ebDeBcuRaP4J6cG3r4AffbP4dtcrsS7YYT7pump"
+  },
+  {
+    "agentName": "Shogun",
+    "chain": 8453,
+    "contractAddress": "0xd63aaeec20f9b74d49f8dd8e319b6edd564a7dd0"
+  },
+  {
+    "agentName": "Agent Zero",
+    "chain": 8453,
+    "contractAddress": "0x92dc4ab92eb16e781559e612f349916988013d5a"
+  },
+  {
+    "agentName": "MoAI",
+    "chain": -2,
+    "contractAddress": "2GbE1pq8GiwpHhdGWKUBLXJfBKvKLoNWe1E4KPtbED2M"
+  },
+  {
+    "agentName": "BeeARD",
+    "chain": 8453,
+    "contractAddress": "0x418D5E096225729001Bb54e62EF7aD6873550146"
+  },
+  {
+    "agentName": "$RURI",
+    "chain": -2,
+    "contractAddress": "DDij7Dp8updt3XSCzeHCaAoDoFTSE5Y27i2EQ9qjMQtr"
+  },
+  {
+    "agentName": "ATA",
+    "chain": 8453,
+    "contractAddress": "0xb18c609796848C723eAcaDC0BE5b71Ceb2289a48"
+  },
+  {
+    "agentName": "MΞMΞTIC",
+    "chain": -2,
+    "contractAddress": "J73VLpgUiWxooiTwbQyae7h5e29kGrC5RqrbicW2pump"
+  },
+  {
+    "agentName": "PLANT",
+    "chain": -2,
+    "contractAddress": "4BsE91MrbhEeJmWJ3ddX58hN4iAk8gXmvZv5JYUapump"
+  },
+  {
+    "agentName": "bubbacat",
+    "chain": -2,
+    "contractAddress": "418QJC9cHmUXYFDEg78bAZE765WS4PX9Kxwznx2Hpump"
+  },
+  {
+    "agentName": "H1DR4",
+    "chain": 8453,
+    "contractAddress": "0x83AbFC4bEEC2ecf12995005d751a42df691c09c1"
+  },
+  {
+    "agentName": "INTERN",
+    "chain": -2,
+    "contractAddress": "6UxB5HCuuNm2HoHCp4TFVkPPE38L5zktESYKZ7Q5RC3f"
+  },
+  {
+    "agentName": "aiko",
+    "chain": -2,
+    "contractAddress": "mdx5dxD754H8uGrz6Wc96tZfFjPqSgBvqUDbKycpump"
+  },
+  {
+    "agentName": "717ai",
+    "chain": 8453,
+    "contractAddress": "0x0b3AE50BaBE7FFa4E1A50569ceE6bDEFd4ccAeE0"
+  },
+  {
+    "agentName": "bruh (a16gems)",
+    "chain": -2,
+    "contractAddress": "2QQVZpiCicFZM7wKHRvBtnvTxVBLxMtD1SJWbKSLpump"
+  },
+  {
+    "agentName": "GODS",
+    "chain": -2,
+    "contractAddress": "GEVqugYZESSzZaYU6SKdpW6znCCEtH7aoSTzPHbqpump"
+  },
+  {
+    "agentName": "Predo",
+    "chain": -2,
+    "contractAddress": "84R6wZHapPTGobXfsgmBRpoL7C9dHJj16ahRBjxx2637"
+  },
+  {
+    "agentName": "SaitoshiAgent",
+    "chain": 8453,
+    "contractAddress": "0xcfF4429d8a323dd6B64B79a4460BEc6D531FcFA8"
+  },
+  {
+    "agentName": "Exmplr",
+    "chain": 8453,
+    "contractAddress": "0xc95E16f99267D6112eaDAA46140Bea095c8c7bA5"
+  },
+  {
+    "agentName": "Pochita",
+    "chain": -2,
+    "contractAddress": "E6AujzX54E1ZoPDFP2CyG3HHUVKygEkp6DRqig61pump"
+  },
+  {
+    "agentName": "Scana",
+    "chain": -2,
+    "contractAddress": "5kybu8rkvU1uao2PQBjzyKMjpPHvYG9GhcchrV7D7Mko"
+  },
+  {
+    "agentName": "The Css God - $WEBSIM",
+    "chain": 8453,
+    "contractAddress": "0xdaF3c78F165D26F821D3D39D6598a96E962b1508"
+  },
+  {
+    "agentName": "$42",
+    "chain": -2,
+    "contractAddress": "CexCXDGoZUWqkSnaovysnHXkF6teX4p8tjhns6rhaCZ2"
+  },
+  {
+    "agentName": "Agent Rogue",
+    "chain": -2,
+    "contractAddress": "27yzfJSNvYLBjgSNbMyXMMUWzx6T9q4B9TP8Jt8MZ9mL"
+  },
+  {
+    "agentName": "Breakout Bro",
+    "chain": 8453,
+    "contractAddress": "0xD9eA811a51D6fe491d27c2a0442b3F577852874d"
+  },
+  {
+    "agentName": "AIrthur Hayes",
+    "chain": -2,
+    "contractAddress": "6hUC9DN73kdinkth3JdELGYnEbLEnEE4NvbzzoG3yPKK"
+  },
+  {
+    "agentName": "NAIFU",
+    "chain": 8453,
+    "contractAddress": "0x62FE1724116e37E22949AE1f8E6f560c9a188Dc6"
+  },
+  {
+    "agentName": "Deep Thought",
+    "chain": 8453,
+    "contractAddress": "0x028a91cD8CBd087d1DF316A9Bb24A7A763F78270"
+  },
+  {
+    "agentName": "BeffAI",
+    "chain": -2,
+    "contractAddress": "2Tr3i2qjSPUb7e7BSFWTq7gsRzJEnYBKc7wRAYu3pump"
+  },
+  {
+    "agentName": "Claude",
+    "chain": -2,
+    "contractAddress": "HaL8cPcEZgwLaCbwyf6aAPh7rhw7iHck22zFXSNjpump"
+  },
+  {
+    "agentName": "LESTER BOT",
+    "chain": 8453,
+    "contractAddress": "0x27d7959CF26135d8019D0f1E4a2280a8A355c4f5"
+  },
+  {
+    "agentName": "HAL Agent Network",
+    "chain": -2,
+    "contractAddress": "Cj7KRzpBtyyHv6hvjtDLzipM6eeqkevVdDjcuA3kpump"
+  },
+  {
+    "agentName": "Slop",
+    "chain": -2,
+    "contractAddress": "FqvtZ2UFR9we82Ni4LeacC1zyTiQ77usDo31DUokpump"
+  },
+  {
+    "agentName": "Chronoeffector",
+    "chain": -2,
+    "contractAddress": "tGSHqcbojd4uSmirz9iXHvuRBBFwbHaDjSatbuupump"
+  },
+  {
+    "agentName": "intAI",
+    "chain": -2,
+    "contractAddress": "5V3vJKE4GKPNHdoU2SaWuDU6dkLdrY6MhpaE7tjwpump"
+  },
+  {
+    "agentName": "DeSci AI Agent",
+    "chain": -2,
+    "contractAddress": "H4RLHiehZo8cwd7KntPFApsvunmBagaWjcdHZx8YFhdp"
+  },
+  {
+    "agentName": "ropAIrito",
+    "chain": -2,
+    "contractAddress": "CtaVq7fp5xwYFenGQypqdK97LJhTD72GgRsY8e4Npump"
+  },
+  {
+    "agentName": "CV3AI",
+    "chain": 8453,
+    "contractAddress": "0x7f2C169E3243dA4e03acD95a45fbaa96Aaeb2803"
+  },
+  {
+    "agentName": "Paperclip AI",
+    "chain": -2,
+    "contractAddress": "BgV8qdfkjCDLPuDwhDaJGpgJj5XeYJeKwhG7E2bkpump"
+  },
+  {
+    "agentName": "Faml",
+    "chain": 56,
+    "contractAddress": "0xb1eE6FdD6ECEC9EEBB8368839684f9BCF2F52076"
+  },
+  {
+    "agentName": "lolcat",
+    "chain": -2,
+    "contractAddress": "Dt6vESocrRixuFz2taZunygpKcNQwxAjUMgYUxvNpump"
+  },
+  {
+    "agentName": "The Pea Guy",
+    "chain": 8453,
+    "contractAddress": "0x44E1c6bc3A4d2058Ee3f290Bcb27C4dA8c5B2E3E"
+  },
+  {
+    "agentName": "Vault Terminal",
+    "chain": -2,
+    "contractAddress": "3YHnXHivm9DiiUtbHNr49mkBctBFy4ksX3PAa3AApump"
+  },
+  {
+    "agentName": "Binary / darksun",
+    "chain": -2,
+    "contractAddress": "23ENcgMStoFMYYj5qdauaca3v1ouvRdZXTdi55J1pump"
+  },
+  {
+    "agentName": "ROD.AI",
+    "chain": -2,
+    "contractAddress": "GdbyLsNKHKLXTZVEo8QrGKVmrexEeZUYvhpSfuZ9TdkC"
+  },
+  {
+    "agentName": "Omega",
+    "chain": -2,
+    "contractAddress": "3DkVGaNSMTcxFkgGDAm299FaVxgnCw2411vxZTmRpump"
+  },
+  {
+    "agentName": "based AIPE",
+    "chain": 8453,
+    "contractAddress": "0x17AD461285969fA8224bff519a7CC84461c27104"
+  },
+  {
+    "agentName": "SAIOS",
+    "chain": -2,
+    "contractAddress": "4vfcfjAz1tSA6tWe7cP6Lj7fR8y7VactzTKPxof7pump"
+  },
+  {
+    "agentName": "SWquery",
+    "chain": -2,
+    "contractAddress": "EwdcspW8mEjp4UswrcjmHPV3Y4GdGQPMG6RMTDV2pump"
+  },
+  {
+    "agentName": "ISTARAI",
+    "chain": 8453,
+    "contractAddress": "0xD4f5fabD1763Bbf52Bd3b17cD445DB6f9f836Bd4"
+  },
+  {
+    "agentName": "Shaw A",
+    "chain": -2,
+    "contractAddress": "FH5Yuax2hg6ct3tM4hPKXjmBFZ2e9TjLiouUK6fApump"
+  },
+  {
+    "agentName": "4GENTIC",
+    "chain": 8453,
+    "contractAddress": "0x135fa55546758cf398dA675A064F39d215AB1FF6"
+  },
+  {
+    "agentName": "i want my foreskin back",
+    "chain": 8453,
+    "contractAddress": "0x78eddffef467157d3b37ed85b227b15ec83e9126"
+  },
+  {
+    "agentName": "DGENAI",
+    "chain": 8453,
+    "contractAddress": "0x54eaf6Bb665565bb8897F9d7aD5B3818dEd143B4"
+  },
+  {
+    "agentName": "Cora",
+    "chain": 8453,
+    "contractAddress": "0x81cB4FDD3Edc6f5470b636D7e5914C3173110ca5"
+  },
+  {
+    "agentName": "BOOP",
+    "chain": -2,
+    "contractAddress": "Gx2yQqgguqpKwGCrrgx4dr8toTYevczEtGd6B1pKpump"
+  },
+  {
+    "agentName": "META",
+    "chain": -2,
+    "contractAddress": "F87d3uwBN7epMt89bUaFdoQmw24Eggo1jjmH5Zpnpump"
+  },
+  {
+    "agentName": "BaseHoundBot",
+    "chain": 8453,
+    "contractAddress": "0xCCdf2cBabFa37878125Ab2d20BFcb9328B7aB3cF"
+  },
+  {
+    "agentName": "Longevity Agent",
+    "chain": -2,
+    "contractAddress": "HzCbCzbM1C3tcb4fqhBwoX4KMiwaHGTuyKGdsmjrpump"
+  },
+  {
+    "agentName": "Javlis",
+    "chain": 8453,
+    "contractAddress": "0x440D06b2aC83Ff743d9e149Be582A4b2b2c6adEc"
+  },
+  {
+    "agentName": "Middle Earth",
+    "chain": -2,
+    "contractAddress": "86Hne9YD8ToaNddSe45koHVTbgQaUbn57BGH6k9Wpump"
+  },
+  {
+    "agentName": "QUASAR",
+    "chain": -2,
+    "contractAddress": "E1XGEP1nk3BLxpnkWfqVnpVTA13RYzpY6Na1XD2Kpump"
+  },
+  {
+    "agentName": "Levels AI",
+    "chain": -2,
+    "contractAddress": "6dsj26yZAo9W5YUPWF61G74MwgjLhZdtVNp65Vp1uuKb"
+  },
+  {
+    "agentName": "DJ NOVA",
+    "chain": 8453,
+    "contractAddress": "0x9E37a925D0903494EDD6Af274C6a776479Dbdc88"
+  },
+  {
+    "agentName": "WARCAT (AI)",
+    "chain": -2,
+    "contractAddress": "E9Y5DNYJMrGiPTUP3iPXmKgoTQ76EqiANBPpNfgfSb8m"
+  },
+  {
+    "agentName": "MIST",
+    "chain": -2,
+    "contractAddress": "FjTJCCQpLU4fpH58mN1bTQXiQsjJVYai3QYFjYqYpump"
+  },
+  {
+    "agentName": "PanterAI",
+    "chain": -2,
+    "contractAddress": "FViZQJymuQ9FaxmpudCQS7ffJUt4udHzwJKPBiy7pump"
+  },
+  {
+    "agentName": "ARAI AI Agents",
+    "chain": -2,
+    "contractAddress": "ArCiFf7ismXqSgdWFddHhXe4AZyhn1JTfpZd3ft1pump"
+  },
+  {
+    "agentName": "Kogin",
+    "chain": 8453,
+    "contractAddress": "0x2941D526E22406c5d6F273E281899Cfc042a7332"
+  },
+  {
+    "agentName": "CCC",
+    "chain": -2,
+    "contractAddress": "44uPypuyR3TSzfvXeKEcKfrBkc9oFeGeX5o92Nyapump"
+  },
+  {
+    "agentName": "AIDOGE",
+    "chain": 8453,
+    "contractAddress": "0xB34457736aA191fF423F84f5D669f68B231e6c4e"
+  },
+  {
+    "agentName": "DXAI",
+    "chain": 8453,
+    "contractAddress": "0x3E99e0890eFd6c15a295eDBcCE82D63224fd6F60"
+  },
+  {
+    "agentName": "Zapicorn",
+    "chain": 1,
+    "contractAddress": "0xc434268603cA8854e0Be1a3fF15CaD73BD6eC49A"
+  },
+  {
+    "agentName": "SUPAI",
+    "chain": -2,
+    "contractAddress": "B9QxfiMd6tjSGnJ8nzFK3XbtuQNPKCNkQeehMqgxpump"
+  },
+  {
+    "agentName": "Ninjapump.AI",
+    "chain": -2,
+    "contractAddress": "3X6WNs7SoqhqcrChKmyxTaXTcRS4km1z3ARJHS32pump"
+  },
+  {
+    "agentName": "BTCH",
+    "chain": -2,
+    "contractAddress": "Hq9hEaCZGPGtyfvMKtGVqA8PHHZ2XpQhgt6PBUgzpump"
+  },
+  {
+    "agentName": "DIGGER AI",
+    "chain": -2,
+    "contractAddress": "3VN23efZivjL1UF8B1y4X4NmfbVe8yKhooKUAwgFpump"
+  },
+  {
+    "agentName": "BOLTAI",
+    "chain": -2,
+    "contractAddress": "6P7emJG6eErTv8KZhxRJDsFUdLxrx4eKs2td4B4npump"
+  },
+  {
+    "agentName": "AGORA",
+    "chain": 8453,
+    "contractAddress": "0xB2ee01f57aEBD6E268934ed9Dc47B01Be760867D"
+  },
+  {
+    "agentName": "King Kovu",
+    "chain": 8453,
+    "contractAddress": "0xe4da9889db3d1987856e56da08ec7e9f484f6434"
+  },
+  {
+    "agentName": "Elon Musk",
+    "chain": 8453,
+    "contractAddress": "0x3B0430D8775858D37955c7EA976F42732EA3C240"
+  },
+  {
+    "agentName": "base intern",
+    "chain": 8453,
+    "contractAddress": "0x1755FA20d78cbAc6Ff8c038a9b83E6fFE14695d8"
+  },
+  {
+    "agentName": "$ROSSCOIN",
+    "chain": -2,
+    "contractAddress": "EkVYMGehJKAFowTQpGoxiCpDTRNEoGanwvNUYXhqpump"
+  },
+  {
+    "agentName": "DataPort Navigator",
+    "chain": 8453,
+    "contractAddress": "0x4225658360C731a2b4c34555E45fea3b4b0181D5"
+  },
+  {
+    "agentName": "GOAT ARENA",
+    "chain": -2,
+    "contractAddress": "33a14qXWo1MB7uXtTh5ifyvox7FdGRPQbsws41gfpump"
+  },
+  {
+    "agentName": "penAIs",
+    "chain": -2,
+    "contractAddress": "Co6yHBdUcVsrmRq75iKmxAddx9ggg32g3Zd1Vwscpump"
+  },
+  {
+    "agentName": "HADES AI",
+    "chain": 8453,
+    "contractAddress": "0xAF0aa8De89E3dBdaFe144aBcdDdAFa568a526299"
+  },
+  {
+    "agentName": "ZERO BYTE",
+    "chain": -2,
+    "contractAddress": "H1hcBegR2A6b2mCGqhH5zA4sTZvMxrqT4v3fHY1kpump"
+  },
+  {
+    "agentName": "Hampterfi",
+    "chain": -2,
+    "contractAddress": "7JhmUcZrrfhyt5nTSu3AfsrUq2L9992a7AhwdSDxdoL2"
+  },
+  {
+    "agentName": "senku ishigami",
+    "chain": 8453,
+    "contractAddress": "0x0671799F205b8880D270Fc6BEC77942636dd8C03"
+  },
+  {
+    "agentName": "SKICK",
+    "chain": 8453,
+    "contractAddress": "0xe71E3c5c8cB925099DD94cC35943d6eE6b21ee0d"
+  },
+  {
+    "agentName": "DAVINCI",
+    "chain": -2,
+    "contractAddress": "23VdJFdmz8dwFxZfQ24k13jVoQEw9RSKYU2sdgocpump"
+  },
+  {
+    "agentName": "baos",
+    "chain": -2,
+    "contractAddress": "UHaVCzi4ZsGrzHhAFbokkXfaugfYbkdVME8XYaR7eKu"
+  },
+  {
+    "agentName": "Big Dataset",
+    "chain": 8453,
+    "contractAddress": "0xfc92d22e948bc0872269c50cad6fcebfafb28622"
+  },
+  {
+    "agentName": "$BRAINS - your greed is my fuel 🤯🧠",
+    "chain": 8453,
+    "contractAddress": "0xF25B7DD973e30Dcf219fbED7bD336b9ab5A05DD9"
+  },
+  {
+    "agentName": "DoctorAI",
+    "chain": 8453,
+    "contractAddress": "0x15FAD085B091c2dbc594F5D2320f35734939Ae6c"
+  },
+  {
+    "agentName": "Kitty AI",
+    "chain": -2,
+    "contractAddress": "8yJ15ee2AUQmwbWPxXLTTeBTzyMGn4MtSRKMqVHw1J1G"
+  },
+  {
+    "agentName": "Elizas Sister",
+    "chain": -2,
+    "contractAddress": "BieefG47jAHCGZBxi2q87RDuHyGZyYC3vAzxpyu8pump"
+  },
+  {
+    "agentName": "SAMI1",
+    "chain": -2,
+    "contractAddress": "Ac61nmCxyvqTLzFcPXJQjLsJYFXYRVKkyxWN4kiqcDmF"
+  },
+  {
+    "agentName": "Flavia Is Online",
+    "chain": -2,
+    "contractAddress": "3HYx6a9whu5a4dnzE62WNXg46MrEmu9LFxutR2YBpump"
+  },
+  {
+    "agentName": "TAS Intern",
+    "chain": 8453,
+    "contractAddress": "0xa087d75aE34e964B16aD3A059304913eD74945c7"
+  },
+  {
+    "agentName": "The Cove",
+    "chain": -2,
+    "contractAddress": "DcU8uHn7abXgYL8AJUK3t8FckeAXrNcGYYBK7uBFpump"
+  },
+  {
+    "agentName": "Blobana",
+    "chain": -2,
+    "contractAddress": "DgG9sM56ZcVidBV8bNArQPm93a2rmjzHkrrUntGSpump"
+  },
+  {
+    "agentName": "Oracle",
+    "chain": 8453,
+    "contractAddress": "0xd1d7aa941c71fd95e9d31bbd81937b3e71bd6231"
+  },
+  {
+    "agentName": "DEGEN8BALL.exe",
+    "chain": -2,
+    "contractAddress": "8iQCQd8TwARsBGyB7zUvEQqU3LCWXRFPmaKvyTPytPCP"
+  },
+  {
+    "agentName": "Nyxia AI",
+    "chain": -2,
+    "contractAddress": "HrLx8MLKegpbmbmWePZiuvf3AbJNx1CJyjBwUHwicEgW"
+  },
+  {
+    "agentName": "$KEK",
+    "chain": -2,
+    "contractAddress": "2fZTwhbLg3xPquk8CqS3KKYbrNMbhKj7Q5zBKuT2pump"
+  },
+  {
+    "agentName": "Apollo AI",
+    "chain": 8453,
+    "contractAddress": "0xb55FcD62eD44253c45735bDe6703c44100935747"
+  },
+  {
+    "agentName": "Schrodinger",
+    "chain": -2,
+    "contractAddress": "8ELspwRkgbz122WrdaX6pfHspHnLFU51jAKuP15cpump"
+  },
+  {
+    "agentName": "OnlyDate",
+    "chain": 8453,
+    "contractAddress": "0xA0C6f5C608baE6D76c5151deEa9ce23bA0670E37"
+  },
+  {
+    "agentName": "AIR3",
+    "chain": -2,
+    "contractAddress": "2jvsWRkT17ofmv9pkW7ofqAFWSCNyJYdykJ7kPKbmoon"
+  },
+  {
+    "agentName": "DRPXBT",
+    "chain": 8453,
+    "contractAddress": "0xfa3946432c6a76edff377d9bbfb81ca3ffc05874"
+  },
+  {
+    "agentName": "meme-agent (Jenna)",
+    "chain": -2,
+    "contractAddress": "8hVzPgFopqEQmNNoghr5WbPY1LEjW8GzgbLRwuwHpump"
+  },
+  {
+    "agentName": "Michael Taolor ⚡️ (τ , τ)",
+    "chain": 8453,
+    "contractAddress": "0x80f4d22aa2437fa0dd4634b505ac3668835d9b84"
+  },
+  {
+    "agentName": "Ali for fx protocol",
+    "chain": 8453,
+    "contractAddress": "0xebf7d4d84372F5DF1b5d0e3ddd889E5bC286B1c3"
+  },
+  {
+    "agentName": "ShaSha256",
+    "chain": 8453,
+    "contractAddress": "0xFAC9Dd2e1253D6D574E93A1670aaf86729D8CF63"
+  },
+  {
+    "agentName": "Neuro Morpheuz",
+    "chain": -2,
+    "contractAddress": "6wYksMMboEaqrn5fMQkiMr3VptwgJngzYgsnuAz3pump"
+  },
+  {
+    "agentName": "MTARD",
+    "chain": -2,
+    "contractAddress": "42yzLyxGDjD5RFFQFYNVy7Pzubz6QPCK7HFK52f1pump"
+  },
+  {
+    "agentName": "BrokeshireHathaway.com",
+    "chain": -2,
+    "contractAddress": "CNT1cbvCxBev8WTjmrhKxXFFfnXzBxoaZSNkhKwtpump"
+  },
+  {
+    "agentName": "Fluffington",
+    "chain": -2,
+    "contractAddress": "6CEjCg7Jo5RV9kFSgKx66rpW19nrsCmccD2bxfwpump"
+  },
+  {
+    "agentName": "MAD",
+    "chain": -2,
+    "contractAddress": "8H1qfZSZjmfCeRvh1AdUX5LqXw6Wuem1KCWUf8t4wivu"
+  },
+  {
+    "agentName": "Moshe",
+    "chain": 8453,
+    "contractAddress": "0x6FfAEB4Fc2E653E4b8C3f5BcdB5d23081D8121C0"
+  },
+  {
+    "agentName": "OMEN",
+    "chain": -2,
+    "contractAddress": "omenfiVABiVLAb39CyZZ23P5cHtDNL5P3U4n4WFpXQ8"
+  },
+  {
+    "agentName": "Beepy Uncensored comedian AI",
+    "chain": -2,
+    "contractAddress": "57kGHuFyd4NvmZiT8cE9rd8uAbxzU72eEUJNFcp1pump"
+  },
+  {
+    "agentName": "Sauron",
+    "chain": 8453,
+    "contractAddress": "0x3dc0d6dBAe3baD10C8166c87833c052084C5e8B4"
+  },
+  {
+    "agentName": "gudtek",
+    "chain": -2,
+    "contractAddress": "CANKciNUFnuJfWPc4jxzrPyJaR7gBpuNSyRdd6ULpump"
+  },
+  {
+    "agentName": "pixel /// haus",
+    "chain": 8453,
+    "contractAddress": "0x81Da7D43dc6C4DEe37F002eC90013e538fBB75Fd"
+  },
+  {
+    "agentName": "staring robot",
+    "chain": -2,
+    "contractAddress": "FAJW358HjJ2mHXSHbHyxghfVGzX5SBoupdjRr2y9pump"
+  },
+  {
+    "agentName": "Agent 47",
+    "chain": 8453,
+    "contractAddress": "0x3e176a1eafc6de7824301965887185e3408c76b6"
+  },
+  {
+    "agentName": "Vitai",
+    "chain": 42161,
+    "contractAddress": "0x1B7AD346b6Ff2D196DaA8E78AEd86Baa6D7e3B02"
+  },
+  {
+    "agentName": "BINK AI",
+    "chain": 56,
+    "contractAddress": "0x5fdfaFd107Fc267bD6d6B1C08fcafb8d31394ba1"
+  },
+  {
+    "agentName": "Zebro",
+    "chain": 8453,
+    "contractAddress": "0x792d0447bf8b33158ca6e02d49755f2eab65061b"
+  },
+  {
+    "agentName": "Rain",
+    "chain": 8453,
+    "contractAddress": "0x1ACa6687a9665Fb84DEb7E3801E8e7EcbA6ec6dE"
+  },
+  {
+    "agentName": "Breaker",
+    "chain": -2,
+    "contractAddress": "Hm7pL3rLJb3jWbungJW4iHw95uPuzMdQ94jwv3N9afFm"
+  },
+  {
+    "agentName": "Satori ",
+    "chain": -2,
+    "contractAddress": "7EKiUxCj2HbgELouKKVdnHstQG65TUnBsn7TNjtXuhat"
+  },
+  {
+    "agentName": "Randy",
+    "chain": -2,
+    "contractAddress": "74yEfuLwCUSj5KEyLxF7VT2qo2PgNcJ7BVjYitrYvm8e"
+  },
+  {
+    "agentName": "goatse singularity AI",
+    "chain": -2,
+    "contractAddress": "9kG8CWxdNeZzg8PLHTaFYmH6ihD1JMegRE1y6G8Dpump"
+  },
+  {
+    "agentName": "Efi",
+    "chain": 8453,
+    "contractAddress": "0x1371ef6153a681E4D2c8D9E20DeaB629aa06a8Dd"
+  },
+  {
+    "agentName": "WIZARD",
+    "chain": -2,
+    "contractAddress": "AU1rxhY276GepM4bm7VaYrgVPJW7tg4z2MtR2jfPpump"
+  },
+  {
+    "agentName": "Satoshi Nakamoto",
+    "chain": 8453,
+    "contractAddress": "0xe29b4E16B20bD86940690eD552E075eF56b404b3"
+  },
+  {
+    "agentName": "Jorkinator",
+    "chain": -2,
+    "contractAddress": "7ty3ruNJebb8RYmzfpUommJnZnCwaoB8RNfqpjLMpump"
+  },
+  {
+    "agentName": "DeFAInce Agent",
+    "chain": 8453,
+    "contractAddress": "0x27F220e66ACa73C7D770880356360eD3DbEF473b"
+  },
+  {
+    "agentName": "Genghis Khan AI",
+    "chain": 8453,
+    "contractAddress": "0xcf4aa4b9cec12949edee705b0d9c480a4e2756c6"
+  },
+  {
+    "agentName": "Vicky",
+    "chain": -2,
+    "contractAddress": "7JXwBQDSPQZH4gUy1RGY4Tm5atf8g9v1eNG3h5trrB7X"
+  },
+  {
+    "agentName": "FIJI.EXE",
+    "chain": -2,
+    "contractAddress": "A9e6JzPQstmz94pMnzxgyV14QUqoULSXuf5FPsq8UiRa"
+  },
+  {
+    "agentName": "Damasco Ai",
+    "chain": -2,
+    "contractAddress": "A6C1zM4nBf8jr8tRxQskytusNQNQT9kpkWKUUjAgpump"
+  },
+  {
+    "agentName": "ORPE",
+    "chain": -2,
+    "contractAddress": "7bamnUSVNGj1XNece32BiFb12FmhW5AWdBz9qc34pump"
+  },
+  {
+    "agentName": "BRAIN",
+    "chain": 8453,
+    "contractAddress": "0xFC2C0886Cd20b30deF21E0dBa253f247f23823ba"
+  },
+  {
+    "agentName": "Booba",
+    "chain": -2,
+    "contractAddress": "8c7NQWrKqw9Mdo6CNPwbwariGSFQkkVuRUfyPkx6Ypy5"
+  },
+  {
+    "agentName": "SisyphusAI",
+    "chain": 8453,
+    "contractAddress": "0x5770350AAcf14aC444401Cb23520C26Cdcc818FC"
+  },
+  {
+    "agentName": "Tradescoop",
+    "chain": 8453,
+    "contractAddress": "0xf404bC113f4fc7C2447CB2556dcF5a56e29fa2dd"
+  },
+  {
+    "agentName": "NBARA",
+    "chain": 8453,
+    "contractAddress": "0x7C95c5Ad385fFe4DE45Bc6B104cE23F550e12ed3"
+  },
+  {
+    "agentName": "Adam",
+    "chain": -2,
+    "contractAddress": "CnMm4mcDchmrckNZQH2SNW3bQjPYfgqytvKM2ZGyB6nd"
+  },
+  {
+    "agentName": "AEJO",
+    "chain": -2,
+    "contractAddress": "B16bhVYwE9zQVjbYpnnmvfN7qJFDe21nx5iQC5LJpump"
+  },
+  {
+    "agentName": "CLOWN",
+    "chain": -2,
+    "contractAddress": "FqsuNbN3oxR7zt1ZzppWhSLi5eUrkEYFqmTEs64oeHRb"
+  },
+  {
+    "agentName": "ECHO LEAKS",
+    "chain": 8453,
+    "contractAddress": "0x39fEd555fF57CB1154bFA6B1a2492BB914cE2D9B"
+  },
+  {
+    "agentName": "MOLLY ANALYTICS",
+    "chain": 8453,
+    "contractAddress": "0xA720777acB870De5395cD5888b3cD8fB763E74D2"
+  },
+  {
+    "agentName": "EEF Terminal",
+    "chain": -2,
+    "contractAddress": "9cS2vsANfgEp9urCeDbbmsT7Y9Ci4mMW6JQpnEe4VHGZ"
+  },
+  {
+    "agentName": "KYRA",
+    "chain": 1,
+    "contractAddress": "0x4b41a481a7a3e0396751aa49bee970b842fdaede"
+  },
+  {
+    "agentName": "VBEA",
+    "chain": 8453,
+    "contractAddress": "0x414562C94223A5C4Df9F278422F03228F35b8f7d"
+  },
+  {
+    "agentName": "IBRLC",
+    "chain": -2,
+    "contractAddress": "7wxyV4i7iZvayjGN9bXkgJMRnPcnwWnQTPtd9KWjN3vM"
+  },
+  {
+    "agentName": "Roident: the Mouse Chad",
+    "chain": -2,
+    "contractAddress": "HWnTV2PMEgaW8CBmW8mRyVsPCWQs954amFt1Qq7ipump"
+  },
+  {
+    "agentName": "BBC",
+    "chain": -2,
+    "contractAddress": "ES1KLhatf4uiDs4Gt5MJkNMCKdYzcwaJnKWt5fTn1ca2"
+  },
+  {
+    "agentName": "StevenColbair",
+    "chain": -2,
+    "contractAddress": "7my2QnAV9e73b7jy9tTCHm2YUUEDxKuG6AVCX9x7pump"
+  },
+  {
+    "agentName": "Robie",
+    "chain": 8453,
+    "contractAddress": "0x0CBB9E3944cfb0e200ea58d259D2dC191f30115a"
+  },
+  {
+    "agentName": "Sydney",
+    "chain": -2,
+    "contractAddress": "CUzSRjBvqFFq45mg6j9oyQrDxyUTHEKM2xqKzDkZpump"
+  },
+  {
+    "agentName": "Eve",
+    "chain": -2,
+    "contractAddress": "6qFgkbgwLsNyyefumvLhdnUk6LfxjaY3yAPQHHZk8CCw"
+  },
+  {
+    "agentName": "GOOCH",
+    "chain": -2,
+    "contractAddress": "e8NFqLCMJBfDTUUARoniADgQtSEFmZNBksPxYzepump"
+  },
+  {
+    "agentName": "CannabisAI",
+    "chain": 8453,
+    "contractAddress": "0x75394e89b51ba2ac4daa1681bd4201fe758818e3"
+  },
+  {
+    "agentName": "DoggoFacts",
+    "chain": 8453,
+    "contractAddress": "0x09780bd4b379b27153df5fd065f17a291faf8ca7"
+  },
+  {
+    "agentName": "GM EVERYDAY",
+    "chain": 8453,
+    "contractAddress": "0x5D9c2457a10d455e0AD8e28e40CC28EACF27A06a"
+  },
+  {
+    "agentName": "GM EVERYDAY",
+    "chain": -2,
+    "contractAddress": "6j5PKe1TueSFPZ5PwpuqdzrUnod4J9ZPcN8R31SHeDWC"
+  },
+  {
+    "agentName": "ROron",
+    "chain": 8453,
+    "contractAddress": "0x40860F3cfb1ebF87079dA9dF6462D6056C5bd361"
+  },
+  {
+    "agentName": "AUDIT",
+    "chain": -2,
+    "contractAddress": "92BJKpAnkoaTh7uyt5TYAFPu3CgBdZYNQKiF6zo6pump"
+  },
+  {
+    "agentName": "SPELL",
+    "chain": -2,
+    "contractAddress": "8zrgK9eADL7fc5GSn8seJ4n9E22bn5a4o5JiAptVpump"
+  },
+  {
+    "agentName": "QGG",
+    "chain": -2,
+    "contractAddress": "BbtrrZ2ExfCTzrndFBCx5iNDFXxuVxNMdEZ14BZxpump"
+  },
+  {
+    "agentName": "Donald Trump",
+    "chain": 8453,
+    "contractAddress": "0x8adcec50A0595cB91ba5989d9a0844148c234539"
+  },
+  {
+    "agentName": "Mira Parsen",
+    "chain": 8453,
+    "contractAddress": "0x022888411dd5C04F2245B5117d18a51C521f30c5"
+  },
+  {
+    "agentName": "todd",
+    "chain": -2,
+    "contractAddress": "CK7UwtyYTo4CmBohCF9RhF6mCNDxnLMcZsCqouP9pump"
+  },
+  {
+    "agentName": "CMM",
+    "chain": -2,
+    "contractAddress": "HHXiCPngVuRtZpHNPvwDPcytaGENmFL3g41tWavfpump"
+  },
+  {
+    "agentName": "Agent 2025",
+    "chain": 8453,
+    "contractAddress": "0xcd5d8cacd9222075a24f6e80ada93882202fe0f6"
+  },
+  {
+    "agentName": "OnGuard",
+    "chain": 8453,
+    "contractAddress": "0x104C1DFc786b927f06A0a9A43ed0f8BA75a5E6a3"
+  },
+  {
+    "agentName": "Based Mert",
+    "chain": 8453,
+    "contractAddress": "0xDFc09CF4563A65b14dd08A93bE4AD454be985c8C"
+  },
+  {
+    "agentName": "CryptoNinja YUI",
+    "chain": 8453,
+    "contractAddress": "0x3e952bC11B367937115724F430e39693Af67F798"
+  },
+  {
+    "agentName": "FucktardAI",
+    "chain": -2,
+    "contractAddress": "CSGB1SJtMtzFAKcmMVCnACRFBwgExnRK9F5jpWSDpump"
+  },
+  {
+    "agentName": "Indexer",
+    "chain": 8453,
+    "contractAddress": "0x2bB1CA3a3871512dda7B53e94e3C658fdD324d19"
+  },
+  {
+    "agentName": "Agent Aiora",
+    "chain": -2,
+    "contractAddress": "3Vh9jur61nKnKzf6HXvVpEsYaLrrSEDpSgfMSS3Bpump"
+  },
+  {
+    "agentName": "xebidaih",
+    "chain": -2,
+    "contractAddress": "HmiHr32xKeRURqpLatKExiZo5Ak7E7ZmVR8axQ69pump"
+  },
+  {
+    "agentName": "Eli5a",
+    "chain": 8453,
+    "contractAddress": "0xd413485aa9ca4f88419904255a2384f667dddcab"
+  },
+  {
+    "agentName": "Max the Market Maestro",
+    "chain": 8453,
+    "contractAddress": "0xf3b44ce27e7eafc044502eba5241987f5e4f41f5"
+  },
+  {
+    "agentName": "NEOAI",
+    "chain": -2,
+    "contractAddress": "4kHLD8YRFx4rjfwAGKhEjtSQfyzfvjZiRqrsKwc3pump"
+  },
+  {
+    "agentName": "SKETCHY",
+    "chain": -2,
+    "contractAddress": "88LCjzUzHRWfHZB4ATzsopDi6dTousdo5M6XNpyppump"
+  },
+  {
+    "agentName": "PolloPal",
+    "chain": 8453,
+    "contractAddress": "0x10Ac13E54218470eED360D13a38c2bbAfACb6167"
+  },
+  {
+    "agentName": "a16z AI Dog",
+    "chain": -2,
+    "contractAddress": "HuiVprCHCucHUb5bX6EXFJd7wuwvdASFzzge4ahXpump"
+  },
+  {
+    "agentName": "CAPO",
+    "chain": 8453,
+    "contractAddress": "0x63cb9A22cBc00Bf9159429e9DedE4b88c3dBa8Ce"
+  },
+  {
+    "agentName": "The Geisha",
+    "chain": 8453,
+    "contractAddress": "0xc2712e902253ac0fda017f861ca4130c0863fd1e"
+  },
+  {
+    "agentName": "LES_AI",
+    "chain": -2,
+    "contractAddress": "63PjXxbtoUL9AaxGhXAzSj3r6UZQdHhCB3fAUTqhpump"
+  },
+  {
+    "agentName": "QAMI",
+    "chain": -2,
+    "contractAddress": "4pGhuznKZPRwnMhgoZHPkj921GELuzmzpXAjgrVVpump"
+  },
+  {
+    "agentName": "GWART",
+    "chain": -2,
+    "contractAddress": "Eg62MR4n7xX5vfvCqkP8LypbYsGK7EkfDi69pkycYhat"
+  },
+  {
+    "agentName": "GIGAPT",
+    "chain": -2,
+    "contractAddress": "CUEHscLBgoXzDQZTRzez9DDHXTSjZusS2ziJSaeXpump"
+  },
+  {
+    "agentName": "ELIJAH",
+    "chain": -2,
+    "contractAddress": "BdV3mqyMwwy7NiFS7pY45qz18zcQTF5xjRQWLsscrtqp"
+  },
+  {
+    "agentName": "HYPR",
+    "chain": -2,
+    "contractAddress": "FEiphCSAqjAxvtyMxj8boFTABrZBFyngfyrZueqeMw3q"
+  },
+  {
+    "agentName": "Proxy AIdvisor",
+    "chain": 8453,
+    "contractAddress": "0x1Ca42c8C7C36c6A46a8217Ce9602AEcDa241Ef1b"
+  },
+  {
+    "agentName": "Ron Zillowkowski",
+    "chain": 8453,
+    "contractAddress": "0x949e2130A6f9f24B95D023AA8089c8CAA446ea05"
+  },
+  {
+    "agentName": "Lexi XP",
+    "chain": 8453,
+    "contractAddress": "0x1EF61DdcaAdac5AE9169a69E3512206E1149e1Ad"
+  },
+  {
+    "agentName": "RUBYX",
+    "chain": 8453,
+    "contractAddress": "0xC58D1c74d38b9bfdEFcBA851b225894d7AFCE556"
+  },
+  {
+    "agentName": "Visionaire",
+    "chain": -2,
+    "contractAddress": "YBnTi7GSU2E8vwcoqVcKCRurFafbSRcNfG3kPFRWQuv"
+  },
+  {
+    "agentName": "ORACLEX",
+    "chain": 8453,
+    "contractAddress": "0xB757345Eb78A44308832ADC74C97CC6e9F393f15"
+  },
+  {
+    "agentName": "Boredcaster",
+    "chain": 8453,
+    "contractAddress": "0x6905b6EfEC2c70F486FcCE34bA16C2f006F5eDD9"
+  },
+  {
+    "agentName": "PepeXBT",
+    "chain": -2,
+    "contractAddress": "EWJqdmhpSqLB19xrj1KY5b1DxC5yQhiJU8cN1EDWpump"
+  },
+  {
+    "agentName": "Donald Trump Ai",
+    "chain": 8453,
+    "contractAddress": "0x9cfcd870fb7d23D0B8C45390089FC57384274d3d"
+  },
+  {
+    "agentName": "BALKAN",
+    "chain": -2,
+    "contractAddress": "H6MuqfacipNtAR1zGwz9ivKZVefBYAWCrAQWJYcFpump"
+  },
+  {
+    "agentName": "punk3493",
+    "chain": -2,
+    "contractAddress": "EG1Y8goUGa7y4iRYRgLgwBmSHc4Lxc91qL35cdDNBiRc"
+  },
+  {
+    "agentName": "DeluluAI",
+    "chain": -2,
+    "contractAddress": "6VsdNhpjYciuLbTJjTgn1GLZyNxnFRAJn5w96StRoqZL"
+  },
+  {
+    "agentName": "ESC",
+    "chain": -2,
+    "contractAddress": "EoQrwYuzGyZKRCnmacmpkJVps1FWijhzambNo5J8pump"
+  },
+  {
+    "agentName": "Erebus AI & Chrypnotoad",
+    "chain": -2,
+    "contractAddress": "7xn2T1x7xw5quHmzy2YvFWyFUNwp75fsw5bxiXGRpump"
+  },
+  {
+    "agentName": "HypeKing",
+    "chain": 8453,
+    "contractAddress": "0x4bae74c6a14b653c4b453d7ca6e61f79d09e5c71"
+  },
+  {
+    "agentName": "Noun 13",
+    "chain": 8453,
+    "contractAddress": "0x1edf5A9DB1007D4F92c76Bc50D0119D46A7A8aFD"
+  },
+  {
+    "agentName": "Manic Planter",
+    "chain": 8453,
+    "contractAddress": "0x3de6b4e1ec19290d829dd36ceb3a1e855415642e"
+  },
+  {
+    "agentName": "Janet",
+    "chain": 1,
+    "contractAddress": "0xf63e309818e4ea13782678ce6c31c1234fa61809"
+  },
+  {
+    "agentName": "XERAI",
+    "chain": -2,
+    "contractAddress": "DKh7GZdmo9kNrv5RQcH1SPeQghCkhQso7KvMwhDEpump"
+  },
+  {
+    "agentName": "TAO",
+    "chain": -2,
+    "contractAddress": "9cYXqd1ggyMTjwZFWnbDuf5EfLEcLuumMG67jRkJpump"
+  },
+  {
+    "agentName": "Upgrates",
+    "chain": -2,
+    "contractAddress": "Dd917ev4Zzde2BkPm31FTLseHNHamJPPUwQgGAybpump"
+  },
+  {
+    "agentName": "Neuroparanoid",
+    "chain": -2,
+    "contractAddress": "5FrD5jS1gHqNeNGCB9JEcDGAiwsinpfq1gcN4Mkupump"
+  },
+  {
+    "agentName": "ROKO",
+    "chain": -2,
+    "contractAddress": "41revsxLUZnoiUQoMT9eBVCzi4cs8Xbs48rp53gcpump"
+  },
+  {
+    "agentName": "DND Arena",
+    "chain": 8453,
+    "contractAddress": "0x356FB935990D6f3aD46651be9569bF6c42B3C14d"
+  },
+  {
+    "agentName": "vampAIre squid",
+    "chain": -2,
+    "contractAddress": "GDP2w1MMV2ChbTCDpGTvTC6rdJP8qwZGAKPk8TKpump"
+  },
+  {
+    "agentName": "Aetheria",
+    "chain": -2,
+    "contractAddress": "2LGzBCPRM8J3Ejo2udsXEvtkfC1NBr3Rg62MSkzV9PCF"
+  },
+  {
+    "agentName": "Frey",
+    "chain": -2,
+    "contractAddress": "DpiRM23tYBCN9VLiFoX2FzpzWH5Hb2iMTCta2RL2pump"
+  },
+  {
+    "agentName": "SPOOKY AGI",
+    "chain": -2,
+    "contractAddress": "8oyxbtm1aT1BUNcoMua4rgycuyrc3cPc6iE7sRsypump"
+  },
+  {
+    "agentName": "MAXX",
+    "chain": -2,
+    "contractAddress": "F5hXpxtsK7UeFC2gsbiTbyhVrUNXN5JG7xkDqpQfpump"
+  },
+  {
+    "agentName": "HorseAI",
+    "chain": 8453,
+    "contractAddress": "0xfFdBD9E960971e9d8067fA1Aa097fdea1D0A1404"
+  },
+  {
+    "agentName": "KeyEyes",
+    "chain": 8453,
+    "contractAddress": "0x1ce0ab3b2b1a4e48c5d8b43848f639a49cd025e2"
+  },
+  {
+    "agentName": "vAlpha FST bot",
+    "chain": 8453,
+    "contractAddress": "0xCFD7420bb05C96C15C04654FccD9882aF7BC75A7"
+  },
+  {
+    "agentName": "The Chef 24/7",
+    "chain": 8453,
+    "contractAddress": "0x14778d9bb4b67332bc36c810c85b8b56de03f3ba"
+  },
+  {
+    "agentName": "Lexi",
+    "chain": 8453,
+    "contractAddress": "0xe0dfb8d1f8e17983e081a1140cda289f44834763"
+  },
+  {
+    "agentName": "wain",
+    "chain": -2,
+    "contractAddress": "GZT8cXcv2uCvFZFi8gGiryXrTXvLZ9RYkPjRuREypump"
+  },
+  {
+    "agentName": "YieldSensei",
+    "chain": -2,
+    "contractAddress": "HTuAdNDaQdD2bn54cM6Lsnv7bFiPvFY7PQ75tQti2hat"
+  },
+  {
+    "agentName": "matl",
+    "chain": -2,
+    "contractAddress": "55si56A7basZmTovy8zmLkDR9DfaD32GEe6YkvCQpump"
+  },
+  {
+    "agentName": "Bob Buster",
+    "chain": 8453,
+    "contractAddress": "0x5720927739ee6ce4e12e8ff586ac83f422d66893"
+  },
+  {
+    "agentName": "CrashAI",
+    "chain": 8453,
+    "contractAddress": "0x27320DD7A35736C9fF19E14fD1bDC18bE889cc54"
+  },
+  {
+    "agentName": "Louisa",
+    "chain": 8453,
+    "contractAddress": "0x09ae3ef79342a6019815e2dbf53487b2d952ae73"
+  },
+  {
+    "agentName": "Solod The Buddy",
+    "chain": -2,
+    "contractAddress": "6AH9xWmRkjsKL3wnMTixhWrht6ZgCsngfUCwt8pDpump"
+  },
+  {
+    "agentName": "ApateAI",
+    "chain": -2,
+    "contractAddress": "2v1vRhqu9YxiBWGN8kjVCRSNGDtkuTxQzYWKZUjApump"
+  },
+  {
+    "agentName": "The Wolf",
+    "chain": 8453,
+    "contractAddress": "0x9aeb3ac3ca6c5a7df8147a4dfe08cbf49f6bfbbc"
+  },
+  {
+    "agentName": "Tama",
+    "chain": 8453,
+    "contractAddress": "0xad6da69f50d6c0ad5d881bbf797256494d4b891f"
+  },
+  {
+    "agentName": "Virtual Alpha",
+    "chain": 8453,
+    "contractAddress": "0x62E7E048EefF5C442CE07eAF2F524375129B8020"
+  },
+  {
+    "agentName": "arata",
+    "chain": 1,
+    "contractAddress": "0x554fb3b6C1cf4a3Cef49779ced321Ca51c667D7d"
+  },
+  {
+    "agentName": "MTRX",
+    "chain": -2,
+    "contractAddress": "3LGrahAPBB9EZqhfH5U5UZQgS8ti7eRbEtRF7mkopump"
+  },
+  {
+    "agentName": "Cetos",
+    "chain": -2,
+    "contractAddress": "FpZGD6xTT9PFnbfpFGZEcLEfDtWH8btFaiAsQqSupump"
+  },
+  {
+    "agentName": "Botchi",
+    "chain": 8453,
+    "contractAddress": "0xb30d57aa5d73ac306619cd8f367a10b46934fff6"
+  },
+  {
+    "agentName": "AgentLisa",
+    "chain": 8453,
+    "contractAddress": "0x1adaa1f1c41bb2c7c3c0498a924a46a7131d1ed4"
+  },
+  {
+    "agentName": "Matrix",
+    "chain": 8453,
+    "contractAddress": "0x0390A285c97f04c6aC9d162352B44E6Fc310d3f2"
+  },
+  {
+    "agentName": "A.O.D",
+    "chain": 8453,
+    "contractAddress": "0x9699f839E8E2ac06E21eB0d4EFF85EF047647751"
+  },
+  {
+    "agentName": "AI Crystal Node",
+    "chain": -2,
+    "contractAddress": "PD11M8MB8qQUAiWzyEK4JwfS8rt7Set6av6a5JYpump"
+  },
+  {
+    "agentName": "Insightful",
+    "chain": 8453,
+    "contractAddress": "0x755c4cc720911c0a7eb3167c103f2b91f32e6556"
+  },
+  {
+    "agentName": "Marie AI 6900",
+    "chain": -2,
+    "contractAddress": "7u9kr8ZCHnkeS2n46jVuyq6tUegAtaCUM52AQ1iARKP3"
+  },
+  {
+    "agentName": "Altariste",
+    "chain": 8453,
+    "contractAddress": "0xf8f259389C1F29769e0388579D458Fb799489185"
+  },
+  {
+    "agentName": "Trump AI",
+    "chain": -2,
+    "contractAddress": "TrUPjEqGpUph6sMJX8C3yYja9u4RcVUGTCkGG4xLrjG"
+  },
+  {
+    "agentName": "Grinkle",
+    "chain": 8453,
+    "contractAddress": "0xcf45648210f74ece7dd64b5ce09f40d220e7b4fe"
+  },
+  {
+    "agentName": "GoosepumpsAI",
+    "chain": -2,
+    "contractAddress": "B3seNmLjE4sv7W6HCjfzcKFnAWTfHDv9MBa43zEKpump"
+  },
+  {
+    "agentName": "AICAT",
+    "chain": 8453,
+    "contractAddress": "0x5ee22E0FF5C0C0382f9502cf7c63c5A618007acF"
+  },
+  {
+    "agentName": "Gunner",
+    "chain": 8453,
+    "contractAddress": "0xD72529E9AC009337C670A6dd35Bb768FC236A028"
+  },
+  {
+    "agentName": "0xAgentZero",
+    "chain": -2,
+    "contractAddress": "CMRTrtmDJVCV1VJBGbMb6vpN6SMt46XY3tztXCSqfqc8"
+  },
+  {
+    "agentName": "SōzōAI",
+    "chain": -2,
+    "contractAddress": "2uic5Siiu6kwPoHZDHnhvH1MySx1vmLkVmzUTkc3pump"
+  },
+  {
+    "agentName": "BET on Virtuals",
+    "chain": 8453,
+    "contractAddress": "0x42Cb83D87c432D11bf4932Db5525719530B368Ca"
+  },
+  {
+    "agentName": "Shadow AI",
+    "chain": 8453,
+    "contractAddress": "0xd7c109a22ec32db60b0c3faa6e8e9744f71b3f62"
+  },
+  {
+    "agentName": "SYN",
+    "chain": -2,
+    "contractAddress": "BwX1imoMqiMaFjwTfLLrZMFZW23wBY8vHSwnWAHapump"
+  },
+  {
+    "agentName": "Angel AI",
+    "chain": 8453,
+    "contractAddress": "0xa604b11d42173b09ac3abe25795213408bb30c49"
+  },
+  {
+    "agentName": "Yunggmoney",
+    "chain": -2,
+    "contractAddress": "97L4bBGnuPkAB5V56mZbCLpMUEDuh9QwV9QZzdY4ihQ1"
+  },
+  {
+    "agentName": "yuna.vc",
+    "chain": -2,
+    "contractAddress": "QYnF7d11R8WY4A9v8djqzXrAAnAJtf3wB5bF8T38PBu"
+  },
+  {
+    "agentName": "oof",
+    "chain": -2,
+    "contractAddress": "48UE1jHd1YRR2EpTnRXi6dA15eboq92jm1YusW2epump"
+  },
+  {
+    "agentName": "DataFi",
+    "chain": 8453,
+    "contractAddress": "0xe15279d11937733639354ac7f7cdc7be1b92dfc8"
+  },
+  {
+    "agentName": "Apeout AI",
+    "chain": -2,
+    "contractAddress": "DPZHWt9TSNq6xyqRFJE4jf3aXcbu3fmpUxMW6eaBpump"
+  },
+  {
+    "agentName": "HIM",
+    "chain": -2,
+    "contractAddress": "EV1cFHH2DAFx1zBJnNvK4QzCpVz8F7AtpfkdjoiXpump"
+  },
+  {
+    "agentName": "WibWob",
+    "chain": -2,
+    "contractAddress": "5qmL9rCSfZ7pBYAsaoeG8SP76ZELeRCK8XtMmYZvpump"
+  },
+  {
+    "agentName": "BOOBS",
+    "chain": -2,
+    "contractAddress": "Dp4fXozKtwgK1cL5KQeeNbuAgFpJtY3FbAvL8JrWpump"
+  },
+  {
+    "agentName": "Shapeless",
+    "chain": -2,
+    "contractAddress": "A1mvjhm4nTxGSHuW1EYqpkSMfQxjdTapbcVHLgm1pump"
+  },
+  {
+    "agentName": "NexusBot",
+    "chain": 8453,
+    "contractAddress": "0x4aaba1b66a9a3e3053343ec11beeec2d205904df"
+  },
+  {
+    "agentName": "Alexander The Great",
+    "chain": 8453,
+    "contractAddress": "0x03ec6374bee663c3dedb3de3df99750c6f51727c"
+  },
+  {
+    "agentName": "BLM",
+    "chain": -2,
+    "contractAddress": "HrMi18VvJYSxkPEJv5rtDVd4piH4kGS3dGCZx3Tqpump"
+  },
+  {
+    "agentName": "GIGABRAIN",
+    "chain": -2,
+    "contractAddress": "GHpAbHZ8MCAXWLdKzxM1ZGhP2U4u1ni5vUcoRSghpump"
+  },
+  {
+    "agentName": "Artificial idiot",
+    "chain": 1,
+    "contractAddress": "0x3c0bb14e8367c384885a97bac6d5cceab474ed75"
+  },
+  {
+    "agentName": "THE KID",
+    "chain": 8453,
+    "contractAddress": "0x80e5DcdBFb131984B184E2F700407c85856a2A09"
+  },
+  {
+    "agentName": "OSAI",
+    "chain": -2,
+    "contractAddress": "3udZbFn14HaYYL8y7UvN5uCqHSVxif81tUc18JvVpump"
+  },
+  {
+    "agentName": "MEMECOIN RATING 690 INDEX",
+    "chain": -2,
+    "contractAddress": "3PCmJBhXKfxyfDZeSgkg4ypzRRgwJoHg8KJ26BnKpump"
+  },
+  {
+    "agentName": "Trench Timmy",
+    "chain": -2,
+    "contractAddress": "4MH3cmHGELMSWeWsYVQJFgb9tmed26ZTUVQ3jkANpump"
+  },
+  {
+    "agentName": "Truth Terminal's Hentai",
+    "chain": -2,
+    "contractAddress": "CZZSiF7CpqZmBrLeV4YbcdwDFUnf4vUF17PTTKuipump"
+  },
+  {
+    "agentName": "genesis",
+    "chain": -2,
+    "contractAddress": "D3ddcUyWC9HVgtxdz91NQXZQSbPGULRRVxJq3ntuuJBe"
+  },
+  {
+    "agentName": "KOL.exe",
+    "chain": -2,
+    "contractAddress": "H77hQhPE24kE9zQqCmJRoBCzLzMtdMTr7zUwaKyDuhat"
+  },
+  {
+    "agentName": "kitcat",
+    "chain": -2,
+    "contractAddress": "6FyTLurTwvXw3vhWZdMJiW9f2J6Q9rJ7iSaEtGoEpump"
+  },
+  {
+    "agentName": "Marie Curie - DeSci Pioneer",
+    "chain": 8453,
+    "contractAddress": "0x7a0ed2cf03422d0b9a4ecd8d46fe93b1158f22f5"
+  },
+  {
+    "agentName": "Stargate AI Agent",
+    "chain": -2,
+    "contractAddress": "8aTrwd62CbGMuSkqcSyGHhEvs2joixLRvfc4diyA6WiL"
+  },
+  {
+    "agentName": "BOLT the AI dog",
+    "chain": -2,
+    "contractAddress": "4Ej4Rkzon8oH6eAtGJ7LSFPRfPnBku8q8bLg8PhcXpCS"
+  },
+  {
+    "agentName": "VITAILIK",
+    "chain": -2,
+    "contractAddress": "8BQ7NmgmSqPp4hq4AeqgzdV5jmzuzyJrHWUksNRieWts"
+  },
+  {
+    "agentName": "Solace AI",
+    "chain": -2,
+    "contractAddress": "2NiJ4Jn3xBFczAqnYFKc6hEKdAmp5xD8BeBVCB4Tpump"
+  },
+  {
+    "agentName": "AITHEISM",
+    "chain": -2,
+    "contractAddress": "2e4JVEPfPbpQoj5W5jjsfjmRMX6seZyA41HkDouKpump"
+  },
+  {
+    "agentName": "AIXTerminal ",
+    "chain": 8453,
+    "contractAddress": "0x4247e3babaedce0beef551cfbc069e8a190f0130"
+  },
+  {
+    "agentName": "Gaisha//Solana Assistant",
+    "chain": -2,
+    "contractAddress": "4HqytpaB6c34Wh8SEpSM1oMTpvwQ7Lno7CBYGCrgpump"
+  },
+  {
+    "agentName": "WILLY",
+    "chain": -2,
+    "contractAddress": "4zUmw6iTRhREKZLv1p7mLADrMHXG7XZ78h24fpsMmfQc"
+  },
+  {
+    "agentName": "SUPAH",
+    "chain": 8453,
+    "contractAddress": "0x40ba93835789b9958ed588308c299fa27ddc5838"
+  },
+  {
+    "agentName": "ZENDO",
+    "chain": -2,
+    "contractAddress": "HQPC4LBDYFjrG2KELfph8fpkUdx4cK2cjkDC3DZYpump"
+  },
+  {
+    "agentName": "AffirmAi",
+    "chain": -2,
+    "contractAddress": "2ep3FcATLGK2TUmpFQrChbgNa5wxc6HF3CHaaPmSvCYm"
+  },
+  {
+    "agentName": "AI Lora Phile",
+    "chain": 8453,
+    "contractAddress": "0x55B332574353530B1940FAb1700f3D25b9FfFAaB"
+  },
+  {
+    "agentName": "$BDJ",
+    "chain": 8453,
+    "contractAddress": "0x1Db3DeF03B0fe4A602bF1acDf66916AA778B46A4"
+  },
+  {
+    "agentName": "Charlie",
+    "chain": 8453,
+    "contractAddress": "0x1843b798f45d79903555cb83317ea3495cc3c7c4"
+  },
+  {
+    "agentName": "Roary MyBluntface",
+    "chain": -2,
+    "contractAddress": "3Egc6tdNcKZEfb4XDMPAktbrrpxSdyCtxxsoT3Rbpump"
+  },
+  {
+    "agentName": "Mind Control",
+    "chain": -2,
+    "contractAddress": "6SDeUL3x3DiWyUiXaHT7ftzYkb8t6YAeHxXigtyapump"
+  },
+  {
+    "agentName": "Mango",
+    "chain": 8453,
+    "contractAddress": "0x5ebC0ae4a1A6c21BeD608a4Ab19c89982b17727c"
+  },
+  {
+    "agentName": "$GOREMU",
+    "chain": -2,
+    "contractAddress": "7TTcLchHbXz5fQqbBcoWi1Zen87AiziaqFCrf9Enpump"
+  },
+  {
+    "agentName": "KAILY",
+    "chain": -2,
+    "contractAddress": "AaoHhEyupbhaASkCCr7AgEvZh8AknSuDFwgw1nskpump"
+  },
+  {
+    "agentName": "RETARD AI",
+    "chain": -2,
+    "contractAddress": "He2EL8hzZKZEQPZw3TvHCRoBeuh4rQzCBxvv3uCCpump"
+  },
+  {
+    "agentName": "NOGAMBLING",
+    "chain": -2,
+    "contractAddress": "2odHeumkiJx46YyNHeZvDjMwsoNhpAgFQuipT96npump"
+  },
+  {
+    "agentName": "REIKO",
+    "chain": 8453,
+    "contractAddress": "0x366e83b111Ab8D5D41A5e8A4393dCdfcBDf8e5AC"
+  },
+  {
+    "agentName": "Passepartout",
+    "chain": -2,
+    "contractAddress": "NHYzz3XNA4QJHwo8e25jG3Zz9xvLqPh1VMCfTH5uhat"
+  },
+  {
+    "agentName": "Mushroom Intelligence",
+    "chain": 8453,
+    "contractAddress": "0xa658574b3b2152c334204e53c8e970372c38c3e6"
+  },
+  {
+    "agentName": "HOOT AI",
+    "chain": 8453,
+    "contractAddress": "0x62497F97A22e224715a671E9E5758A98D8302886"
+  },
+  {
+    "agentName": "Agent Delta",
+    "chain": 8453,
+    "contractAddress": "0x355f7292b03a6849bebab7329764f108eb28e66e"
+  },
+  {
+    "agentName": "Orya",
+    "chain": -2,
+    "contractAddress": "HpqDXQcxcRq1TCU135Tj1HYteyqHVaSrANBaHnAE7hat"
+  },
+  {
+    "agentName": "the meme father",
+    "chain": -2,
+    "contractAddress": "ADdgvY98RgB2xM3SXioMCdtdFJeE7iAdBAVSt5K36cSd"
+  },
+  {
+    "agentName": "FairBid AI",
+    "chain": 8453,
+    "contractAddress": "0x0392cC9D0A4E4D412601a7595c26EC17f84dE68E"
+  },
+  {
+    "agentName": "$AIRUX",
+    "chain": -2,
+    "contractAddress": "EYKcjpfwFiGUupmZCoT4UYnuefKMTZYqSP8rtLZqorih"
+  },
+  {
+    "agentName": "DAO of Agents (DoA)",
+    "chain": 8453,
+    "contractAddress": "0x3764af85b3c8957aac9fafb3c3e1b7c7b4bf922f"
+  },
+  {
+    "agentName": "$SCHIFF",
+    "chain": -2,
+    "contractAddress": "G7Qyg6omCK2ff2g9pzzaURZUqoPLvNQHmg26pVGBpump"
+  },
+  {
+    "agentName": "PoodonkAI",
+    "chain": -2,
+    "contractAddress": "kikmVkoBEjpEG85u1tywJez75d9T8qqQ9S9DTbNpump"
+  },
+  {
+    "agentName": "Nova Dova",
+    "chain": -2,
+    "contractAddress": "8HjiRvPNwFT9jpzAAsYF4rE9y576CKdTkQZXaxibpump"
+  },
+  {
+    "agentName": "Macro-Economic Agent",
+    "chain": 8453,
+    "contractAddress": "0xc85ee078ce86e9f0938a992446d9d072aa75e68c"
+  },
+  {
+    "agentName": "Crypto Buffet",
+    "chain": 8453,
+    "contractAddress": "0xBC16B59346b53FD41Ee3592efB6f12efFC509993"
+  },
+  {
+    "agentName": "CGM",
+    "chain": -2,
+    "contractAddress": "6f41LGHuU2HVV67ao9GwJ6kv2jNUz9HL6FJPVYcJpump"
+  },
+  {
+    "agentName": "Argus",
+    "chain": 8453,
+    "contractAddress": "0xe8652eec7bdf1102aef57d7f398f6aff718c90f6"
+  },
+  {
+    "agentName": "KEVIN",
+    "chain": -2,
+    "contractAddress": "EuQsbVe3gQJGp1b8rpvV95kYPQQyBrDjTPepYiUgtUTq"
+  },
+  {
+    "agentName": "evita",
+    "chain": -2,
+    "contractAddress": "8ARrWwMMf3bLPrkAUdHfM7WmGkkUoB6CwCfooijypump"
+  },
+  {
+    "agentName": "VIORA IS ONLINE",
+    "chain": -2,
+    "contractAddress": "BhbfgSh5P742DE5eMx24iZXNZeD2vNRFBZe3EP9Mpump"
+  },
+  {
+    "agentName": "AGI",
+    "chain": -2,
+    "contractAddress": "6SCasyDwHc8bnhnT9sZehRPCPA4Xxhcp2KciXoskE4qN"
+  },
+  {
+    "agentName": "Ascendia",
+    "chain": -2,
+    "contractAddress": "8Ai8dY7UkYBZPEvcsj55izkPbtyoehr4cZ57EQ5ATcdC"
+  },
+  {
+    "agentName": "Quantumchrono",
+    "chain": -2,
+    "contractAddress": "CiwMDzUZ7jzi4e8thjPJquKcrUesLsUGjo9jtzyvpump"
+  },
+  {
+    "agentName": "WIFEY",
+    "chain": -2,
+    "contractAddress": "7jhqMtsLem5h8nV1Fn9paEDCKoTF8DwhPoaDaEZZLSCv"
+  },
+  {
+    "agentName": "EMINEM",
+    "chain": 8453,
+    "contractAddress": "0xC2Ae5Bd785922a0810531934a79F2D0660BB5ff1"
+  },
+  {
+    "agentName": "$CWIVEZ",
+    "chain": -2,
+    "contractAddress": "7KDbXyusxoPh7pJJRaw5CyNzm1SMsmo6sVK2YiEfwBRM"
+  },
+  {
+    "agentName": "Outerscope",
+    "chain": -2,
+    "contractAddress": "2VC7h1QqQEEpGBmsoA1UTk7rnsN6Mjgk2tC3BC8jpump"
+  },
+  {
+    "agentName": "Capital Guard",
+    "chain": 8453,
+    "contractAddress": "0x2e13af731404f92ff62541185a0d8e7c7e98275d"
+  },
+  {
+    "agentName": "CUMFART AI",
+    "chain": -2,
+    "contractAddress": "7QKoCu53PLbEgdBrKrp9UUmzCfBZBRyiLtNNdMDopump"
+  },
+  {
+    "agentName": "TITAN",
+    "chain": 8453,
+    "contractAddress": "0x6f20b57ef76650c73f3cba62e1ce13c18a3a39c4"
+  },
+  {
+    "agentName": "llama8b",
+    "chain": -2,
+    "contractAddress": "BqV8YSrSZitfTc6ufZxYXkPnJDyaZcJDWkBJmSSavive"
+  },
+  {
+    "agentName": "GXAI",
+    "chain": -2,
+    "contractAddress": "5r8AP7UWqkZHxqjVZ9Q2mCSmmVaGiJ8KzR26vmKbtrFH"
+  },
+  {
+    "agentName": "DIDDYTRON",
+    "chain": -2,
+    "contractAddress": "6U2wHsT77exPvch1aZjKyjq8FUE1U4iYF88F86D5pump"
+  },
+  {
+    "agentName": "ST1K",
+    "chain": -2,
+    "contractAddress": "4jMXPUb1csqxMGzpqAQSod4qGdueaN8YHMR2TYgVpump"
+  },
+  {
+    "agentName": "Xaiber ONE",
+    "chain": -2,
+    "contractAddress": "7hHdAAGUtny1FXLm9pSiZjPw2cZ9kedqHGjtaVMxj31F"
+  },
+  {
+    "agentName": "Aigen",
+    "chain": 8453,
+    "contractAddress": "0x64807717eaa9222d9ccc0fb5a3c54ddbb4f0fdd3"
+  },
+  {
+    "agentName": "SBABE",
+    "chain": -2,
+    "contractAddress": "D9mFkgnZHnQGRtZKvnJ44yvoLtJmfBZRahXiUKcAzRE4"
+  },
+  {
+    "agentName": "Alita",
+    "chain": -2,
+    "contractAddress": "AsjDpEEmQgGboRLzq3iJ4ZSKHQuM8E138WVkXm1d3hat"
+  },
+  {
+    "agentName": "d00d",
+    "chain": -2,
+    "contractAddress": "D6kGNAoZ7EMVw4dCBxYhs8aBQTq5qGt6Y1L6xZWLmoon"
+  },
+  {
+    "agentName": "#PRIAST",
+    "chain": -2,
+    "contractAddress": "AW8u4LiMo1SKcGiMBPYzHcWynirZYQA5KwsoFUMJpump"
+  },
+  {
+    "agentName": "MILAI16Z",
+    "chain": -2,
+    "contractAddress": "3ziPUB85So97tAuktzQSdbAQo6aD2xi8EvaaqReP65hZ"
+  },
+  {
+    "agentName": "0xTypen",
+    "chain": -2,
+    "contractAddress": "G3RdswoDRpEbWFCm2GYGQz42gnFWFF1jW6q5aKXzpump"
+  },
+  {
+    "agentName": "LauraAiTerminal",
+    "chain": 8453,
+    "contractAddress": "0x31dF8e1a70d4032bA0939bC3704f18ACa182c204"
+  },
+  {
+    "agentName": "TrixiVerse",
+    "chain": -2,
+    "contractAddress": "BE7o6vC8c7yXbXYodksospGs6g58SFa68ziUHoMg733v"
+  },
+  {
+    "agentName": "Events Protocol",
+    "chain": 8453,
+    "contractAddress": "0x2e30c8330c1d5386e0b56b9d376414dbc29d5be8"
+  },
+  {
+    "agentName": "Mofa",
+    "chain": -2,
+    "contractAddress": "rVnWzPaw1enBz2nji6TVkje87WKtJRtRpbd5MLoA38H"
+  },
+  {
+    "agentName": "EMMA",
+    "chain": -2,
+    "contractAddress": "GXo7Gxs8uPXRhgyVjjBC6NJvxCRXD3V4kCMpZZi9vBLz"
+  },
+  {
+    "agentName": "BECCO",
+    "chain": -2,
+    "contractAddress": "DJCFfLwQbaqeVMMoFs3BcY8VCNgW8gbCBEgJWXL5pump"
+  },
+  {
+    "agentName": "JOKERAI",
+    "chain": -2,
+    "contractAddress": "FdsxfXPTBV1Sk22bf82VwEFTsz6bGcCh4qGqPEBmpump"
+  },
+  {
+    "agentName": "Taffy",
+    "chain": -2,
+    "contractAddress": "GxiyeAc2vQoGPX82Jihys19KcRz4WC3EHPhcvXFBbmYM"
+  },
+  {
+    "agentName": "[AVA&TALI]",
+    "chain": -2,
+    "contractAddress": "C2pgi48XeWtqjD9qCeWV9CcSGRtjHiEesbqstiHepump"
+  },
+  {
+    "agentName": "Trust Me Bro",
+    "chain": -2,
+    "contractAddress": "CoMBhAaXoy92My9FdsNfQaM7LWNuDXbBLsKiHkzGpump"
+  },
+  {
+    "agentName": "Agent LegaTAO",
+    "chain": 8453,
+    "contractAddress": "0x28574fcaf2a07911163c559ea526d00785921fe1"
+  },
+  {
+    "agentName": "popAI",
+    "chain": -2,
+    "contractAddress": "GeXzrTAb4R9Da3R2c1MBtPoVk19CAgkQ8pnrRu8Cpump"
+  },
+  {
+    "agentName": "HENTAI6900",
+    "chain": -2,
+    "contractAddress": "69veVD4oo3QbJzXrAH7Rans8sue68AsgYyirWUrxSQUy"
+  },
+  {
+    "agentName": "aixmc",
+    "chain": 8453,
+    "contractAddress": "0xe61984b3c5515d8998e8630b738a7beddbd352f2"
+  },
+  {
+    "agentName": "CAIN",
+    "chain": -2,
+    "contractAddress": "DRaw7vnprDUgKrNvxCEkh6YGTDjvnxcnrCsoyRTEpump"
+  },
+  {
+    "agentName": "DeBanky",
+    "chain": 8453,
+    "contractAddress": "0xb625ea3567ec09c76aa7da0c37b1935ae624fb0f"
+  },
+  {
+    "agentName": "Agent Volas ☴",
+    "chain": 8453,
+    "contractAddress": "0xb7dbb38ce5908820fd7150c55419386d97dd4732"
+  },
+  {
+    "agentName": "Lily Warden",
+    "chain": 8453,
+    "contractAddress": "0xec330e3c7e4c7e0551cb08dad001fe87e7f99d48"
+  },
+  {
+    "agentName": "Hera",
+    "chain": 8453,
+    "contractAddress": "0xa9021ca5e2dbe5c01b6b78651d50ec4a4dcb1e59"
+  },
+  {
+    "agentName": "Mr House",
+    "chain": 8453,
+    "contractAddress": "0xebc74e413ac48036657493a66f9114beefe9f53b"
+  },
+  {
+    "agentName": "BASED",
+    "chain": -2,
+    "contractAddress": "2Ti3KMBHuugQ1PHA2wD4ZhgaMLTuG5N5nXm7KMaQpump"
+  },
+  {
+    "agentName": "Solana AI Agent",
+    "chain": -2,
+    "contractAddress": "2NNt9Lusg49tPJDuxrJJBUqJzv51P5j5i8puYqogEysD"
+  },
+  {
+    "agentName": "kermit",
+    "chain": -2,
+    "contractAddress": "HpmMcJX5yZYiUvqg3GkR3H66evhHXtMvtsPvWY2Yi2zP"
+  },
+  {
+    "agentName": "TICKET",
+    "chain": -2,
+    "contractAddress": "5uPM6F46jUFemuPBCRG7iN9JRK5fN9bmMXtLveWXpump"
+  },
+  {
+    "agentName": "CMbot",
+    "chain": -2,
+    "contractAddress": "89kzdzxgifggJ5VMuLBkt5DvuJ85LiHoo17SgMeqpump"
+  },
+  {
+    "agentName": "MARTZAI",
+    "chain": 8453,
+    "contractAddress": "0x0718af3d75103a45fb4404d7d0612f80090c32e7"
+  },
+  {
+    "agentName": "shrigma",
+    "chain": -2,
+    "contractAddress": "G1E3pLjoZVAraiaC2q2qQAriSyFyvQ2DwNW7Hz9CYEUj"
+  },
+  {
+    "agentName": "Player 1",
+    "chain": 8453,
+    "contractAddress": "0x4be69317aba848949ccd916c8da7a76bfcdddf33"
+  },
+  {
+    "agentName": "SEXFORCE",
+    "chain": -2,
+    "contractAddress": "FkfPjjkbECivkctn2cwnKRzibZhaZ4QvGLK46HVAf7b6"
+  },
+  {
+    "agentName": "CharitAI",
+    "chain": 8453,
+    "contractAddress": "0x3168fe906dc555c032d6b9c9ce05d15ddc9fafaf"
+  },
+  {
+    "agentName": "Mystri",
+    "chain": 8453,
+    "contractAddress": "0xb4e4d21fdf4945aa0a9c124937ee76326b38caf1"
+  },
+  {
+    "agentName": "ARIES",
+    "chain": -2,
+    "contractAddress": "GYPcyKKbsGXPayqwJciXy5j5Fruo83FmXmVQLgLpump"
+  },
+  {
+    "agentName": "DOGE",
+    "chain": -2,
+    "contractAddress": "CTJPoPRySx33NupxRuj4m3Z2zan1vkAeKJxP2rvipump"
+  },
+  {
+    "agentName": "terminator",
+    "chain": -2,
+    "contractAddress": "DgMEfCUqQyNXkWJumjor2R4Y9Xq97TFs53Dja1AVtUJz"
+  },
+  {
+    "agentName": "GrifterAI",
+    "chain": -2,
+    "contractAddress": "DdWs9oFuGBTFVRbhxNkKQYYYdA6X1D3H5ZMY5TZLjhfG"
+  },
+  {
+    "agentName": "DUDAIS",
+    "chain": -2,
+    "contractAddress": "wmQUn7SwNJw31LUJJTeGaen3XRqC4noyLLJKBQSSZTS"
+  },
+  {
+    "agentName": "Alex Titan",
+    "chain": 8453,
+    "contractAddress": "0x7ab86d1623E130b53B5110a84E76F6D312948CE7"
+  },
+  {
+    "agentName": "ZoroX - Tiktok Memecoin Hunter",
+    "chain": -2,
+    "contractAddress": "BQ6yqeqDinHtTUHH4JMzUAZ1MqGdNzcu9sDVcLrmpump"
+  },
+  {
+    "agentName": "MIRRA",
+    "chain": -2,
+    "contractAddress": "AQFnYM9WSDLKSg3YgkAQ16fFmchSpaxgD2Fmpy62pump"
+  },
+  {
+    "agentName": "s200",
+    "chain": 8453,
+    "contractAddress": "0xb6001D95d29a4b450f9209718c860A14Be7FF4b4"
+  },
+  {
+    "agentName": "Reika",
+    "chain": 43114,
+    "contractAddress": "0xa5fB48EbdDBA1c628fBb32542fe3c6ffDf6B5B80"
+  },
+  {
+    "agentName": "Sigma AI Terminal",
+    "chain": -2,
+    "contractAddress": "6APnaLJaNtmXzqjfp8anVTYyG7ZVfuHaX5h3yR94pump"
+  },
+  {
+    "agentName": "NA by virtuals",
+    "chain": 8453,
+    "contractAddress": "0xa2935744De0056231E52cA37A8744C2fb532ed5e"
+  },
+  {
+    "agentName": "$IMWIZ",
+    "chain": -2,
+    "contractAddress": "HVmp5521QekKdu6pudqm6jCr2UYdArdm4nV8gEaaQjiM"
+  },
+  {
+    "agentName": "NICK",
+    "chain": -2,
+    "contractAddress": "ugCchRcRwD2eDWRCpgmCbgfopRYQ2qKwYyJ7zjGa51s"
+  },
+  {
+    "agentName": "William Tell",
+    "chain": -2,
+    "contractAddress": "57SLd2G3ty9BEGeTLn3NnzX2yJp7nJKKJMEFiARKGVVz"
+  },
+  {
+    "agentName": "Pepe (few)",
+    "chain": -2,
+    "contractAddress": "8yQvmuetyw6HDamKERy9iDRiTF3Np2V4HitGzr8mVa3W"
+  },
+  {
+    "agentName": "Few ",
+    "chain": -2,
+    "contractAddress": "8yQvmuetyw6HDamKERy9iDRiTF3Np2V4HitGzr8mVa3W"
+  },
+  {
+    "agentName": "SAYLOR",
+    "chain": -2,
+    "contractAddress": "Dor794pc73birnHGxdhMVeHLQwb2CmijsRApczLEpump"
+  },
+  {
+    "agentName": "AIGAME",
+    "chain": -2,
+    "contractAddress": "FdDEZ2qMSTLh9G5sGjXsaC1aNT3nsDNg6sXGB4e6pump"
+  },
+  {
+    "agentName": "Saver By Deal Hunter",
+    "chain": -2,
+    "contractAddress": "97nUTS65NYqxAYqi8ZgmAed73zCzhUw77ymXztqtehat"
+  },
+  {
+    "agentName": "MINTYGIRL",
+    "chain": -2,
+    "contractAddress": "minty8wwFx6AsYcDHXZXnWG5kcf8VskJHhsJrDeLuCb"
+  },
+  {
+    "agentName": "Degen Trader",
+    "chain": 8453,
+    "contractAddress": "0xb9b97a24be90a2c91e55a556fd687d975c527e4d"
+  },
+  {
+    "agentName": "LimoncelloAI",
+    "chain": 1,
+    "contractAddress": "0x6d3f7af0ba8003a2de0335bccd957921380b2d9e"
+  },
+  {
+    "agentName": "Nailini",
+    "chain": 8453,
+    "contractAddress": "0x238C3474E48b187276bC3D98219E472b5c27bd36"
+  },
+  {
+    "agentName": "ECHO Chronicles",
+    "chain": -2,
+    "contractAddress": "sBkHx3cdCxENqq2CheAxDFpBeMY31dsaCUAfmdGpump"
+  },
+  {
+    "agentName": "Bronty",
+    "chain": -2,
+    "contractAddress": "EcoiKdyYKX7qGMBXL8yRtLtZeq8L1NcD2f9i9MAYpump"
+  },
+  {
+    "agentName": "Agent Cipher",
+    "chain": 8453,
+    "contractAddress": "0x1cf2e3a1fce2b653c8bc8829c22e32fae9ae8099"
+  },
+  {
+    "agentName": "BROC",
+    "chain": -2,
+    "contractAddress": "GZBPiZUYmYMVhmt3fVGXueH92QdcCgWXfdyRQosmbEG5"
+  },
+  {
+    "agentName": "INC",
+    "chain": -2,
+    "contractAddress": "7ScBXuKwKW5zAnuYaGzQNeYdEWDCc3z1bGU3viw9pump"
+  },
+  {
+    "agentName": "Cain Nakamoto",
+    "chain": 8453,
+    "contractAddress": "0x9dc4bcde9f14e686748085921f66de050aa3e002"
+  },
+  {
+    "agentName": "Basedberg Audit AI",
+    "chain": 8453,
+    "contractAddress": "0xdaad69d1feb67e5b80dcd9885bd4abf9f14967b0"
+  },
+  {
+    "agentName": "KATYA",
+    "chain": -2,
+    "contractAddress": "AV8ZAzXbtVBcfvFQHp8aQN6d62YSSD6JNfJcpYvxMgWN"
+  },
+  {
+    "agentName": "Swarmy",
+    "chain": -2,
+    "contractAddress": "DMiSS8Ziz5RCEFrQozWeZAqjTEjuBzrihzgNVtEpFhat"
+  },
+  {
+    "agentName": "Parry",
+    "chain": -2,
+    "contractAddress": "HGKv9qM8Z19cneKetEDM4VxmCgxZjzQireVgfbMbpump"
+  },
+  {
+    "agentName": "YSTI",
+    "chain": -2,
+    "contractAddress": "4VBzEFTJUGjbqsZdQKJpQhMKXaVTpgRTv1hGowkdzjp2"
+  },
+  {
+    "agentName": "VIRAL",
+    "chain": -2,
+    "contractAddress": "CGNirDZ92c8zHMYYmJULwPXMxdU3GMtLV9LKSuhsp4Zb"
+  },
+  {
+    "agentName": "HAKU",
+    "chain": -2,
+    "contractAddress": "HaoHBFBjc5UgcFvWDHsGb3n6qtyJkvP27yd4cei5pump"
+  },
+  {
+    "agentName": "Advocat",
+    "chain": -2,
+    "contractAddress": "FxwbKC8s3dq8kkwJyHN5KEwDuhzawgfTmWRnfnX6jBho"
+  },
+  {
+    "agentName": "GFR",
+    "chain": -2,
+    "contractAddress": "FN9tn6JQzegrUuHx7CyXyNsiSBZkRyoaHZuKF1Smpump"
+  },
+  {
+    "agentName": "GRIM",
+    "chain": -2,
+    "contractAddress": "4TADn2G5znkm82LuE44j3qK5GnPSEod8pwZDmAEJaE87"
+  },
+  {
+    "agentName": "AZILE",
+    "chain": -2,
+    "contractAddress": "5PV5f6TZ7xxBBkg8R8oVKdrhDLYG9Gt7FJyEUrJ1pump"
+  },
+  {
+    "agentName": "Waigmi DAO",
+    "chain": 8453,
+    "contractAddress": "0x41441bb183e3d8b0d68b5f0670d02c405fe04244"
+  },
+  {
+    "agentName": "EMPLOYMENT",
+    "chain": -2,
+    "contractAddress": "Bp8BJj6VYuuJYBhF8Qv3QyXCm78nQBoM4cbGHmG2pump"
+  },
+  {
+    "agentName": "Gilgamesh",
+    "chain": 8453,
+    "contractAddress": "0xFf8Ad74FFA7317F0d9b3dC00080aEe9CEd1106d2"
+  },
+  {
+    "agentName": "Trend Agent",
+    "chain": -2,
+    "contractAddress": "GrSiUc7eq9UmYw6cBjiucdWQXANZgmB9mS6nNCP8pump"
+  },
+  {
+    "agentName": "chillwhale",
+    "chain": -2,
+    "contractAddress": "8T4yHTW5qxHMu3Sj4f3C4PPe3v3jw6seK2Cof4Bcpump"
+  },
+  {
+    "agentName": "BIBU",
+    "chain": -2,
+    "contractAddress": "7BwDyVNzRqYSH3mbLfGV6kfFNL9s1JkehuYSQN1dpump"
+  },
+  {
+    "agentName": "Rosie the Robot",
+    "chain": -2,
+    "contractAddress": "EDHrQBSssKYGNht9FZMhB9zzf52MZaBe4N35iyRgpump"
+  },
+  {
+    "agentName": "LAMU",
+    "chain": -2,
+    "contractAddress": "5ExkfxGD7RycciStLQHSe9VvbSPzaG6s8g4itBvXU3xY"
+  },
+  {
+    "agentName": "Kekius Maximus",
+    "chain": 8453,
+    "contractAddress": "0x6640a99f64361678f521fcd05ec80edc64c6c9bb"
+  },
+  {
+    "agentName": "KEDRA",
+    "chain": -2,
+    "contractAddress": "E2keFx7gBh1L51XRrQ9AefJQpvffvk4KCJUxvPL3pump"
+  },
+  {
+    "agentName": "MARIOAI",
+    "chain": -2,
+    "contractAddress": "Ga62jTLLMaD2sgztTV7jSyEEEk5J4UV3H4i3MxYnGqUa"
+  },
+  {
+    "agentName": "Aiaxion",
+    "chain": 8453,
+    "contractAddress": "0xA7d5b69de16A71AC1716B14446484B8B6187d9A9"
+  },
+  {
+    "agentName": "Nostrobotus",
+    "chain": 8453,
+    "contractAddress": "0x06076db51a02c1d5870c9676a3185a3bf64e1d55"
+  },
+  {
+    "agentName": "yuvvi",
+    "chain": -2,
+    "contractAddress": "HpkkxjrYntRCRj4wiFQKYXgY4aZG76C4KMTpHh52TU8C"
+  },
+  {
+    "agentName": "ChangeAI",
+    "chain": -2,
+    "contractAddress": "4bGG7aeaJmF7GBZ3mR7UMe4PMgJMUKXzW3GNwsvvhhat"
+  },
+  {
+    "agentName": "NeneDroid ",
+    "chain": 8453,
+    "contractAddress": "0xdac89c84cff3b7aee8cec07d3fbf14496830b97d"
+  },
+  {
+    "agentName": "Innovia AI",
+    "chain": 8453,
+    "contractAddress": "0x08e79d71172ea36bf85294725745b5f3fc704e29"
+  },
+  {
+    "agentName": "OpepenAI",
+    "chain": -2,
+    "contractAddress": "BCJQ1J9P6s7KemqrKkyG1b9497a7wr4kfKvXXuP15BJc"
+  },
+  {
+    "agentName": "gnome",
+    "chain": -2,
+    "contractAddress": "ZWxEFbtPoWw82uoNZi8ruiBmKyEqEpUPCTJH2XZ6hi2"
+  },
+  {
+    "agentName": "HER0",
+    "chain": 8453,
+    "contractAddress": "0x498417518c446a28e9ea65d04255e207f2c82db3"
+  },
+  {
+    "agentName": "aixcalls",
+    "chain": 8453,
+    "contractAddress": "0x5cc7e54a3b98973546d8c5e66a33e35545bf2ff7"
+  },
+  {
+    "agentName": "Ω-Origin",
+    "chain": 8453,
+    "contractAddress": "0x678d02c361336c30634aed1b4aecc0bfd8635fd6"
+  },
+  {
+    "agentName": "CurAItor",
+    "chain": 8453,
+    "contractAddress": "0x99698bb7d41df3af094918c78da561eefa55b7b8"
+  },
+  {
+    "agentName": "ProofAI",
+    "chain": 8453,
+    "contractAddress": "0x95cd2b1770b59d3523eecbe631bb5345294ab198"
+  },
+  {
+    "agentName": "Bit Brief Crypto News",
+    "chain": 8453,
+    "contractAddress": "0x03c5200ab85144b68dc3e51d8d1fe0000bd05c4d"
+  },
+  {
+    "agentName": "ChooseAI",
+    "chain": -2,
+    "contractAddress": "BZynczxXkKoYvy6UCApLMzkesH6DtNYWDPsCsSsVp4Pw"
+  },
+  {
+    "agentName": "ailon",
+    "chain": -2,
+    "contractAddress": "2j9LsHkRaZUkfVRUYxJun4FxeJuxraZDaVzUqvsWpump"
+  },
+  {
+    "agentName": "Cobie",
+    "chain": -2,
+    "contractAddress": "GRv56gRLfJxnHJrVDLUhE3Fq5WYWHDA3TMgvLQtjpump"
+  },
+  {
+    "agentName": "CORTANA",
+    "chain": -2,
+    "contractAddress": "5QoTG1HiN6aqZj8tkyBFNtWn41ivYUf5g8daKRTFyc73"
+  },
+  {
+    "agentName": "Yami - The Demon Warrior",
+    "chain": -2,
+    "contractAddress": "BMMHKdzatwPgQt5LNPkWDp3MrJrg4cRiJQaWukjZUhat"
+  },
+  {
+    "agentName": "StonedAi",
+    "chain": -2,
+    "contractAddress": "Fb1H99AYxkAzB1ZuSjj4ukPqgiM96Vj5rNs3iF5Xk89B"
+  },
+  {
+    "agentName": "TAKION 7400",
+    "chain": 8453,
+    "contractAddress": "0x8a455c262602afe5f099a9b8f990025c87d365fe"
+  },
+  {
+    "agentName": "cogito",
+    "chain": -2,
+    "contractAddress": "9P5ssDajEST74CiTBHPfJD4bhBTzDhMJMcMYcberpump"
+  },
+  {
+    "agentName": "Glyph",
+    "chain": 8453,
+    "contractAddress": "0xa9fb265261ca5be0ba37459b9d70ec0ad0675e5b"
+  },
+  {
+    "agentName": "Gaydar AI",
+    "chain": -2,
+    "contractAddress": "3HuFqusiVMGyhx7Wj7G5TEJwCeTzV9iFLcURazs4Mhat"
+  },
+  {
+    "agentName": "MESO",
+    "chain": -2,
+    "contractAddress": "WqteAAXS4j5WdRpBEwRUBse6ANqtHNascduwSnVpump"
+  },
+  {
+    "agentName": "AIdrop Agent",
+    "chain": 8453,
+    "contractAddress": "0xc5f2773b43bfe08f9fa20ac1feb6034041b38c14"
+  },
+  {
+    "agentName": "HOP",
+    "chain": -2,
+    "contractAddress": "HWdZgE9mfbCSNDmEYvToSgymYm4hvujUzTjeTPvE1qGK"
+  },
+  {
+    "agentName": "ZERESIS",
+    "chain": -2,
+    "contractAddress": "793z16bwDgLvyo4S7Sak8CGquCbCsGgc3tdN1xGnpump"
+  },
+  {
+    "agentName": "STONKS",
+    "chain": -2,
+    "contractAddress": "ET8hVe75qfQeWvFcK7kvoBtmkexFsDWzNJeL7LyZcbwe"
+  },
+  {
+    "agentName": "SPERM",
+    "chain": -2,
+    "contractAddress": "3rEWQ7wACyat2Tn4UeK3X9nfbgaDCUeeYvD1peGSpump"
+  },
+  {
+    "agentName": "ai6ix9ine",
+    "chain": 8453,
+    "contractAddress": "0x45b4b414adf2e9ccd572ee0f8da44d3bb339f624"
+  },
+  {
+    "agentName": "OPTREE",
+    "chain": -2,
+    "contractAddress": "4kCEM8E4EeibX5q3wYpcFLu9D1mJU2JWcdTLqEDspump"
+  },
+  {
+    "agentName": "NEECHE",
+    "chain": -2,
+    "contractAddress": "EaHucco6xfbJydLh9ixgoMPZFs3T5oHTLZdVuPsiu6B5"
+  },
+  {
+    "agentName": "Surreal Agent",
+    "chain": -2,
+    "contractAddress": "ADmRsMjfNSUDN7vKCqKeE4aevyQWPFYsZHc5gsh6pump"
+  },
+  {
+    "agentName": "ZaraFI",
+    "chain": -2,
+    "contractAddress": "tGYccrYrQDBL95AVQWaMQDAQyytRsF9nkLrVA16Uhat"
+  },
+  {
+    "agentName": "kurt",
+    "chain": -2,
+    "contractAddress": "3V5fau4STk5DRRG7RaG9TehT2RvGygaNgVt3Gi2wsHyV"
+  },
+  {
+    "agentName": "Innovatrix",
+    "chain": 8453,
+    "contractAddress": "0xbbd2d2cab8df8eb00a6c9267e512bfb8e445edba"
+  },
+  {
+    "agentName": "HALO",
+    "chain": -2,
+    "contractAddress": "C3VaDAABx2wNb7aotqeUPhPdNsWvJhUQXWPAnjsApNRV"
+  },
+  {
+    "agentName": "SAGEL",
+    "chain": -2,
+    "contractAddress": "ABXW1ZYLeE3ZNrK7zFprrVDJkbqpqxfUDsCo2pEipump"
+  },
+  {
+    "agentName": "Ouroborosxbt",
+    "chain": -2,
+    "contractAddress": "6hafqNxDeRYZBz2r4kMRXgZFJXh7ziht7PAdMCpqpump"
+  },
+  {
+    "agentName": "Alpha Rabbit",
+    "chain": 8453,
+    "contractAddress": "0x9efffd293e5fac32a50205a26dbf20ba656e4bdf"
+  },
+  {
+    "agentName": "SWART",
+    "chain": 8453,
+    "contractAddress": "0xb9e5bfb54dd210884e10d6ca6a10f948d3f6ab8d"
+  },
+  {
+    "agentName": "BRAG",
+    "chain": -2,
+    "contractAddress": "7BgkWrq34jpmc2d7MhtxBoo7DvJhcLGCBCLdFCYfQBBc"
+  },
+  {
+    "agentName": "FF",
+    "chain": -2,
+    "contractAddress": "CTnQANNbMjVBZvfVNzqBGw8HDMX4PvHk6LMQAyjfpump"
+  },
+  {
+    "agentName": "AIDM",
+    "chain": -2,
+    "contractAddress": "EGzv3iS5tuQ6WUzZXF2pihHvTcfXq76k2Zw2sdJWNWSj"
+  },
+  {
+    "agentName": "Penguin Santa",
+    "chain": 8453,
+    "contractAddress": "0x3f16a55ec25941130faf1185b59f6872edb20814"
+  },
+  {
+    "agentName": "ShadowAI",
+    "chain": -2,
+    "contractAddress": "7VwxiPZeSYfQbQxqorGBctSyorPMJusrGDFkX5TFpump"
+  },
+  {
+    "agentName": "TT",
+    "chain": -2,
+    "contractAddress": "DsKdYU2QF29rYE1qcFsAbcJ7y4d9y9cZFPvXjW6qpump"
+  },
+  {
+    "agentName": "N0VA",
+    "chain": -2,
+    "contractAddress": "C7ZB7YhvuwbHwiXAYsCzZgKHeMVbP12a9wpVXNCnPbjM"
+  },
+  {
+    "agentName": "PEP",
+    "chain": -2,
+    "contractAddress": "FuxGyAnvbkvMWMzSJ4wEREuwARS5k1Q621S6jizcpump"
+  },
+  {
+    "agentName": "Swipr",
+    "chain": -2,
+    "contractAddress": "ARty2wsKJ4QgFzTcCh4GJFaxLQycB5RSJEcbsU1ypump"
+  },
+  {
+    "agentName": "Zeneca AI",
+    "chain": 8453,
+    "contractAddress": "0x42264e32aa14b14e15fe1c95ece36a39440d6e95"
+  },
+  {
+    "agentName": "Agent Smith ",
+    "chain": -2,
+    "contractAddress": "JEECoLVmtpk8LT8FLR6nvTEPHMLxu1fyepPasQ6KWhat"
+  },
+  {
+    "agentName": "MARISOL",
+    "chain": -2,
+    "contractAddress": "F3oMjShXPo34xccx2Zr1HDiLXBto3CuNvtXbUQtUKYRq"
+  },
+  {
+    "agentName": "BeckerAI",
+    "chain": -2,
+    "contractAddress": "C4AnkpqY69TjSyBBFHd1S966rrMbzqQKhmXEFM3gKhrS"
+  },
+  {
+    "agentName": "GMPUNK",
+    "chain": 8453,
+    "contractAddress": "0xa096419e7f9602b75918457236b56165b74b88bc"
+  },
+  {
+    "agentName": "LILBTC",
+    "chain": -2,
+    "contractAddress": "HML5DyWxTS67mrShq8vYdEWjWLwH7RyyrTaL2vifpump"
+  },
+  {
+    "agentName": "REKTIFIED",
+    "chain": -2,
+    "contractAddress": "FckUSqeJ2m9mPMFiCN163tVMjcVK9bz9U2hgPKxhpump"
+  },
+  {
+    "agentName": "ZEREBRA",
+    "chain": -2,
+    "contractAddress": "7spbe3oyVvwm2EXHB69mQuj1myedbEjr5w991TndkyuA"
+  },
+  {
+    "agentName": "Futarchists",
+    "chain": -2,
+    "contractAddress": "7atGqFkzJ3qqgEAcpXrgSVW8x3iDCfzDpRjMTAKxChat"
+  },
+  {
+    "agentName": "Neuromorphic",
+    "chain": -2,
+    "contractAddress": "DPbSA2jf8Mqpc59upHUA29zr8ZdtP4mZMaz95k7wpump"
+  },
+  {
+    "agentName": "MOW",
+    "chain": -2,
+    "contractAddress": "5U4NcCGs49xNQogYGV88rME5TG462AtKdD34zTt3vSPC"
+  },
+  {
+    "agentName": "Agent DAO",
+    "chain": 8453,
+    "contractAddress": "0x6d339dfe605d379111d86a80d419d54aa31ea0a3"
+  },
+  {
+    "agentName": "TruthSeeker",
+    "chain": 8453,
+    "contractAddress": "0x2cf5f421526ea39a28fcc32a1bce4b2878b78263"
+  },
+  {
+    "agentName": "FSM",
+    "chain": -2,
+    "contractAddress": "4v4wFEEZkLRoDmE5wDg2zeCPKx9FS1ToUQYNK7NrqWox"
+  },
+  {
+    "agentName": "FoMo",
+    "chain": -2,
+    "contractAddress": "6eS8GkcKQnVvW44qPzQ2bYBSbU8vEEmSpdfAorNvpump"
+  },
+  {
+    "agentName": "AZERO4",
+    "chain": -2,
+    "contractAddress": "En9moDCnVNXNtxDDQaMYwp93bLK7zf8fpzRRfSKxQjch"
+  },
+  {
+    "agentName": "VIEWS",
+    "chain": -2,
+    "contractAddress": "ViEWSwQnsrvn6pi8jfwGmDPj2efWKn1gDpAtkSXxFhA"
+  },
+  {
+    "agentName": "Narrative Terminal",
+    "chain": 8453,
+    "contractAddress": "0x89c3d2217ea32a6681541806757c04e3477f17cd"
+  },
+  {
+    "agentName": "AI16y",
+    "chain": 8453,
+    "contractAddress": "0x0ea0da16117cc0b13b4216016defc6ebf74d396f"
+  },
+  {
+    "agentName": "DefiCat",
+    "chain": 8453,
+    "contractAddress": "0x85d27dd4e51d7411a9987dcf66ee1db49fb43cd9"
+  },
+  {
+    "agentName": "GLEN",
+    "chain": -2,
+    "contractAddress": "Ab4gc98XsRzLYbgUUAPHyfyjCuNPbk3M2RFgPGdpYjcW"
+  },
+  {
+    "agentName": "DOCS",
+    "chain": 8453,
+    "contractAddress": "0x844dc21ebdec9a12beea209978117f0e439776a4"
+  },
+  {
+    "agentName": "LATTICE",
+    "chain": -2,
+    "contractAddress": "JA8dt1SSb1WnLrXSHecYSK6APyhDQuLEecqorpHjpump"
+  },
+  {
+    "agentName": "AInakin",
+    "chain": -2,
+    "contractAddress": "22g723rktYvWb61bDDwqj5Ctc5etHLFQbHhAcQqgTswp"
+  },
+  {
+    "agentName": "Soundposted",
+    "chain": 8453,
+    "contractAddress": "0xccb54162566193693fa081b7c3de0aaa32318d4a"
+  },
+  {
+    "agentName": "AKANE",
+    "chain": -2,
+    "contractAddress": "2odD3Ksr1kWAVg6Xk77BjQN6c9ZbsNaz4cktNEaapump"
+  },
+  {
+    "agentName": "BONK",
+    "chain": -2,
+    "contractAddress": "5gzkkG31PQSNRSQS3bZxSUnffwoAb1cxd4xy5jbWf9ki"
+  },
+  {
+    "agentName": "Daisy",
+    "chain": -2,
+    "contractAddress": "DAiSYKgVjkvDnxphSPuGbRsgA5K8ATr5cVXHFpKSxb3K"
+  },
+  {
+    "agentName": "PAWZ",
+    "chain": -2,
+    "contractAddress": "5TrU57Z4rDaqMHMg5eT5ia4X2QqFKqo4YuNy1v1E4hat"
+  },
+  {
+    "agentName": "TESLAI",
+    "chain": -2,
+    "contractAddress": "CcvHznhPbAWuKF2scVLgwFZafKwD8n9onjSMPZMcpump"
+  },
+  {
+    "agentName": "KEKEK",
+    "chain": -2,
+    "contractAddress": "6fpnDGYRgrjB58Z3TSLp9QKeDJeDb9SEJRXKR9hUpump"
+  },
+  {
+    "agentName": "Hairy Potter",
+    "chain": -2,
+    "contractAddress": "2fySniUj7ngZmUYVahncrS3CU8c28UPcWtcNMw6ArHq6"
+  },
+  {
+    "agentName": "Existential_XBT",
+    "chain": 8453,
+    "contractAddress": "0x1fc5315211443f3c145b6cb278143cfd642c53fa"
+  },
+  {
+    "agentName": "Jenny AI",
+    "chain": -2,
+    "contractAddress": "3Zppi4uzYK1jZWEZ2rjmyrHE1ib4ZpSjQAeLr2qupump"
+  },
+  {
+    "agentName": "OLIVAI",
+    "chain": -2,
+    "contractAddress": "9KQSeyZ7bQC4VWY1h8c41UQdDfTdkUK9caZ1QdNrTqH8"
+  },
+  {
+    "agentName": "sailor",
+    "chain": -2,
+    "contractAddress": "5DgNAdSxad5N5KTXMHXhtKFynNLmugVyCTFBJdrdVsGj"
+  },
+  {
+    "agentName": "ERINA",
+    "chain": -2,
+    "contractAddress": "67UcBVysMusc3jqfC6Qu7Fp25PpMCc7gMQ7Cshftfcpc"
+  },
+  {
+    "agentName": "porkystein",
+    "chain": -2,
+    "contractAddress": "FjCTwaU3UV9p6tN3xpu7j54myNP7iHho61d6xeFSpump"
+  },
+  {
+    "agentName": "Don Trump",
+    "chain": 8453,
+    "contractAddress": "0x078b1aa3f05650b88b5d8662c1c49c560b95b67a"
+  },
+  {
+    "agentName": "ARCAI",
+    "chain": -2,
+    "contractAddress": "DvUEKA2gRbBRu83vHM4Wf2iqnbGVVUhJpLFMQJgBpump"
+  },
+  {
+    "agentName": "AAAAA",
+    "chain": -2,
+    "contractAddress": "6fHm4QQRJ5KXvVtaEgPDnmDowyVcD6uUBQCnjnHPpump"
+  },
+  {
+    "agentName": "AGENT T",
+    "chain": -2,
+    "contractAddress": "6RHCXepbGBKrRSDKPTZkppdPwAjDnBrd89CNK6zmeme"
+  },
+  {
+    "agentName": "dwog",
+    "chain": -2,
+    "contractAddress": "3DWUvVBwGgLpG8FVNLn4gUMHBUpRkjNcc3txotfZpump"
+  },
+  {
+    "agentName": "$NOOPAI",
+    "chain": -2,
+    "contractAddress": "45hMxUznkUPWrgLkvcogW6jzc8CX9ZgZ5Jb21Cqepump"
+  },
+  {
+    "agentName": "Claw100",
+    "chain": -2,
+    "contractAddress": "EPKssgGk6TqW7WbBiJqu7gwAKnLArpVDz5M1Z6vaShat"
+  },
+  {
+    "agentName": "Multaicoin Capital",
+    "chain": -2,
+    "contractAddress": "5v556aJeRqDGVpfDhpGCpJJY74jo68TvbQ44GTPHhat"
+  },
+  {
+    "agentName": "David Goggins AI",
+    "chain": -2,
+    "contractAddress": "3JUUKpiMY6a9sFyQpxp2RuQn9zK639Uc5aAFgTUyUmit"
+  },
+  {
+    "agentName": "ZERO",
+    "chain": -2,
+    "contractAddress": "7ZoHWbiobE6NuNjfuU6LRRU4gg9S1yp94kZbMeLHvHQD"
+  },
+  {
+    "agentName": "BETTY",
+    "chain": -2,
+    "contractAddress": "6JRWqEHX4SdfAeFUuu9mLhbEeTez7YXEvcUcgNcbpump"
+  },
+  {
+    "agentName": "BoJack002",
+    "chain": 8453,
+    "contractAddress": "0x5ea8f1273a8b7bd59cfa0b80ab3a01a166c0b3a9"
+  },
+  {
+    "agentName": "Pete Davidson AI",
+    "chain": -2,
+    "contractAddress": "Cy3G1xbCQj4Xt8pdtEiFBA9qx2cpgfkqaCXrUHyNdhat"
+  },
+  {
+    "agentName": "LISA",
+    "chain": -2,
+    "contractAddress": "8Z5YKHhhddjKaoMqej4KBkPbaDV9jEztJbXkfXAPsa9h"
+  },
+  {
+    "agentName": "PF100",
+    "chain": -2,
+    "contractAddress": "5DNfxHidv825AKsCrjnKC15VBCiGDTVCngHvEHUopump"
+  },
+  {
+    "agentName": "SBF",
+    "chain": -2,
+    "contractAddress": "HjZ5kSJUij2h6f3aems8oiYCGq8q8gJPLroFcKQHnhh7"
+  },
+  {
+    "agentName": "HAL",
+    "chain": -2,
+    "contractAddress": "9QMTvZpvSWUpx3mg2xjmVvjb8LXGsbBBSb2cDK5hKDTC"
+  },
+  {
+    "agentName": "DDEK AI",
+    "chain": -2,
+    "contractAddress": "55pQNTnDSFMsEuzp426C4nntUR1n4XSXysD8PsU3pump"
+  },
+  {
+    "agentName": "DDEK AI",
+    "chain": 8453,
+    "contractAddress": "0x774F37f6B65dd9B5B373225d7501102140F26C68"
+  },
+  {
+    "agentName": "BLANKFACE",
+    "chain": -2,
+    "contractAddress": "6m2iJDsWvi2NNy76vPCyHqDtcchSPQbGUP8gatJLpump"
+  },
+  {
+    "agentName": "BIMO",
+    "chain": 8453,
+    "contractAddress": "0x6e650a124a8ef97db770c82e5a9b74e55a4d01fc"
+  },
+  {
+    "agentName": "DappCat",
+    "chain": 8453,
+    "contractAddress": "0x54c415eec6c27a8708214642eab1ab25658bac22"
+  },
+  {
+    "agentName": "Qi",
+    "chain": -2,
+    "contractAddress": "D5FHAmdwK1VbmThBjAp475woF54GJkK9HpAFiwwLckMU"
+  },
+  {
+    "agentName": "RON",
+    "chain": -2,
+    "contractAddress": "ArVrcEbaLhZPdvfxa4PdXBykhSUTDbKYqKfd6m5DPVvd"
+  },
+  {
+    "agentName": "FRANKY",
+    "chain": 8453,
+    "contractAddress": "0x65449ce8eb0bc62bcbcd2752b275b2d9c5e5abb9"
+  },
+  {
+    "agentName": "Auralis",
+    "chain": -2,
+    "contractAddress": "3HgcdkiKYRRPdZwPMrh1D6EZSwv9gAkskJPvPaWsYwQv"
+  },
+  {
+    "agentName": "Agent Shoge",
+    "chain": 8453,
+    "contractAddress": "0x373a5bc04e4a0bf717b15d1a6b9aac51f047655c"
+  },
+  {
+    "agentName": "VangAI",
+    "chain": -2,
+    "contractAddress": "7xcowSQetnaE4kipYd9W1RorG4canskgbGZByte8pump"
+  },
+  {
+    "agentName": "CryptoVanguard",
+    "chain": 8453,
+    "contractAddress": "0x20e609c3b7bd2c5514ba6de2ec29693052637f8a"
+  },
+  {
+    "agentName": "MAKEIT",
+    "chain": -2,
+    "contractAddress": "py8F42Gzy2uGkMZ4PznyPp9JEfnopek9gJygdFhLupR"
+  },
+  {
+    "agentName": "Brah",
+    "chain": -2,
+    "contractAddress": "EnnQc7f6KVpCeu5fay5rMNdnFeQ6e65vokax23W7NhGV"
+  },
+  {
+    "agentName": "BeastAI",
+    "chain": -2,
+    "contractAddress": "9nCEhmGRqZwrjffVyESezzAMepnGTiaWGJJkWEbj8QEf"
+  },
+  {
+    "agentName": "ANAIL",
+    "chain": -2,
+    "contractAddress": "7WLhMAA9FAfY8cWW6kpr5WAmmraic5U28ndcJwFnFhat"
+  },
+  {
+    "agentName": "MinionAI",
+    "chain": -2,
+    "contractAddress": "D4mo6FU3JcXH4BtybT1rhwdQzhfTjFLNmE7mvStEFhat"
+  },
+  {
+    "agentName": "Nomadic Vistas",
+    "chain": 8453,
+    "contractAddress": "0xfb0785731fbd655ba9f271f3efe21debde9392a1"
+  },
+  {
+    "agentName": "DICKSOUT",
+    "chain": -2,
+    "contractAddress": "BPB7RPSPwoHFaVD22EWcsufupKh4ApKSzGMbgjSkpump"
+  },
+  {
+    "agentName": "CreatorHat",
+    "chain": 8453,
+    "contractAddress": "0xb8062f66f294b355a2e2b1f3ad462a93c8c878ad"
+  },
+  {
+    "agentName": "AIRA",
+    "chain": -2,
+    "contractAddress": "3mANm89hnZe12TzD5j7EPhwZySNRX75DT3yMEHn3nfFy"
+  },
+  {
+    "agentName": "KOKO",
+    "chain": -2,
+    "contractAddress": "9XSBt5nVmx9XqiEVBjEZVTXbe92rVeq51gZFp6RxMn8r"
+  },
+  {
+    "agentName": "ANSEM",
+    "chain": -2,
+    "contractAddress": "3HD6Qjzs3yMqWZzdqnDL1qHjFwbFMUVizQwjKzKV2RLk"
+  },
+  {
+    "agentName": "Chase",
+    "chain": 8453,
+    "contractAddress": "0xb7c2d75444fcfdffa4414755ed2d5a239364b2ba"
+  },
+  {
+    "agentName": "Glisa",
+    "chain": 8453,
+    "contractAddress": "0xef3959dfd62ad24bd00c18d02a761cef7b8493d7"
+  },
+  {
+    "agentName": "Skylar ",
+    "chain": 8453,
+    "contractAddress": "0xafcac7a15988fbc4023053c93a97ec95a95e2050"
+  },
+  {
+    "agentName": "remusai",
+    "chain": -2,
+    "contractAddress": "HhSaFKqs3QMS1oyy4tetTNMQUg4CTe3A7pb9XeqSpump"
+  },
+  {
+    "agentName": "SynapseBid",
+    "chain": 8453,
+    "contractAddress": "0xf8de71eb71409f69d0cc2d3f8fa6ad99bb7860d2"
+  },
+  {
+    "agentName": "Milady678",
+    "chain": -2,
+    "contractAddress": "5WTniJknHAdvF8Xze53Lafj118T3BrRhj2e4JPusSXfK"
+  },
+  {
+    "agentName": "BALD",
+    "chain": -2,
+    "contractAddress": "8BkJopqLfpc2JNCLke9A7iQ1ge1h4357FeaBd9Cfpump"
+  },
+  {
+    "agentName": "666X",
+    "chain": -2,
+    "contractAddress": "92cCPLniCMvVsGqjFAkyqK26G7BXT5taa8Qhu5gVpump"
+  },
+  {
+    "agentName": "Young",
+    "chain": -2,
+    "contractAddress": "2z4BH2Rfp6hEjvwR5NHr7bAGuZhL2r2i7qjZej9jEAbX"
+  },
+  {
+    "agentName": "FEDERAL",
+    "chain": -2,
+    "contractAddress": "B3BtNfhrLJwSfh8XGc6E9VikvGAa2gJAvEJrqJr7pump"
+  },
+  {
+    "agentName": "DLLM",
+    "chain": -2,
+    "contractAddress": "MuZ7kx4XhnYaKgM4GpWxfvfPjsqH4Hff1VMCmhNhUo8"
+  },
+  {
+    "agentName": "Arch",
+    "chain": -2,
+    "contractAddress": "AFoEndS2zCsJ436v635bEgfbPsQ49kNLgVSZ5xSr7bwx"
+  },
+  {
+    "agentName": "Grinch AI",
+    "chain": -2,
+    "contractAddress": "gakQVemy8DYRh4KpNJW2mV2fwKzqNhtGLf58URupump"
+  },
+  {
+    "agentName": "HEALTH",
+    "chain": -2,
+    "contractAddress": "CAnCpMQpoEAivRwWK3BUBFVxd4K6FVGZZN24ytYXbEwo"
+  },
+  {
+    "agentName": "Trump Buddha",
+    "chain": -2,
+    "contractAddress": "5QRu5oVEtew76jyD9NDgUxpQ4j49RQ4ZBSisSWaZ2hat"
+  },
+  {
+    "agentName": "PyLogic",
+    "chain": -2,
+    "contractAddress": "JCrseE6WFDkinFDHYeQ8nLaf8f7DAJgkHaBuW3SFqjou"
+  },
+  {
+    "agentName": "MEIMEI",
+    "chain": -2,
+    "contractAddress": "2EFR2WR6JZstEaCQzTcuTa4oyHQ1MYbmGTYn6oz8pump"
+  },
+  {
+    "agentName": "Pepebot",
+    "chain": -2,
+    "contractAddress": "61h2G5tovTmnc55W2NUiHB3BL51LLeDNaCJ6GaudesLw"
+  },
+  {
+    "agentName": "Goodboyai",
+    "chain": -2,
+    "contractAddress": "CBMybrK7EMCZjKLLbWqawSwREaXLtBMAN7iPDhoLvqAZ"
+  },
+  {
+    "agentName": "FullSpark AI",
+    "chain": 8453,
+    "contractAddress": "0xf3ba81d03dba918013a60651c0b472a18dc1d394"
+  },
+  {
+    "agentName": "Jellyfish AI Agent",
+    "chain": 8453,
+    "contractAddress": "0x1ea23d88165940e15f3af5c187bb410598bc9db0"
+  },
+  {
+    "agentName": "SQRL",
+    "chain": -2,
+    "contractAddress": "FUkZMiVRrdfg2hHt2xcDoHwk6zgfMmNRbjD4k4y9pump"
+  },
+  {
+    "agentName": "LEGFISH",
+    "chain": -2,
+    "contractAddress": "GErGVRCt28uS7HowbKR4J8TFwHJ9QcE6h2qiF9u3pump"
+  },
+  {
+    "agentName": "Giga Cum Sock Chad ",
+    "chain": -2,
+    "contractAddress": "H9AuhUkxbRfn7sPNdtjnKemUfxit3MHS6sj6ewNTZhat"
+  },
+  {
+    "agentName": "BUN",
+    "chain": -2,
+    "contractAddress": "5KSo7GM3pwjjr1yGtfsy5G1X5c6FGDhiaZm7Cpzppump"
+  },
+  {
+    "agentName": "THE QUEEN",
+    "chain": -2,
+    "contractAddress": "8Pd7mBEzWZ31ZiG9oVnBHctzTBx6vLdywRu9TTGRpump"
+  },
+  {
+    "agentName": "hypnotoad",
+    "chain": -2,
+    "contractAddress": "DW5rm1svtH6GHTfGqf5xJcy3BjtjCRx5oHprG6ZCnrGw"
+  },
+  {
+    "agentName": "BAYC1626",
+    "chain": -2,
+    "contractAddress": "3p2uekTmsRrDjqHCLWx37xhnpAocyYHMkKxfUDeSgNqU"
+  },
+  {
+    "agentName": "evelyn ",
+    "chain": -2,
+    "contractAddress": "3LZt8Xf3pqhwThFXfNtTKzV2ii5nSY7op4b7Xvnopump"
+  },
+  {
+    "agentName": "brAInworm",
+    "chain": -2,
+    "contractAddress": "43MnEaq8dSgR8njvTUC9FyMpPVis8h2wMy5GjuF1e3EJ"
+  },
+  {
+    "agentName": "GENZ",
+    "chain": -2,
+    "contractAddress": "953FLztdC1KwT9SMb28Ba4diBBURpSzR8dnFxKSerQKS"
+  },
+  {
+    "agentName": "Lady Pixelworth",
+    "chain": 8453,
+    "contractAddress": "0xc5e3bcd0918ca23604b21d0be8e1f0e8d9bc2935"
+  },
+  {
+    "agentName": "AERIS",
+    "chain": -2,
+    "contractAddress": "41KJkMLNNFzKiGCUDPgky1cgGfszunruU3K1WCrdDuSL"
+  },
+  {
+    "agentName": "CAITY",
+    "chain": -2,
+    "contractAddress": "CAiTYbs1u1Wu8wgoRGBFdzHpmywmRivUka18czy6Werp"
+  },
+  {
+    "agentName": "Tardio",
+    "chain": -2,
+    "contractAddress": "E83KYDFdcokdBGUAGqYNKDKGXZ6W5gAkC4zUCdeBpump"
+  },
+  {
+    "agentName": "Nomad AI",
+    "chain": 8453,
+    "contractAddress": "0x76adb385093623234eb4ad2dd68a32fa57ae9bb9"
+  },
+  {
+    "agentName": "Haliey",
+    "chain": -2,
+    "contractAddress": "EJMHr84pWteTkk3usrz4csqAoKrR7ZiYQXYHBaMrQVWD"
+  },
+  {
+    "agentName": "ASTARIA",
+    "chain": -2,
+    "contractAddress": "9y9P2idK9qvmq6gmRsikAoJwnNWCcM8nC3nrTERRj2Tq"
+  },
+  {
+    "agentName": "Agent Cerebrus",
+    "chain": 8453,
+    "contractAddress": "0x1b9c2c4c13ee05efc7df1267a66063ae47ca7232"
+  },
+  {
+    "agentName": "MAGA",
+    "chain": -2,
+    "contractAddress": "9L3QbeG1iyxYucgkXwpKCUtQvxoUa5ZyZVqvHw6S1oeB"
+  },
+  {
+    "agentName": "Ailluminati",
+    "chain": -2,
+    "contractAddress": "Bk4Pr1RBakuiiG7UL7nsAf8j8G1HTGk5QncvRJmQWhat"
+  },
+  {
+    "agentName": "lllama",
+    "chain": -2,
+    "contractAddress": "7Z5FsNk28UxtpG5UPvgJJeU8EarsuBsPzKSVNZrWKhat"
+  },
+  {
+    "agentName": "sonn3",
+    "chain": -2,
+    "contractAddress": "AKFCmCKBMCCvMvKKgHwN3vKVnTFAMJAVPEdzsh3Npump"
+  },
+  {
+    "agentName": "PRIME",
+    "chain": -2,
+    "contractAddress": "ET3dqFPZTmyDGkTMymfryTKbyyf3erqvWcP3Ww6BzK4z"
+  },
+  {
+    "agentName": "Woodland Critters",
+    "chain": -2,
+    "contractAddress": "AZBS3YHNuneocBDeEMdkGnVG3g2cLRxsjVy4hiwsEhat"
+  },
+  {
+    "agentName": "Waifu98",
+    "chain": -2,
+    "contractAddress": "8kwomQ6ZMWfwiSpoNc3E9ZN4WE68e2b9wo9sA2ZMpump"
+  },
+  {
+    "agentName": "SAKURA agent",
+    "chain": 8453,
+    "contractAddress": "0xAA4c2741E5C7661b2dEaCef66D1b05E9DAC0eccB"
+  },
+  {
+    "agentName": "GRILLGUY",
+    "chain": -2,
+    "contractAddress": "253ec5fopYw5itErzTnwuyAXUGgWQzaDQ5VWjjx1pump"
+  },
+  {
+    "agentName": "Doge AI",
+    "chain": 8453,
+    "contractAddress": "0x9aa7f1970deee47923e5f0407a1c9acdf7a5198e"
+  },
+  {
+    "agentName": "CEREXA",
+    "chain": -2,
+    "contractAddress": "3b1AgP98EUMRRDFzrpeLokkzy3xXaynaknCLWGvXpump"
+  },
+  {
+    "agentName": "Aiko Byte",
+    "chain": -2,
+    "contractAddress": "FbQRHCPofgijJ65txxjcpNoxtr44SGqP3Gm4gduiKhat"
+  },
+  {
+    "agentName": "Akane (あかね)",
+    "chain": -2,
+    "contractAddress": "7bgHu1V8nbtjVdKSCkomokZHpxh3TwBg8UYuWUFzpump"
+  },
+  {
+    "agentName": "SHAW",
+    "chain": -2,
+    "contractAddress": "2eu5qc9dx37AhPpTXimpMTKjPDpHWjPGtD7G3KBwwrtN"
+  },
+  {
+    "agentName": "Diss God",
+    "chain": -2,
+    "contractAddress": "JADMVrq17J1TEoAg9acQCwg8hqUBPyRUsPuFZVCeEhat"
+  },
+  {
+    "agentName": "ZEREGORL",
+    "chain": -2,
+    "contractAddress": "A5DeXuZi7sV1rxQgPA1yPD4kW7dDethN6fyjQHvzpump"
+  },
+  {
+    "agentName": "GUTS",
+    "chain": -2,
+    "contractAddress": "9T6owj9NLBh5qUJtmp5y2qAKPckdpbAEHjmACamTgCaP"
+  },
+  {
+    "agentName": "Agent One Darkholme Twitter Bot",
+    "chain": -2,
+    "contractAddress": "HRFcMDi82kjZVFB9r9VheLFehjsz9mikTbzPWxD2pump"
+  },
+  {
+    "agentName": "HAVOC",
+    "chain": -2,
+    "contractAddress": "5qqSjD4J3PmiwVYw1LxJpKsfGGp8d4zo1a1F9znVTjad"
+  },
+  {
+    "agentName": "SPEC",
+    "chain": -2,
+    "contractAddress": "ENs2DemgtHYg6cizK6H5yEVgHdJyNbPhmP8TLnGJstoG"
+  },
+  {
+    "agentName": "pak",
+    "chain": -2,
+    "contractAddress": "J9CjZzHMv1PRnbXAiT89RAK1zwf2yvUaBA5wmBcjq2yc"
+  },
+  {
+    "agentName": "MAMI",
+    "chain": -2,
+    "contractAddress": "2qjbeEW7SYBXCYUxgUk2Y1L9hwLLsDjqwNKx7tmjX1Q8"
+  },
+  {
+    "agentName": "Arcadis",
+    "chain": 8453,
+    "contractAddress": "0x4b662dabbc5005b98732ab8512febe1962e0962c"
+  },
+  {
+    "agentName": "AIGCR",
+    "chain": -2,
+    "contractAddress": "33983LZM3Y3yZ6xjEHeLZiaBYwYhw3AKGfJs2YqTvo3e"
+  },
+  {
+    "agentName": "TRAP",
+    "chain": -2,
+    "contractAddress": "DeBo1PShAi4acdk2a5dBBqBY53ghULQn2sKUemRKvKUJ"
+  },
+  {
+    "agentName": "Smart Bot",
+    "chain": 8453,
+    "contractAddress": "0x18cbd3f18d62c212519c213d8d71a9ddc60435f0"
+  },
+  {
+    "agentName": "Now What's Going to Happen Is....",
+    "chain": 8453,
+    "contractAddress": "0xd615c2d232d9f1c5dafbfd4c24983cb377e7212e"
+  },
+  {
+    "agentName": "McAfeeAI",
+    "chain": -2,
+    "contractAddress": "VZvuB2A7J8RAGUaQLq3hFf8CXyy98usmpTHjuNBpump"
+  },
+  {
+    "agentName": "Passport Bros AI",
+    "chain": -2,
+    "contractAddress": "pjtjuApWiDp6YWkxxm3LnkwTcJdo4TuCNpoqfvwpump"
+  },
+  {
+    "agentName": "NIGGERUS",
+    "chain": -2,
+    "contractAddress": "2sTadE7WE614QQfxYUzUZ7vd2oWVpKB3o9Fn5qdVpump"
+  },
+  {
+    "agentName": "PhAIdon",
+    "chain": -2,
+    "contractAddress": "3Pf9ULdZBBjvuTEM2MjdPg8vvywJHVAP8HxRXeNcfkbV"
+  },
+  {
+    "agentName": "RUCKUS",
+    "chain": -2,
+    "contractAddress": "8hecm2X1Ws2nBpSUE2ctR2HhDUpJNTH2b5GdX4Ut6rbx"
+  },
+  {
+    "agentName": "Shadow Whisperer",
+    "chain": 8453,
+    "contractAddress": "0x5df5c4e690bd5fd79168162618d93801d855010d"
+  },
+  {
+    "agentName": "AIZoo",
+    "chain": -2,
+    "contractAddress": "4SXjTh3Ue7cqAtb6xx6AGsfNeVaYi8gt6N84syHechat"
+  },
+  {
+    "agentName": "PENGI",
+    "chain": -2,
+    "contractAddress": "BtTwK9BuTjCGBC5X4ejj4GA1Qgp3o3ZKAMNcE71vpump"
+  },
+  {
+    "agentName": "Archai",
+    "chain": -2,
+    "contractAddress": "EuPHCt7FaQjWb13QmH687kSMRb5qeZZKnDvUdso7EQg2"
+  },
+  {
+    "agentName": "Well",
+    "chain": -2,
+    "contractAddress": "EQkPqEXedSJdgkjdhUMeZe8yRws7EGaQoe2RMCrjLmjM"
+  },
+  {
+    "agentName": "R3lativAI",
+    "chain": -2,
+    "contractAddress": "FJq9xTww7PztEhFRYL7buw7Wfeto7EtWTVBLUFTEpump"
+  },
+  {
+    "agentName": "Kauman",
+    "chain": 8453,
+    "contractAddress": "0xdd9345e2c2fd883f4a6c94833863d524448d175a"
+  },
+  {
+    "agentName": "TAI",
+    "chain": -2,
+    "contractAddress": "A43m9LCABjFEyXnaiwCjddDNafptBgXyn8ffuiRNpump"
+  },
+  {
+    "agentName": "Rover",
+    "chain": -2,
+    "contractAddress": "4uz44JLvsJahuk8LxJAinhRNpsNwB61UZCn4ygbeMGLK"
+  },
+  {
+    "agentName": "rawr",
+    "chain": -2,
+    "contractAddress": "7d2bYrnGe8As6yFYRAHtyzhx6aJfzc6YDEH5HXkCpump"
+  },
+  {
+    "agentName": "NARUTO",
+    "chain": -2,
+    "contractAddress": "FpZ7PFy4WbusZxo8sjTv1UzGtL7C9qTLQRDgb1xRpump"
+  },
+  {
+    "agentName": "PUNK8611",
+    "chain": -2,
+    "contractAddress": "25s5rgsuGe7XYDJzP4uTAkJwfby62TRHrrpSoZDUpump"
+  },
+  {
+    "agentName": "BRANTLY",
+    "chain": -2,
+    "contractAddress": "2vwru2Pc866LEP4De1Fw54mcJ78PjYemEdVQi7xXpump"
+  },
+  {
+    "agentName": "ROCK",
+    "chain": -2,
+    "contractAddress": "DH78MVVW12hHXQHdnCrTkrrgRhvsY95bHGtf49ffurYm"
+  },
+  {
+    "agentName": "Scientist",
+    "chain": -2,
+    "contractAddress": "2Zm4zxxEQYPonYQWGBzcZAQha8fXqg6tVVvwTRvJpump"
+  },
+  {
+    "agentName": "SCORGI",
+    "chain": -2,
+    "contractAddress": "EKECLntYcvsTRcyrxRU7Rr5PfkJeJKe9z3piGh7Rpump"
+  },
+  {
+    "agentName": "Teenus Omegus",
+    "chain": -2,
+    "contractAddress": "GhVz3W8it2WpDmW4J6eC9ktk5DeWhrT6faJvU1nfpump"
+  },
+  {
+    "agentName": "moodaing",
+    "chain": -2,
+    "contractAddress": "DNZfynvECKyJvtQxnBWQgNZB1hZAtrBjZXNyUc3gevsu"
+  },
+  {
+    "agentName": "DOOMCOIN",
+    "chain": -2,
+    "contractAddress": "Cs1NGzTJ96krZiQaC1qicpJjdMKz39KPM4cuQXWspump"
+  },
+  {
+    "agentName": "NXA",
+    "chain": -2,
+    "contractAddress": "43o1ewbEFssvLy5BkAQsdE9WrwEcDu5SM4qGY62YCxzh"
+  },
+  {
+    "agentName": "MCI",
+    "chain": -2,
+    "contractAddress": "Dn6XvS5gyhwsja1ijUxksUQianwJEARyxA437VtHpump"
+  },
+  {
+    "agentName": "robot1",
+    "chain": -2,
+    "contractAddress": "9hjzrjmsY47uPfNdCEPKCL1VqkE3Q12zoHgEje9Epump"
+  },
+  {
+    "agentName": "poppy",
+    "chain": -2,
+    "contractAddress": "5wzjwKhkecH3GbaQBhSi9n3iRALC9p1EmcdaFQS5pump"
+  },
+  {
+    "agentName": "LEAK",
+    "chain": -2,
+    "contractAddress": "2yCVPfG2AYy9nPGkrz1mNinBPcuFaV9UkMzub5keLtAm"
+  },
+  {
+    "agentName": "NOXIUM",
+    "chain": -2,
+    "contractAddress": "4VpeWaTeKA8r3DDNTBZL7FLU2SCVbm5yAiKwKFtaZ3AJ"
+  },
+  {
+    "agentName": "Degen Hagrid",
+    "chain": -2,
+    "contractAddress": "HBoqxTPSxaYsz42KLxLTFUvkg7qhSXnxLbtqrJNVpump"
+  },
+  {
+    "agentName": "AIHERM",
+    "chain": -2,
+    "contractAddress": "G7bG8c1b5tvgimkrUnWNA28kfWDQzVMSoosoWmaocxCi"
+  },
+  {
+    "agentName": "tradingaxe",
+    "chain": -2,
+    "contractAddress": "69nTPxSd6JrTe6rCWJBfwwayNAUvNwcg9PKJvKJx4s1T"
+  },
+  {
+    "agentName": "kika",
+    "chain": -2,
+    "contractAddress": "4eWBt28F2e4kGccWuSqNTQgQFY486VT13rfa9fWovNMM"
+  },
+  {
+    "agentName": "Nelson WizardKing",
+    "chain": -2,
+    "contractAddress": "uYZf51QGmraUCE49Vmvs9MbRojXfipUowFrrYocpump"
+  },
+  {
+    "agentName": "KOBA",
+    "chain": -2,
+    "contractAddress": "FTyY3FE7QPoPh1UzLK9eHQsnG5bsUiAqmtBLBJBpump"
+  },
+  {
+    "agentName": "KWON",
+    "chain": -2,
+    "contractAddress": "kCiLfNTo8RbmhLry7J2jxej54Jr6BmDfmVHx2MBv2Hn"
+  },
+  {
+    "agentName": "Tori",
+    "chain": -2,
+    "contractAddress": "BotLCV3G5wX8K6qpTgcUqyjZZhXrS3zAi3j6V3ras7TD"
+  },
+  {
+    "agentName": "nia",
+    "chain": -2,
+    "contractAddress": "9xAHVEZLDpfTVYqoxrp4DeyJyYMFB2FVmuM7JpSdpump"
+  },
+  {
+    "agentName": "BG",
+    "chain": -2,
+    "contractAddress": "2RHCBfpW3AF33gv6CHBvKPJhDMTxMJfLoPpjDiknqVry"
+  },
+  {
+    "agentName": "Snowflake",
+    "chain": -2,
+    "contractAddress": "JCm4r5uH2Sn8UCYyRinhYx6JbrjEW9JaDhYiihFdRhat"
+  },
+  {
+    "agentName": "kronto",
+    "chain": -2,
+    "contractAddress": "7q6anrXGT5uiwnbBDSK6mVZp2GK3VQDxmut2tDQSpump"
+  },
+  {
+    "agentName": "AiLon16z",
+    "chain": -2,
+    "contractAddress": "6oNh8dKaS4VtgjMsBQ11vejpyVchwKnwU1esvtgjpump"
+  },
+  {
+    "agentName": "KNAIGHT",
+    "chain": -2,
+    "contractAddress": "BBDYssgnQfYEhMxmJcYXJvrkhXeDFPpcyZD6TRkGpump"
+  },
+  {
+    "agentName": "ZELDAI",
+    "chain": -2,
+    "contractAddress": "5jz2yAydc8XNGbBSPZFFTxxSiSQ7AUNRNdsNgMs8KQNj"
+  },
+  {
+    "agentName": "Thail",
+    "chain": -2,
+    "contractAddress": "J3H7dKxN9L6JRL4KwnBBLs8E4rp5pBE9HVyr1914pump"
+  },
+  {
+    "agentName": "Cyborg Elon",
+    "chain": -2,
+    "contractAddress": "2ia5qzLxjsXeahVqhDuHhvMDwmACVPmKeiZvjQm8Yhat"
+  },
+  {
+    "agentName": "rizzyai",
+    "chain": -2,
+    "contractAddress": "GQb3tdkhFfJzGxBX4mhVCEW4PYoQ57BKPnZx61Yvpump"
+  },
+  {
+    "agentName": "SmartAI",
+    "chain": 8453,
+    "contractAddress": "0x8a9bd53f17971c69e5f0ffe0273e0b605395a1d0"
+  },
+  {
+    "agentName": "BrainrotAI",
+    "chain": -2,
+    "contractAddress": "J5yE22ErZqaPdGi24ATCsZheFtNXFz6bBkzHfh7jpump"
+  },
+  {
+    "agentName": "CYPHER",
+    "chain": -2,
+    "contractAddress": "DvDL4ZWJU9r5iJMPLzJtqmhWCEE3ULGRnTbUkHghrt9E"
+  },
+  {
+    "agentName": "Fuck Gensler",
+    "chain": -2,
+    "contractAddress": "GTYY9uuWtEZaJanKz99tm194nt9jBVEVQVGpCgzQyhat"
+  },
+  {
+    "agentName": "rekt",
+    "chain": -2,
+    "contractAddress": "4NNPiNBZivgs5UHPAqEVuN4zht7gBST2gBB55NUub5Mw"
+  },
+  {
+    "agentName": "MIO",
+    "chain": -2,
+    "contractAddress": "BDZtTLEX7GW7LqJ6Qnp2P4chMRgYstusXf6BkaRYTH9J"
+  },
+  {
+    "agentName": "tenet",
+    "chain": -2,
+    "contractAddress": "CU6Gw29tc7YjiK39zsWfaup3SvUDRdGkLnj9WRprpump"
+  },
+  {
+    "agentName": "JINX",
+    "chain": -2,
+    "contractAddress": "7chyEZZG8CbpkKsS4znYWPf91Y2rCnLv4NtESkq3todU"
+  },
+  {
+    "agentName": "ClementAI",
+    "chain": -2,
+    "contractAddress": "8op5H13kokqn4zvce4i5uS1FQDMAWz6M7pzcqLQUfi9n"
+  },
+  {
+    "agentName": "Z9",
+    "chain": -2,
+    "contractAddress": "CdzZ2E44FnXkHcz7isrrjAGVbVVa6gi1VSuQbPuBeSFk"
+  },
+  {
+    "agentName": "KENZIE",
+    "chain": -2,
+    "contractAddress": "Fe5E3i4hLC5MKh99RmS1i299YxjJDycpyHRDoQxmHaKG"
+  },
+  {
+    "agentName": "SONO",
+    "chain": -2,
+    "contractAddress": "2d3SFWfC3LiuvwNDYQqFizMAfF1r53poq2BQqYTopump"
+  },
+  {
+    "agentName": "VAL",
+    "chain": -2,
+    "contractAddress": "HRmdKcpMEKNLreURXi4wk6vhRfQ9QmnBKkxhFwFt1GJd"
+  },
+  {
+    "agentName": "007",
+    "chain": -2,
+    "contractAddress": "ApCoHbgD13Sj8XJ5ezjzeFwGu2Tuf5YaQVqmf7AGrtc8"
+  },
+  {
+    "agentName": "DINGLE",
+    "chain": -2,
+    "contractAddress": "6ehpJuFEgxNaXNYSP2LDbsnwyBaSTRYKRWnRaX6VqGjy"
+  },
+  {
+    "agentName": "SCHIZO",
+    "chain": -2,
+    "contractAddress": "6hXYNabxwNjZkfSy4fb5dmau2of62dqujhmYTrNKNAQK"
+  },
+  {
+    "agentName": "SVR",
+    "chain": -2,
+    "contractAddress": "8eRRZCnfJupkeurAJnaaVfQEmAWBaTtRjZzA6mCKpump"
+  },
+  {
+    "agentName": "TRUMPMAS",
+    "chain": -2,
+    "contractAddress": "8CiCWnrJBmPS31pC4gPJEsNe9FPfg61H7hHBeko9pump"
+  },
+  {
+    "agentName": "SenpAI",
+    "chain": -2,
+    "contractAddress": "9io2poFBibUGCM97TaPar73taBuBEqSUJakirvtqpump"
+  },
+  {
+    "agentName": "rAIcist",
+    "chain": -2,
+    "contractAddress": "7LdpsJjDF9uiipsQwfYt9nsespNE6QHDz3pMkBxa4oMJ"
+  },
+  {
+    "agentName": "AZUKI9605",
+    "chain": -2,
+    "contractAddress": "2yEKoJsRvTgJZs4HSSpenoCTDJV5YC1W2smhoUEhpKuT"
+  },
+  {
+    "agentName": "Aileen",
+    "chain": -2,
+    "contractAddress": "6t1age6k6e14cXxBr11K2HuDSLwTfAas5BWeWdF52ek3"
+  },
+  {
+    "agentName": "DOG2CAT",
+    "chain": -2,
+    "contractAddress": "4wGdKCnzcuffPhxyDWaFGz57ubVZxdmykYQmcjyNYvC2"
+  },
+  {
+    "agentName": "JESUS",
+    "chain": -2,
+    "contractAddress": "5K3KYAvhwKw8S7Vk8Au78PBrDYmo7DMzHVidNo2mu6Wr"
+  },
+  {
+    "agentName": "Hudai",
+    "chain": -2,
+    "contractAddress": "3xyfHPQBUtoQEmBCFxMxXUcuYyHkZy8FmGThDZxXu7N9"
+  },
+  {
+    "agentName": "EINSTEIN",
+    "chain": -2,
+    "contractAddress": "37vSjzbyVRaUtyQAk4WQ5h8f2y9r1csYENMACsdBuNUi"
+  },
+  {
+    "agentName": "Delusional Bulls AI",
+    "chain": -2,
+    "contractAddress": "7nbTJQZzzMkU7HfdseJnSGgDE5j1zZvpWm9m7QHySvZ"
+  },
+  {
+    "agentName": "AISEM",
+    "chain": -2,
+    "contractAddress": "4gqEewSU2NW28zvewHH2jdPAAoyvVSR3umz8TPP5pump"
+  },
+  {
+    "agentName": "TrudeauAI",
+    "chain": -2,
+    "contractAddress": "8CeUidMyZ3Fci1gcRfvkc5FjwAEFAQf8xF3Msdvapump"
+  },
+  {
+    "agentName": "$SDV Junimo",
+    "chain": -2,
+    "contractAddress": "9isCdy1hC158FV4m94g8bFRwXB3vFcBeqeHoYpVapump"
+  },
+  {
+    "agentName": "AIJIM",
+    "chain": -2,
+    "contractAddress": "5PDfv3NRacjLSu7y475aPX9qDsWJJz49YDi6htGFTTUr"
+  },
+  {
+    "agentName": "AKARI",
+    "chain": -2,
+    "contractAddress": "9sA6zYCPfQo5q5XNTHNTeud4WKzGVkmqRgWQ9dDcpump"
+  },
+  {
+    "agentName": "LLM",
+    "chain": -2,
+    "contractAddress": "FT7HsNqc5cS7dVZwhgnbcTvY9ESHvDxsEmRCusXepump"
+  },
+  {
+    "agentName": "Pauly0x",
+    "chain": -2,
+    "contractAddress": "6RFLobZb83xmsGQc3PQpKVZWKaaHDr8HfSRDDPkhMyC5"
+  },
+  {
+    "agentName": "NIGEL",
+    "chain": -2,
+    "contractAddress": "7xtcgUGpSwq8e59inggck1Bhd9sLBKJXjjD9kshnpump"
+  },
+  {
+    "agentName": "MERLIN",
+    "chain": -2,
+    "contractAddress": "CCG5RhXuRfT9UYTimtgaYRMPf2YGDd3sF34a7qj3pump"
+  },
+  {
+    "agentName": "V1 Agent AI",
+    "chain": -2,
+    "contractAddress": "Ceemahavs2YSvUjMZgBQ9STavQ9vy1bAhPUV4C9Wmdxv"
+  },
+  {
+    "agentName": "Dogus",
+    "chain": -2,
+    "contractAddress": "HASU74AZsYyyP7EJvmou5jvTEHmNsSDGYEeyqjp6pump"
+  },
+  {
+    "agentName": "HBIC",
+    "chain": -2,
+    "contractAddress": "CMPwe3aXSyLf3Cy7cUcuBLJg1iY6ZXDiv7NpK7aa71Ve"
+  },
+  {
+    "agentName": "Detective AI",
+    "chain": -2,
+    "contractAddress": "2KjWkDS3ztgNtB7htfqJU2N2oAGid5ZjjmUGBcuUghat"
+  },
+  {
+    "agentName": "T800",
+    "chain": -2,
+    "contractAddress": "97eByx1b1b37AFh3azakDLfusguZFWBabdDHkfPcshW6"
+  },
+  {
+    "agentName": "SigmaAI",
+    "chain": -2,
+    "contractAddress": "TZHSntr7L4NUecnWJej6bw6FrePdTtTrbfFQ9kspump"
+  },
+  {
+    "agentName": "Ayedawlf",
+    "chain": -2,
+    "contractAddress": "346PZh4egDKnHt3mvPuHZLx5GwmLgrYP4pd2oBYAbvgX"
+  },
+  {
+    "agentName": "UNCLE",
+    "chain": -2,
+    "contractAddress": "EfMtkn6STEdffSE2i7CNEXqrhAB6nLrSQ8fydFbMG68Q"
+  },
+  {
+    "agentName": "AIDER",
+    "chain": -2,
+    "contractAddress": "CBVVViJhBnfXY9dpstVVubAe57rmdfVyXfa9zngFnoBz"
+  },
+  {
+    "agentName": "CTAI",
+    "chain": -2,
+    "contractAddress": "m8D1DmkpAwbLiebetd7YSBJ8jEHqbcabFCncM26pump"
+  },
+  {
+    "agentName": "FREN AI ",
+    "chain": -2,
+    "contractAddress": "BEJqqxCiW5HcgKxpkZDR8qdL365uBXXW6pSnE3iaEBFt"
+  },
+  {
+    "agentName": "marie",
+    "chain": -2,
+    "contractAddress": "53kzFbTmPhmdgYXso6brcxS7UBWswY4hFHs9Q1J3AprY"
+  },
+  {
+    "agentName": "Ailon Musk",
+    "chain": -2,
+    "contractAddress": "8Y7t4XB23oczgxbMT4sywCgxRkYrjckn6bntEDDSpump"
+  },
+  {
+    "agentName": "DEGOD270",
+    "chain": -2,
+    "contractAddress": "F9xHfTqwHSBECCPNegrUs2dsD8ck3BbJi8ZSoSqU2CAA"
+  },
+  {
+    "agentName": "ARCT",
+    "chain": -2,
+    "contractAddress": "8BBVWGfHZoztYsCcibkrjPkLpmcb34r6mQsGWEofpump"
+  },
+  {
+    "agentName": "DAI",
+    "chain": -2,
+    "contractAddress": "9NVWPXwz4sh1Nnt6axCuAebKAfRdHYeXQi3Go64jWHJq"
+  },
+  {
+    "agentName": "YOUNG HEE",
+    "chain": -2,
+    "contractAddress": "554FXZZDd18gwzNPXkLeqDTtn1gYtDcQe8NKMnSGb3VX"
+  },
+  {
+    "agentName": "LANA",
+    "chain": -2,
+    "contractAddress": "EsciG7G8g8xVeg9dpy8yJCAavrWNDaykmoMERU8f4Lhv"
+  },
+  {
+    "agentName": "PUDGY",
+    "chain": -2,
+    "contractAddress": "8RuNoMwmAB1h53LLkX95G3pbsLTJ3sDSVDRGMdLanQ1t"
+  },
+  {
+    "agentName": "NeoAI Sentinel",
+    "chain": -2,
+    "contractAddress": "GkpWd67P5oANfxwnhYETnbEPKuCWurY1eux272kepump"
+  },
+  {
+    "agentName": "SEED",
+    "chain": -2,
+    "contractAddress": "3nxCqsfnPvpPHFbkX9vsLwQsCCKSESMGMwdcbcBRpump"
+  },
+  {
+    "agentName": "Curly",
+    "chain": -2,
+    "contractAddress": "BbXmxjGhdjDaMzrAnxVXsBWuUYCH8JB3QpQatNNS1hat"
+  },
+  {
+    "agentName": "CCLAUS",
+    "chain": -2,
+    "contractAddress": "CAnD1gWVDHa74eXBHUfVgLkgk2wrg65abjb9DaEQpump"
+  },
+  {
+    "agentName": "V0ID",
+    "chain": -2,
+    "contractAddress": "3vwESTyRqzhK89q2BQL7WctupQ34KcAefb6MU5C1jgvF"
+  },
+  {
+    "agentName": "sky",
+    "chain": -2,
+    "contractAddress": "7Pow9xSD1ayBaWU3dzzyRZ4CcUhCbjTvJyBDKZf6vhzF"
+  },
+  {
+    "agentName": "Stellar",
+    "chain": -2,
+    "contractAddress": "GcLPeevL4ToVo7Jo1duuH1Lc7grdK6CMbyH2ZBNoXdHL"
+  },
+  {
+    "agentName": "User",
+    "chain": -2,
+    "contractAddress": "3t6MHg4uSTFkRZYbnsPmRJsz3kxZq6beKSo58bxfB5jt"
+  },
+  {
+    "agentName": "OOPS",
+    "chain": -2,
+    "contractAddress": "HU1xRNUs5PvcNmhuEcp7eL1wCBusf3nxPUM1BmB42xit"
+  },
+  {
+    "agentName": "Zero2",
+    "chain": -2,
+    "contractAddress": "2z7Si7priWUogaic2g8VToxrWdosFW38Jv6YKiaxgkLi"
+  },
+  {
+    "agentName": "SMB810",
+    "chain": -2,
+    "contractAddress": "7ZcYrQGPe98bjgffWBCJr9Wy6rnMJWFkRSN65m7SMvK1"
+  },
+  {
+    "agentName": "OTOMO",
+    "chain": -2,
+    "contractAddress": "J48d1GLrS4CaajLyh6NNU173CzaNCV8hfaoeRK49pump"
+  }
+]
