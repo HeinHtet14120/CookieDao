@@ -19,6 +19,7 @@ interface VaultTableProps {
 
 export function VaultTable({ tokens }: VaultTableProps) {
   return (
+
       <Table>
         <TableHeader>
           <TableRow className="border-neutral-500 ">
@@ -42,15 +43,15 @@ export function VaultTable({ tokens }: VaultTableProps) {
                     </Avatar>
                     <div>
                       <div className="font-medium">{token.agentName}</div>
-                      <div className="text-xs text-muted-foreground">${token.price.toFixed(2)}</div>
+                      <div className="text-xs text-muted-foreground">${token.price}</div>
                     </div>
                   </div>
                 </TableCell>
                 <TableCell className={token.priceDeltaPercent >= 0 ? "text-green-500" : "text-red-500"}>
-                  {token.priceDeltaPercent.toFixed(2)}%
+                  {token.priceDeltaPercent}%
                 </TableCell>
-                <TableCell>${(token.price * token.balance).toFixed(2)}</TableCell>
-                <TableCell>{(token.marketCap / 1e6).toFixed(2)}M</TableCell>
+                <TableCell>${(token.price * token.balance)}</TableCell>
+                <TableCell>{(token.marketCap / 1e6)}M</TableCell>
                 <TableCell>
               <span
                   className={`inline-flex items-center rounded-full px-2 py-1 text-xs ${

@@ -21,13 +21,18 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Copy } from "lucide-react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const router = useRouter();
   const { walletAddress, connectWallet, disconnectWallet, error } = useWallet();
   const [copied, setCopied] = useState(false);
   const [availableWallets, setAvailableWallets] = useState<string[]>([]);
+
+  const handleProfile = () => {
+    router.push("/userprofile");
+  };
 
   useEffect(() => {
     if (window.ethereum) {
@@ -152,9 +157,12 @@ export default function Navbar() {
               )}
               <DialogFooter className="sm:justify-start">
                 {walletAddress && (
-                  <Button variant="destructive" onClick={disconnectWallet}>
-                    Disconnect Wallet
-                  </Button>
+                  <>  
+                    <Button variant="destructive" onClick={disconnectWallet}>
+                      Disconnect Wallet
+                    </Button>
+                    <Button variant="outline" onClick={handleProfile}>Profile</Button>
+                  </>
                 )}
               </DialogFooter>
             </DialogContent>

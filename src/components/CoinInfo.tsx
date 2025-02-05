@@ -67,14 +67,14 @@ const CoinInfo = ({ data }: { data: Agent }) => {
     {
       title: "CA",
       icon: (
-        <IconTerminal2 className="h-full w-full text-black   dark:text-neutral-300" />
+        <IconTerminal2 className="h-full w-full text-neutral-300" />
       ),
       ca: data.contracts?.[0]?.contractAddress,
     },
     {
       title: "Twitter",
       icon: (
-        <IconBrandX className="h-full w-full text-black   dark:text-neutral-300" />
+        <IconBrandX className="h-full w-full text-neutral-300" />
       ),
       href: `https://twitter.com/${data.twitterUsernames?.[0]}`,
     },
@@ -92,7 +92,7 @@ const CoinInfo = ({ data }: { data: Agent }) => {
 
   return (
     <div className="flex items-center my-auto justify-between min-h-full w-[100%] mt-10 gap-10">
-      <div className="flex w-[20%] flex-col gap-2">
+      <div className="flex w-[20%] flex-col gap-2 border border-white/20 backdrop-blur-lg rounded-xl">
         {/* Core Metrics Card */}
         <Card className="h-fit w-fit">
           <CardHeader className="pb-3">

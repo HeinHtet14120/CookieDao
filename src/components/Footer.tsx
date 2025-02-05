@@ -9,6 +9,9 @@ import {
   Twitter,
   DiscIcon as DiscordIcon,
   ChevronRight,
+  User,
+  Spade,
+  SpadeIcon,
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { ToastAction } from "@/components/ui/toast";
@@ -59,6 +62,22 @@ export default function AdvancedWeb3Footer() {
                 </motion.a>
               ))}
             </div>
+          </div>
+
+          {/* developer profile */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Devs</h3>
+            
+            <div onClick={() => window.open("https://x.com/biginthe4teen", "_blank")} className="flex items-center gap-2 cursor-pointer">
+              <SpadeIcon className="h-4 w-4" />
+              <p className="text-gray-400 hover:underline">Big</p>
+            </div>
+
+            <div onClick={() => window.open("https://x.com/PhilipBright_", "_blank")} className="flex items-center gap-2 cursor-pointer">
+              <SpadeIcon className="h-4 w-4" />
+              <p className="text-gray-400 hover:underline">Bright</p>
+            </div>
+            
           </div>
 
           {/* Newsletter Signup */}
