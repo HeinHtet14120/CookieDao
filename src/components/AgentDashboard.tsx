@@ -763,17 +763,19 @@ export function AgentDashboard({
         const prediction = aiPredictions[agentName] || "No Data";
 
         return (
-          <div
-            className={`text-sm px-2 py-1 rounded ${
-              prediction === "Increase allocation"
-                ? "bg-green-300 text-green-800"
-                : prediction === "Reduce allocation"
-                  ? "bg-red-300 text-red-800"
-                  : "bg-gray-200"
-            }`}
-          >
-            {prediction}
-          </div>
+            <div
+                className={`text-sm px-2 py-1 rounded animate-pulse 
+    ${
+                    prediction === "Increase allocation"
+                        ? "bg-green-300 text-green-800"
+                        : prediction === "Reduce allocation"
+                            ? "bg-red-300 text-red-800"
+                            : "bg-gray-200"
+                }`}
+            >
+              {prediction}
+            </div>
+
         );
       },
     },
@@ -781,13 +783,13 @@ export function AgentDashboard({
     {
       id: "actions",
       enableHiding: false,
-      cell: ({ row }) => {
+      cell: ({row}) => {
         const agent = row.original;
 
         return (
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" className="h-8 w-8 p-0">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" className="h-8 w-8 p-0">
                 <span className="sr-only">Open menu</span>
                 <IconDotsVertical className="h-4 text-white/50 hover:text-white w-4" />
               </Button>
