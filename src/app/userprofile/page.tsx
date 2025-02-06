@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState, useEffect } from "react";
@@ -21,7 +20,6 @@ export default function Page() {
   >([]);
   const [historicalData, setHistoricalData] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
-  const [selectedTimeframe, setSelectedTimeframe] = useState("Last month");
   const [errors, setErrors] = useState<string | null>(null);
 
   useEffect(() => {
@@ -31,7 +29,21 @@ export default function Page() {
     }
   }, [walletAddress]);
 
+  // Fetch SOL Balance
+  const fetchSolBalance = async () => {
+    try {
+      if (!walletAddress) return 0;
+      const walletPublicKey = new PublicKey(walletAddress);
+      const solBalance = await connection.getBalance(walletPublicKey);
+      console.log("✅ SOL Balance:", solBalance / 1e9);
+      return solBalance / 1e9; // Convert lamports to SOL
+    } catch (error) {
+      console.error("❌ Error fetching SOL balance:", error);
+      return 0;
+    }
+  };
 
+  // Fetch SPL Token Balances + Enrich Data
   const fetchAllTokenBalances = async () => {
     setLoading(true);
     setErrors(null);
@@ -46,71 +58,73 @@ export default function Page() {
 
       const walletPublicKey = new PublicKey(walletAddress);
 
-      // 🔹 Fetch token accounts for Solana (Including Stablecoins)
+      // Fetch SOL Balance
+      const solBalance = await fetchSolBalance();
+
+      // Fetch SPL Token Accounts
       const tokenAccounts = await connection.getParsedTokenAccountsByOwner(walletPublicKey, {
         programId: new PublicKey("TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"),
       });
 
-      if (tokenAccounts.value.length === 0) {
-        setErrors("No tokens found in this wallet.");
-        setLoading(false);
-        return;
-      }
-
-      const tokenList = tokenAccounts.value
+      let tokenList = tokenAccounts.value
           .map((accountInfo) => {
             const mintAddress = accountInfo.account.data.parsed.info.mint;
             const amount = accountInfo.account.data.parsed.info.tokenAmount.uiAmount || 0;
-            return { tokenMint: mintAddress, balance: amount };
+            return { tokenMint: mintAddress, balance: amount, price: null, marketCap: null };
           })
           .filter((token) => token.balance > 0);
-      console.log(tokenList);
 
+      console.log("✅ SPL Tokens:", tokenList);
 
-      // ✅ Use Solana Token List API as a fallback for stablecoins
-      const solanaTokenList = await fetch("https://token.jup.ag/all").then((res) => res.json());
+      // Add SOL manually to the token list
+      tokenList.unshift({
+        tokenMint: "So11111111111111111111111111111111111111112",
+        agentName: "SOL",
+        balance: solBalance,
+        price: null, // Market price to be fetched
+        marketCap: null,
+      });
 
+      // Enrich SPL Tokens
       const enrichedTokens = await Promise.all(
           tokenList.map(async (token) => {
-            try {
-              // ✅ Try fetching from our API
-              const apiUrl = `/api/fetchTokenData?contractAddress=${token.tokenMint}`;
-              const response = await fetch(apiUrl);
-              const result = await response.json();
-
-              if (result.success && result.data) {
-                return {
-                  ...token,
-                  agentName: result.data.ok.agentName || "Unknown",
-                  price: result.data.ok.price || null,
-                  marketCap: result.data.ok.marketCap || null,
-                  priceDeltaPercent: result.data.ok.priceDeltaPercent || 0,
-                  liquidity: result.data.ok.liquidity || null,
-                  volume24Hours: result.data.ok.volume24Hours || null,
-                  holdersCount: result.data.ok.holdersCount || null,
-                };
+            if (token.tokenMint === "So11111111111111111111111111111111111111112") {
+              try {
+                const response = await fetch("https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd");
+                const data = await response.json();
+                const solPrice = data.solana.usd;
+                return { ...token, price: solPrice, marketCap: null };
+              } catch (error) {
+                console.error("❌ Error fetching SOL market price:", error);
+                return token;
               }
-            } catch (err) {
-              console.error(`❌ Error fetching API for ${token.tokenMint}:`, err);
+            } else {
+              try {
+                const apiUrl = `/api/fetchTokenData?contractAddress=${token.tokenMint}`;
+                const response = await fetch(apiUrl);
+                const result = await response.json();
+
+                if (result.success && result.data) {
+                  return {
+                    ...token,
+                    agentName: result.data.ok.agentName || "Unknown",
+                    price: result.data.ok.price || null,
+                    marketCap: result.data.ok.marketCap || null,
+                    priceDeltaPercent: result.data.ok.priceDeltaPercent || 0,
+                    liquidity: result.data.ok.liquidity || null,
+                    volume24Hours: result.data.ok.volume24Hours || null,
+                    holdersCount: result.data.ok.holdersCount || null,
+                  };
+                }
+              } catch (err) {
+                console.error(`❌ Error fetching data for ${token.tokenMint}:`, err);
+              }
             }
-
-            // 🔹 If our API fails, check the Solana Token List API for stablecoins
-            const fallbackToken = solanaTokenList.find((t: any) => t.address === token.tokenMint);
-
-            if (fallbackToken) {
-              return {
-                ...token,
-                agentName: fallbackToken.symbol,
-                price: fallbackToken.price || null,
-                marketCap: fallbackToken.marketCap || null,
-              };
-            }
-
-            // 🔹 If still unknown, return default
-            return { ...token, agentName: "Unknown", price: null, marketCap: null };
+            return token;
           })
       );
 
+      console.log("✅ Final Token List:", enrichedTokens);
       setBalances(enrichedTokens);
     } catch (err) {
       console.error("❌ Error fetching token balances:", err);
@@ -119,7 +133,6 @@ export default function Page() {
       setLoading(false);
     }
   };
-
 
   const fetchTransactionHistory = async () => {
     if (!walletAddress) return;
@@ -134,40 +147,24 @@ export default function Page() {
       let balanceTracker = 0;
       const balanceMap = new Map();
 
-      const batchSize = 5;
-      for (let i = 0; i < signatures.length; i += batchSize) {
-        const batch = signatures.slice(i, i + batchSize);
+      for (const sig of signatures) {
+        const tx = await connection.getTransaction(sig.signature, {
+          commitment: "confirmed",
+          maxSupportedTransactionVersion: 0,
+        });
 
-        const transactions = await Promise.all(
-            batch.map(async (sig) => {
-              try {
-                return await connection.getTransaction(sig.signature, {
-                  commitment: "confirmed",
-                  maxSupportedTransactionVersion: 0,
-                });
-              } catch (err) {
-                console.error(`❌ Error fetching transaction ${sig.signature}:`, err);
-                return null;
-              }
-            })
-        );
+        if (tx) {
+          const blockTime = tx.blockTime ? new Date(tx.blockTime * 1000) : new Date();
+          const formattedDate = blockTime.toISOString().split("T")[0];
 
-        for (const tx of transactions) {
-          if (tx) {
-            const blockTime = tx.blockTime ? new Date(tx.blockTime * 1000) : new Date();
-            const formattedDate = blockTime.toISOString().split("T")[0];
+          const amount = (tx.meta?.preBalances[0] - tx.meta?.postBalances[0]) / 1e9 || 0;
+          balanceTracker += amount;
 
-            const amount = (tx.meta?.preBalances[0] - tx.meta?.postBalances[0]) / 1e9 || 0;
-            balanceTracker += amount;
-
-            balanceMap.set(formattedDate, {
-              date: formattedDate,
-              value: balanceTracker.toFixed(4),
-            });
-          }
+          balanceMap.set(formattedDate, {
+            date: formattedDate,
+            value: balanceTracker.toFixed(4),
+          });
         }
-
-        await new Promise((resolve) => setTimeout(resolve, 500));
       }
 
       setHistoricalData(Array.from(balanceMap.values()).reverse());
@@ -180,10 +177,8 @@ export default function Page() {
 
   const totalBalance = balances.reduce((sum, token) => sum + (token.price ? token.price * token.balance : 0), 0);
   const totalMarketCap = balances.reduce((sum, token) => sum + (token.marketCap || 0), 0);
-  const topToken = balances.length > 0 ? balances[0].agentName : "No tokens found";
 
   return (
-
       <div className="min-h-screen bg-black text-white">
         <main className="p-6">
           <div className="mb-6 flex items-center justify-between">
@@ -193,29 +188,18 @@ export default function Page() {
           </div>
 
           <div className="grid gap-4 md:grid-cols-3">
-            <MetricsCard title="Your Balance" tokens={balances}/>
-
-            {balances.length > 0 && (
-                <MetricsCard title="Top Holdings" tokens={balances.slice(0, 3)}/>
-            )}
-
-            {balances.length > 3 && (
-                balances.slice(3).map((chunk, index) => (
-                    <MetricsCard key={index} title={`Other Holdings #${index + 1}`} tokens={[chunk]}/>
-                ))
-            )}
+            <MetricsCard title="Your Balance" tokens={balances} />
+            {balances.length > 0 && <MetricsCard title="Top Holdings" tokens={balances.slice(0, 3)} />}
           </div>
 
-
           <Card className="mt-6 p-6 bg-black border-neutral-500">
-            <StatsChart data={historicalData}/>
+            <StatsChart data={historicalData} />
           </Card>
 
           <Card className="mt-6 p-6 bg-black border-neutral-500">
-            <VaultTable tokens={balances}/>
+            <VaultTable tokens={balances} />
           </Card>
         </main>
       </div>
   );
 }
-
