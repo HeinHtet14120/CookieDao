@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { Agent, ApiResponse } from "@/types/api";
 import AgentDashboard from "@/components/AgentDashboard";
 import axios from "axios";
+import Footer from "@/components/Footer";
 
 export default function DashboardPage() {
   const [agentsCache, setAgentsCache] = useState<Record<number, Agent[]>>({});
@@ -147,6 +148,7 @@ export default function DashboardPage() {
 
   return (
       <div className="p-4 h-screen w-full bg-black/100 border-none backdrop-blur-lg rounded-xl border shadow-xl ">
+        <div className="flex flex-col items-center justify-center overflow-y-auto">
         <AgentDashboard
             data={hasSearched ? searchResults : agents}
             pagination={pagination}
@@ -156,6 +158,11 @@ export default function DashboardPage() {
             onSearch={handleSearch}
             aiPredictions={aiPredictions}
         />
+        </div>
+        
+      <Footer />
+
       </div>
+      
   );
 }

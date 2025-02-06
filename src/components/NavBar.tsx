@@ -60,7 +60,7 @@ export default function Navbar() {
                     href="/"
                     className="font-bold text-3xl bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent font-fira"
                   >
-                    Jr.Mafia DeFi
+                    Jr.Mafia
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>

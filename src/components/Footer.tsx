@@ -12,9 +12,11 @@ import {
   User,
   Spade,
   SpadeIcon,
+  Icon,
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { ToastAction } from "@/components/ui/toast";
+import { IconBrandX } from "@tabler/icons-react";
 
 export default function AdvancedWeb3Footer() {
   const { toast } = useToast();
@@ -46,13 +48,15 @@ export default function AdvancedWeb3Footer() {
               the Web3 revolution.
             </p>
             <div className="flex space-x-4">
-              {[Github, Twitter, DiscordIcon].map((Icon, index) => (
+              {[Github, IconBrandX, DiscordIcon].map((Icon, index) => (
                 <motion.a
                   key={index}
                   href={
                     Github === Icon
                       ? "https://github.com/HeinHtet14120/CookieDao"
-                      : "https://x.com/JrMafia404"
+                      : IconBrandX === Icon
+                        ? "https://x.com/JrMafia404"
+                        : "https://jrmafiawhitepaper.vercel.app/"
                   }
                   className="text-gray-400 hover:text-white transition-colors"
                   whileHover={{ scale: 1.2 }}

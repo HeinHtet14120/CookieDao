@@ -9,6 +9,7 @@ import { MetricsCard } from "@/components/metrics-card";
 import { VaultTable } from "@/components/vault-table";
 import { StatsChart } from "@/components/stats-chart";
 import { useRouter } from "next/navigation";
+import { MultiStepLoader as Loader } from "@/components/ui/multi-step-loader";
 
 const SOLANA_MAINNET_URL =
     "https://tiniest-broken-lake.solana-mainnet.quiknode.pro/c5462950ebb302a25357758b0160085153b91d73/";
@@ -23,6 +24,21 @@ export default function Page() {
   const [loading, setLoading] = useState<boolean>(false);
   const [errors, setErrors] = useState<string | null>(null);
   const router = useRouter();
+
+  const loadingStates = [
+    {
+      text: "🔍 Connecting to wallet...",
+    },
+    {
+      text: "💰 Verifying wallet...",
+    },
+    {
+      text: "🪙 Loading token balances...",
+    },
+    {
+      text: "✨ Enriching token data...",
+    },
+  ];
 
   useEffect(() => {
     if (walletAddress) {
@@ -132,7 +148,9 @@ export default function Page() {
       console.error("❌ Error fetching token balances:", err);
       setErrors("Failed to fetch token balances.");
     } finally {
-      setLoading(false);
+      setTimeout(() => {
+        setLoading(false);
+      }, 1000);
     }
   };
 
@@ -205,6 +223,12 @@ export default function Page() {
     </div>
 
           </div>
+          <Loader
+            loadingStates={loadingStates}
+            loading={loading}
+            duration={1000}
+            loop={false}
+          />
 
           <div className="grid gap-4 md:grid-cols-3">
             <MetricsCard title="Your Balance" tokens={tokensWithAgentNames} />

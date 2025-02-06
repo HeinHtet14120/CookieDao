@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { IconBrandX } from "@tabler/icons-react";
+import { IconBrandX, IconDotsVertical } from "@tabler/icons-react";
 import {
   ColumnDef,
   ColumnFiltersState,
@@ -380,7 +380,7 @@ export const columns: ColumnDef<Agent>[] = [
           <DropdownMenuTrigger asChild>
             <Button variant="ghost" className="h-8 w-8 p-0">
               <span className="sr-only">Open menu</span>
-              <MoreHorizontal className="h-4 w-4" />
+              <MoreHorizontal className="h-4 w-4 text-white/50" />
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
@@ -789,7 +789,7 @@ export function AgentDashboard({
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" className="h-8 w-8 p-0">
                 <span className="sr-only">Open menu</span>
-                <MoreHorizontal className="h-4 w-4" />
+                <IconDotsVertical className="h-4 text-white/50 hover:text-white w-4" />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
@@ -1027,7 +1027,7 @@ export function AgentDashboard({
         </Table>
       </div>
       {data.length > 1 && (
-        <div className="flex items-center justify-end space-x-2 bg-black/100 border-none mt-4 mb-4 backdrop-blur-lg rounded-xl border shadow-xl">
+        <div className="flex items-center justify-end space-x-2 bg-black/100 border-none mt-4 mb-4 pb-4 backdrop-blur-lg rounded-xl border shadow-xl">
           <div className="flex-1 text-sm text-muted-foreground">
             Page {pagination.currentPage} of {pagination.totalPages} (
             {pagination.totalCount} total items)

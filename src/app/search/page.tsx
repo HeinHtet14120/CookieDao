@@ -102,6 +102,7 @@ export default function SearchExample() {
   };
 
   return (
+    <>
     <div className="p-4 h-screen w-full bg-black/10 backdrop-blur-lg overflow-y-auto rounded-xl border border-black shadow-xl">
       <div className="max-w-4xl mx-auto p-6 bg-gray-900/50 backdrop-blur-lg rounded-2xl shadow-2xl border border-gray-800/50 mb-8">
         <div className="flex flex-col space-y-6">
@@ -268,5 +269,7 @@ export default function SearchExample() {
         </>
       )}
     </div>
+    </>
+
   );
 }
