@@ -13,8 +13,8 @@ import "./globals.css";
 // });
 
 export const metadata: Metadata = {
-  title: "Jr.Mafia DeFi",
-  description: "Jr.Mafia DeFi",
+  title: "Prime AI",
+  description: "Prime AI",
 };
 
 export default function RootLayout({

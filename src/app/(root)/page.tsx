@@ -19,7 +19,7 @@ export default function Home() {
       icon: (
         <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://x.com/JrMafia404",
+      href: "https://x.com/prime_ai404",
     },
     {
       title: "GitHub",

@@ -29,7 +29,7 @@ export function GlowingCard() {
       <GridItem
         area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
         icon={<Wallet className="h-4 w-4 text-neutral-400" />}
-        title="Cross-Chain Portfolio Tracker"
+        title="SPL Tokens Cross-Chain Portfolio Tracker"
         description="Monitor your assets across multiple chains. Get detailed transaction history and portfolio performance metrics in real-time."
       />
 

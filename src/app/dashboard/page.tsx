@@ -8,8 +8,8 @@ import axios from "axios";
 import Footer from "@/components/Footer";
 
 export default function DashboardPage() {
-  const [agentsCache, setAgentsCache] = useState<Record<number, Agent[]>>({});
-  const [currentPage, setCurrentPage] = useState(1);
+  const [, setAgentsCache] = useState<Record<number, Agent[]>>({});
+  const [, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [pagination, setPagination] = useState({

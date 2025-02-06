@@ -1,14 +1,20 @@
 import React from "react";
 
-const TokenList = ({ tokens }: { tokens: any[] }) => {
+type Token = {
+  chain: string;
+  contractAddress: string;
+};
+
+// ✅ Correct Type for `tokens` Prop
+const TokenList = ({ tokens }: { tokens: Token[] }) => {
   return (
-    <ul style={styles.list}>
-      {tokens.map((token, index) => (
-        <li key={index} style={styles.listItem}>
-          <strong>{token.chain}</strong>: {token.contractAddress}
-        </li>
-      ))}
-    </ul>
+      <ul style={styles.list}>
+        {tokens.map((token, index) => (
+            <li key={index} style={styles.listItem}>
+              <strong>{token.chain}</strong>: {token.contractAddress}
+            </li>
+        ))}
+      </ul>
   );
 };
 

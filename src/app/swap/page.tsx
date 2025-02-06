@@ -10,9 +10,9 @@ export default function TokenSwap() {
   const [inputToken, setInputToken] = useState("")
   const [outputToken, setOutputToken] = useState("")
   const [amount, setAmount] = useState("")
-  const [loading, setLoading] = useState(false)
-  const [quote, setQuote] = useState(null)
-  const [gasFee, setGasFee] = useState(null)
+  const [loading] = useState(false)
+  // const [quote] = useState(null)
+  // const [gasFee] = useState(null)
 
   // Placeholder functions
   const executeSwap = () => {}
@@ -26,7 +26,7 @@ export default function TokenSwap() {
         <div className="bg-black bg-opacity-80 border border-[#38444D] rounded-2xl p-8 shadow-lg max-w-sm w-full mx-4">
           <h2 className="text-3xl font-bold text-[#1DA1F2] text-center mb-4">Coming Soon</h2>
           <p className="text-[#8899A6] text-center text-lg">
-            We're working hard to bring you the Token Swap feature. Stay tuned for updates!
+            We&#39;re working hard to bring you the Token Swap feature. Stay tuned for updates!
           </p>
           <div className="mt-6 flex justify-center">
             <div className="inline-flex items-center px-4 py-2 border border-[#1DA1F2] rounded-full text-[#1DA1F2]">
@@ -89,26 +89,26 @@ export default function TokenSwap() {
               />
             </div>
 
-            {quote && (
-              <div className="space-y-2 p-4 bg-[#192734] rounded-lg border border-[#38444D]">
-                <p className="text-[#8899A6]">
-                  Expected Output:{" "}
-                  <span className="font-medium text-white">
-                    {(quote.outAmount / 1e6).toFixed(6)} {outputToken === USDC_MINT ? "USDC" : "SOL"}
-                  </span>
-                </p>
-                <p className="text-[#8899A6]">
-                  Price Impact:{" "}
-                  <span className="font-medium text-white">{(quote.priceImpactPct * 100).toFixed(2)}%</span>
-                </p>
-                <p className="text-[#8899A6]">
-                  Gas Fee:{" "}
-                  <span className="font-medium text-white">
-                    {gasFee ? `${gasFee.toFixed(6)} SOL` : "Calculating..."}
-                  </span>
-                </p>
-              </div>
-            )}
+            {/*{quote && (*/}
+            {/*  <div className="space-y-2 p-4 bg-[#192734] rounded-lg border border-[#38444D]">*/}
+            {/*    <p className="text-[#8899A6]">*/}
+            {/*      Expected Output:{" "}*/}
+            {/*      <span className="font-medium text-white">*/}
+            {/*        {(quote.outAmount / 1e6).toFixed(6)} {outputToken === USDC_MINT ? "USDC" : "SOL"}*/}
+            {/*      </span>*/}
+            {/*    </p>*/}
+            {/*    <p className="text-[#8899A6]">*/}
+            {/*      Price Impact:{" "}*/}
+            {/*      <span className="font-medium text-white">{(quote.priceImpactPct * 100).toFixed(2)}%</span>*/}
+            {/*    </p>*/}
+            {/*    <p className="text-[#8899A6]">*/}
+            {/*      Gas Fee:{" "}*/}
+            {/*      <span className="font-medium text-white">*/}
+            {/*        {gasFee ? `${gasFee.toFixed(6)} SOL` : "Calculating..."}*/}
+            {/*      </span>*/}
+            {/*    </p>*/}
+            {/*  </div>*/}
+            {/*)}*/}
 
             <Button
               onClick={executeSwap}

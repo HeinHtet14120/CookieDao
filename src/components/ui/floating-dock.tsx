@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
 import {
   AnimatePresence,
   MotionValue,
@@ -9,16 +8,16 @@ import {
   useTransform,
 } from "framer-motion";
 import Link from "next/link";
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 
 export const FloatingDock = ({
   items,
   desktopClassName,
-  mobileClassName,
+
 }: {
   items: { title: string; icon: React.ReactNode; href?: string; ca?: string }[];
   desktopClassName?: string;
-  mobileClassName?: string;
+
 }) => {
   return (
     <>
@@ -90,7 +89,7 @@ const FloatingDockDesktop = ({
   items: { title: string; icon: React.ReactNode; href?: string; ca?: string }[];
   className?: string;
 }) => {
-  let mouseX = useMotionValue(Infinity);
+  const mouseX = useMotionValue(Infinity);
   return (
     <motion.div
       onMouseMove={(e) => mouseX.set(e.pageX)}

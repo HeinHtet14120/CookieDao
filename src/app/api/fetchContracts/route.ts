@@ -1,20 +1,28 @@
-import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
+import { NextResponse } from "next/server";
 
-const API_KEY = "77cdfd4c-132e-4314-ac93-b8ac64f6a2a8";
+const API_KEY = '77cdfd4c-132e-4314-ac93-b8ac64f6a2a8';
 const BASE_URL =
-  "https://api.cookie.fun/v2/agents/agentsPaged?interval=_7Days&page=";
-const CONTRACTS_FILE_PATH = path.join(
-  process.cwd(),
-  "public/contractAddresses.json",
-);
+    "https://api.cookie.fun/v2/agents/agentsPaged?interval=_7Days&page=";
+const CONTRACTS_FILE_PATH = path.join(process.cwd(), "public/contractAddresses.json");
+
+// ✅ Define the expected data structure
+type Contract = {
+  chain: string;
+  contractAddress: string;
+};
+
+type Token = {
+  agentName: string;
+  contracts: Contract[];
+};
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
-export async function GET() {
+async function fetchContracts() {
   try {
-    let allContracts = [];
+    const allContracts: { agentName: string; chain: string; contractAddress: string }[] = [];
     let page = 1;
     let hasMorePages = true;
 
@@ -28,27 +36,15 @@ export async function GET() {
         },
       });
 
-      // ✅ Log the full response for debugging
-      console.log(`🔹 Response Status: ${response.status}`);
-      console.log(`🔹 Response Headers:`, response.headers);
-      const text = await response.text();
-      console.log(`🔹 Response Body: ${text}`);
-
-      // ❌ If not OK, log the response & return
       if (!response.ok) {
-        console.error(
-          `❌ API Error (Page ${page}): ${response.status} - ${response.statusText}`,
-        );
-        return NextResponse.json(
-          { error: "Failed to fetch contracts", details: text },
-          { status: response.status },
-        );
+        console.error(`❌ API Error: ${response.status} - ${response.statusText}`);
+        return;
       }
 
-      const data = JSON.parse(text);
+      const data = await response.json();
 
-      if (data.success && data.ok.data) {
-        data.ok.data.forEach((token) => {
+      if (data.success && Array.isArray(data.ok.data)) {
+        (data.ok.data as Token[]).forEach((token) => {
           token.contracts.forEach((contract) => {
             allContracts.push({
               agentName: token.agentName,
@@ -57,8 +53,8 @@ export async function GET() {
             });
           });
         });
-        hasMorePages =
-          page < data.ok.totalPages && allContracts.length < data.ok.totalCount;
+
+        hasMorePages = page < data.ok.totalPages && allContracts.length < data.ok.totalCount;
         page++;
       } else {
         hasMorePages = false;
@@ -67,21 +63,15 @@ export async function GET() {
       await delay(2000);
     }
 
-    fs.writeFileSync(
-      CONTRACTS_FILE_PATH,
-      JSON.stringify(allContracts, null, 2),
-    );
-    console.log("📁 Updated contractAddresses.json");
-
-    return NextResponse.json(
-      { success: true, count: allContracts.length },
-      { status: 200 },
-    );
+    fs.writeFileSync(CONTRACTS_FILE_PATH, JSON.stringify(allContracts, null, 2));
+    console.log("📁 Updated contractAddresses.json ✅");
   } catch (error) {
     console.error("❌ Error fetching token contracts:", error);
-    return NextResponse.json(
-      { error: "Internal Server Error", details: error.message },
-      { status: 500 },
-    );
   }
+}
+
+// ✅ Export API Route
+export async function GET() {
+  await fetchContracts();
+  return NextResponse.json({ success: true, message: "Contracts updated successfully" });
 }
