@@ -9,7 +9,12 @@ const nextConfig = {
     ];
   },
   images: {
-    domains: ["raw.githubusercontent.com", "api.dicebear.com", "cache.jup.ag"],
+    domains: [
+      "raw.githubusercontent.com",
+      "api.dicebear.com",
+      "cache.jup.ag",
+      "images.unsplash.com",
+    ],
   },
 };
 
