@@ -7,6 +7,9 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Transaction, PublicKey, Connection } from "@solana/web3.js";
 import { useConnection } from "@solana/wallet-adapter-react";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Input } from "@/components/ui/input"
+import { cookieApi } from "../api/cookies";
 
 const USDC_MINT = "EPjFWdd5AufqSSvwxS5uo4ptRG4AkLbS5uLsrD3Hhrf"; // USDC Token Mint
 const SOL_MINT = "So11111111111111111111111111111111111111112"; // SOL Token Mint
@@ -22,6 +25,7 @@ export default function SwapPage() {
   const [quote, setQuote] = useState(null);
   const [gasFee, setGasFee] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [name, setName] = useState("");
 
   useEffect(() => {
     if (inputToken && outputToken && amount) {
@@ -94,58 +98,89 @@ export default function SwapPage() {
     }
   };
 
+  
+
+  const inputTokenAgent = async () => {
+    const agent = await cookieApi.getAgentByContract(inputToken);
+    setName(agent.ok.agentName);
+    return agent.ok.agentName;
+  };
+
+  useEffect(() => {
+    inputTokenAgent();
+  }, [searchParams.get("tokenMint")]);
+
   return (
-      <div className="min-h-screen bg-black text-white p-6">
-        <h1 className="text-2xl font-bold mb-4">Token Swap</h1>
+    <div className="min-h-screen bg-black text-white p-6 flex items-center justify-center">
+    <Card className="w-full max-w-md p-6 bg-[#15202B] border border-[#38444D] rounded-2xl shadow-lg">
+      <h1 className="text-3xl font-bold mb-6 text-center text-white">Token Swap</h1>
+      <div className="space-y-6">
+        <div className="space-y-2">
+          <label className="text-[#8899A6] font-medium">Swap From:</label>
+          <Select value={inputToken} onValueChange={setInputToken}>
+            <SelectTrigger className="w-full bg-[#192734] border-[#38444D] text-white">
+              <SelectValue placeholder="Select token" />
+            </SelectTrigger>
+            <SelectContent className="bg-[#192734] border-[#38444D]">
+              <SelectItem value={searchParams.get("tokenMint") || SOL_MINT}>
+                {searchParams.get("tokenMint") ? name : "SOL"}
+              </SelectItem>
+              <SelectItem value={SOL_MINT}>SOL</SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
 
-        <Card className="p-6 bg-black border-neutral-500">
-          <div className="flex flex-col space-y-4">
-            {/* Token Selection */}
-            <label className="text-gray-400">Swap From:</label>
-            <select
-                value={inputToken}
-                onChange={(e) => setInputToken(e.target.value)}
-                className="p-2 bg-neutral-800 rounded"
-            >
-              <option value={searchParams.get("tokenMint")}>{searchParams.get("tokenMint")}</option>
-              <option value={SOL_MINT}>SOL</option>
-            </select>
+        <div className="space-y-2">
+          <label className="text-[#8899A6] font-medium">Swap To:</label>
+          <Select value={outputToken} onValueChange={setOutputToken}>
+            <SelectTrigger className="w-full bg-[#192734] border-[#38444D] text-white">
+              <SelectValue placeholder="Select token" />
+            </SelectTrigger>
+            <SelectContent className="bg-[#192734] border-[#38444D]">
+              <SelectItem value={USDC_MINT}>USDC</SelectItem>
+              <SelectItem value={SOL_MINT}>SOL</SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
 
-            <label className="text-gray-400">Swap To:</label>
-            <select
-                value={outputToken}
-                onChange={(e) => setOutputToken(e.target.value)}
-                className="p-2 bg-neutral-800 rounded"
-            >
-              <option value={USDC_MINT}>USDC</option>
-              <option value={SOL_MINT}>SOL</option>
-            </select>
+        <div className="space-y-2">
+          <label className="text-[#8899A6] font-medium">Amount:</label>
+          <Input
+            type="number"
+            value={amount}
+            onChange={(e) => setAmount(e.target.value)}
+            className="w-full bg-[#192734] border-[#38444D] text-white placeholder-[#8899A6]"
+            placeholder="Enter amount"
+          />
+        </div>
 
-            {/* Amount Input */}
-            <label className="text-gray-400">Amount:</label>
-            <input
-                type="number"
-                value={amount}
-                onChange={(e) => setAmount(e.target.value)}
-                className="p-2 bg-neutral-800 rounded w-full"
-                placeholder="Enter amount"
-            />
-
-            {/* Swap Quote */}
-            {quote && (
-                <div className="text-gray-300">
-                  <p>Expected Output: {(quote.outAmount / 1e6).toFixed(6)} {outputToken === USDC_MINT ? "USDC" : "SOL"}</p>
-                  <p>Price Impact: {(quote.priceImpactPct * 100).toFixed(2)}%</p>
-                  <p>Gas Fee: {gasFee ? `${gasFee.toFixed(6)} SOL` : "Calculating..."}</p>
-                </div>
-            )}
-
-            {/* Swap Button */}
-            <Button onClick={executeSwap} disabled={loading || !quote} className="w-full bg-yellow-500">
-              {loading ? "Swapping..." : "Swap"}
-            </Button>
+        {quote && (
+          <div className="space-y-2 p-4 bg-[#192734] rounded-lg border border-[#38444D]">
+            <p className="text-[#8899A6]">
+              Expected Output:{" "}
+              <span className="font-medium text-white">
+                {(quote.outAmount / 1e6).toFixed(6)} {outputToken === USDC_MINT ? "USDC" : "SOL"}
+              </span>
+            </p>
+            <p className="text-[#8899A6]">
+              Price Impact: <span className="font-medium text-white">{(quote.priceImpactPct * 100).toFixed(2)}%</span>
+            </p>
+            <p className="text-[#8899A6]">
+              Gas Fee:{" "}
+              <span className="font-medium text-white">{gasFee ? `${gasFee.toFixed(6)} SOL` : "Calculating..."}</span>
+            </p>
           </div>
-        </Card>
+        )}
+
+        <Button
+          onClick={executeSwap}
+          disabled={loading || !quote}
+          className="w-full bg-[#1DA1F2] hover:bg-[#1A91DA] text-white font-bold py-3 rounded-full transition-all duration-200 ease-in-out disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          {loading ? "Swapping..." : "Swap"}
+        </Button>
       </div>
+    </Card>
+  </div>
   );
 }
