@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 PRIME AI - Crypto Intelligence Platform
 
-## Getting Started
+<img src='./src/assets/images/Crown.png' width='300' height='300' />
 
-First, run the development server:
+**Prime AI** is an advanced **crypto intelligence platform** that provides AI-powered market insights, wallet tracking, social sentiment analysis, and real-time predictions for cryptocurrencies.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔹 Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🧠 AI Chat Integration
+- **DeepSeek-powered chatbot** for automated crypto analysis.
+- Get **real-time market insights** and trading strategies.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 📊 AI-Powered Dashboard
+- **Price feeds**, **liquidity metrics**, **holder analytics**.
+- AI-powered **price predictions** for each cryptocurrency.
 
-## Learn More
+### 📈 AI Market Predictions
+- **Machine learning models** for crypto price forecasts.
+- **Trend analysis** to optimize trading strategies.
 
-To learn more about Next.js, take a look at the following resources:
+### 🐦 Social Data API
+- Fetch **top tweets** for any cryptocurrency.
+- **Sentiment analysis & filtering** based on engagement, keywords, and trends.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🔗 Wallet Integration
+- Connect **crypto wallets** securely.
+- Track **balances & transaction history**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 📉 Market Analytics
+- Real-time **market metrics** (Price, Market Cap, Liquidity, 24h Volume, Holders).
+- AI-powered insights on market trends.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Coming Soon Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 💱 Token Swap Integration
+- **Direct swaps** with multiple DEXs.
+- **Cross-chain bridging** and gas fee optimization.
+
+### 📡 WebSockets & GraphQL APIs
+- **Live updates** for crypto data.
+- **More SDK support** (Python, TypeScript, GraphQL).
+
+### 🔍 Extended API Support
+- **New endpoints** for deep market insights.
+- More **AI-driven analytics**.
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Clone the repository
+```sh
+git clone https://github.com/your-username/prime-ai.git
+cd prime-ai
