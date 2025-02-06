@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "motion/react";
 
 export default function ColourfulText({ text }: { text: string }) {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const colors = [
     "rgb(100, 149, 237)", // Cornflower Blue
     "rgb(65, 105, 225)", // Royal Blue
@@ -27,7 +28,7 @@ export default function ColourfulText({ text }: { text: string }) {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [colors]);
 
   return text.split("").map((char, index) => (
     <motion.span

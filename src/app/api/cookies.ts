@@ -1,4 +1,4 @@
-const API_KEY = "77cdfd4c-132e-4314-ac93-b8ac64f6a2a8";
+const API_KEY = '77cdfd4c-132e-4314-ac93-b8ac64f6a2a8';
 
 if (!API_KEY) {
   console.error(
@@ -21,6 +21,7 @@ const fetchOptions = {
 export const getAgentsPaged = async (page: number) => {
   try {
     console.log(`🔄 Fetching page ${page} from CookieFun API...`);
+
     const response = await fetch(`${BASE_URL}${page}&pageSize=25`, {
       method: "GET",
       headers: {
@@ -44,6 +45,8 @@ export const getAgentsPaged = async (page: number) => {
     return await response.json();
   } catch (error) {
     console.error("❌ Fetch Error:", error);
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
     return { success: false, error: "Network error", details: error.message };
   }
 };

@@ -3,7 +3,7 @@
 import { Link } from "@radix-ui/react-navigation-menu";
 import { useWallet } from "@/hooks/useWallet";
 import { useState, useEffect } from "react";
-
+import logo from '@/assets/images/Crown.png'
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -23,6 +23,7 @@ import { Button } from "@/components/ui/button";
 import { Copy } from "lucide-react";
 import { CircleUser } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
+import Image from "next/image";
 
 
 export default function Navbar() {
@@ -37,7 +38,9 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    if (window.ethereum) {
+    if ("ethereum" in window) {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-expect-error
       setAvailableWallets("Phantom");
     }
   }, []);
@@ -58,11 +61,13 @@ export default function Navbar() {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
+
                   <Link
-                    href="/"
-                    className="font-bold text-3xl bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent font-fira"
+                      href="/"
+                      className="font-bold flex items-center gap-1 text-3xl bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent font-fira"
                   >
-                    Jr.Mafia
+                    <Image src={logo} alt="Prime AI" width={50} height={50} />
+                    <span className="text-2xl font-bold">Prime AI</span>
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>

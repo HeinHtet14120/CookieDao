@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const COOKIE_API_KEY = "77cdfd4c-132e-4314-ac93-b8ac64f6a2a8"; // 🔹 Replace with your actual API key
+const COOKIE_API_KEY = '77cdfd4c-132e-4314-ac93-b8ac64f6a2a8'; //
 const COOKIE_API_URL = "https://api.cookie.fun/v2/agents/contractAddress";
 
 export async function GET(req: Request) {

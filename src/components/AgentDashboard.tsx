@@ -42,7 +42,6 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import XIcon from "./ui/general";
 import CoinAvatar from "./CoinAvatar";
 import { useState, useEffect } from "react";
 import { debounce } from "@/lib/debounce";
@@ -760,7 +759,7 @@ export function AgentDashboard({
       header: "AI Suggestion",
       cell: ({ row }) => {
         const agentName = row.original.agentName;
-        const prediction = aiPredictions[agentName] || "No Data";
+        const prediction = aiPredictions[agentName] || "Loading..";
 
         return (
             <div

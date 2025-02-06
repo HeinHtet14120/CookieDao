@@ -2,6 +2,8 @@
 
 import { Line, LineChart, ResponsiveContainer, Tooltip } from "recharts";
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
 export function StatsChart({ data }) {
   return (
       <div className="h-[300px] w-full bg-black">

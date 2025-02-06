@@ -6,13 +6,12 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import {
   Github,
-  Twitter,
+
   DiscIcon as DiscordIcon,
   ChevronRight,
-  User,
-  Spade,
+
   SpadeIcon,
-  Icon,
+
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { ToastAction } from "@/components/ui/toast";
@@ -41,7 +40,7 @@ export default function AdvancedWeb3Footer() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              Junior Mafia
+              Prime AI
             </motion.h2>
             <p className="text-gray-400 mb-4">
               Empowering the future of decentralized finance. Join us in shaping
@@ -55,8 +54,8 @@ export default function AdvancedWeb3Footer() {
                     Github === Icon
                       ? "https://github.com/HeinHtet14120/CookieDao"
                       : IconBrandX === Icon
-                        ? "https://x.com/JrMafia404"
-                        : "https://jrmafiawhitepaper.vercel.app/"
+                        ? "https://x.com/prime_ai404"
+                        : "https://primeai-lime.vercel.app/"
                   }
                   className="text-gray-400 hover:text-white transition-colors"
                   whileHover={{ scale: 1.2 }}

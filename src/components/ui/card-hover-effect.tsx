@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
+import React, { useState } from "react";
 
 export const HoverEffect = ({
   items,
@@ -20,7 +20,7 @@ export const HoverEffect = ({
   const id = parseInt(items[0]?.id);
   return (
     <div
-      // @ts-expect-error
+
       tabIndex={id}
       className={cn(className)}
     >

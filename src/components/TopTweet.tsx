@@ -1,5 +1,6 @@
 import { BentoGridItem, BentoGrid } from "./ui/bento-grid";
 import { IconBrandX } from "@tabler/icons-react";
+import Image from "next/image";
 
 export function TopTweet({
   tweets,
@@ -21,7 +22,7 @@ export function TopTweet({
           title={tweet.tweetAuthorDisplayName}
           description={`${tweet.smartEngagementPoints} engagement points · ${tweet.impressionsCount.toLocaleString()} impressions`}
           header={
-            <img
+            <Image
               src={tweet.tweetAuthorProfileImageUrl.replace("_normal", "")}
               alt={tweet.tweetAuthorDisplayName}
               className="rounded-full h-10 w-10 object-cover"

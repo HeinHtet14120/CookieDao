@@ -1,5 +1,5 @@
 "use client"
-import { useState, useEffect } from "react";
+import {useState, useEffect, useCallback} from "react";
 import { Connection, PublicKey } from "@solana/web3.js";
 import { useWallet } from "@/hooks/useWallet";
 import { Button } from "@/components/ui/button";
@@ -9,9 +9,18 @@ const SOLANA_MAINNET_URL =
     "https://tiniest-broken-lake.solana-mainnet.quiknode.pro/c5462950ebb302a25357758b0160085153b91d73/";
 const connection = new Connection(SOLANA_MAINNET_URL, "confirmed");
 
+interface Transaction {
+    signature: string;
+    blockTime: number | null;
+    sender: string;
+    receiver: string;
+    amount: number;
+    fee: number;
+}
+
 export default function WalletHistory() {
     const { walletAddress } = useWallet();
-    const [transactions, setTransactions] = useState<any[]>([]);
+    const [transactions, setTransactions] = useState<Transaction[]>([]);
     const [loading, setLoading] = useState<boolean>(false);
     const [error, setError] = useState<string | null>(null);
 
@@ -33,7 +42,7 @@ export default function WalletHistory() {
 
 
 
-    const fetchTransactionHistory = async () => {
+    const fetchTransactionHistory = useCallback(async () => {
         if (!walletAddress) {
             setError("Wallet not connected.");
             return;
@@ -68,25 +77,27 @@ export default function WalletHistory() {
                         blockTime: tx?.blockTime,
                         sender: tx?.transaction.message.staticAccountKeys[0]?.toBase58(),
                         receiver: tx?.transaction.message.staticAccountKeys[1]?.toBase58(),
-                        amount: tx?.meta?.preBalances[0] - tx?.meta?.postBalances[0] || 0, // Balance change
+                        amount: (tx?.meta?.preBalances[0] || 0) - (tx?.meta?.postBalances[0] || 0), // Balance change
                         fee: tx?.meta?.fee || 0,
                     };
                 })
             );
 
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-expect-error
             setTransactions(transactionDetails);
             setLoading(false);
         } catch (err) {
             console.error("❌ Error fetching transaction history:", err);
             setError("Failed to fetch transactions.");
         } 
-    };
+    },[walletAddress]);
 
     useEffect(() => {
         if (walletAddress) {
             fetchTransactionHistory();
         }
-    }, [walletAddress]);
+    }, [fetchTransactionHistory, walletAddress]);
 
     return (
         <div className="min-h-screen bg-black text-white p-6">
