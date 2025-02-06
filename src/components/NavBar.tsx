@@ -21,14 +21,16 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Copy } from "lucide-react";
+import { CircleUser } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
+
 
 export default function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
   const { walletAddress, connectWallet, disconnectWallet, error } = useWallet();
   const [copied, setCopied] = useState(false);
-  const [availableWallets, setAvailableWallets] = useState<string[]>([]);
+  const [availableWallets, setAvailableWallets] = useState();
 
   const handleProfile = () => {
     router.push("/userprofile");
@@ -36,7 +38,7 @@ export default function Navbar() {
 
   useEffect(() => {
     if (window.ethereum) {
-      setAvailableWallets(["MetaMask", "WalletConnect", "Coinbase Wallet"]);
+      setAvailableWallets("Phantom");
     }
   }, []);
 
@@ -92,6 +94,16 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
                   <Link
+                      href="/swap"
+                      className={`block select-none text-slate-200 p-2 transition-colors rounded-md hover:text-accent focus:text-accent ${pathname === "/swap" ? "text-slate-300" : ""}`}
+                  >
+                    Swap
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link
                     href="/search"
                     className={`block select-none text-slate-200 p-2 transition-colors rounded-md hover:text-accent focus:text-accent ${pathname === "/search" ? "text-slate-300" : ""}`}
                   >
@@ -104,6 +116,16 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-4 z-10">
+          <div>
+            {walletAddress ? (
+
+                <Button variant="outline" onClick={handleProfile}>
+                  <CircleUser />
+                  Profile</Button>
+
+            ): null}
+
+          </div>
           <Dialog>
             <DialogTrigger asChild>
               <Button variant="outline">
@@ -142,15 +164,15 @@ export default function Navbar() {
                 <div className="mt-4">
                   <p>Select a Wallet:</p>
                   <div className="flex flex-col space-y-2 mt-2">
-                    {availableWallets.map((wallet) => (
+
                       <Button
-                        key={wallet}
+
                         onClick={connectWallet}
                         className="w-full"
                       >
-                        {wallet}
+                        {availableWallets}
                       </Button>
-                    ))}
+
                   </div>
                   {error && <p className="mt-2 text-red-600">{error}</p>}
                 </div>
@@ -161,7 +183,6 @@ export default function Navbar() {
                     <Button variant="destructive" onClick={disconnectWallet}>
                       Disconnect Wallet
                     </Button>
-                    <Button variant="outline" onClick={handleProfile}>Profile</Button>
                   </>
                 )}
               </DialogFooter>

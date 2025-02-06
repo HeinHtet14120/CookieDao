@@ -234,14 +234,21 @@ export default function Page() {
             <MetricsCard title="Your Balance" tokens={tokensWithAgentNames} />
             {balances.length > 0 && <MetricsCard title="Top Holdings" tokens={tokensWithAgentNames.slice(0, 3)} />}
           </div>
+          {historicalData.length > 0 ? (
+              <Card className="mt-6 p-6 bg-black border-neutral-500">
+                <StatsChart data={historicalData} />
+              </Card>
+          ) : (
+              <div className="flex flex-col justify-center items-center h-40">
+                <div className="w-10 h-10 border-4 border-gray-300 border-t-yellow-500 rounded-full animate-spin"></div>
+                <p className="pt-4">Loading...</p>
+              </div>
+          )}
 
-          <Card className="mt-6 p-6 bg-black border-neutral-500">
-            <StatsChart data={historicalData} />
-          </Card>
 
-          <Card className="mt-6 p-6 bg-black border-neutral-500">
-            <VaultTable tokens={tokensWithAgentNames} />
-          </Card>
+          {/*<Card className="mt-6 p-6 bg-black border-neutral-500">*/}
+          {/*  <VaultTable tokens={tokensWithAgentNames} />*/}
+          {/*</Card>*/}
         </main>
       </div>
   );
