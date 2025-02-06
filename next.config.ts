@@ -6,6 +6,10 @@ const nextConfig = {
         source: "/api/cookie/:path*",
         destination: "https://api.cookie.fun/:path*",
       },
+      {
+        source: "/api/backend/:path*", // Proxy API requests
+        destination: "https://cookiedao-production-1847.up.railway.app/:path*",
+      },
     ];
   },
   images: {
