@@ -15,26 +15,27 @@ import Footer from "@/components/Footer";
 export default function Home() {
   const links = [
     {
-      title: "Twitter",
+      title: "X",
       icon: (
         <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://x.com/JrMafia404",
     },
     {
       title: "GitHub",
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://github.com/HeinHtet14120/CookieDao",
     },
   ];
   return (
     <>
-      <main className="min-h-screen p-4 bg-black relative">
-        <div className="relative z-10 max-w-6xl mx-auto pt-40">
+      <main className="min-h-screen p-4 bg-gray-100 relative">
+        <div className="relative z-10 max-w-6xl mx-auto pt-52">
+
           {/* Hero Section */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-20">
             <h1 className="text-2xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans">
               Welcome to <ColourfulText text="Crypto Intelligence" />
               <br />
@@ -63,14 +64,14 @@ export default function Home() {
               className=""
             >
               <div className="max-w-xs">
-                <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                  Multi-Chain Dashboard
-                </h2>
-                <p className="mt-4 text-left text-base/6 text-neutral-200">
-                  Track your portfolio across Ethereum, BSC, Solana, and more.
-                  Real-time price updates, profit/loss tracking, and gas
-                  analytics all in one place.
-                </p>
+              <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+          AI Trading Dashboard
+        </h2>
+        <p className="mt-4 text-left text-base/6 text-neutral-200">
+          Track AI trading tokens with real-time market insights. Monitor price movements,
+          market cap, liquidity, 24h volume, and holder metrics. Get AI-powered suggestions
+          for optimal trading decisions across various DeFi protocols.
+        </p>
               </div>
               <Image
                 src={chart}

@@ -4,7 +4,7 @@ import { Connection, PublicKey } from "@solana/web3.js";
 import { useWallet } from "@/hooks/useWallet";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-
+import { MultiStepLoader as Loader } from "@/components/ui/multi-step-loader";
 const SOLANA_MAINNET_URL =
     "https://tiniest-broken-lake.solana-mainnet.quiknode.pro/c5462950ebb302a25357758b0160085153b91d73/";
 const connection = new Connection(SOLANA_MAINNET_URL, "confirmed");
@@ -15,11 +15,23 @@ export default function WalletHistory() {
     const [loading, setLoading] = useState<boolean>(false);
     const [error, setError] = useState<string | null>(null);
 
-    useEffect(() => {
-        if (walletAddress) {
-            fetchTransactionHistory();
+    const loadingStates = [
+        {
+            text: "🔍 Fetching transaction history...",
+        },
+        {
+            text: "🪙 Loading transaction history...",
+        },
+        {
+            text: "✨ Enriching transaction history...",
+        },
+        {
+            text: "🔍 Finalizing transactions...",
         }
-    }, [walletAddress]);
+    ];
+
+
+
 
     const fetchTransactionHistory = async () => {
         if (!walletAddress) {
@@ -63,13 +75,18 @@ export default function WalletHistory() {
             );
 
             setTransactions(transactionDetails);
+            setLoading(false);
         } catch (err) {
             console.error("❌ Error fetching transaction history:", err);
             setError("Failed to fetch transactions.");
-        } finally {
-            setLoading(false);
-        }
+        } 
     };
+
+    useEffect(() => {
+        if (walletAddress) {
+            fetchTransactionHistory();
+        }
+    }, [walletAddress]);
 
     return (
         <div className="min-h-screen bg-black text-white p-6">
@@ -79,6 +96,13 @@ export default function WalletHistory() {
             ) : (
                 <p className="mb-4 text-sm text-red-500">Wallet not connected.</p>
             )}
+
+            <Loader
+                loadingStates={loadingStates}
+                loading={loading}
+                duration={1000}
+                loop={false}
+            />
 
             <Button className="bg-black-500" onClick={fetchTransactionHistory} disabled={loading || !walletAddress} variant="outline">
                 {loading ? "Fetching..." : "Refresh Transactions"}
