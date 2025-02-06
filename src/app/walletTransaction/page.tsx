@@ -46,12 +46,16 @@ export default function WalletHistory() {
             // 🔹 Fetch details for each transaction
             const transactionDetails = await Promise.all(
                 signatures.map(async (sig) => {
-                    const tx = await connection.getTransaction(sig.signature, { commitment: "confirmed" });
+                    const tx = await connection.getTransaction(sig.signature, {
+                        commitment: "confirmed",
+                        maxSupportedTransactionVersion: 0
+                    });
+                    console.log("this is the tx", tx);
                     return {
                         signature: sig.signature,
                         blockTime: tx?.blockTime,
-                        sender: tx?.transaction.message.accountKeys[0]?.toBase58(),
-                        receiver: tx?.transaction.message.accountKeys[1]?.toBase58(),
+                        sender: tx?.transaction.message.staticAccountKeys[0]?.toBase58(),
+                        receiver: tx?.transaction.message.staticAccountKeys[1]?.toBase58(),
                         amount: tx?.meta?.preBalances[0] - tx?.meta?.postBalances[0] || 0, // Balance change
                         fee: tx?.meta?.fee || 0,
                     };

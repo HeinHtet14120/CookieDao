@@ -3,11 +3,12 @@
 import { useState, useEffect } from "react";
 import { Connection, PublicKey } from "@solana/web3.js";
 import { useWallet } from "@/hooks/useWallet";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/moving-border";
 import { Card } from "@/components/ui/card";
 import { MetricsCard } from "@/components/metrics-card";
 import { VaultTable } from "@/components/vault-table";
 import { StatsChart } from "@/components/stats-chart";
+import { useRouter } from "next/navigation";
 
 const SOLANA_MAINNET_URL =
     "https://tiniest-broken-lake.solana-mainnet.quiknode.pro/c5462950ebb302a25357758b0160085153b91d73/";
@@ -21,6 +22,7 @@ export default function Page() {
   const [historicalData, setHistoricalData] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [errors, setErrors] = useState<string | null>(null);
+  const router = useRouter();
 
   useEffect(() => {
     if (walletAddress) {
@@ -175,8 +177,14 @@ export default function Page() {
     }
   };
 
+  const handleNavigation = () => {
+    router.push("/walletTransaction");
+  };
+
   const totalBalance = balances.reduce((sum, token) => sum + (token.price ? token.price * token.balance : 0), 0);
   const totalMarketCap = balances.reduce((sum, token) => sum + (token.marketCap || 0), 0);
+
+  const tokensWithAgentNames = balances.filter((token) => token.agentName);
 
   return (
       <div className="min-h-screen bg-black text-white">
@@ -185,11 +193,22 @@ export default function Page() {
             <div className="space-y-1">
               <h1 className="text-2xl font-bold">Overview</h1>
             </div>
+            <div>
+            <Button
+              onClick={() => handleNavigation()}
+              borderRadius="1rem"
+              className="bg-slate-900 text-white border-slate-800"
+              borderClassName=" border border-2 border-slate-800"
+            >
+              Transactions
+            </Button>
+    </div>
+
           </div>
 
           <div className="grid gap-4 md:grid-cols-3">
-            <MetricsCard title="Your Balance" tokens={balances} />
-            {balances.length > 0 && <MetricsCard title="Top Holdings" tokens={balances.slice(0, 3)} />}
+            <MetricsCard title="Your Balance" tokens={tokensWithAgentNames} />
+            {balances.length > 0 && <MetricsCard title="Top Holdings" tokens={tokensWithAgentNames.slice(0, 3)} />}
           </div>
 
           <Card className="mt-6 p-6 bg-black border-neutral-500">
@@ -197,7 +216,7 @@ export default function Page() {
           </Card>
 
           <Card className="mt-6 p-6 bg-black border-neutral-500">
-            <VaultTable tokens={balances} />
+            <VaultTable tokens={tokensWithAgentNames} />
           </Card>
         </main>
       </div>
