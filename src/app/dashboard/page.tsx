@@ -20,22 +20,46 @@ export default function DashboardPage() {
   const [searchResults, setSearchResults] = useState<Agent[]>([]);
   const [hasSearched, setHasSearched] = useState(false);
   const [aiPredictions, setAiPredictions] = useState<{ [key: string]: string }>(
-    {},
+      {},
   );
 
   useEffect(() => {
     const fetchAiPredictions = async () => {
       console.log("Fetching AI predictions..."); // 🟢 Step 1: Debug Start
 
+      // 1️⃣ Check if cached AI predictions exist
+      const cachedData = localStorage.getItem("ai_predictions");
+      if (cachedData) {
+        const parsedData = JSON.parse(cachedData);
+        const lastFetchedDate = parsedData.date;
+        const today = new Date().toISOString().split("T")[0];
+
+        // 2️⃣ If cache is from today, use it
+        if (lastFetchedDate === today) {
+          console.log("✅ Using cached AI predictions.");
+          setAiPredictions(parsedData.predictions);
+          return;
+        }
+      }
+
+      // 3️⃣ Otherwise, fetch new predictions
       try {
         const response = await axios.get("http://127.0.0.1:8000/predict");
 
-        console.log("Response received ✅", response); // 🟢 Step 2: Debug Response
-        console.log("AI Predictions:", response.data, "hi"); // 🟢 Step 3: Debug Data
+        console.log("Response received ✅", response);
+        console.log("AI Predictions:", response.data);
 
         setAiPredictions(response.data);
+
+        // 4️⃣ Save new predictions to localStorage
+        const jsonData = {
+          date: new Date().toISOString().split("T")[0], // Save today's date
+          predictions: response.data,
+        };
+        localStorage.setItem("ai_predictions", JSON.stringify(jsonData));
+
       } catch (error) {
-        console.error("❌ Error fetching AI predictions:", error); // 🛑 Debug Error
+        console.error("❌ Error fetching AI predictions:", error);
         setAiPredictions({});
       }
     };
@@ -66,7 +90,7 @@ export default function DashboardPage() {
     } catch (error) {
       console.error("Error fetching agents:", error);
       setError(
-        error instanceof Error ? error.message : "Failed to fetch agents",
+          error instanceof Error ? error.message : "Failed to fetch agents",
       );
     } finally {
       setLoading(false);
@@ -86,9 +110,9 @@ export default function DashboardPage() {
       }
 
       const result =
-        type === "contract"
-          ? await cookieApi.getAgentByContract(query)
-          : await cookieApi.getAgentByTwitter(query);
+          type === "contract"
+              ? await cookieApi.getAgentByContract(query)
+              : await cookieApi.getAgentByTwitter(query);
 
       if (result?.success && result.ok) {
         console.log("result", result.ok.data);
@@ -104,7 +128,7 @@ export default function DashboardPage() {
     } catch (error) {
       setSearchResults([]);
       if (
-        !(error instanceof Error && error.message.includes("Data not found"))
+          !(error instanceof Error && error.message.includes("Data not found"))
       ) {
         setError(error instanceof Error ? error.message : "Search failed");
       }
@@ -122,16 +146,16 @@ export default function DashboardPage() {
   };
 
   return (
-    <div className="p-4 h-screen w-full bg-black/100 border-none backdrop-blur-lg rounded-xl border shadow-xl ">
-      <AgentDashboard
-        data={hasSearched ? searchResults : agents}
-        pagination={pagination}
-        loading={loading}
-        error={error}
-        onPageChange={handlePageChange}
-        onSearch={handleSearch}
-        aiPredictions={aiPredictions}
-      />
-    </div>
+      <div className="p-4 h-screen w-full bg-black/100 border-none backdrop-blur-lg rounded-xl border shadow-xl ">
+        <AgentDashboard
+            data={hasSearched ? searchResults : agents}
+            pagination={pagination}
+            loading={loading}
+            error={error}
+            onPageChange={handlePageChange}
+            onSearch={handleSearch}
+            aiPredictions={aiPredictions}
+        />
+      </div>
   );
 }

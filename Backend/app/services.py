@@ -1,5 +1,4 @@
 import json
-
 import requests
 
 # Load API key from environment variable (keep it secure)
@@ -29,24 +28,31 @@ def calculate_sentiment(agent):
     return round(sentiment_score, 2)  # Round for readability
 
 def fetch_sentiment_data():
-    """Fetches social-driven sentiment data from Cookie API."""
-    url = f"{BASE_URL}/v2/agents/agentsPaged?interval=_7Days&page=1&pageSize=25"
+    """Fetches all pages of social-driven sentiment data from Cookie API."""
+    all_data = []
+    page = 1
+    page_size = 25  # Keep fetching in batches of 25
 
-    try:
-        response = requests.get(url, headers=headers)
-        response_json = response.json()
+    while True:
+        url = f"{BASE_URL}/v2/agents/agentsPaged?interval=_7Days&page={page}&pageSize={page_size}"
 
-        if response_json.get("success") and response_json.get("ok"):
+        try:
+            response = requests.get(url, headers=headers)
+            response_json = response.json()
+
+            if not response_json.get("success") or "ok" not in response_json:
+                return {"error": f"Failed to fetch data. Response: {response_json}"}
+
             crypto_data = response_json["ok"]["data"]
 
             if not crypto_data:
-                return {"error": "No crypto data found."}
+                break  # Stop fetching if the page has no data (last page reached)
 
             # Format and calculate sentiment scores
             formatted_data = [
                 {
                     "token": agent["agentName"],
-                    "sentiment_score": calculate_sentiment(agent),  # Compute sentiment
+                    "sentiment_score": calculate_sentiment(agent),
                     "price": agent.get("price", 0),
                     "mindshare": agent.get("mindshare", 0),
                     "engagements": agent.get("averageEngagementsCount", 0),
@@ -54,10 +60,11 @@ def fetch_sentiment_data():
                 }
                 for agent in crypto_data
             ]
-            return formatted_data
 
-        else:
-            return {"error": f"Failed to fetch data. Response: {response_json}"}
+            all_data.extend(formatted_data)
+            page += 1  # Move to the next page
 
-    except requests.RequestException as e:
-        return {"error": f"API request failed: {str(e)}"}
+        except requests.RequestException as e:
+            return {"error": f"API request failed: {str(e)}"}
+
+    return all_data  # Return the complete dataset
