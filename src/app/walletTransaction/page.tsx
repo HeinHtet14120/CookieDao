@@ -35,7 +35,7 @@ export default function WalletHistory() {
             const walletPublicKey = new PublicKey(walletAddress);
 
             // 🔹 Fetch recent transactions (signatures)
-            const signatures = await connection.getSignaturesForAddress(walletPublicKey, { limit: 50 });
+            const signatures = await connection.getSignaturesForAddress(walletPublicKey, { limit: 10 });
 
             if (!signatures.length) {
                 setError("No transactions found.");
@@ -43,29 +43,22 @@ export default function WalletHistory() {
                 return;
             }
 
-            let balanceTracker = 0;
-            const balanceHistory = [];
+            // 🔹 Fetch details for each transaction
+            const transactionDetails = await Promise.all(
+                signatures.map(async (sig) => {
+                    const tx = await connection.getTransaction(sig.signature, { commitment: "confirmed" });
+                    return {
+                        signature: sig.signature,
+                        blockTime: tx?.blockTime,
+                        sender: tx?.transaction.message.accountKeys[0]?.toBase58(),
+                        receiver: tx?.transaction.message.accountKeys[1]?.toBase58(),
+                        amount: tx?.meta?.preBalances[0] - tx?.meta?.postBalances[0] || 0, // Balance change
+                        fee: tx?.meta?.fee || 0,
+                    };
+                })
+            );
 
-            for (const sig of signatures) {
-                const tx = await connection.getTransaction(sig.signature, {
-                    commitment: "confirmed",
-                    maxSupportedTransactionVersion: 0, // ✅ Fix: Add this parameter
-                });
-
-                if (tx) {
-                    const blockTime = tx.blockTime ? new Date(tx.blockTime * 1000) : new Date();
-                    const amount = (tx.meta?.preBalances[0] - tx.meta?.postBalances[0]) / 1e9 || 0; // Convert lamports to SOL
-
-                    balanceTracker += amount;
-
-                    balanceHistory.push({
-                        date: blockTime.toLocaleDateString(),
-                        value: balanceTracker.toFixed(4),
-                    });
-                }
-            }
-
-            setTransactions(balanceHistory.reverse()); // 🔹 Reverse to show oldest first
+            setTransactions(transactionDetails);
         } catch (err) {
             console.error("❌ Error fetching transaction history:", err);
             setError("Failed to fetch transactions.");

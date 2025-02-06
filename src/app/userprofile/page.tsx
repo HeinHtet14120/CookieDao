@@ -30,6 +30,7 @@ export default function Page() {
     }
   }, [walletAddress]);
 
+
   const fetchAllTokenBalances = async () => {
     setLoading(true);
     setErrors(null);
@@ -44,10 +45,10 @@ export default function Page() {
 
       const walletPublicKey = new PublicKey(walletAddress);
 
-      const tokenAccounts = await connection.getParsedTokenAccountsByOwner(
-          walletPublicKey,
-          { programId: new PublicKey("TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA") }
-      );
+      // 🔹 Fetch token accounts for Solana
+      const tokenAccounts = await connection.getParsedTokenAccountsByOwner(walletPublicKey, {
+        programId: new PublicKey("TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"),
+      });
 
       if (tokenAccounts.value.length === 0) {
         setErrors("No tokens found in this wallet.");
@@ -63,9 +64,11 @@ export default function Page() {
           })
           .filter((token) => token.balance > 0);
 
+      // 🔹 Enrich Token Data using API & Local JSON as a fallback
       const enrichedTokens = await Promise.all(
           tokenList.map(async (token) => {
             try {
+              // ✅ Fetch from Primary API
               const apiUrl = `/api/fetchTokenData?contractAddress=${token.tokenMint}`;
               const response = await fetch(apiUrl);
               const result = await response.json();
@@ -73,20 +76,39 @@ export default function Page() {
               if (result.success && result.data) {
                 return {
                   ...token,
-                  agentName: result.data.ok.agentName,
-                  price: result.data.ok.price,
+                  agentName: result.data.ok.agentName || "Unknown",
+                  price: result.data.ok.price || null,
                   balance: token.balance,
-                  marketCap: result.data.ok.marketCap,
-                  priceDeltaPercent: result.data.ok.priceDeltaPercent,
-                  liquidity: result.data.ok.liquidity,
-                  volume24Hours: result.data.ok.volume24Hours,
-                  holdersCount: result.data.ok.holdersCount,
+                  marketCap: result.data.ok.marketCap || null,
+                  priceDeltaPercent: result.data.ok.priceDeltaPercent || 0,
+                  liquidity: result.data.ok.liquidity || null,
+                  volume24Hours: result.data.ok.volume24Hours || null,
+                  holdersCount: result.data.ok.holdersCount || null,
                 };
               }
             } catch (err) {
               console.error(`❌ Error fetching data for ${token.tokenMint}:`, err);
             }
 
+            // 🔹 Fallback: Fetch from Local JSON API
+            try {
+              const localApiUrl = `/api/fetchLocalToken?contractAddress=${token.tokenMint}`;
+              const localResponse = await fetch(localApiUrl);
+              const localResult = await localResponse.json();
+
+              if (localResult.success && localResult.data) {
+                return {
+                  ...token,
+                  agentName: localResult.data.name,
+                  price: localResult.data.price,
+                  marketCap: null, // No market cap in local JSON
+                };
+              }
+            } catch (err) {
+              console.error(`❌ Error fetching local token data for ${token.tokenMint}:`, err);
+            }
+
+            // If no data found, return default
             return { ...token, agentName: "Unknown", price: null, marketCap: null };
           })
       );
