@@ -46,7 +46,7 @@ export default function Page() {
 
       const walletPublicKey = new PublicKey(walletAddress);
 
-      // 🔹 Fetch token accounts for Solana
+      // 🔹 Fetch token accounts for Solana (Including Stablecoins)
       const tokenAccounts = await connection.getParsedTokenAccountsByOwner(walletPublicKey, {
         programId: new PublicKey("TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"),
       });
@@ -64,12 +64,16 @@ export default function Page() {
             return { tokenMint: mintAddress, balance: amount };
           })
           .filter((token) => token.balance > 0);
+      console.log(tokenList);
 
-      // 🔹 Enrich Token Data using API & Local JSON as a fallback
+
+      // ✅ Use Solana Token List API as a fallback for stablecoins
+      const solanaTokenList = await fetch("https://token.jup.ag/all").then((res) => res.json());
+
       const enrichedTokens = await Promise.all(
           tokenList.map(async (token) => {
             try {
-              // ✅ Fetch from Primary API
+              // ✅ Try fetching from our API
               const apiUrl = `/api/fetchTokenData?contractAddress=${token.tokenMint}`;
               const response = await fetch(apiUrl);
               const result = await response.json();
@@ -79,7 +83,6 @@ export default function Page() {
                   ...token,
                   agentName: result.data.ok.agentName || "Unknown",
                   price: result.data.ok.price || null,
-                  balance: token.balance,
                   marketCap: result.data.ok.marketCap || null,
                   priceDeltaPercent: result.data.ok.priceDeltaPercent || 0,
                   liquidity: result.data.ok.liquidity || null,
@@ -88,28 +91,22 @@ export default function Page() {
                 };
               }
             } catch (err) {
-              console.error(`❌ Error fetching data for ${token.tokenMint}:`, err);
+              console.error(`❌ Error fetching API for ${token.tokenMint}:`, err);
             }
 
-            // 🔹 Fallback: Fetch from Local JSON API
-            try {
-              const localApiUrl = `/api/fetchLocalToken?contractAddress=${token.tokenMint}`;
-              const localResponse = await fetch(localApiUrl);
-              const localResult = await localResponse.json();
+            // 🔹 If our API fails, check the Solana Token List API for stablecoins
+            const fallbackToken = solanaTokenList.find((t: any) => t.address === token.tokenMint);
 
-              if (localResult.success && localResult.data) {
-                return {
-                  ...token,
-                  agentName: localResult.data.name,
-                  price: localResult.data.price,
-                  marketCap: null, // No market cap in local JSON
-                };
-              }
-            } catch (err) {
-              console.error(`❌ Error fetching local token data for ${token.tokenMint}:`, err);
+            if (fallbackToken) {
+              return {
+                ...token,
+                agentName: fallbackToken.symbol,
+                price: fallbackToken.price || null,
+                marketCap: fallbackToken.marketCap || null,
+              };
             }
 
-            // If no data found, return default
+            // 🔹 If still unknown, return default
             return { ...token, agentName: "Unknown", price: null, marketCap: null };
           })
       );
@@ -122,6 +119,7 @@ export default function Page() {
       setLoading(false);
     }
   };
+
 
   const fetchTransactionHistory = async () => {
     if (!walletAddress) return;
