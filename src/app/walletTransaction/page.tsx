@@ -76,7 +76,7 @@ export default function WalletHistory() {
                 <p className="mb-4 text-sm text-red-500">Wallet not connected.</p>
             )}
 
-            <Button onClick={fetchTransactionHistory} disabled={loading || !walletAddress} variant="outline">
+            <Button className="bg-black-500" onClick={fetchTransactionHistory} disabled={loading || !walletAddress} variant="outline">
                 {loading ? "Fetching..." : "Refresh Transactions"}
             </Button>
 

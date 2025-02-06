@@ -57,7 +57,7 @@ const TableRow = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <tr
     ref={ref}
-    className={cn("border-b transition-colors border-white/100", className)}
+    className={cn("", className)}
     {...props}
   />
 ));
@@ -96,7 +96,7 @@ const TableCaption = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <caption
     ref={ref}
-    className={cn("mt-4 text-sm text-muted-foreground", className)}
+    className={cn("mt-4 text-sm text-white/20", className)}
     {...props}
   />
 ));

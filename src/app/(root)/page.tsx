@@ -5,7 +5,8 @@ import ChatBot from "@/components/Chatbox";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import ColourfulText from "@/components/ui/colourful-text";
 import { WobbleCard } from "@/components/ui/wobble-card";
-import chart from "@/assets/images/chartpng.png";
+import chart from "@/assets/images/chartdata.png"
+import transistion from "@/assets/images/transhis.png"
 import { FloatingDock } from "@/components/ui/floating-dock";
 import { IconBrandGithub, IconBrandX } from "@tabler/icons-react";
 import Image from "next/image";
@@ -104,7 +105,7 @@ export default function Home() {
                 </p>
               </div>
               <Image
-                src={chart}
+                src={transistion}
                 width={500}
                 height={500}
                 alt="analytics chart"
