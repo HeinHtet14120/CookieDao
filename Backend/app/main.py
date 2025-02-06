@@ -1,13 +1,15 @@
 from fastapi import FastAPI
+import os
 from app.services import fetch_sentiment_data
 from app.ai_model import predict_rebalancing
 from fastapi.middleware.cors import CORSMiddleware
+import uvicorn
 
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Allow Next.js frontend
+    allow_origins=["*"],  # Allow Next.js frontend
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods
     allow_headers=["*"],  # Allow all headers
@@ -30,6 +32,10 @@ def predict():
     recommendation = predict_rebalancing()
     return recommendation
 
+
+
 if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    port = int(os.getenv("PORT", "8000"))  # 🚀 Railway assigns a port dynamically
+    print(f"🚀 Starting FastAPI on port {port}")
+    uvicorn.run(app, host="0.0.0.0", port=port)
+

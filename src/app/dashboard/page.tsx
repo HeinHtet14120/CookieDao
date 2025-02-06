@@ -44,7 +44,7 @@ export default function DashboardPage() {
 
       // 3️⃣ Otherwise, fetch new predictions
       try {
-        const response = await axios.get("http://127.0.0.1:8000/predict");
+        const response = await axios.get("https://cookiedao-production-1847.up.railway.app/predict");
 
         console.log("Response received ✅", response);
         console.log("AI Predictions:", response.data);
