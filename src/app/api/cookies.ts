@@ -58,7 +58,7 @@ export const cookieApis = {
       console.log(`🔹 Fetching page ${page} from CookieFun API...`);
 
       const response = await fetch(
-        `http://localhost:3000/api/cookie/v2/agents/agentsPaged?page=${page}&pageSize=${pageSize}`,
+        `/api/cookie/v2/agents/agentsPaged?page=${page}&pageSize=${pageSize}`,
         {
           method: "GET",
           headers: {

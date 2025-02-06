@@ -33,6 +33,7 @@ export default function Home() {
     <>
       <main className="min-h-screen p-4 bg-gray-100 relative">
         <div className="relative z-10 max-w-6xl mx-auto pt-52">
+
           {/* Hero Section */}
           <div className="text-center mb-20">
             <h1 className="text-2xl md:text-5xl lg:text-7xl font-bold text-center text-white relative z-2 font-sans">
